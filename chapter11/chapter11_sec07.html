@@ -1,0 +1,929 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Übungen zum Selbststudium &#8212; Mathematik 1: Grundlagen</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter11/chapter11_sec07';</script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.3.5/jsxgraphcore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="12. Integralrechnung" href="../chapter12/chapter12_sec00.html" />
+    <link rel="prev" title="11.6 Wendepunkte" href="chapter11_sec06.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo-sl.png" class="logo__image only-light" alt="Mathematik 1: Grundlagen - Home"/>
+    <img src="../_static/logo-sl.png" class="logo__image only-dark pst-js-only" alt="Mathematik 1: Grundlagen - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Vorlesungsskript Mathematik 1: Grundlagen
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Mathematischer Werkzeugkasten</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter01/chapter01_sec00.html">1. Elementare Grundlagen</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec01.html">Videos zu Mengen und Intervalle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec02.html">Videos zu Rechenregeln</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec03.html">Videos zu Potenzen, Wurzeln und Logarithmen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec04.html">Videos zu Gleichungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec05.html">Videos zu Polynomdivision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec06.html">Videos zu Trigonometrie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter02/chapter02_sec00.html">2. Videos zu Funktionen</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec01.html">Videos zu Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec02.html">Videos zu Eigenschaften von Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">Videos zu Polynomen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">Videos zu Exponential- und Logarithmusfunktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">Videos zu Trigonometrische Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">Videos zu Beziehungen zwischen trigonometrischen Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vektoren und ihre Anwendungen</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter03/chapter03_sec00.html">3. Vektorräume</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter04/chapter04_sec00.html">4. Vektorrechnung</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter04/chapter04_sec01.html">4.1 Basis und Dimension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter04/chapter04_sec02.html">4.2 Skalarprodukt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter04/chapter04_sec03.html">4.3 Geometrische Interpretation Skalarprodukt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter04/chapter04_sec04.html">4.4 Anwendungen Skalarprodukt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter04/chapter04_sec05.html">4.5 Vektorprodukt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter04/chapter04_sec06.html">4.6 Spatprodukt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter04/chapter04_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter05/chapter05_sec00.html">5. Punkte, Geraden und Ebenen</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter05/chapter05_sec01.html">5.1 Geraden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter05/chapter05_sec02.html">5.2 Ebenen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter05/chapter05_sec03.html">5.3 Lineare Gleichungssysteme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter05/chapter05_sec04.html">5.4 Lagebeziehungen Geraden und Ebenen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter05/chapter05_sec05.html">5.5 Abstände</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter05/chapter05_sec06.html">5.6 Winkel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter05/chapter05_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Matrizen</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter06/chapter06_sec00.html">6. Matrizenrechnung</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter06/chapter06_sec01.html">6.1 Was ist eine Matrix?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter06/chapter06_sec02.html">6.2 Besondere Matrizen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter06/chapter06_sec03.html">6.3 Matrizenaddition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter06/chapter06_sec04.html">6.4 Skalarmultiplikation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter06/chapter06_sec05.html">6.5 Matrizenmultiplikation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter06/chapter06_sec06.html">6.6 Transponierte und symmetrische Matrizen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter06/chapter06_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter07/chapter07_sec00.html">7. Anwendungen von Matrizen</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec01.html">7.1 Determinanten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec02.html">7.2 Inverse Matrizen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec03.html">7.3 Orthogonale Matrizen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec04.html">7.4 Lineare Gleichungssysteme mit Matrizenrechnung lösen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec05.html">7.5 Eigenwerte und Eigenvektoren (2x2-Matrix)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec06.html">7.6 Eigenwerte und Eigenvektoren von 3x3-Matrizen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Komplexe Zahlen</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter08/chapter08_sec00.html">8. Komplexe Zahlen</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter08/chapter08_sec01.html">8.1 Was sind komplexe Zahlen?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter08/chapter08_sec02.html">8.2 Addition, Subtraktion und Multiplikation komplexer Zahlen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter08/chapter08_sec03.html">8.3 Betrag, komplexe Konjugation und Division</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter08/chapter08_sec04.html">8.4 Komplexe Zahlen in trigonometrischer Form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter08/chapter08_sec05.html">8.5 Komplexe Zahlen in Exponentialform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter08/chapter08_sec06.html">8.6 Potenzen und Wurzeln komplexer Zahlen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter08/chapter08_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Analysis</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter09/chapter09_sec00.html">9. Folgen, Grenzwerte und Stetigkeit</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter09/chapter09_sec01.html">9.1 Grundwissen Zahlenfolgen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter09/chapter09_sec02.html">9.2 Grenzwert einer Zahlenfolge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter09/chapter09_sec03.html">9.3 Rechnen mit konvergenten Folgen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter09/chapter09_sec04.html">9.4 Funktionsgrenzwerte und ihre Rechenregeln</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter09/chapter09_sec05.html">9.5 Stetigkeit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter09/chapter09_sec06.html">9.6 Unstetigkeitsstellen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter09/chapter09_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter10/chapter10_sec00.html">10. Differentialrechnung</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter10/chapter10_sec01.html">10.1 Ableitungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter10/chapter10_sec02.html">10.2 Ableitung von elementaren Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter10/chapter10_sec03.html">10.3 Faktor-, Summen- und Produktregel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter10/chapter10_sec04.html">10.4 Quotientenregel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter10/chapter10_sec05.html">10.5 Kettenregel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter10/chapter10_sec06.html">10.6 Ableitung der Umkehrfunktion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter10/chapter10_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="chapter11_sec00.html">11. Anwendung Differentialrechnung</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chapter11_sec01.html">11.1 Linearisierung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11_sec02.html">11.2 Regel von Bernoulli-de L’Hospital</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11_sec03.html">11.3 Neigungswinkel / Schnittwinkel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11_sec04.html">11.4 Monotonie und Krümmung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11_sec05.html">11.5 Extremwerte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter11_sec06.html">11.6 Wendepunkte</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter12/chapter12_sec00.html">12. Integralrechnung</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../chapter12/chapter12_sec01.html">12.1 Stammfunktion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter12/chapter12_sec02.html">12.2 Bestimmtes Integral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter12/chapter12_sec03.html">12.3 Eigenschaften von Integralen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter12/chapter12_sec04.html">12.4 Partielle Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter12/chapter12_sec05.html">12.5 Integration durch Substitution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter12/chapter12_sec06.html">12.6 Integralfunktionen und das uneigentliche Integral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter12/chapter12_sec07.html">Übungen zum Selbststudium</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapter11/chapter11_sec07.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/chapter11/chapter11_sec07.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Übungen zum Selbststudium</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ubungen-zum-selbststudium">
+<h1>Übungen zum Selbststudium<a class="headerlink" href="#ubungen-zum-selbststudium" title="Link to this heading">#</a></h1>
+<div class="miniexercise admonition">
+<p class="admonition-title">Übung 11.1</p>
+<p>Bestimme die lokalen Extrema. M.a.W., an welchen Stellen haben die Funktionen lokale Extrema, und handelt es sich um ein Minimum oder Maximum?</p>
+<p>a) <span class="math notranslate nohighlight">\(\displaystyle f(x)=x^2-5x\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\displaystyle f(x)=(1-x)^2\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(\displaystyle f(x)=1-x^2\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(\displaystyle f(x)=(x-1)^2\)</span></p>
+<p>e) <span class="math notranslate nohighlight">\(\displaystyle f(x)=x^3-75x\)</span></p>
+<p>f) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{1}{1+x^2}\)</span></p>
+<p>g) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{x}{1+x^2}\)</span></p>
+<p>h) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{x^2}{1+x^2}\)</span></p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>a) Minimum bei <span class="math notranslate nohighlight">\(x=\frac{5}{2}\)</span></p>
+<p>b) Minimum bei <span class="math notranslate nohighlight">\(x=1\)</span></p>
+<p>c) Maximum bei <span class="math notranslate nohighlight">\(x=0\)</span></p>
+<p>d) Minimum bei <span class="math notranslate nohighlight">\(x=1\)</span> (siehe b))</p>
+<p>e) Minimum bei <span class="math notranslate nohighlight">\(x=5\)</span>, Maximum bei <span class="math notranslate nohighlight">\(x=-5\)</span></p>
+<p>f) Maximum bei <span class="math notranslate nohighlight">\(x=0\)</span></p>
+<p>g) Minimum bei <span class="math notranslate nohighlight">\(x=-1\)</span>, Maximum bei <span class="math notranslate nohighlight">\(x=1\)</span></p>
+<p>h) Minimum bei <span class="math notranslate nohighlight">\(x=0\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">a)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(x)&amp;=x^2-5x \\
+f'(x)&amp;=2x-5=0\ \Rightarrow\ x=\frac{5}{2} \\
+f''(x)&amp;=2&gt;0:\ \text{Minimum}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">b)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(x)&amp;=(1-x)^2 \\
+f'(x)&amp;=-2(1-x)=2x-2=0\ \Rightarrow\ x=1 \\
+f''(x)&amp;=2&gt;0:\ \text{Minimum}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">c)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(x)&amp;=1-x^2 \\
+f'(x)&amp;=-2x=0\ \Rightarrow\ x=0 \\
+f''(x)&amp;=-2&lt;0:\ \text{Maximum}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">d)</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f(x)=(x-1)^2=(-1)^2(1-x)^2=(1-x)^2\)</span>, siehe b).</p>
+<p class="sd-card-text">e)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(x)&amp;=x^3-75x \\
+f'(x)&amp;=3x^2-75=0\ \Rightarrow\ x=\pm5 \\
+f''(x)&amp;=6x \\
+f''(5)&amp;=30&gt;0:\ \text{Minimum} \\
+f''(-5)&amp;=-30&lt;0:\ \text{Maximum}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">f)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(x)&amp;=\frac{1}{1+x^2} \\
+f'(x)&amp;=-\frac{2x}{(1+x^2)^2}=0\ \Rightarrow\ x=0 \\
+f''(x)&amp;=\frac{-2(1+x^2)+8x^2}{(1+x^2)^3} \\
+f''(0)&amp;=-2&lt;0:\ \text{Maximum}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">g)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(x)&amp;=\frac{x}{1+x^2} \\
+f'(x)&amp;=\frac{1-x^2}{(1+x^2)^2}=0\ \Rightarrow\ x=1\ \text{oder}\ x=-1 \\
+f''(x)&amp;=\frac{-2x(1+x^2)-(1-x^2)\cdot4x}{(1+x^2)^3} \\
+f''(-1)&amp;&gt;0:\ \text{Minimum} \\
+f''(1)&amp;&lt;0:\ \text{Maximum}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">h)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(x)&amp;=\frac{x^2}{1+x^2} \\
+f'(x)&amp;=\frac{2x}{(1+x^2)^2}=0\ \Rightarrow\ x=0 \\
+f''(x)&amp;=\frac{2(1+x^2)-8x^2}{(1+x^2)^3} \\
+f''(0)&amp;&gt;0:\ \text{Minimum}
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details></div>
+<div class="miniexercise admonition">
+<p class="admonition-title">Übung 11.2</p>
+<p>Welche Bedingung müssen die Koeffizienten <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> und <span class="math notranslate nohighlight">\(d\)</span> erfüllen, damit <span class="math notranslate nohighlight">\(f(x)=ax^3+bx^2+cx+d\)</span> zwei lokale Extrema hat?</p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p><span class="math notranslate nohighlight">\(b^2-3ac&gt;0\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f'(x)&amp;=3ax^2+2bx+c \\
+f'(x)=0\ \Rightarrow\ x^2+\frac{2b}{3a}\,x+\frac{c}{3a}&amp;=0\quad\text{mit}\quad p=\frac{2b}{3a},\ q=\frac{c}{3a} \\
+\Rightarrow\ x&amp;=-\frac{p}{2}\pm\sqrt{\left(\frac{p}{2}\right)^2-q}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">Zwei Extrema gibt es genau dann, wenn <span class="math notranslate nohighlight">\(\left(\dfrac{p}{2}\right)^2-q&gt;0\)</span>, d.h. <span class="math notranslate nohighlight">\(b^2-3ac&gt;0\)</span>.</p>
+</div>
+</details></div>
+<div class="miniexercise admonition">
+<p class="admonition-title">Übung 11.3</p>
+<p>Zerlege die Zahl 60 so in zwei Summanden, dass das Produkt dieser Zahlen ein Maximum annimmt.</p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>Die beiden Summanden sind <span class="math notranslate nohighlight">\(30\)</span> und <span class="math notranslate nohighlight">\(30\)</span> (das Produkt ist dann <span class="math notranslate nohighlight">\(900\)</span>).</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+60&amp;=a+b\ \Rightarrow\ b=60-a \\
+f(a)&amp;=a(60-a)=60a-a^2 \\
+f'(a)&amp;=60-2a=0\ \Rightarrow\ a=30 \\
+f''(a)&amp;=-2&lt;0:\ \text{Maximum}
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details></div>
+<div class="miniexercise admonition">
+<p class="admonition-title">Übung 11.4</p>
+<p>Zerlege die Zahl 24 so in zwei Summanden, dass die Summe der Quadrate dieser Zahlen möglichst klein wird.</p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>Die beiden Summanden sind <span class="math notranslate nohighlight">\(12\)</span> und <span class="math notranslate nohighlight">\(12\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+24&amp;=a+b\ \Rightarrow\ b=24-a \\
+f(a)&amp;=a^2+(24-a)^2 \\
+f'(a)&amp;=2a+2(24-a)(-1)=4a-48=0\ \Rightarrow\ a=12 \\
+f''(a)&amp;=4&gt;0:\ \text{Minimum}
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details></div>
+<div class="miniexercise admonition">
+<p class="admonition-title">Übung 11.5</p>
+<p>Berechne die folgenden Grenzwerte.</p>
+<p>Hinweis: Verwende die Regel von l’Hospital.</p>
+<p>a) <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to0}\frac{\sin x}{e^x-1}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to1}\frac{\ln x}{x^2-1}\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to0}\frac{1-\cos x}{x^2}\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to0}x^b\ln x\)</span> für <span class="math notranslate nohighlight">\(x&gt;0\)</span>, <span class="math notranslate nohighlight">\(b&gt;0\)</span></p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>a) <span class="math notranslate nohighlight">\(1\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\dfrac{1}{2}\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(\dfrac{1}{2}\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(0\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">a)</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{aligned}
+\lim_{x\to0}\frac{\sin x}{e^x-1}&amp;=\lim_{x\to0}\frac{\cos x}{e^x}=\frac{1}{1}=1
+\end{aligned}
+\]</div>
+<p class="sd-card-text">b)</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{aligned}
+\lim_{x\to1}\frac{\ln x}{x^2-1}&amp;=\lim_{x\to1}\frac{\frac{1}{x}}{2x}=\lim_{x\to1}\frac{1}{2x^2}=\frac{1}{2}
+\end{aligned}
+\]</div>
+<p class="sd-card-text">c)</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{aligned}
+\lim_{x\to0}\frac{1-\cos x}{x^2}&amp;=\lim_{x\to0}\frac{\sin x}{2x}=\lim_{x\to0}\frac{\cos x}{2}=\frac{1}{2}
+\end{aligned}
+\]</div>
+<p class="sd-card-text">d)</p>
+<p class="sd-card-text">Wegen des Logarithmus ist der Grenzwert ohnehin nur für <span class="math notranslate nohighlight">\(x\downarrow0\)</span> definiert.</p>
+<p class="sd-card-text">Es ist <span class="math notranslate nohighlight">\(\displaystyle x^b\ln x=\frac{\ln x}{x^{-b}}\)</span> für <span class="math notranslate nohighlight">\(x&gt;0\)</span>, <span class="math notranslate nohighlight">\(b&gt;0\)</span>. Wegen <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\downarrow0}\ln x=-\infty\)</span> und <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\downarrow0}x^{-b}=\infty\)</span> lässt sich die Regel von l’Hospital anwenden. Also:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\lim_{x\downarrow0}x^b\ln x&amp;=\lim_{x\downarrow0}\frac{\ln x}{x^{-b}}=\lim_{x\downarrow0}\frac{\frac{1}{x}}{-b\,x^{-b-1}} \\
+&amp;=\lim_{x\downarrow0}\left(-\frac{1}{b}\right)x^{-1}\,x^{b+1}=\lim_{x\downarrow0}\left(-\frac{1}{b}\right)x^{b}=0
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details></div>
+<div class="miniexercise admonition">
+<p class="admonition-title">Übung 11.6</p>
+<p>Ermittle die Gleichung der Tangente.</p>
+<p>a) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{x^2}{2}\)</span> bei <span class="math notranslate nohighlight">\(x_0=1\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{x^2}{4}\sqrt{8-x}\)</span> bei <span class="math notranslate nohighlight">\(x_0=-1\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{1}{x+4}\)</span> bei <span class="math notranslate nohighlight">\(x_0=3\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{x^2-4}{x+4}\)</span> bei <span class="math notranslate nohighlight">\(x_0=3\)</span></p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>a) <span class="math notranslate nohighlight">\(g(x)=x-\dfrac{1}{2}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(g(x)=-\dfrac{19}{24}-\dfrac{37}{24}\,x\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(g(x)=\dfrac{10}{49}-\dfrac{x}{49}\)</span></p>
+<p>d) <span class="math notranslate nohighlight">\(g(x)=\dfrac{5}{7}+\dfrac{37}{49}(x-3)=\dfrac{37x-76}{49}\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">a)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(1)&amp;=\frac{1}{2},\qquad f'(x)=x,\qquad f'(1)=1 \\
+g(x)&amp;=\frac{1}{2}+1\cdot(x-1)=x-\frac{1}{2}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">b)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(-1)&amp;=\frac{3}{4},\qquad f'(x)=\frac{32x-5x^2}{8\sqrt{8-x}},\qquad f'(-1)=-\frac{37}{24} \\
+g(x)&amp;=\frac{3}{4}-\frac{37}{24}(x+1)=-\frac{19}{24}-\frac{37}{24}\,x
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">c)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(3)&amp;=\frac{1}{7},\qquad f'(x)=-\frac{1}{(x+4)^2},\qquad f'(3)=-\frac{1}{49} \\
+g(x)&amp;=\frac{1}{7}-\frac{1}{49}(x-3)=\frac{10}{49}-\frac{x}{49}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">d)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+f(3)&amp;=\frac{5}{7},\qquad f'(x)=\frac{x^2+8x+4}{(x+4)^2},\qquad f'(3)=\frac{37}{49} \\
+g(x)&amp;=\frac{5}{7}+\frac{37}{49}(x-3)
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details></div>
+<div class="miniexercise admonition">
+<p class="admonition-title">Übung 11.7</p>
+<p>Bei einem Pendel der Länge <span class="math notranslate nohighlight">\(L\)</span> berechnet sich die Schwingungsdauer <span class="math notranslate nohighlight">\(T\)</span> einer Schwingung nach der Formel <span class="math notranslate nohighlight">\(T=2\pi\sqrt{\dfrac{L}{g}}\)</span>, wobei <span class="math notranslate nohighlight">\(g\)</span> die Erdbeschleunigung ist (<span class="math notranslate nohighlight">\(g\approx10\ \mathrm{m/s^2}\)</span>).</p>
+<p>a) Auf wie viel Prozent genau kann man die Schwingungsdauer <span class="math notranslate nohighlight">\(T\)</span> angeben, wenn man die Pendellänge auf 1 % genau bestimmt?</p>
+<p>b) Nach wie viel Sekunden geht ein „Sekundenpendel“ (<span class="math notranslate nohighlight">\(T=2\,\mathrm{s}\)</span>) um 1 Sekunde vor, wenn man die Pendellänge um 0,1 % zu kurz macht?</p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>a) Die Schwingungsdauer ist auf <span class="math notranslate nohighlight">\(0{,}5\,\%\)</span> genau.</p>
+<p>b) Nach ca. <span class="math notranslate nohighlight">\(2000\,\mathrm{s}\)</span>, also ca. einer halben Stunde.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">a)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+T(L)&amp;=\frac{2\pi}{\sqrt{g}}\sqrt{L} \\
+T'(L)&amp;=\frac{2\pi}{\sqrt{g}}\cdot\frac{1}{2}\cdot\frac{1}{\sqrt{L}} \\
+\Delta L&amp;=L\cdot\Delta_{\mathrm{rel}}L=0{,}01\,L \\
+\Delta T&amp;=T'(L)\,\Delta L=\frac{\pi}{\sqrt{g}\sqrt{L}}\,L\cdot\Delta_{\mathrm{rel}}L=\frac{\pi}{\sqrt{g}}\sqrt{L}\cdot\Delta_{\mathrm{rel}}L=\frac{1}{2}\,T\cdot\Delta_{\mathrm{rel}}L \\
+\Delta_{\mathrm{rel}}T&amp;=\frac{\Delta T}{T}=\frac{1}{2}\cdot\Delta_{\mathrm{rel}}L=\frac{1}{2\cdot100}
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">Beachte die Formel für <span class="math notranslate nohighlight">\(\Delta T\)</span>.</p>
+<p class="sd-card-text">Genauigkeit für die Periode: <span class="math notranslate nohighlight">\(0{,}5\,\%\)</span>.</p>
+<p class="sd-card-text">b)</p>
+<p class="sd-card-text">„Geht vor“ bedeutet: Die Zeit, die bei gleicher Anzahl Schwingungen verstrichen ist, ist eine Sekunde kürzer. Die Periode des „Sekundenpendels“ sei <span class="math notranslate nohighlight">\(T_{2\mathrm{s}}\)</span>, die Periode des kürzeren Pendels sei <span class="math notranslate nohighlight">\(T\)</span>. Die Anzahl der verstrichenen Schwingungen sei <span class="math notranslate nohighlight">\(n\)</span>. Dann gilt</p>
+<div class="math notranslate nohighlight">
+\[nT=nT_{2\mathrm{s}}-1\,\mathrm{s}\]</div>
+<p class="sd-card-text">Es verstreichen also</p>
+<div class="math notranslate nohighlight">
+\[n=\frac{1\,\mathrm{s}}{T_{2\mathrm{s}}-T}\]</div>
+<p class="sd-card-text">Schwingungen, bis die Zeitdifferenz <span class="math notranslate nohighlight">\(1\,\mathrm{s}\)</span> beträgt.</p>
+<p class="sd-card-text">Die Periode <span class="math notranslate nohighlight">\(T\)</span> des kürzeren Pendels lässt sich näherungsweise aus der Fehlerfortpflanzung berechnen: <span class="math notranslate nohighlight">\(T\approx T_{2\mathrm{s}}+\Delta T\)</span>. Es ist</p>
+<div class="math notranslate nohighlight">
+\[\Delta T=T_{2\mathrm{s}}\cdot\frac{1}{2}\,\Delta_{\mathrm{rel}}L=2\,\mathrm{s}\cdot\frac{1}{2}\cdot\frac{1}{1000}=\frac{1}{1000}\,\mathrm{s}.\]</div>
+<p class="sd-card-text">D.h., <span class="math notranslate nohighlight">\(n=1000\)</span>. Die Zeit, die verstreicht, sind also ca. <span class="math notranslate nohighlight">\(2000\,\mathrm{s}\)</span>, also ca. eine halbe Stunde.</p>
+</div>
+</details></div>
+<div class="miniexercise admonition">
+<p class="admonition-title">Übung 11.8</p>
+<p>Bestimme die ersten 3 nichtverschwindenden Terme der Taylor-Reihen.</p>
+<p>a) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\ln x\)</span> bei <span class="math notranslate nohighlight">\(x_0=1\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\displaystyle f(x)=\frac{1}{\sqrt{x}}\)</span> bei <span class="math notranslate nohighlight">\(x_0=1\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(\displaystyle f(x)=(x+1)^2(x-1)^2\)</span> bei <span class="math notranslate nohighlight">\(x_0=-1\)</span></p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>Taylor-Polynome sind hier mit <span class="math notranslate nohighlight">\(T(x)\)</span> bezeichnet.</p>
+<p>a) <span class="math notranslate nohighlight">\(\displaystyle T(x)=(x-1)-\frac{1}{2}(x-1)^2+\frac{1}{3}(x-1)^3\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(\displaystyle T(x)=1-\frac{1}{2}(x-1)+\frac{3}{8}(x-1)^2\)</span></p>
+<p>c) <span class="math notranslate nohighlight">\(\displaystyle T(x)=4(x+1)^2-4(x+1)^3+(x+1)^4\)</span></p>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapter11"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter11_sec06.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">11.6 Wendepunkte</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../chapter12/chapter12_sec00.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">12. Integralrechnung</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sebastian Linden
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026. Dieses Skript steht unter der CC BY-NC-SA 4.0-Lizenz.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
