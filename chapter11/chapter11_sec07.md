@@ -2,7 +2,7 @@
 
 ```{admonition} Übung 11.1
 :class: miniexercise
-Bestimme die lokalen Extrema. M.a.W., an welchen Stellen haben die Funktionen lokale Extrema, und handelt es sich um ein Minimum oder Maximum?
+Bestimmen Sie die lokalen Extrema. M.a.W., an welchen Stellen haben die Funktionen lokale Extrema, und handelt es sich um ein Minimum oder Maximum?
 
 a) $\displaystyle f(x)=x^2-5x$
 
@@ -148,7 +148,7 @@ Zwei Extrema gibt es genau dann, wenn $\left(\dfrac{p}{2}\right)^2-q>0$, d.h. $b
 
 ```{admonition} Übung 11.3
 :class: miniexercise
-Zerlege die Zahl 60 so in zwei Summanden, dass das Produkt dieser Zahlen ein Maximum annimmt.
+Zerlegen Sie die Zahl 60 so in zwei Summanden, dass das Produkt dieser Zahlen ein Maximum annimmt.
 ```
 
 ````{admonition} Lösung
@@ -170,7 +170,7 @@ $$
 
 ```{admonition} Übung 11.4
 :class: miniexercise
-Zerlege die Zahl 24 so in zwei Summanden, dass die Summe der Quadrate dieser Zahlen möglichst klein wird.
+Zerlegen Sie die Zahl 24 so in zwei Summanden, dass die Summe der Quadrate dieser Zahlen möglichst klein wird.
 ```
 
 ````{admonition} Lösung
@@ -192,9 +192,9 @@ $$
 
 ```{admonition} Übung 11.5
 :class: miniexercise
-Berechne die folgenden Grenzwerte.
+Berechnen Sie die folgenden Grenzwerte.
 
-Hinweis: Verwende die Regel von l'Hospital.
+Hinweis: Verwenden Sie die Regel von l'Hospital.
 
 a) $\displaystyle \lim_{x\to0}\frac{\sin x}{e^x-1}$
 
@@ -258,7 +258,7 @@ $$
 
 ```{admonition} Übung 11.6
 :class: miniexercise
-Ermittle die Gleichung der Tangente.
+Ermitteln Sie die Gleichung der Tangente.
 
 a) $\displaystyle f(x)=\frac{x^2}{2}$ bei $x_0=1$
 
@@ -348,7 +348,7 @@ T'(L)&=\frac{2\pi}{\sqrt{g}}\cdot\frac{1}{2}\cdot\frac{1}{\sqrt{L}} \\
 \end{aligned}
 $$
 
-Beachte die Formel für $\Delta T$.
+Beachten Sie die Formel für $\Delta T$.
 
 Genauigkeit für die Periode: $0{,}5\,\%$.
 
@@ -374,7 +374,7 @@ D.h., $n=1000$. Die Zeit, die verstreicht, sind also ca. $2000\,\mathrm{s}$, als
 
 ```{admonition} Übung 11.8
 :class: miniexercise
-Bestimme die ersten 3 nichtverschwindenden Terme der Taylor-Reihen.
+Bestimmen Sie die ersten 3 nichtverschwindenden Terme der Taylor-Reihen.
 
 a) $\displaystyle f(x)=\ln x$ bei $x_0=1$
 
