@@ -21,12 +21,12 @@ $$\sin^2(x) + \cos^2(x) = 1$$
 
 $$\tan(x)=\frac{\sin(x)}{\cos(x)}$$
 * Sie kennen die **Additionstheoreme** für Sinus und Kosinus:
-\begin{align*}
+$\begin{align*}
 \sin(\alpha+\beta) &= \sin(\alpha)\cdot\cos(\beta) + \cos(\alpha)\cdot\sin(\beta) \\ 
 \sin(\alpha-\beta) &= \sin(\alpha)\cdot\cos(\beta) - \cos(\alpha)\cdot\sin(\beta) \\ 
 \cos(\alpha+\beta) &= \cos(\alpha)\cdot\cos(\beta) - \sin(\alpha)\cdot\sin(\beta) \\
 \cos(\alpha-\beta) &= \cos(\alpha)\cdot\cos(\beta) + \sin(\alpha)\cdot\sin(\beta) \\
-\end{align*}
+\end{align*}$
 ```
 
 ## Trigonometrische Funktionen im Einheitskreis

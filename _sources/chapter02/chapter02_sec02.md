@@ -25,7 +25,7 @@ Diese Eigenschaft nennen wir **Monotonie**.
 
 ```{raw} html
 <div class="kugelbahn-wrapper">
-<iframe src="../chap02/marble_track_simple.html"
+<iframe src="marble_track/marble_track_simple.html"
 width="100%" height="500"
 frameborder="0"scrolling="no"
 title="Interaktive Kugelbahn">
@@ -51,7 +51,7 @@ Geschwindigkeit der Kugel zu tun, sondern zeigt die Eigenschaften der Schienen.
 
 ```{raw} html
 <div class="kugelbahn-wrapper">
-<iframe src="../chap02/marble_track_simple_with_plateau.html"
+<iframe src="marble_track/marble_track_simple_with_plateau.html"
 width="100%" height="500"
 frameborder="0"scrolling="no"
 title="Interaktive Kugelbahn">
