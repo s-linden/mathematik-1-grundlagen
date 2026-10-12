@@ -1,4 +1,4 @@
-# 2.4 
+# 2.4 Exponential- und Logarithmusfunktion
 
 ```{admonition} Hinweis
 :class: warning

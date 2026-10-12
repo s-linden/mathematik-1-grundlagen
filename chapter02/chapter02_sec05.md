@@ -1,4 +1,4 @@
-# Videos zu Trigonometrische Funktionen
+# 2.5 Trigonometrische Funktionen
 
 ```{admonition} Hinweis
 :class: warning
