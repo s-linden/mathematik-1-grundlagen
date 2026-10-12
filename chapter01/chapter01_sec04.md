@@ -1,4 +1,4 @@
-# Videos zu Gleichungen
+# 1.4 Gleichungen
 
 ```{admonition} Hinweise zur Vorlesung Mathematik 1: Grundlagen im WiSe 2026/27
 :class: warning

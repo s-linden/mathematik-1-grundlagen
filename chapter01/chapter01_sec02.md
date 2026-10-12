@@ -1,4 +1,4 @@
-# Videos zu Rechenregeln
+# 1.2 Rechenregeln
 
 ```{admonition} Hinweise zur Vorlesung Mathematik 1: Grundlagen im WiSe 2026/27
 :class: warning
