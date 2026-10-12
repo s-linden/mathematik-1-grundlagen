@@ -1,6 +1,6 @@
 # 1.6 Polynomdivision
 
-```{admonition} Hinweise zur Vorlesung Mathematik 1: Grundlagen im WiSe 2026/27
+```{admonition} Hinweis
 :class: warning
 In den ersten zwei Wochen wiederholen wir Schulstoff.  Bitte arbeiten Sie in der Vorlesung und in der Übung mit, und wiederholen Sie die Inhalte mit Ihrer Vorlesungsmitschrift.  Ergänzen Sie diese bei Bedarf durch die unten verlinkten Videos.  Die Inhalte dieser zwei Wochen sind die Grundlage für alle weiteren Themen in diesem und dem nächsten Semester. Es handelt sich um elementare Kenntnisse und Fertigkeiten.
 ```
