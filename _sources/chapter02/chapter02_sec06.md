@@ -1,4 +1,4 @@
-# Videos zu Beziehungen zwischen trigonometrischen Funktionen
+# 2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen
 
 ```{admonition} Hinweis
 :class: warning
