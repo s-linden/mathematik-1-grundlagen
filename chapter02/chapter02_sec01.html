@@ -60,6 +60,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter02/chapter02_sec01';</script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.3.5/jsxgraphcore.js"></script>
@@ -68,7 +70,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Videos zu Eigenschaften von Funktionen" href="chapter02_sec02.html" />
-    <link rel="prev" title="2. Videos zu Funktionen" href="chapter02_sec00.html" />
+    <link rel="prev" title="2. Funktionen" href="chapter02_sec00.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -175,16 +177,16 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Mathematischer Werkzeugkasten</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter01/chapter01_sec00.html">1. Elementare Grundlagen</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec01.html">Videos zu Mengen und Intervalle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec02.html">Videos zu Rechenregeln</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec03.html">Videos zu Potenzen, Wurzeln und Logarithmen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec04.html">Videos zu Gleichungen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec05.html">Videos zu Polynomdivision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec06.html">Videos zu Trigonometrie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec01.html">1.1 Mengen und Intervalle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec02.html">1.2 Rechenregeln</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec03.html">1.3 Potenzen, Wurzeln und Logarithmen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec04.html">1.4 Gleichungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec05.html">1.5 Trigonometrie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec06.html">1.6 Polynomdivision</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter01/chapter01_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="chapter02_sec00.html">2. Videos zu Funktionen</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="chapter02_sec00.html">2. Funktionen</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Videos zu Funktionen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter02_sec02.html">Videos zu Eigenschaften von Funktionen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter02_sec03.html">Videos zu Polynomen</a></li>
@@ -499,8 +501,10 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lernziele">Lernziele</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktion-und-graph-der-funktion">Funktion und Graph der Funktion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#umkehrfunktion">Umkehrfunktion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-ist-eine-funktion">Was ist eine Funktion?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#darstellungsformen-von-funktionen">Darstellungsformen von Funktionen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitionsmenge-und-wertemenge">Definitionsmenge und Wertemenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zusammenfassung-und-ausblick">Zusammenfassung und Ausblick</a></li>
 </ul>
             </nav>
         </div>
@@ -523,29 +527,187 @@
 <div class="goals admonition">
 <p class="admonition-title">Lernziele Funktionen</p>
 <ul class="simple">
-<li><p>Sie wissen, wie in der Mathematik eine <strong>Funktion</strong> definiert wird und kennen typische Darstellungsformen von Funktionen.</p></li>
-<li><p>Sie können die <strong>Definitionsmenge</strong> und <strong>Wertemenge/Zielmenge</strong> einer Funktion bestimmen.</p></li>
-<li><p>Sie wissen, was eine <strong>Umkehrfunktion</strong> ist und können prüfen, ob eine gegebene Funktion umkehrbar ist und ggf. die Umkehrfunktion ausrechnen.</p></li>
+<li><p>Sie wissen, wie in der Mathematik eine <strong>Funktion</strong> definiert wird.</p></li>
+<li><p>Sie können die <strong>Definitionsmenge</strong> und <strong>Wertemenge</strong> einer Funktion
+bestimmen.</p></li>
+<li><p>Sie kennen die verschiedenen Darstellungsformen einer Funktion wie
+<strong>Wertetabelle</strong>, <strong>Funktionsgleichung</strong> und <strong>Funktionsgraph</strong>.</p></li>
 </ul>
 </div>
 </section>
-<section id="funktion-und-graph-der-funktion">
-<h2>Funktion und Graph der Funktion<a class="headerlink" href="#funktion-und-graph-der-funktion" title="Link to this heading">#</a></h2>
-<div class="seealso admonition">
-<p class="admonition-title">Video</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9HiHcxXhYn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section id="was-ist-eine-funktion">
+<h2>Was ist eine Funktion?<a class="headerlink" href="#was-ist-eine-funktion" title="Link to this heading">#</a></h2>
+<p>Stellen Sie sich vor, wir haben eine einfache Kugelbahn aufgebaut. Es gibt einen
+Start-Stein, eine gerade, schräge Schiene und einen Ziel-Stein, der als
+Auffangbehälter dient. Unsere zentrale Frage lautet: <em>Wie hoch befindet sich die
+Kugel an jeder beliebigen Position entlang der Bahn?</em></p>
+<figure class="align-default" id="kugelbahn-gerade-w800px">
+<a class="reference internal image-reference" href="chapter02/pics/kugelbahn_gerade_w800px.png"><img alt="chapter02/pics/kugelbahn_gerade_w800px.png" src="chapter02/pics/kugelbahn_gerade_w800px.png" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Kugelbahn der Marke
+<a class="reference external" href="https://www.ravensburger.de/de-DE/entdecken/gravitrax">GraviTrax</a>
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
+4.0</a>)</span><a class="headerlink" href="#kugelbahn-gerade-w800px" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Um die Höhe mathematisch zu beschreiben, benötigen wir ein Koordinatensystem.
+Als erste Achse wählen wir die Gerade, die durch Start- und Zielstein geht. Diese
+liegt auf der Tischoberfläche. Als zweite Achse wählen wir die Höhe über der
+Tischoberfläche. Diese steht senkrecht auf der Tischoberfläche. Den Ursprung des
+Koordinatensystems können wir frei wählen. Wir nehmen die Position des Start-Steins
+auf der Tischoberfläche als Ursprung <span class="math notranslate nohighlight">\(O\)</span>.</p>
+<p>Jetzt können wir die Position der Kugel eindeutig beschreiben. Wir messen ihren
+Abstand zum Ursprung auf der ersten Achse. Diese Position kürzen wir mit <span class="math notranslate nohighlight">\(x\)</span> ab.
+Die Höhe über der Tischoberfläche kürzen wir mit <span class="math notranslate nohighlight">\(h\)</span> ab.</p>
+<p>Mit diesem Koordinatensystem können wir jeder Position <span class="math notranslate nohighlight">\(x\)</span> der Kugel eindeutig
+eine Höhe <span class="math notranslate nohighlight">\(h\)</span> zuordnen. Eindeutig bedeutet: Es gibt nicht zwei verschiedene
+Höhen zu einer x-Position. Wir können nun messen und die x-Positionen mit ihrer
+jeweiligen Höhe in einer Tabelle notieren:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Position x [cm]</p></th>
+<th class="head"><p>Höhe h [cm]</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.0</p></td>
+<td><p>6.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.8</p></td>
+<td><p>4.8</p></td>
+</tr>
+<tr class="row-even"><td><p>9.6</p></td>
+<td><p>3.6</p></td>
+</tr>
+<tr class="row-odd"><td><p>14.4</p></td>
+<td><p>2.4</p></td>
+</tr>
+<tr class="row-even"><td><p>19.2</p></td>
+<td><p>1.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>24.0</p></td>
+<td><p>0.0</p></td>
+</tr>
+</tbody>
+</table>
 </div>
+<p>Wir haben nicht an jeder Position der Kugelbahn die Höhe gemessen, aber wir
+könnten es tun. Auch an Zwischenstellen wie beispielsweise <span class="math notranslate nohighlight">\(x = 0.567~\text{cm}\)</span>
+oder <span class="math notranslate nohighlight">\(x = 17.9~\text{cm}\)</span> lassen sich die zugehörigen Höhen messen.</p>
+<p>Diese eindeutige Zuordnung zwischen Position und Höhe ist das Wesen einer
+mathematischen Funktion. In der Mathematik bezeichnet man eine solche eindeutige
+Zuordnung zwischen zwei Mengen als <strong>Funktion</strong>. Formal definieren wir eine
+mathematische Funktion folgendermaßen:</p>
+<div class="note admonition">
+<p class="admonition-title">Was ist … eine Funktion?</p>
+<p>Eine Funktion ist eine eindeutige Zuordnung zwischen zwei Mengen. Jedem
+Element der ersten Menge (Definitionsmenge) wird genau ein Element der zweiten
+Menge (Wertemenge) zugeordnet.</p>
+</div>
+<p>Kürzen wir die Definitionsmenge mit <span class="math notranslate nohighlight">\(D\)</span> ab, die Wertemenge mit <span class="math notranslate nohighlight">\(W\)</span> und die
+Funktion mit <span class="math notranslate nohighlight">\(f\)</span>, so lässt sich diese Definition auch kompakt schreiben als:</p>
+<div class="math notranslate nohighlight">
+\[f: D \to W, \quad x \mapsto f(x).\]</div>
+<p>Das Element aus der Wertemenge, das dem Element <span class="math notranslate nohighlight">\(x\)</span> aus der Definitionsmenge
+zugeordnet wird, heißt <strong>Funktionswert</strong> und wird mit <span class="math notranslate nohighlight">\(f(x)\)</span> abgekürzt.</p>
 </section>
-<section id="umkehrfunktion">
-<h2>Umkehrfunktion<a class="headerlink" href="#umkehrfunktion" title="Link to this heading">#</a></h2>
-<div class="seealso admonition">
-<p class="admonition-title">Video</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bs2mZdidL6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section id="darstellungsformen-von-funktionen">
+<h2>Darstellungsformen von Funktionen<a class="headerlink" href="#darstellungsformen-von-funktionen" title="Link to this heading">#</a></h2>
+<p>Für unsere Kugelbahn-Höhenfunktion gibt es verschiedene Möglichkeiten der
+mathematischen Beschreibung. Jede hat ihre spezifischen Vorteile.</p>
+<p>Eine der einfachsten Darstellungen ist die <strong>Wertetabelle</strong>. Sie ist besonders
+vorteilhaft, wenn die Funktion durch Messungen bestimmt wird. Die Tabelle mit
+den Messwerten unserer Kugelbahn haben wir bereits oben erstellt. Die Wertetabelle
+ist ideal für experimentelle Daten und praktische Messungen.</p>
+<p>Im Fall der Kugelbahn können wir die Höhe der Kugel auch mathematisch exakt
+beschreiben als:</p>
+<div class="math notranslate nohighlight">
+\[h(x) = -\frac{1}{4}x + 6\]</div>
+<p><span class="math notranslate nohighlight">\(h(x)\)</span> gibt die Höhe an der Position <span class="math notranslate nohighlight">\(x\)</span> wieder. Wir haben also eine <em>exakte
+Formel</em> zur Berechnung der Höhe an jeder beliebigen Position in Form einer
+Gleichung. Daher wird diese Darstellungsform <strong>Funktionsgleichung</strong> genannt.
+Die Funktionsgleichung ist präzise, kompakt und ideal für Berechnungen.</p>
+<p>Eine weitere Darstellungsform ist der <strong>Funktionsgraph</strong> oder <strong>Plot</strong> der
+Funktion. Der Funktionsgraph entspricht der Seitenansicht unserer Kugelbahn. Zu
+jedem <span class="math notranslate nohighlight">\(x\)</span>-Wert wird der zugehörige Funktionswert <span class="math notranslate nohighlight">\(h(x)\)</span> ermittelt. Üblicherweise
+wird der Funktionswert mit <span class="math notranslate nohighlight">\(y\)</span> abgekürzt. Die Punkte <span class="math notranslate nohighlight">\((x,y)\)</span> werden dann in ein
+xy-Koordinatensystem eingezeichnet.</p>
+<figure class="align-default" id="function-marble-track">
+<a class="reference internal image-reference" href="chapter02/pics/function_marble_track.svg"><img alt="chapter02/pics/function_marble_track.svg" src="chapter02/pics/function_marble_track.svg" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Graph bzw. Plot der Höhenfunktion der Kugel in der Kugelbahn
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
+4.0</a>)</span><a class="headerlink" href="#function-marble-track" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Der Graph macht den Funktionsverlauf sofort sichtbar und ist besonders nützlich
+für das intuitive Verständnis. Alle drei Darstellungsformen beschreiben dieselbe
+Funktion, nur in unterschiedlicher Weise.</p>
+</section>
+<section id="definitionsmenge-und-wertemenge">
+<h2>Definitionsmenge und Wertemenge<a class="headerlink" href="#definitionsmenge-und-wertemenge" title="Link to this heading">#</a></h2>
+<p>Unsere Kugelbahn ist nicht unendlich lang, und auch die möglichen Höhenwerte
+sind begrenzt. Diese physikalischen Grenzen führen uns zu wichtigen
+mathematischen Konzepten.</p>
+<p>Nicht alle x-Positionen sind sinnvoll. Positionen links des Start-Steins (also
+<span class="math notranslate nohighlight">\(x &lt; 0~\text{cm}\)</span>) und rechts des Ziel-Steins (<span class="math notranslate nohighlight">\(x &gt; 24~\text{cm}\)</span>) sind nicht
+relevant. Wir betrachten daher nur das Intervall:</p>
+<div class="math notranslate nohighlight">
+\[D = [0; 24] \quad \text{gemessen in cm}.\]</div>
+<p>Die tatsächlich relevanten x-Positionen bezeichnen wir als <strong>Definitionsmenge</strong>.</p>
+<p>Für die Höhenwerte bestimmen wir die <strong>Wertemenge</strong>. Die Kugel startet bei 6 cm
+und endet bei 0 cm. Daher ist die Wertemenge:</p>
+<div class="math notranslate nohighlight">
+\[W = [0; 6] \quad \text{gemessen in cm}.\]</div>
+<div class="note admonition">
+<p class="admonition-title">Was ist … die Definitionsmenge und Wertemenge?</p>
+<p><strong>Definitionsmenge D:</strong> Die Menge aller zulässigen Eingabewerte (x-Werte), für
+die die Funktion definiert ist.</p>
+<p><strong>Wertemenge W:</strong> Die Menge aller Ausgabewerte (y-Werte), die die Funktion
+tatsächlich annimmt.</p>
 </div>
-<div class="seealso admonition">
-<p class="admonition-title">Video</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3Bq2dVjJvzg?si=GlNKL46c3koFCOmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Die <strong>Definitionsmenge</strong> ist der Gültigkeitsbereich für die Funktion. Außerhalb der
+Definitionsmenge ergibt unsere Formel <span class="math notranslate nohighlight">\(h(x) = -\frac{1}{4}x + 6\)</span> keinen
+physikalischen Sinn. Bei <span class="math notranslate nohighlight">\(x = -10~\text{cm}\)</span> würde die Formel eine Höhe
+berechnen, aber dort ist gar keine Schiene! Extrapolation, also das Verlassen
+des Gültigkeitsbereichs, ist gefährlich: Formeln gelten nur in ihrem
+Definitionsbereich.</p>
+<p>Die <strong>Wertemenge</strong> zeigt uns die realisierbaren Werte. Sie gibt an, welche
+Höhen die Kugel auf unserer Bahn erreichen kann. Dies ist wichtig für die
+Konstruktion: Wo müssen Auffangbehälter platziert werden? Können wir den
+Höhenbereich durch Umkonstruktion erweitern?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video “Funktion und Graph” von Mathematische Methoden</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9HiHcxXhYn4"
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video “Funktionen: Notation” von HM Kompakt</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QZKQDLh1evA?si=OD-6-bDDpErXUvh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Video “Was ist eine Funktion?” von studyVEMINT</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u4lbFXPlyAI?si=ufbDe-Zyl-rwYQHi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</details></section>
+<section id="zusammenfassung-und-ausblick">
+<h2>Zusammenfassung und Ausblick<a class="headerlink" href="#zusammenfassung-und-ausblick" title="Link to this heading">#</a></h2>
+<p>In diesem Kapitel haben wir anhand einer einfachen Kugelbahn die Grundlagen von
+Funktionen entwickelt: Eine Funktion ist eine eindeutige Zuordnung zwischen
+Position und Höhe, die wir durch Wertetabelle, Funktionsgleichung oder
+Funktionsgraph darstellen können. Definitionsmenge und Wertemenge bestimmen den
+Gültigkeitsbereich und die realisierbaren Werte unserer mathematischen
+Beschreibung. Unsere einfache gerade Schiene ist nur der Anfang. In den
+kommenden Kapiteln erweitern wir unser Kugelbahn-System, um weitere
+mathematische Konzepte zu entdecken.</p>
 </section>
 </section>
 
@@ -585,7 +747,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">2. Videos zu Funktionen</p>
+        <p class="prev-next-title">2. Funktionen</p>
       </div>
     </a>
     <a class="right-next"
@@ -616,8 +778,10 @@
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lernziele">Lernziele</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktion-und-graph-der-funktion">Funktion und Graph der Funktion</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#umkehrfunktion">Umkehrfunktion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#was-ist-eine-funktion">Was ist eine Funktion?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#darstellungsformen-von-funktionen">Darstellungsformen von Funktionen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitionsmenge-und-wertemenge">Definitionsmenge und Wertemenge</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zusammenfassung-und-ausblick">Zusammenfassung und Ausblick</a></li>
 </ul>
   </nav></div>
 

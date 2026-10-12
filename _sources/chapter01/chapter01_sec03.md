@@ -1,4 +1,4 @@
-# Videos zu Potenzen, Wurzeln und Logarithmen
+# 1.3 Potenzen, Wurzeln und Logarithmen
 
 ```{admonition} Hinweise zur Vorlesung Mathematik 1: Grundlagen im WiSe 2026/27
 :class: warning
