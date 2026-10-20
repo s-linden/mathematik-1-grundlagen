@@ -36,12 +36,12 @@ $$z_1 + z_2 = (1.3 + 0.3) + (0.4 \mathrm{i} + 1.3\mathrm{i}) = 1.6 + 1.7
 \mathrm{i}.$$
 
 Natürlich können wir die Addition zweier komplexen Zahlen in Normalform auch
-allgemein formulieren. Für zwei komplexe Zahlen $z_1$ und $z_2$
+signaformulieren. Für zwei komplexe Zahlen $z_1$ und $z_2$
 
-\begin{align*}
+$\begin{align*}
 z_1 &= a_1 + b_1 \mathrm{i}\\
 z_2 &= a_2 + b_2 \mathrm{i}\\
-\end{align*}
+\end{align*}$
 
 ist die Summe der beiden komplexen Zahlen wieder eine komplexe Zahl:
 
@@ -84,10 +84,10 @@ $$z_1 - z_2 = (1.3 - 0.3) + (0.4 \mathrm{i} - 1.3\mathrm{i}) = 1 - 0.9
 
 Allgemein formuliert ist die Differenz zweier komplexer Zahlen $z_1$ und $z_2$ mit
 
-\begin{align*}
+$\begin{align*}
 z_1 &= a_1 + b_1 \mathrm{i}\\
 z_2 &= a_2 + b_2 \mathrm{i}\\
-\end{align*}
+\end{align*}$
 
 die folgende komplexe Zahl:
 
@@ -102,21 +102,21 @@ Die Multiplikation zweier komplexer Zahlen ist nicht weiter schwer, wenn wir die
 
 **Beispiel:** Die beiden komplexen Zahlen $z_1 = 2 + 3\mathrm{i}$ und $z_2 = -4 + 2\mathrm{i}$ sollen multipliziert werden. Dann gilt
 
-\begin{align*}
+$\begin{align*}
 z_1 \cdot z_2
 &= (2 + 3\mathrm{i}) \cdot (-4 + 2\mathrm{i}) = \\
 &= 2\cdot(-4) + 4\mathrm{i} - 12\mathrm{i} + 6 \mathrm{i}^2 = \\
 &= -8 -8\mathrm{i} + 6\cdot(-1) = \\
 &= -14 - 8\mathrm{i}.
-\end{align*}
+\end{align*}$
 
 Allgmein können wir folgende Formel für die Multiplikation zweier komplexer
 Zahlen notieren. Gegeben sind zwei komplexe Zahlen $z_1$ und $z_2$ mit
 
-\begin{align*}
+$\begin{align*}
 z_1 &= a_1 + b_1 \mathrm{i},\\
 z_2 &= a_2 + b_2 \mathrm{i}.\\
-\end{align*}
+\end{align*}$
 
 Dann ist das Produkt dieser beiden komplexen Zahlen die folgende Zahl:
 
