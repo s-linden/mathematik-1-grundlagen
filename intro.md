@@ -11,4 +11,4 @@ Jedes Kapitel entspricht einer Vorlesung von 6 SWS mit einer Übung von 2 SWS. D
 
 <br />
 
-Dieses Skript basiert auf einem Skript von Simone Gramsch und wird von mir beständig weiterentwickelt. Es steht unter der Lizenz [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+Dieses Skript basiert auf einem Skript von Simone Gramsch, die Aufgaben basieren auf der Aufgaben-Sammlung von Ulrich Becker. Die Materialien werden von mir beständig weiterentwickelt. Es steht unter der Lizenz [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/).
