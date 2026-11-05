@@ -105,7 +105,7 @@ $$
 
 ```{admonition} Übung 2.3
 :class: miniexercise
-Vereinfachen Sie die folgenden Terme.
+Vereinfachen Sie die folgenden Terme, bis nur noch ein einzelner Sinus- oder Cosinus-Term übrigbleibt.
 
 a) $\displaystyle 2{\sin }^{2}(x)\cos (\frac{x}{2})+\cos (2x)\sin (\frac{x}{2}+\frac{\pi}{2})$
 
@@ -115,7 +115,6 @@ c) $\displaystyle {\cos }^{3}(x)-3{\sin }^{2}(x)\cos (x)$
 
 d) $\displaystyle 2\sin (2x)\left( 1-2{\sin }^{2}(x) \right)$
 
-Hinweis: Die Terme lassen sich auf einen einzelnen Sinus- oder Cosinus-Term reduzieren.
 ```
 
 ````{admonition} Lösung
