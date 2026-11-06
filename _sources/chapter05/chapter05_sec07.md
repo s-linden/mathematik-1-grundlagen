@@ -321,3 +321,128 @@ $$
 $$
 ```
 ````
+
+```{admonition} Übung 5.10
+:class: miniexercise, vernetzend
+Diese Aufgabe bündelt typische Fragestellungen zum Thema Punkte, Geraden und Ebenen. Es lohnt sich, sie vollständig und ohne Hilfsmittel durchzurechnen.
+
+Gegeben sei die Ebenenschar
+
+$$E_a:\ x+2y+az=3,\qquad a\in\mathbb{R}.$$
+
+Weiterhin seien der Punkt $P=(1,0,1)$ sowie die Gerade
+
+$$g:\ \vec{r}(t)=\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}+t\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix},\qquad t\in\mathbb{R}$$
+
+gegeben.
+
+a) Bestimmen Sie einen Normalenvektor der Ebene $E_a$.
+
+b) Bestimmen Sie alle Werte von $a$, für die der Punkt $P$ in der Ebene $E_a$ liegt.
+
+c) Untersuchen Sie, ob es Punkte gibt, die unabhängig vom Parameter $a$ auf jeder Ebene der Schar liegen. Bestimmen Sie gegebenenfalls die Menge aller dieser Punkte.
+
+d) Untersuchen Sie die Lage der Geraden $g$ bezüglich der Ebene $E_a$. Bestimmen Sie die Werte von $a$, für die
+- die Gerade die Ebene schneidet,
+- die Gerade parallel zur Ebene verläuft.
+
+Begründen Sie Ihre Ergebnisse und bestimmen Sie für $a=3$ den Schnittpunkt.
+```
+
+`````{admonition} Lösung
+:class: miniexercise, toggle
+
+a) $\vec{n}_a=\begin{pmatrix} 1 \\ 2 \\ a \end{pmatrix}$
+
+b) $a=2$
+
+c) Ja. Alle Ebenen der Schar enthalten die Gerade $h:\ \vec{x}(s)=\begin{pmatrix} 3 \\ 0 \\ 0 \end{pmatrix}+s\begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix},\ s\in\mathbb{R}$.
+
+d) Für $a\neq 1$ schneidet $g$ die Ebene $E_a$ in genau einem Punkt, für $a=1$ verläuft $g$ (echt) parallel zu $E_1$. Für $a=3$ ist der Schnittpunkt $S=(2,\,-1,\,1)$.
+
+````{dropdown} Lösungsweg a)
+Eine Ebene in Koordinatenform $n_1x+n_2y+n_3z=d$ hat den Normalenvektor $\vec{n}=(n_1,\,n_2,\,n_3)$. Man liest also einfach die Koeffizienten vor $x$, $y$ und $z$ ab:
+
+$$E_a:\ 1\cdot x+2\cdot y+a\cdot z=3\qquad\Rightarrow\qquad\vec{n}_a=\begin{pmatrix} 1 \\ 2 \\ a \end{pmatrix}$$
+
+Der Normalenvektor hängt von $a$ ab. Das ist kein Fehler, sondern zeigt, dass die Ebenen der Schar unterschiedlich geneigt sind. Jedes Vielfache $k\cdot\vec{n}_a$ mit $k\neq 0$ ist ebenfalls ein Normalenvektor.
+````
+
+````{dropdown} Lösungsweg b)
+Ein Punkt liegt in einer Ebene, wenn seine Koordinaten die Ebenengleichung erfüllen. Einsetzen von $P=(1,0,1)$:
+
+$$1+2\cdot 0+a\cdot 1=3\qquad\Rightarrow\qquad 1+a=3\qquad\Rightarrow\qquad a=2$$
+
+Der Punkt $P$ liegt also nur in der Ebene $E_2:\ x+2y+2z=3$.
+
+```{admonition} Merke
+:class: note
+Würde beim Einsetzen eine Gleichung ohne $a$ entstehen, gäbe es zwei Fälle: Ist sie wahr (z. B. $3=3$), so liegt der Punkt in *allen* Ebenen der Schar; ist sie falsch (z. B. $1=3$), so liegt er in *keiner*.
+```
+````
+
+````{dropdown} Lösungsweg c)
+Gesucht sind Punkte $(x,y,z)$, die die Gleichung $x+2y+az=3$ für **jedes** $a\in\mathbb{R}$ erfüllen. Dazu sortiert man die Gleichung nach dem Parameter:
+
+$$(x+2y-3)+a\cdot z=0\qquad\text{für alle } a\in\mathbb{R}.$$
+
+Ein Ausdruck der Form $A+a\cdot B$ ist nur dann für alle $a$ gleich null, wenn $A=0$ **und** $B=0$ gilt. (Begründung: Für $a=0$ folgt $A=0$, und dann folgt z. B. für $a=1$ auch $B=0$.)
+
+Damit erhält man das Gleichungssystem
+
+$$
+\begin{aligned}
+x+2y&=3 \\
+z&=0
+\end{aligned}
+$$
+
+Das sind zwei Gleichungen für drei Unbekannte, also bleibt eine Unbekannte frei wählbar. Setzt man $y=s$, so folgt $x=3-2s$ und $z=0$:
+
+$$h:\ \vec{x}(s)=\begin{pmatrix} 3-2s \\ s \\ 0 \end{pmatrix}=\begin{pmatrix} 3 \\ 0 \\ 0 \end{pmatrix}+s\begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix},\qquad s\in\mathbb{R}.$$
+
+Die gemeinsamen Punkte aller Ebenen bilden also eine Gerade. Anschaulich „drehen“ sich alle Ebenen der Schar um diese Gerade (man spricht von einem Ebenenbüschel mit Trägergerade $h$).
+
+**Probe:** Für einen beliebigen Punkt von $h$ gilt $(3-2s)+2s+a\cdot 0=3$, unabhängig von $a$ und $s$.
+````
+
+````{dropdown} Lösungsweg d)
+**Schritt 1: Gerade in die Ebene einsetzen.** Aus der Geradengleichung liest man die Koordinaten eines beliebigen Geradenpunkts ab:
+
+$$x=1+t,\qquad y=-t,\qquad z=t.$$
+
+Einsetzen in $E_a$:
+
+$$
+\begin{aligned}
+(1+t)+2\cdot(-t)+a\cdot t&=3 \\
+1+t-2t+at&=3 \\
+1+(a-1)\,t&=3 \\
+(a-1)\,t&=2
+\end{aligned}
+$$
+
+**Schritt 2: Fallunterscheidung.** Ob man durch $(a-1)$ teilen darf, hängt von $a$ ab.
+
+- **Fall $a\neq 1$:** Dann ist $t=\dfrac{2}{a-1}$ eindeutig bestimmt. Es gibt genau einen gemeinsamen Punkt, die Gerade schneidet die Ebene.
+- **Fall $a=1$:** Die Gleichung lautet $0\cdot t=2$, also $0=2$. Das ist für kein $t$ erfüllt. Gerade und Ebene haben keinen gemeinsamen Punkt, die Gerade verläuft parallel zur Ebene $E_1$ (und liegt nicht in ihr).
+
+**Kontrolle über den Normalenvektor:** Eine Gerade ist genau dann parallel zu einer Ebene (oder liegt in ihr), wenn ihr Richtungsvektor senkrecht auf dem Normalenvektor steht:
+
+$$\vec{u}\cdot\vec{n}_a=\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}\cdot\begin{pmatrix} 1 \\ 2 \\ a \end{pmatrix}=1-2+a=a-1.$$
+
+Das ist genau für $a=1$ gleich null. Um zu entscheiden, ob $g$ dann parallel ist oder in $E_1$ liegt, setzt man den Stützpunkt $(1,0,0)$ ein: $1+0+0=1\neq 3$. Der Stützpunkt liegt nicht in $E_1$, also ist $g$ echt parallel.
+
+**Schritt 3: Schnittpunkt für $a=3$.** Es ist $t=\dfrac{2}{3-1}=1$, also
+
+$$\overrightarrow{OS}=\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}+1\cdot\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}=\begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}.$$
+
+Probe in $E_3$: $2+2\cdot(-1)+3\cdot 1=3$. ✓
+
+```{admonition} Typischer Fehler
+:class: attention
+Direkt $t=\frac{2}{a-1}$ hinschreiben, ohne den Fall $a=1$ gesondert zu untersuchen. Gerade dieser Sonderfall ist die Antwort auf die Frage nach der Parallelität.
+```
+````
+
+`````

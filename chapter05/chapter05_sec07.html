@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=c705587a" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -780,6 +781,108 @@ x+y+z&amp;=5
 \varphi&amp;=\arccos \left( \frac{4}{21} \right)=79^\circ =1{,}38\,\mathrm{rad}
 \end{aligned}
 \end{split}\]</div>
+</div>
+</details></div>
+<div class="miniexercise vernetzend admonition">
+<p class="admonition-title">Übung 5.10</p>
+<p>Diese Aufgabe bündelt typische Fragestellungen zum Thema Punkte, Geraden und Ebenen. Es lohnt sich, sie vollständig und ohne Hilfsmittel durchzurechnen.</p>
+<p>Gegeben sei die Ebenenschar</p>
+<div class="math notranslate nohighlight">
+\[E_a:\ x+2y+az=3,\qquad a\in\mathbb{R}.\]</div>
+<p>Weiterhin seien der Punkt <span class="math notranslate nohighlight">\(P=(1,0,1)\)</span> sowie die Gerade</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}g:\ \vec{r}(t)=\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}+t\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix},\qquad t\in\mathbb{R}\end{split}\]</div>
+<p>gegeben.</p>
+<p>a) Bestimmen Sie einen Normalenvektor der Ebene <span class="math notranslate nohighlight">\(E_a\)</span>.</p>
+<p>b) Bestimmen Sie alle Werte von <span class="math notranslate nohighlight">\(a\)</span>, für die der Punkt <span class="math notranslate nohighlight">\(P\)</span> in der Ebene <span class="math notranslate nohighlight">\(E_a\)</span> liegt.</p>
+<p>c) Untersuchen Sie, ob es Punkte gibt, die unabhängig vom Parameter <span class="math notranslate nohighlight">\(a\)</span> auf jeder Ebene der Schar liegen. Bestimmen Sie gegebenenfalls die Menge aller dieser Punkte.</p>
+<p>d) Untersuchen Sie die Lage der Geraden <span class="math notranslate nohighlight">\(g\)</span> bezüglich der Ebene <span class="math notranslate nohighlight">\(E_a\)</span>. Bestimmen Sie die Werte von <span class="math notranslate nohighlight">\(a\)</span>, für die</p>
+<ul class="simple">
+<li><p>die Gerade die Ebene schneidet,</p></li>
+<li><p>die Gerade parallel zur Ebene verläuft.</p></li>
+</ul>
+<p>Begründen Sie Ihre Ergebnisse und bestimmen Sie für <span class="math notranslate nohighlight">\(a=3\)</span> den Schnittpunkt.</p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>a) <span class="math notranslate nohighlight">\(\vec{n}_a=\begin{pmatrix} 1 \\ 2 \\ a \end{pmatrix}\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(a=2\)</span></p>
+<p>c) Ja. Alle Ebenen der Schar enthalten die Gerade <span class="math notranslate nohighlight">\(h:\ \vec{x}(s)=\begin{pmatrix} 3 \\ 0 \\ 0 \end{pmatrix}+s\begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix},\ s\in\mathbb{R}\)</span>.</p>
+<p>d) Für <span class="math notranslate nohighlight">\(a\neq 1\)</span> schneidet <span class="math notranslate nohighlight">\(g\)</span> die Ebene <span class="math notranslate nohighlight">\(E_a\)</span> in genau einem Punkt, für <span class="math notranslate nohighlight">\(a=1\)</span> verläuft <span class="math notranslate nohighlight">\(g\)</span> (echt) parallel zu <span class="math notranslate nohighlight">\(E_1\)</span>. Für <span class="math notranslate nohighlight">\(a=3\)</span> ist der Schnittpunkt <span class="math notranslate nohighlight">\(S=(2,\,-1,\,1)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg a)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Eine Ebene in Koordinatenform <span class="math notranslate nohighlight">\(n_1x+n_2y+n_3z=d\)</span> hat den Normalenvektor <span class="math notranslate nohighlight">\(\vec{n}=(n_1,\,n_2,\,n_3)\)</span>. Man liest also einfach die Koeffizienten vor <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> und <span class="math notranslate nohighlight">\(z\)</span> ab:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}E_a:\ 1\cdot x+2\cdot y+a\cdot z=3\qquad\Rightarrow\qquad\vec{n}_a=\begin{pmatrix} 1 \\ 2 \\ a \end{pmatrix}\end{split}\]</div>
+<p class="sd-card-text">Der Normalenvektor hängt von <span class="math notranslate nohighlight">\(a\)</span> ab. Das ist kein Fehler, sondern zeigt, dass die Ebenen der Schar unterschiedlich geneigt sind. Jedes Vielfache <span class="math notranslate nohighlight">\(k\cdot\vec{n}_a\)</span> mit <span class="math notranslate nohighlight">\(k\neq 0\)</span> ist ebenfalls ein Normalenvektor.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg b)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Ein Punkt liegt in einer Ebene, wenn seine Koordinaten die Ebenengleichung erfüllen. Einsetzen von <span class="math notranslate nohighlight">\(P=(1,0,1)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[1+2\cdot 0+a\cdot 1=3\qquad\Rightarrow\qquad 1+a=3\qquad\Rightarrow\qquad a=2\]</div>
+<p class="sd-card-text">Der Punkt <span class="math notranslate nohighlight">\(P\)</span> liegt also nur in der Ebene <span class="math notranslate nohighlight">\(E_2:\ x+2y+2z=3\)</span>.</p>
+<div class="note admonition">
+<p class="admonition-title">Merke</p>
+<p class="sd-card-text">Würde beim Einsetzen eine Gleichung ohne <span class="math notranslate nohighlight">\(a\)</span> entstehen, gäbe es zwei Fälle: Ist sie wahr (z. B. <span class="math notranslate nohighlight">\(3=3\)</span>), so liegt der Punkt in <em>allen</em> Ebenen der Schar; ist sie falsch (z. B. <span class="math notranslate nohighlight">\(1=3\)</span>), so liegt er in <em>keiner</em>.</p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg c)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Gesucht sind Punkte <span class="math notranslate nohighlight">\((x,y,z)\)</span>, die die Gleichung <span class="math notranslate nohighlight">\(x+2y+az=3\)</span> für <strong>jedes</strong> <span class="math notranslate nohighlight">\(a\in\mathbb{R}\)</span> erfüllen. Dazu sortiert man die Gleichung nach dem Parameter:</p>
+<div class="math notranslate nohighlight">
+\[(x+2y-3)+a\cdot z=0\qquad\text{für alle } a\in\mathbb{R}.\]</div>
+<p class="sd-card-text">Ein Ausdruck der Form <span class="math notranslate nohighlight">\(A+a\cdot B\)</span> ist nur dann für alle <span class="math notranslate nohighlight">\(a\)</span> gleich null, wenn <span class="math notranslate nohighlight">\(A=0\)</span> <strong>und</strong> <span class="math notranslate nohighlight">\(B=0\)</span> gilt. (Begründung: Für <span class="math notranslate nohighlight">\(a=0\)</span> folgt <span class="math notranslate nohighlight">\(A=0\)</span>, und dann folgt z. B. für <span class="math notranslate nohighlight">\(a=1\)</span> auch <span class="math notranslate nohighlight">\(B=0\)</span>.)</p>
+<p class="sd-card-text">Damit erhält man das Gleichungssystem</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+x+2y&amp;=3 \\
+z&amp;=0
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">Das sind zwei Gleichungen für drei Unbekannte, also bleibt eine Unbekannte frei wählbar. Setzt man <span class="math notranslate nohighlight">\(y=s\)</span>, so folgt <span class="math notranslate nohighlight">\(x=3-2s\)</span> und <span class="math notranslate nohighlight">\(z=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}h:\ \vec{x}(s)=\begin{pmatrix} 3-2s \\ s \\ 0 \end{pmatrix}=\begin{pmatrix} 3 \\ 0 \\ 0 \end{pmatrix}+s\begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix},\qquad s\in\mathbb{R}.\end{split}\]</div>
+<p class="sd-card-text">Die gemeinsamen Punkte aller Ebenen bilden also eine Gerade. Anschaulich „drehen“ sich alle Ebenen der Schar um diese Gerade (man spricht von einem Ebenenbüschel mit Trägergerade <span class="math notranslate nohighlight">\(h\)</span>).</p>
+<p class="sd-card-text"><strong>Probe:</strong> Für einen beliebigen Punkt von <span class="math notranslate nohighlight">\(h\)</span> gilt <span class="math notranslate nohighlight">\((3-2s)+2s+a\cdot 0=3\)</span>, unabhängig von <span class="math notranslate nohighlight">\(a\)</span> und <span class="math notranslate nohighlight">\(s\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg d)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Schritt 1: Gerade in die Ebene einsetzen.</strong> Aus der Geradengleichung liest man die Koordinaten eines beliebigen Geradenpunkts ab:</p>
+<div class="math notranslate nohighlight">
+\[x=1+t,\qquad y=-t,\qquad z=t.\]</div>
+<p class="sd-card-text">Einsetzen in <span class="math notranslate nohighlight">\(E_a\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+(1+t)+2\cdot(-t)+a\cdot t&amp;=3 \\
+1+t-2t+at&amp;=3 \\
+1+(a-1)\,t&amp;=3 \\
+(a-1)\,t&amp;=2
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text"><strong>Schritt 2: Fallunterscheidung.</strong> Ob man durch <span class="math notranslate nohighlight">\((a-1)\)</span> teilen darf, hängt von <span class="math notranslate nohighlight">\(a\)</span> ab.</p>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Fall <span class="math notranslate nohighlight">\(a\neq 1\)</span>:</strong> Dann ist <span class="math notranslate nohighlight">\(t=\dfrac{2}{a-1}\)</span> eindeutig bestimmt. Es gibt genau einen gemeinsamen Punkt, die Gerade schneidet die Ebene.</p></li>
+<li><p class="sd-card-text"><strong>Fall <span class="math notranslate nohighlight">\(a=1\)</span>:</strong> Die Gleichung lautet <span class="math notranslate nohighlight">\(0\cdot t=2\)</span>, also <span class="math notranslate nohighlight">\(0=2\)</span>. Das ist für kein <span class="math notranslate nohighlight">\(t\)</span> erfüllt. Gerade und Ebene haben keinen gemeinsamen Punkt, die Gerade verläuft parallel zur Ebene <span class="math notranslate nohighlight">\(E_1\)</span> (und liegt nicht in ihr).</p></li>
+</ul>
+<p class="sd-card-text"><strong>Kontrolle über den Normalenvektor:</strong> Eine Gerade ist genau dann parallel zu einer Ebene (oder liegt in ihr), wenn ihr Richtungsvektor senkrecht auf dem Normalenvektor steht:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{u}\cdot\vec{n}_a=\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}\cdot\begin{pmatrix} 1 \\ 2 \\ a \end{pmatrix}=1-2+a=a-1.\end{split}\]</div>
+<p class="sd-card-text">Das ist genau für <span class="math notranslate nohighlight">\(a=1\)</span> gleich null. Um zu entscheiden, ob <span class="math notranslate nohighlight">\(g\)</span> dann parallel ist oder in <span class="math notranslate nohighlight">\(E_1\)</span> liegt, setzt man den Stützpunkt <span class="math notranslate nohighlight">\((1,0,0)\)</span> ein: <span class="math notranslate nohighlight">\(1+0+0=1\neq 3\)</span>. Der Stützpunkt liegt nicht in <span class="math notranslate nohighlight">\(E_1\)</span>, also ist <span class="math notranslate nohighlight">\(g\)</span> echt parallel.</p>
+<p class="sd-card-text"><strong>Schritt 3: Schnittpunkt für <span class="math notranslate nohighlight">\(a=3\)</span>.</strong> Es ist <span class="math notranslate nohighlight">\(t=\dfrac{2}{3-1}=1\)</span>, also</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\overrightarrow{OS}=\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}+1\cdot\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}=\begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}.\end{split}\]</div>
+<p class="sd-card-text">Probe in <span class="math notranslate nohighlight">\(E_3\)</span>: <span class="math notranslate nohighlight">\(2+2\cdot(-1)+3\cdot 1=3\)</span>. ✓</p>
+<div class="attention admonition">
+<p class="admonition-title">Typischer Fehler</p>
+<p class="sd-card-text">Direkt <span class="math notranslate nohighlight">\(t=\frac{2}{a-1}\)</span> hinschreiben, ohne den Fall <span class="math notranslate nohighlight">\(a=1\)</span> gesondert zu untersuchen. Gerade dieser Sonderfall ist die Antwort auf die Frage nach der Parallelität.</p>
+</div>
 </div>
 </details></div>
 </section>
