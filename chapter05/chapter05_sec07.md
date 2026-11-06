@@ -437,11 +437,6 @@ Das ist genau für $a=1$ gleich null. Um zu entscheiden, ob $g$ dann parallel is
 $$\overrightarrow{OS}=\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}+1\cdot\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}=\begin{pmatrix} 2 \\ -1 \\ 1 \end{pmatrix}.$$
 
 Probe in $E_3$: $2+2\cdot(-1)+3\cdot 1=3$. ✓
-
-```{admonition} Typischer Fehler
-:class: attention
-Direkt $t=\frac{2}{a-1}$ hinschreiben, ohne den Fall $a=1$ gesondert zu untersuchen. Gerade dieser Sonderfall ist die Antwort auf die Frage nach der Parallelität.
-```
 ````
 
 `````

@@ -323,11 +323,6 @@ Also ist $\vec{w}_{1}$ Eigenvektor zum Eigenwert $\lambda_{1}=3$.
 $$\mathbf{A}\vec{w}_{2}=\begin{pmatrix} 1 & 2 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 4 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1-2 \\ 2-1 \\ 0 \end{pmatrix}=\begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}=-1\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=-1\cdot\vec{w}_{2}$$
 
 Also ist $\vec{w}_{2}$ Eigenvektor zum Eigenwert $\lambda_{2}=-1$.
-
-```{admonition} Typischer Fehler
-:class: attention
-Hier ist kein charakteristisches Polynom nötig. Die Eigenvektoren sind schon gegeben, man muss sie nur mit $\mathbf{A}$ multiplizieren. Ein negativer Eigenwert ist übrigens völlig in Ordnung, nur der Eigenvektor darf nicht der Nullvektor sein.
-```
 ````
 
 ````{dropdown} Lösungsweg c)
@@ -367,10 +362,5 @@ $$\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.$$
 $$\vec{w}_{1}\times\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\times\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot0-0\cdot(-1) \\ 0\cdot1-1\cdot0 \\ 1\cdot(-1)-1\cdot1 \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ -2 \end{pmatrix}$$
 
 Das ist ein Vielfaches von $\vec{w}_{3}$ und damit ebenfalls ein Eigenvektor zu $\lambda_{3}=4$.
-
-```{admonition} Typischer Fehler
-:class: attention
-Als Eigenvektor den Nullvektor angeben, weil das Gleichungssystem „nur Nullen“ liefert. Eine Nullzeile wie (III) bedeutet, dass eine Unbekannte frei wählbar ist. Man wählt sie ungleich null.
-```
 ````
 `````
