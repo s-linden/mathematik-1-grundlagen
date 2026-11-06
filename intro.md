@@ -2,9 +2,11 @@
 
 Sebastian Linden
 
-Dies ist das Vorlesungsskript zur Veranstaltung „Mathematik 1: Grundlagen“ für Studierende im Studiengang Mechatronik. Wir behandeln in diesem Semester die vier großen Themenblöcke Vektoren, Matrizen, komplexe Zahlen und Analysis. Diese Themenblöcke sind unterteilt in 12 Kapitel. Jedes Kapitel entspricht einer Vorlesung von 6 SWS mit einer Übung von 2 SWS.
-Bitte nutzen Sie dieses Skript als Ergänzung zu meiner Vorlesung oder zum gezielten Nach- oder Vorarbeiten. Das Arbeiten mit dem Skript sollte den Besuch der Lehrveranstaltung allerdings nicht ersetzen.
-Am Ende jedes Kapites finden Sie Übungen zum Selbststudium. Es lohnt sich, alle diese Übungen ohne Hilfsmittel vollständig durchzurechnen. Zum Ende jedes Themenblocks finden Sie eine Aufgabe, die typische Fragestellungen zum Themenblock vernetzt. 
+Dies ist das Vorlesungsskript zur Veranstaltung „Mathematik 1: Grundlagen“ für Studierende im Studiengang Mechatronik. Nach einer Wiederholung von Schulstoff behandeln wir in diesem Semester die vier großen Themenblöcke Vektoren, Matrizen, komplexe Zahlen und Analysis. Der Stoff ist hier unterteilt in 12 Kapitel. Jedes Kapitel entspricht einer Vorlesung von 6 SWS mit einer Übung von 2 SWS.
+
+Bitte nutzen Sie dieses Skript als Ergänzung zu meiner Vorlesung oder zum gezielten Nach- oder Vorarbeiten. Das Arbeiten mit dem Skript soll den Besuch der Vorlesung nicht vollständig ersetzen.
+
+Am Ende jedes Kapites finden Sie Übungen zum Selbststudium. Es lohnt sich, alle diese Übungen ohne Hilfsmittel vollständig durchzurechnen. Zum Ende eines Themenblocks finden Sie in den Übungen zusätzlich eine Aufgabe, die typische Fragestellungen zum Themenblock vernetzt. 
 Probieren Sie immer erst, die Aufgabe zu lösen, bevor Sie sich die Lösung beziehungsweise den Lösungsweg zur Selbstkontrolle anzeigen lassen.
 
 ## Inhaltsverzeichnis
