@@ -130,7 +130,7 @@ a) $\mathbf{A}=\begin{pmatrix} 1 & 2 \\ 2 & -2 \end{pmatrix}$
 
 b) $\mathbf{B}=\begin{pmatrix} -3 & -3 & -3 \\ -3 & 1 & -1 \\ -3 & -1 & 1 \end{pmatrix}$
 
-Hinweis: Nutzen Sie zum Beispiel Wolframalpha oder ChatGPT mit der Wolframalpha-Schnittstelle, um die kubische Gleichung in 7.5 b) zu lösen.
+Hinweis: Nutzen Sie Computer-Unterstützung, um die kubische Gleichung in 7.5 b) zu lösen.
 ```
 
 ````{admonition} Lösung
@@ -267,3 +267,110 @@ Wir wählen ${v}_{33}=1$ und erhalten ${v}_{32}=1$ und ${v}_{31}=-1$.
 Ein EV zu ${\lambda}_{3}$ ist damit $\vec{v}_{3}=\begin{pmatrix} -1 \\ 1 \\ 1 \end{pmatrix}$.
 ```
 ````
+
+```{admonition} Übung 7.6
+:class: miniexercise, vernetzend
+Gegeben seien die Matrix
+
+$$\mathbf{A}=\begin{pmatrix} 1 & 2 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 4 \end{pmatrix}$$
+
+sowie die Vektoren
+
+$$\vec{w}_{1}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\qquad\text{und}\qquad\vec{w}_{2}=\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}.$$
+
+a) Bestimmen Sie die Determinante der Matrix $\mathbf{A}$. Untersuchen Sie, ob die Matrix $\mathbf{A}$ invertierbar ist.
+
+b) Zeigen Sie, dass die Vektoren $\vec{w}_{1}$ und $\vec{w}_{2}$ Eigenvektoren von $\mathbf{A}$ sind. Bestimmen Sie die zugehörigen Eigenwerte.
+
+c) Überprüfen Sie, ob die Eigenvektoren $\vec{w}_{1}$ und $\vec{w}_{2}$ orthogonal zueinander sind.
+
+d) Bestimmen Sie einen Eigenvektor zum dritten Eigenwert.
+```
+
+`````{admonition} Lösung
+:class: miniexercise, toggle
+
+a) $\det(\mathbf{A})=-12\neq 0$, also ist $\mathbf{A}$ invertierbar.
+
+b) $\mathbf{A}\vec{w}_{1}=3\,\vec{w}_{1}$ und $\mathbf{A}\vec{w}_{2}=-1\cdot\vec{w}_{2}$. Die Eigenwerte sind $\lambda_{1}=3$ und $\lambda_{2}=-1$.
+
+c) Ja, denn $\vec{w}_{1}\cdot\vec{w}_{2}=0$.
+
+d) Der dritte Eigenwert ist $\lambda_{3}=4$, ein zugehöriger Eigenvektor ist $\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
+
+````{dropdown} Lösungsweg a)
+Die dritte Zeile enthält zwei Nullen. Deshalb lohnt sich die Entwicklung nach der 3. Zeile, denn dann bleibt nur ein Summand übrig:
+
+$$\det(\mathbf{A})=4\cdot(+1)\cdot\begin{vmatrix} 1 & 2 \\ 2 & 1 \end{vmatrix}=4\cdot\left( 1\cdot1-2\cdot2 \right)=4\cdot(-3)=-12$$
+
+Das Vorzeichen $(+1)$ ergibt sich aus dem Schachbrettmuster: Das Element steht in Zeile 3 und Spalte 3, also $(-1)^{3+3}=+1$.
+
+Eine quadratische Matrix ist genau dann invertierbar, wenn ihre Determinante ungleich null ist. Wegen $\det(\mathbf{A})=-12\neq 0$ ist $\mathbf{A}$ invertierbar.
+
+```{admonition} Merke
+:class: note
+Ob die Determinante positiv oder negativ ist, spielt für die Invertierbarkeit keine Rolle. Entscheidend ist nur, ob sie null ist.
+```
+````
+
+````{dropdown} Lösungsweg b)
+Ein Vektor $\vec{w}\neq\vec{0}$ ist Eigenvektor von $\mathbf{A}$, wenn $\mathbf{A}\vec{w}$ ein Vielfaches von $\vec{w}$ ist: $\mathbf{A}\vec{w}=\lambda\vec{w}$. Der Faktor $\lambda$ ist dann der zugehörige Eigenwert. Man muss also nur das Produkt ausrechnen und vergleichen:
+
+$$\mathbf{A}\vec{w}_{1}=\begin{pmatrix} 1 & 2 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 4 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot1+2\cdot1+0\cdot0 \\ 2\cdot1+1\cdot1+0\cdot0 \\ 0\cdot1+0\cdot1+4\cdot0 \end{pmatrix}=\begin{pmatrix} 3 \\ 3 \\ 0 \end{pmatrix}=3\cdot\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}=3\,\vec{w}_{1}$$
+
+Also ist $\vec{w}_{1}$ Eigenvektor zum Eigenwert $\lambda_{1}=3$.
+
+$$\mathbf{A}\vec{w}_{2}=\begin{pmatrix} 1 & 2 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 4 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1-2 \\ 2-1 \\ 0 \end{pmatrix}=\begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}=-1\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=-1\cdot\vec{w}_{2}$$
+
+Also ist $\vec{w}_{2}$ Eigenvektor zum Eigenwert $\lambda_{2}=-1$.
+
+```{admonition} Typischer Fehler
+:class: attention
+Hier ist kein charakteristisches Polynom nötig. Die Eigenvektoren sind schon gegeben, man muss sie nur mit $\mathbf{A}$ multiplizieren. Ein negativer Eigenwert ist übrigens völlig in Ordnung, nur der Eigenvektor darf nicht der Nullvektor sein.
+```
+````
+
+````{dropdown} Lösungsweg c)
+Zwei Vektoren sind orthogonal, wenn ihr Skalarprodukt null ist:
+
+$$\vec{w}_{1}\cdot\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=1\cdot1+1\cdot(-1)+0\cdot0=0$$
+
+Die beiden Eigenvektoren sind also orthogonal.
+
+Das ist kein Zufall: $\mathbf{A}$ ist symmetrisch ($\mathbf{A}^{T}=\mathbf{A}$). Bei symmetrischen Matrizen stehen Eigenvektoren zu verschiedenen Eigenwerten immer senkrecht aufeinander.
+````
+
+````{dropdown} Lösungsweg d)
+**Weg 1: Über das charakteristische Polynom.** Die Eigenwerte sind die Nullstellen von $\det(\mathbf{A}-\lambda\mathbf{E})$. Auch hier hilft die Entwicklung nach der 3. Zeile:
+
+$$
+\begin{aligned}
+\det(\mathbf{A}-\lambda\mathbf{E})&=\begin{vmatrix} 1-\lambda & 2 & 0 \\ 2 & 1-\lambda & 0 \\ 0 & 0 & 4-\lambda \end{vmatrix}=(4-\lambda)\cdot\left[ (1-\lambda)^{2}-4 \right] \\
+&=(4-\lambda)\cdot(1-\lambda-2)\cdot(1-\lambda+2)=(4-\lambda)\cdot(-1-\lambda)\cdot(3-\lambda)
+\end{aligned}
+$$
+
+Die Nullstellen sind $\lambda=4$, $\lambda=-1$ und $\lambda=3$. Die Eigenwerte $3$ und $-1$ kennen wir schon aus b), der dritte Eigenwert ist also $\lambda_{3}=4$.
+
+Den Eigenvektor erhält man aus $(\mathbf{A}-4\mathbf{E})\vec{v}=\vec{0}$:
+
+$$\begin{pmatrix} -3 & 2 & 0 \\ 2 & -3 & 0 \\ 0 & 0 & 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\qquad\Leftrightarrow\qquad\begin{array}{lrcll} & -3x+2y & = & 0 & \text{ (I)} \\ & 2x-3y & = & 0 & \text{ (II)} \\ & 0 & = & 0 & \text{ (III)} \end{array}$$
+
+Aus (I) folgt $y=\frac{3}{2}x$. Eingesetzt in (II): $2x-\frac{9}{2}x=-\frac{5}{2}x=0$, also $x=0$ und damit $y=0$. Für $z$ gibt es keine Bedingung, $z$ ist frei wählbar. Mit $z=1$ erhält man
+
+$$\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.$$
+
+**Probe:** $\mathbf{A}\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 4 \end{pmatrix}=4\,\vec{w}_{3}$. ✓
+
+**Weg 2: Über das Kreuzprodukt.** Da $\mathbf{A}$ symmetrisch ist, steht der dritte Eigenvektor senkrecht auf $\vec{w}_{1}$ und $\vec{w}_{2}$ (siehe c). Einen solchen Vektor liefert das Kreuzprodukt:
+
+$$\vec{w}_{1}\times\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\times\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot0-0\cdot(-1) \\ 0\cdot1-1\cdot0 \\ 1\cdot(-1)-1\cdot1 \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ -2 \end{pmatrix}$$
+
+Das ist ein Vielfaches von $\vec{w}_{3}$ und damit ebenfalls ein Eigenvektor zu $\lambda_{3}=4$.
+
+```{admonition} Typischer Fehler
+:class: attention
+Als Eigenvektor den Nullvektor angeben, weil das Gleichungssystem „nur Nullen“ liefert. Eine Nullzeile wie (III) bedeutet, dass eine Unbekannte frei wählbar ist. Man wählt sie ungleich null.
+```
+````
+`````

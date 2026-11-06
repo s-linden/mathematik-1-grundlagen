@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -610,7 +610,7 @@
 <p>Bestimmen Sie die Eigenwerte und Eigenvektoren für folgende Matrizen:</p>
 <p>a) <span class="math notranslate nohighlight">\(\mathbf{A}=\begin{pmatrix} 1 &amp; 2 \\ 2 &amp; -2 \end{pmatrix}\)</span></p>
 <p>b) <span class="math notranslate nohighlight">\(\mathbf{B}=\begin{pmatrix} -3 &amp; -3 &amp; -3 \\ -3 &amp; 1 &amp; -1 \\ -3 &amp; -1 &amp; 1 \end{pmatrix}\)</span></p>
-<p>Hinweis: Nutzen Sie zum Beispiel Wolframalpha oder ChatGPT mit der Wolframalpha-Schnittstelle, um die kubische Gleichung in 7.5 b) zu lösen.</p>
+<p>Hinweis: Nutzen Sie Computer-Unterstützung, um die kubische Gleichung in 7.5 b) zu lösen.</p>
 </div>
 <div class="miniexercise toggle admonition">
 <p class="admonition-title">Lösung</p>
@@ -705,6 +705,91 @@
 \[-3{v}_{31}-3{v}_{32}=0\Rightarrow\,{v}_{31}=-{v}_{32}\]</div>
 <p class="sd-card-text">Wir wählen <span class="math notranslate nohighlight">\({v}_{33}=1\)</span> und erhalten <span class="math notranslate nohighlight">\({v}_{32}=1\)</span> und <span class="math notranslate nohighlight">\({v}_{31}=-1\)</span>.</p>
 <p class="sd-card-text">Ein EV zu <span class="math notranslate nohighlight">\({\lambda}_{3}\)</span> ist damit <span class="math notranslate nohighlight">\(\vec{v}_{3}=\begin{pmatrix} -1 \\ 1 \\ 1 \end{pmatrix}\)</span>.</p>
+</div>
+</details></div>
+<div class="miniexercise vernetzend admonition">
+<p class="admonition-title">Übung 7.6</p>
+<p>Gegeben seien die Matrix</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\end{split}\]</div>
+<p>sowie die Vektoren</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{w}_{1}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\qquad\text{und}\qquad\vec{w}_{2}=\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}.\end{split}\]</div>
+<p>a) Bestimmen Sie die Determinante der Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>. Untersuchen Sie, ob die Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> invertierbar ist.</p>
+<p>b) Zeigen Sie, dass die Vektoren <span class="math notranslate nohighlight">\(\vec{w}_{1}\)</span> und <span class="math notranslate nohighlight">\(\vec{w}_{2}\)</span> Eigenvektoren von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> sind. Bestimmen Sie die zugehörigen Eigenwerte.</p>
+<p>c) Überprüfen Sie, ob die Eigenvektoren <span class="math notranslate nohighlight">\(\vec{w}_{1}\)</span> und <span class="math notranslate nohighlight">\(\vec{w}_{2}\)</span> orthogonal zueinander sind.</p>
+<p>d) Bestimmen Sie einen Eigenvektor zum dritten Eigenwert.</p>
+</div>
+<div class="miniexercise toggle admonition">
+<p class="admonition-title">Lösung</p>
+<p>a) <span class="math notranslate nohighlight">\(\det(\mathbf{A})=-12\neq 0\)</span>, also ist <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> invertierbar.</p>
+<p>b) <span class="math notranslate nohighlight">\(\mathbf{A}\vec{w}_{1}=3\,\vec{w}_{1}\)</span> und <span class="math notranslate nohighlight">\(\mathbf{A}\vec{w}_{2}=-1\cdot\vec{w}_{2}\)</span>. Die Eigenwerte sind <span class="math notranslate nohighlight">\(\lambda_{1}=3\)</span> und <span class="math notranslate nohighlight">\(\lambda_{2}=-1\)</span>.</p>
+<p>c) Ja, denn <span class="math notranslate nohighlight">\(\vec{w}_{1}\cdot\vec{w}_{2}=0\)</span>.</p>
+<p>d) Der dritte Eigenwert ist <span class="math notranslate nohighlight">\(\lambda_{3}=4\)</span>, ein zugehöriger Eigenvektor ist <span class="math notranslate nohighlight">\(\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg a)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Die dritte Zeile enthält zwei Nullen. Deshalb lohnt sich die Entwicklung nach der 3. Zeile, denn dann bleibt nur ein Summand übrig:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\det(\mathbf{A})=4\cdot(+1)\cdot\begin{vmatrix} 1 &amp; 2 \\ 2 &amp; 1 \end{vmatrix}=4\cdot\left( 1\cdot1-2\cdot2 \right)=4\cdot(-3)=-12\end{split}\]</div>
+<p class="sd-card-text">Das Vorzeichen <span class="math notranslate nohighlight">\((+1)\)</span> ergibt sich aus dem Schachbrettmuster: Das Element steht in Zeile 3 und Spalte 3, also <span class="math notranslate nohighlight">\((-1)^{3+3}=+1\)</span>.</p>
+<p class="sd-card-text">Eine quadratische Matrix ist genau dann invertierbar, wenn ihre Determinante ungleich null ist. Wegen <span class="math notranslate nohighlight">\(\det(\mathbf{A})=-12\neq 0\)</span> ist <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> invertierbar.</p>
+<div class="note admonition">
+<p class="admonition-title">Merke</p>
+<p class="sd-card-text">Ob die Determinante positiv oder negativ ist, spielt für die Invertierbarkeit keine Rolle. Entscheidend ist nur, ob sie null ist.</p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg b)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Ein Vektor <span class="math notranslate nohighlight">\(\vec{w}\neq\vec{0}\)</span> ist Eigenvektor von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, wenn <span class="math notranslate nohighlight">\(\mathbf{A}\vec{w}\)</span> ein Vielfaches von <span class="math notranslate nohighlight">\(\vec{w}\)</span> ist: <span class="math notranslate nohighlight">\(\mathbf{A}\vec{w}=\lambda\vec{w}\)</span>. Der Faktor <span class="math notranslate nohighlight">\(\lambda\)</span> ist dann der zugehörige Eigenwert. Man muss also nur das Produkt ausrechnen und vergleichen:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A}\vec{w}_{1}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot1+2\cdot1+0\cdot0 \\ 2\cdot1+1\cdot1+0\cdot0 \\ 0\cdot1+0\cdot1+4\cdot0 \end{pmatrix}=\begin{pmatrix} 3 \\ 3 \\ 0 \end{pmatrix}=3\cdot\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}=3\,\vec{w}_{1}\end{split}\]</div>
+<p class="sd-card-text">Also ist <span class="math notranslate nohighlight">\(\vec{w}_{1}\)</span> Eigenvektor zum Eigenwert <span class="math notranslate nohighlight">\(\lambda_{1}=3\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A}\vec{w}_{2}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1-2 \\ 2-1 \\ 0 \end{pmatrix}=\begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}=-1\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=-1\cdot\vec{w}_{2}\end{split}\]</div>
+<p class="sd-card-text">Also ist <span class="math notranslate nohighlight">\(\vec{w}_{2}\)</span> Eigenvektor zum Eigenwert <span class="math notranslate nohighlight">\(\lambda_{2}=-1\)</span>.</p>
+<div class="attention admonition">
+<p class="admonition-title">Typischer Fehler</p>
+<p class="sd-card-text">Hier ist kein charakteristisches Polynom nötig. Die Eigenvektoren sind schon gegeben, man muss sie nur mit <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> multiplizieren. Ein negativer Eigenwert ist übrigens völlig in Ordnung, nur der Eigenvektor darf nicht der Nullvektor sein.</p>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg c)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Zwei Vektoren sind orthogonal, wenn ihr Skalarprodukt null ist:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{w}_{1}\cdot\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=1\cdot1+1\cdot(-1)+0\cdot0=0\end{split}\]</div>
+<p class="sd-card-text">Die beiden Eigenvektoren sind also orthogonal.</p>
+<p class="sd-card-text">Das ist kein Zufall: <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> ist symmetrisch (<span class="math notranslate nohighlight">\(\mathbf{A}^{T}=\mathbf{A}\)</span>). Bei symmetrischen Matrizen stehen Eigenvektoren zu verschiedenen Eigenwerten immer senkrecht aufeinander.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Lösungsweg d)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>Weg 1: Über das charakteristische Polynom.</strong> Die Eigenwerte sind die Nullstellen von <span class="math notranslate nohighlight">\(\det(\mathbf{A}-\lambda\mathbf{E})\)</span>. Auch hier hilft die Entwicklung nach der 3. Zeile:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\det(\mathbf{A}-\lambda\mathbf{E})&amp;=\begin{vmatrix} 1-\lambda &amp; 2 &amp; 0 \\ 2 &amp; 1-\lambda &amp; 0 \\ 0 &amp; 0 &amp; 4-\lambda \end{vmatrix}=(4-\lambda)\cdot\left[ (1-\lambda)^{2}-4 \right] \\
+&amp;=(4-\lambda)\cdot(1-\lambda-2)\cdot(1-\lambda+2)=(4-\lambda)\cdot(-1-\lambda)\cdot(3-\lambda)
+\end{aligned}
+\end{split}\]</div>
+<p class="sd-card-text">Die Nullstellen sind <span class="math notranslate nohighlight">\(\lambda=4\)</span>, <span class="math notranslate nohighlight">\(\lambda=-1\)</span> und <span class="math notranslate nohighlight">\(\lambda=3\)</span>. Die Eigenwerte <span class="math notranslate nohighlight">\(3\)</span> und <span class="math notranslate nohighlight">\(-1\)</span> kennen wir schon aus b), der dritte Eigenwert ist also <span class="math notranslate nohighlight">\(\lambda_{3}=4\)</span>.</p>
+<p class="sd-card-text">Den Eigenvektor erhält man aus <span class="math notranslate nohighlight">\((\mathbf{A}-4\mathbf{E})\vec{v}=\vec{0}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix} -3 &amp; 2 &amp; 0 \\ 2 &amp; -3 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\qquad\Leftrightarrow\qquad\begin{array}{lrcll} &amp; -3x+2y &amp; = &amp; 0 &amp; \text{ (I)} \\ &amp; 2x-3y &amp; = &amp; 0 &amp; \text{ (II)} \\ &amp; 0 &amp; = &amp; 0 &amp; \text{ (III)} \end{array}\end{split}\]</div>
+<p class="sd-card-text">Aus (I) folgt <span class="math notranslate nohighlight">\(y=\frac{3}{2}x\)</span>. Eingesetzt in (II): <span class="math notranslate nohighlight">\(2x-\frac{9}{2}x=-\frac{5}{2}x=0\)</span>, also <span class="math notranslate nohighlight">\(x=0\)</span> und damit <span class="math notranslate nohighlight">\(y=0\)</span>. Für <span class="math notranslate nohighlight">\(z\)</span> gibt es keine Bedingung, <span class="math notranslate nohighlight">\(z\)</span> ist frei wählbar. Mit <span class="math notranslate nohighlight">\(z=1\)</span> erhält man</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.\end{split}\]</div>
+<p class="sd-card-text"><strong>Probe:</strong> <span class="math notranslate nohighlight">\(\mathbf{A}\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 4 \end{pmatrix}=4\,\vec{w}_{3}\)</span>. ✓</p>
+<p class="sd-card-text"><strong>Weg 2: Über das Kreuzprodukt.</strong> Da <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> symmetrisch ist, steht der dritte Eigenvektor senkrecht auf <span class="math notranslate nohighlight">\(\vec{w}_{1}\)</span> und <span class="math notranslate nohighlight">\(\vec{w}_{2}\)</span> (siehe c). Einen solchen Vektor liefert das Kreuzprodukt:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{w}_{1}\times\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\times\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot0-0\cdot(-1) \\ 0\cdot1-1\cdot0 \\ 1\cdot(-1)-1\cdot1 \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ -2 \end{pmatrix}\end{split}\]</div>
+<p class="sd-card-text">Das ist ein Vielfaches von <span class="math notranslate nohighlight">\(\vec{w}_{3}\)</span> und damit ebenfalls ein Eigenvektor zu <span class="math notranslate nohighlight">\(\lambda_{3}=4\)</span>.</p>
+<div class="attention admonition">
+<p class="admonition-title">Typischer Fehler</p>
+<p class="sd-card-text">Als Eigenvektor den Nullvektor angeben, weil das Gleichungssystem „nur Nullen“ liefert. Eine Nullzeile wie (III) bedeutet, dass eine Unbekannte frei wählbar ist. Man wählt sie ungleich null.</p>
+</div>
 </div>
 </details></div>
 </section>
