@@ -6,7 +6,7 @@ Sebastian Linden
 
 **Arbeiten mit diesem Skript &middot;** Bitte nutzen Sie dieses Skript als Ergänzung zu meiner Vorlesung oder zum gezielten Nach- oder Vorarbeiten. Das Arbeiten mit dem Skript soll den Besuch der Vorlesung nicht vollständig ersetzen.
 
-**Übungsaufgaben &middot;** Am Ende jedes Kapites finden Sie Übungen zum Selbststudium. Es lohnt sich, alle diese Übungen ohne Hilfsmittel vollständig durchzurechnen. Zum Ende eines Themenblocks finden Sie in den Übungen zusätzlich eine Aufgabe, die typische Fragestellungen zum Themenblock vernetzt. 
+**Übungen zum Selbststudium &middot;** Am Ende jedes Kapites finden Sie Übungen zum Selbststudium. Es lohnt sich, alle diese Übungen ohne Hilfsmittel vollständig durchzurechnen. Zum Ende eines Themenblocks finden Sie in den Übungen zusätzlich eine Aufgabe, die typische Fragestellungen zum Themenblock vernetzt. 
 Probieren Sie immer erst, die Aufgabe zu lösen, bevor Sie sich die Lösung beziehungsweise den Lösungsweg zur Selbstkontrolle anzeigen lassen.
 
 ## Inhaltsverzeichnis
