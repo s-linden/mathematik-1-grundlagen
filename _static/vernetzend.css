@@ -26,3 +26,16 @@ div.admonition.toggle.toggle-hidden > :not(.admonition-title) {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
+/* Lösungskästen: Titelzeile grau hinterlegt wie die "Lösungsweg"-Felder
+   (gleiche Farbvariable wie dort, passt sich dem Dark Mode an).
+   Die blaue Griffmarke links bleibt erhalten. */
+div.admonition.miniexercise.toggle > .admonition-title {
+  background-color: var(--pst-color-surface);
+}
+
+/* Aufgeklappte Lösungen: etwas Luft zwischen Lösung und "Lösungsweg"-Feld.
+   Gilt nur im aufgeklappten Zustand; zugeklappt greift die Regel oben (Abstände 0). */
+div.admonition.toggle:not(.toggle-hidden) > details.sd-dropdown {
+  margin-top: 1rem;
+}
