@@ -12,3 +12,17 @@ div.admonition.vernetzend > .admonition-title::after {
   height: 1.3rem;
   top: 0.3rem;
 }
+
+/* Alle anderen Übungen und Lösungen (Admonition mit :class: miniexercise):
+   kein Icon in der Titelzeile (statt der Glocke). */
+div.admonition.miniexercise:not(.vernetzend) > .admonition-title::after {
+  content: none;
+}
+
+/* Zugeklappte Lösungen: Abstände der versteckten Inhalte entfernen.
+   Sonst wird ein Lösungskasten mit mehreren "Lösungsweg"-Feldern (z. B. 5.10)
+   im zugeklappten Zustand höher als die anderen. */
+div.admonition.toggle.toggle-hidden > :not(.admonition-title) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

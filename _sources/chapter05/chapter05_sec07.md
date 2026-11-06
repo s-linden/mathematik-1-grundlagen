@@ -324,7 +324,7 @@ $$
 
 ```{admonition} Übung 5.10
 :class: miniexercise, vernetzend
-Diese Aufgabe bündelt typische Fragestellungen zum Thema Punkte, Geraden und Ebenen. Es lohnt sich, sie vollständig und ohne Hilfsmittel durchzurechnen.
+Diese Aufgabe vernetzt typische Fragestellungen zum Thema Punkte, Geraden und Ebenen. Es lohnt sich, sie vollständig und ohne Hilfsmittel durchzurechnen.
 
 Gegeben sei die Ebenenschar
 
