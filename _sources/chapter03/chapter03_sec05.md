@@ -1,7 +1,7 @@
 # 3.5 Betrag Vektor und Abstand Punkte
 
-Nachdem wir im letzten Kapitel den affinen Punkt kennengelernt haben, führen wir
-nun noch den Betrag von Vektoren ein. Streng genommen, wird so aus dem
+Nachdem wir im letzten Abschnitt Punkte und Vektoren miteinander verbunden haben,
+führen wir nun noch den Betrag von Vektoren ein. Streng genommen, wird so aus dem
 Vektorraum ein normierter Raum.
 
 ## Lernziele
@@ -112,15 +112,14 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" refe
 ## Abstand zweier Punkte
 
 Bisher haben wir nur Vektoren betrachtet bzw. ihre geometrische Interpretation
-als Verschiebung. Als nächstes greifen wir wieder auf das Konzept des affinen
-Punktraumes $\mathbb{R}^n$ zurück und nutzen es, um den Abstand zweier Punkte im
-$\mathbb{R}^n$ zu berechnen.  
+als Verschiebung. Als nächstes greifen wir wieder auf das Rechnen mit Punkten und
+Vektoren zurück und nutzen es, um den Abstand zweier Punkte im $\mathbb{R}^n$ zu
+berechnen.  
 
 Die beiden Punkte nennen wir $P$ und $Q$ und ihre Koordinaten werden
 entsprechend als $P(P_1, P_2, \ldots, P_n)$ und $Q(Q_1, Q_2, \ldots, Q_n)$
-bezeichnet. Weil der reelle Standardvektorraum $\mathbb{R}^n$ ein affiner
-Punktraum ist, muss ein Vektor $\vec{v}$ existieren, der $P$ und $Q$ verbindet,
-also
+bezeichnet. Zu zwei Punkten gibt es genau einen Vektor $\vec{v}$, der $P$ und
+$Q$ verbindet, also
 
 $$P + \vec{v} = Q.$$
 
