@@ -179,7 +179,6 @@ Der reelle Standardvektorraum mit n-Tupeln, Vektoraddition und
 Skalarmultiplikation ist ein äußerst geeignetes Werkzeug, um Bewegungen bzw.
 Verschiebungen in der Geometrie zu beschreiben.
 
-Im nächsten Kapitel werden wir uns mit affinen Punkträumen beschäftigen. Affine
-Punkträume erweitern unser Verständnis, indem sie es uns ermöglichen, die
-Konzepte von Punkten (Orten) und Verschiebungen (Bewegungen) zu verbinden. Dies
+Im nächsten Abschnitt verbinden wir Punkte (Orte) und Verschiebungen
+(Bewegungen) miteinander. Dies
 wird uns helfen, komplexere geometrische Probleme zu lösen.

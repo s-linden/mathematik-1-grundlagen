@@ -1,202 +1,155 @@
-# 3.4 Affine Punkträume
+# 3.4 Vektoren und Punkte
 
-Nachdem wir gelernt haben, wie Punkte bezüglich eines Koordinatensystems durch
-n-Tupel und Verschiebungen als Vektoren beschrieben werden können, kombinieren
-wir nun beides und führen den sogenannten affinen Punktraum ein.
+Im letzten Abschnitt haben wir Punkte durch ihre Koordinaten beschrieben und
+Vektoren als Verschiebungen kennengelernt. Jetzt bringen wir beides zusammen:
+Wir verschieben einen Punkt mit einem Vektor und erhalten wieder einen Punkt.
 
 ## Lernziele
 
 ```{admonition} Lernziele
 :class: goals
-* Sie können die Definition eines **affinen Punktraumes** auswendig.
-* Sie wissen, wie Punkte und Verschiebungsvektoren im $\mathbb{R}^n$ über die
-  **Punkt-Vektoraddition** zu einem affinen Punktraum kombiniert werden können.
+* Sie können zwischen **Punkten** (Orten) und **Vektoren** (Verschiebungen)
+  unterscheiden.
+* Sie können einen Punkt mit einem Vektor verschieben (**Punkt + Vektor =
+  Punkt**) und den **Verbindungsvektor** zweier Punkte berechnen (**Punkt −
+  Punkt = Vektor**).
+* Sie wissen, welche Rechnungen mit Punkten und Vektoren sinnvoll sind und
+  welche nicht.
 ```
 
-## Affiner Punktraum
+## Punkte und Vektoren
 
-Erste Zutat eines affinen Punktraumes ist eine nichtleere Menge $A$, deren
-Elemente wir Punkte nennen. Zweite Zutat ist ein reeller Vektorraum $V$ mit der
-Verknüpfung $\oplus: V\times V\to V$ (bzw. ein allgemeiner Vektorraum über einem
-beliebigen Körper). Darüber hinaus setzen wir voraus, dass es eine weitere
-Verknüpfung $\boxplus: A\times V \to A$ gibt. Wir nennen das Tripel
-$(V,A,\boxplus)$ **affinen Punktraum**, wenn gilt:
+Ein **Punkt** beschreibt einen Ort, zum Beispiel $P(3,2)$. Ein **Vektor**
+beschreibt eine Verschiebung, also eine Bewegung um eine bestimmte Strecke in
+eine bestimmte Richtung, zum Beispiel
 
-1. Für alle Punkte $P \in A$ gilt $P \boxplus \vec{0} = P$.
-2. Für jeden Punkt $P\in A$ und $Q\in A$ existiert genau ein Vektor $v\in V$
-   mit $P\boxplus\vec{v}=Q$.
-3. Für alle Punkte $P\in A$ und Vektoren $\vec{v}, \vec{w}\in V$ gilt $P\boxplus
-   (\vec{v}\oplus\vec{w}) = (P\boxplus \vec{v})\boxplus\vec{w}$.
+$$\vec{v} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}.$$
 
-Bemerkung: Üblicherweise werden die Verknüpfungen $\boxplus: A \times V \to A$
-und $\oplus: V \times V \to V$ nur mit einem einfachen Pluszeichen $+$
-geschrieben, da ja aus dem Zusammenhang klar ist, welche Verknüpfung gemeint
-ist.
+Ein Vektor hat keinen festen Ort. Jeder Pfeil, der zwei Einheiten nach rechts
+und eine Einheit nach oben zeigt, stellt denselben Vektor $\vec{v}$ dar, egal
+wo er gezeichnet wird.
 
-In der »lässigeren« Schreibweise mit dem $+$ als Symbol für die Verknüpfung
-lässt sich der Begriff affiner Punktraum also folgendermaßen definieren.
+## Punkt plus Vektor ergibt Punkt
 
-```{admonition} Was ist ... ein affiner Punktraum?
-:class: note
-Eine nichtleere Menge $A$ mit einem Vektorraum $V$ und einer Verknüpfung $+:
-A\times V \to A$ wird affiner Punktraum genannt, wenn folgende Eigenschaften
-erfüllt sind:
+Wenden wir die Verschiebung $\vec{v}$ auf den Punkt $P$ an, landen wir bei
+einem neuen Punkt $Q$. Wir schreiben dafür
 
-1. Für alle Punkte $P \in A$ gilt $P + \vec{0} = P$.
-2. Für jeden Punkt $P\in A$ und $Q\in A$ existiert genau ein Vektor $v\in V$
-   mit $P + \vec{v} = Q$. 
-3. Für alle Punkte $P\in A$ und Vektoren $\vec{v}, \vec{w}\in V$ gilt $P+
-   (\vec{v}+\vec{w}) = (P+ \vec{v})+\vec{w}$.
-```
+$$P + \vec{v} = Q.$$
 
-Gemäß Regel Nr. 2 wird existiert für jeden Punkt $P\in A$ und $Q\in A$ genau ein
-Vektor $v \in V$, so dass $P + \vec{v} = Q$ gilt. Häufig wird dieser Vektor
-$\vec{v}$ auch mit der Notation $\overrightarrow{PQ}$ bezeichnet und
-**Verbindungsvektor** zwischen dem Punkt $P$ und dem Punkt $Q$ genannt.
+Gerechnet wird komponentenweise. Dazu schreiben wir auch die Koordinaten des
+Punktes als Spalte:
 
-Außerdem gilt dann auch
+$$\begin{pmatrix} 3 \\ 2 \end{pmatrix} + \begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 5 \\ 3 \end{pmatrix},$$
 
-$$P + \overrightarrow{PQ} = Q \; \Rightarrow \;
-\overrightarrow{PQ} = Q - P.$$
+also $Q(5,3)$.
 
-## Affine Punkträume zur Beschreibung geometrischer Probleme in der Ebene (2D)
+Die Schreibweise sieht aus wie eine Vektoraddition, es werden aber zwei
+verschiedene Objekte verknüpft: ein Ort und eine Bewegung. Das Ergebnis ist
+wieder ein Ort.
 
-Nachdem wir nun das mathematische Rüstzeug haben, können wir Punkte (Positionen)
-und Verschiebungen (Bewegungen) miteinander kombinieren, um geometrische
-Probleme präzise zu beschreiben und sie zu lösen.
+Führen wir zwei Verschiebungen nacheinander aus, ist es egal, ob wir den Punkt
+zweimal verschieben oder die beiden Verschiebungen erst zu einer
+zusammenfassen:
 
-Sobald wir für unsere Menge der Punkte ein Koordinatensystem gewählt haben,
-können wir die Position der Punkte als n-Tupel angeben. Wir beginnen mit dem
-zweidimensionalen Raum $A=\mathbb{R}^2$. Zweckmäßigerweise verwenden wir für das
-2-Tupel der Koordinaten eines Punktes $P\in\mathbb{R}^2$ einen Spaltenvektor
-
-$$\begin{pmatrix} P_1 \\ P_2 \end{pmatrix}.$$
-
-Die Verknüpfung $+: \mathbb{R}^2 \times V \to \mathbb{R}^2$ definieren wir als
-komponentenweise Addition, also für einen Punkt $S\in\mathbb{R}^2$ und einen
-zweidimensionalen Verschiebungsvektor $\vec{v}$ als
-
-$$\begin{pmatrix} P_1 \\ P_2 \end{pmatrix} + \begin{pmatrix} v_1 \\ v_2
-\end{pmatrix} = \begin{pmatrix} Q_1 \\ Q_2 \end{pmatrix}.$$
-
-Das Ergebnis ist der Punkt $Q\in\mathbb{R}^2$ mit den Koordinaten $Q_1$ und
-$Q_2$.
-
-Achtung: auf den ersten Blick könnte man meinen, dass zwei Vektoren addiert
-werden und das Ergebnis auf der rechten Seite ein Vektor ist. Trotz der
-einheitlichen Schreibweise, die schnelleres Rechnen ermöglichen soll, handelt es
-sich dennoch um zwei unterschiedliche Objekte Punkt und Verschiebung (oder
-physikalisch ausgedrückt um Ort und Bewegung).
-
-Wir fragen uns, ob die so definierte **Punkt-Vektor-Addition** zusammen mit der
-Menge der Punkte $\mathbb{R}^2$ und dem Vektorraum der Verschiebungen einen
-affinen Punktraum bildet. Dazu müssen wir die drei Eigenschaften nachrechnen.
-
-Eigenschaft 1 ist geometrisch und arithmetisch erfüllt. Wenn wir die
-Verschiebung
-
-$$\begin{pmatrix} 0 \\ 0 \end{pmatrix}$$
-
-auf den geometrisch auf den Punkt $P$ anwenden, bewegen wir uns nicht und
-erhalten als Ergebnis wiederum $P$. Also gilt $P + \vec{0} = P$. Arithmetisch
-erhalten wir dasselbe Ergebnis, denn es gilt
-
-$$\begin{pmatrix} P_1 \\ P_2 \end{pmatrix} + \begin{pmatrix} 0 \\ 0
-\end{pmatrix} = \begin{pmatrix} P_1 \\ P_2 \end{pmatrix}.$$
-
-Eigenschaft 2 gilt auch. Wenn wir nämlich den Verbindunsvektor $\vec{v}$ als
-
-$$\vec{v} := \begin{pmatrix} Q_1 - P_1 \\ Q_2 - P_2 \end{pmatrix}$$
-
-definieren, gilt mit der Punkt-Vektor-Addition
-
-$$\begin{pmatrix} P_1 \\ P_2 \end{pmatrix} +
-\begin{pmatrix} Q_1 - P_1 \\ Q_2 - P_2 \end{pmatrix} =
-\begin{pmatrix} Q_1 \\ Q_2 \end{pmatrix},$$
-
-oder anders ausgedrückt $P + \vec{v} = Q$.
-
-Bleibt noch die letzte Eigenschaft. Dazu betrachten wir eine Skizze.
+$$(P + \vec{v}) + \vec{w} = P + (\vec{v} + \vec{w}).$$
 
 ```{figure} pics/affiner_punktraum_2D.png
 ---
 width: 75%
 name: affiner_punktraum_2D
 ---
-Beispiel zur 3. Eigenschaft von affinen Punkträumen am Beispiel vom
-$\mathbb{R}^2$; Quelle: eigene Darstellung; Lizenz: [CC BY-SA
+Verschieben von $P(3,2)$ erst um $\vec{v}$ und dann um $\vec{w}$ führt zum
+selben Punkt $R(1,6)$ wie das Verschieben um $\vec{v}+\vec{w}$; Quelle: eigene
+Darstellung; Lizenz: [CC BY-SA
 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 ```
 
-Geometrisch bedeutet $P+ (\vec{v}+\vec{w})$, dass ich erst die beiden
-Verschiebungen hintereinander ausführe und so zur rot gezeichneten Verschiebung
-$(-2,4)$ komme. Wird der Punkt $P$ dann um $(-2,4)$ verschoben, landen wir bei
-$R(1,6)$. Die linke Seite ergibt arithmetisch
+Mit $\vec{w} = \begin{pmatrix} -4 \\ 3 \end{pmatrix}$ ergibt sich auf beiden
+Wegen
 
-$$P+(\vec{v}+\vec{w}) = P + \begin{pmatrix} -2 \\ 4 \end{pmatrix} =
-\begin{pmatrix} 3 \\ 2 \end{pmatrix} + \begin{pmatrix} -2 \\ 4 \end{pmatrix} =
-\begin{pmatrix} 1 \\ 6 \end{pmatrix}.$$
+$$\begin{pmatrix} 3 \\ 2 \end{pmatrix} + \begin{pmatrix} 2 \\ 1 \end{pmatrix} + \begin{pmatrix} -4 \\ 3 \end{pmatrix} = \begin{pmatrix} 1 \\ 6 \end{pmatrix}.$$
 
-Jetzt betrachten wir die rechte Seite. Verschieben wir zunächst den Punkt
-$P(3,2)$ um $\vec{v}$, landen wir bei $Q(5,3)$. Nun wenden wir die zweite
-Verschiebung $\vec{w}$ an und enden ebenfalls bei $R(1,6)$. Das ist auch
-arithmetisch erfüllt:
+## Punkt minus Punkt ergibt Vektor
 
-$$(P+\vec{v})+\vec{w} = \left(\begin{pmatrix} 3 \\ 2 \end{pmatrix} +
-\begin{pmatrix} 2 \\ 1 \end{pmatrix}\right)
-+ \begin{pmatrix} -4 \\ 3 \end{pmatrix} = \begin{pmatrix} 5 \\ 3 \end{pmatrix} +
-\begin{pmatrix} -4 \\ 3 \end{pmatrix} = \begin{pmatrix} 1 \\ 6 \end{pmatrix}.$$
+Zu zwei Punkten $P$ und $Q$ gibt es genau eine Verschiebung, die $P$ nach $Q$
+bringt. Sie heißt **Verbindungsvektor** und wird mit $\overrightarrow{PQ}$
+bezeichnet. Aus $P + \overrightarrow{PQ} = Q$ folgt
 
-Die Überlegungen wurden hier für ein konkretes Beispiel durchgeführt. Um zu
-zeigen, dass die Punkt-Vektor-Addition tatsächlich die 3. Eigenschaft eines
-affinen Punktraumes erfüllt, müssen wir das allgemein zeigen.
+$$\overrightarrow{PQ} = Q - P.$$
 
-Allgemein lautet die linke Seite
+Man rechnet also »Spitze minus Fuß«. Im Beispiel:
 
-$$P+(\vec{v}+\vec{w}) = \begin{pmatrix} P_1 \\ P_2 \end{pmatrix} +
-\left(\begin{pmatrix} v_1 \\ v_2 \end{pmatrix} + \begin{pmatrix} w_1 \\ w_2
-\end{pmatrix} \right) = \begin{pmatrix} P_1 \\ P_2 \end{pmatrix} +
-\begin{pmatrix} v_1 + w_1 \\ v_2 + w_2 \end{pmatrix} = \begin{pmatrix} P_1 + v_1
-+ w_1\\ P_2 + v_2 + w_2 \end{pmatrix} .$$
+$$\overrightarrow{PQ} = \begin{pmatrix} 5 \\ 3 \end{pmatrix} - \begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}.$$
 
-Die rechte Seite lautet
+Wählt man für $P$ den Koordinatenursprung $O$, erhält man den **Ortsvektor**
+$\overrightarrow{OQ}$. Er hat dieselben Komponenten wie die Koordinaten von
+$Q$. Deshalb dürfen wir mit den Koordinaten von Punkten so rechnen wie mit
+Vektoren.
 
-$$(P+\vec{v})+\vec{w} = \left( \begin{pmatrix} P_1 \\ P_2 \end{pmatrix} +
-\begin{pmatrix} v_1 \\ v_2 \end{pmatrix}\right) + \begin{pmatrix} w_1 \\ w_2
-\end{pmatrix} = \begin{pmatrix} P_1 + v_1 \\ P_2 + v_2\end{pmatrix} +
-\begin{pmatrix}  w_1 \\  w_2 \end{pmatrix} = \begin{pmatrix} P_1 + v_1 + w_1\\
-P_2 + v_2 + w_2 \end{pmatrix} .$$
+## Was darf man rechnen?
 
-Beide Seiten sind gleich, was durch das Assoziativgesetz der skalaren Addition
-bedingt ist. Somit ist auch die 3. Eigenschaft des affinen Punktraumes erfüllt.
+```{admonition} Rechenregeln für Punkte und Vektoren
+:class: note
+* Punkt $+$ Vektor $=$ Punkt
+* Punkt $-$ Punkt $=$ Vektor
+* Vektor $+$ Vektor $=$ Vektor
+* Punkt $+$ Punkt ist nicht definiert.
+```
 
-## Affine Punkträume im $\mathbb{R}^n$
+Dass Punkt plus Punkt keinen Sinn ergibt, sieht man an einem Vergleich: Hamburg
+plus Berlin ist kein Ort. Hamburg plus »rund 250 km nach Osten« dagegen schon,
+nämlich ungefähr Berlin. Rechnerisch zeigt sich das daran, dass die Summe der
+Koordinaten zweier Punkte davon abhängt, wo man den Ursprung des
+Koordinatensystems hinlegt.
 
-Die oben gezeigten Überlegungen lassen sich einfach auf den n-dimensionalen Raum
-$\mathbb{R}^n$ übertragen. Wir stellen Punkte als n-Tupel im kartesischen
-Koordinatensystem dar:
+Eine Ausnahme scheint der **Mittelpunkt** $M$ der Strecke $PQ$ zu sein, den man
+oft als $M = \frac{1}{2}(P + Q)$ schreibt. Sauber gelesen ist das aber Punkt
+plus Vektor, denn man geht von $P$ aus die halbe Strecke in Richtung $Q$:
 
-$$\begin{pmatrix} P_1 \\ P_2 \\ \vdots \\ P_n\end{pmatrix}.$$
+$$M = P + \tfrac{1}{2}\,\overrightarrow{PQ}.$$
 
-Verschiebungen beschreiben wir ebenfalls als n-Tupel mit der üblichen
-Vektoraddition und Skalarmultiplikation des reellen Standardvektorraumes.  Wir
-verwenden ebenfalls die Notation als Spaltenvektor, also
+Mit $\overrightarrow{PQ} = Q - P$ und komponentenweiser Rechnung in
+Koordinaten erhalten wir daraus wieder die bekannte Formel:
 
-$$\begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n\end{pmatrix}.$$
+$$M = P + \tfrac{1}{2}(Q - P) = P + \tfrac{1}{2}Q - \tfrac{1}{2}P = \tfrac{1}{2}P + \tfrac{1}{2}Q = \tfrac{1}{2}(P + Q).$$
 
-Zusätzlich definieren wir eine n-dimensionale Punkt-Vektor-Addition $+:
-\mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}^n$ als komponentenweise Addition
-in den reellen Zahlen, also als
+Im Beispiel ist
 
-$$\begin{pmatrix} P_1 \\ P_2 \\ \vdots \\ P_n\end{pmatrix} + \begin{pmatrix} v_1
-\\ v_2 \\ \vdots \\ v_n\end{pmatrix} = \begin{pmatrix} P_1 + v_1 \\ P_2 + v_2 \\
-\vdots \\ P_n + v_n\end{pmatrix}. $$
+$$M = \begin{pmatrix} 3 \\ 2 \end{pmatrix} + \frac{1}{2}\begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 4 \\ 2{,}5 \end{pmatrix}.$$
 
-Der Nachweis der drei Eigenschaften eines affinen Punktraumes erfolgt dabei wie
-im zweidimensionalen Fall.
+Alles hier gilt genauso im $\mathbb{R}^3$ und allgemein im $\mathbb{R}^n$:
+Gerechnet wird immer komponentenweise.
+
+## Vertiefung: Der affine Punktraum
+
+````{dropdown} Mathematische Definition
+Die Regeln oben lassen sich exakt fassen. Gegeben sind eine nichtleere Menge
+$A$, deren Elemente wir Punkte nennen, ein reeller Vektorraum $V$ und eine
+Verknüpfung $+: A\times V \to A$. Man spricht von einem **affinen Punktraum**,
+wenn gilt:
+
+1. Für alle Punkte $P \in A$ gilt $P + \vec{0} = P$.
+2. Für alle Punkte $P, Q \in A$ gibt es genau einen Vektor $\vec{v} \in V$ mit
+   $P + \vec{v} = Q$.
+3. Für alle Punkte $P \in A$ und Vektoren $\vec{v}, \vec{w} \in V$ gilt
+   $P + (\vec{v} + \vec{w}) = (P + \vec{v}) + \vec{w}$.
+
+Eigenschaft 2 liefert den Verbindungsvektor $\overrightarrow{PQ}$, Eigenschaft 3
+das Hintereinanderausführen von Verschiebungen.
+
+Für $A = \mathbb{R}^n$ mit der komponentenweisen Addition
+
+$$\begin{pmatrix} P_1 \\ \vdots \\ P_n \end{pmatrix} + \begin{pmatrix} v_1 \\ \vdots \\ v_n \end{pmatrix} = \begin{pmatrix} P_1 + v_1 \\ \vdots \\ P_n + v_n \end{pmatrix}$$
+
+sind alle drei Eigenschaften erfüllt. Eigenschaft 1 gilt, weil $P_i + 0 = P_i$
+ist. Für Eigenschaft 2 ist $v_i = Q_i - P_i$ die einzige Wahl. Eigenschaft 3
+folgt aus $P_i + (v_i + w_i) = (P_i + v_i) + w_i$, also aus dem
+Assoziativgesetz der reellen Zahlen.
+````
 
 ## Zusammenfassung und Ausblick
 
-Mit Hilfe des mathematischen Konzepts der affinen Punkträume können wir nun
-geometrische Probleme algebraisch beschreiben. In den nächsten Kapiteln werden
-sehen, wie geometrische Probleme dadurch einfacher gelöst werden können.
+Punkte beschreiben Orte, Vektoren beschreiben Verschiebungen. Mit Punkt + Vektor
+= Punkt und Punkt − Punkt = Vektor können wir geometrische Probleme algebraisch
+beschreiben. In den nächsten Kapiteln nutzen wir das, um Geraden und Ebenen
+darzustellen.
