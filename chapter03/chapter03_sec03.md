@@ -97,17 +97,17 @@ Einheiten nach oben gelaufen. Bewegungen bzw. geometrische Verschiebungen dürfe
 addiert werden, so wie die Vektoraddition im reellen Standardvektorraum
 definiert ist:
 
-$$\vec{v}_1 \oplus \vec{v}_2 = \begin{pmatrix} 3 \\ 0 \end{pmatrix} +
+$$\vec{v}_1 + \vec{v}_2 = \begin{pmatrix} 3 \\ 0 \end{pmatrix} +
 \begin{pmatrix} -3 \\ 3 \end{pmatrix} = \begin{pmatrix} 0 \\ 3 \end{pmatrix}.$$
 
 Betrachten wir das Gesamtergebnis einer Verschiebung, gibt es keinen Unterschied
 zwischen
 
-$$\vec{v}_1 \oplus (\vec{v}_2 \oplus \vec{v}_3)$$
+$$\vec{v}_1 + (\vec{v}_2 + \vec{v}_3)$$
 
 und
 
-$$(\vec{v}_1 \oplus \vec{v}_2) \oplus \vec{v}_3.$$
+$$(\vec{v}_1 + \vec{v}_2) + \vec{v}_3.$$
 
 Es gibt auch ein neutrales Element
 
@@ -124,7 +124,7 @@ links gehen. $-b$ Einheiten nach oben bedeutet, dass wir $b$ Einheiten nach
 unten gehen. Werden nun diese beiden Bewegungen oder Verschiebungen
 hintereinander ausgeführt, haben wir uns gar nicht bewegt.
 
-$$\vec{v} = \begin{pmatrix} a \\ b \end{pmatrix} \Rightarrow \vec{v} \oplus
+$$\vec{v} = \begin{pmatrix} a \\ b \end{pmatrix} \Rightarrow \vec{v} +
 (-\vec{v}) =\begin{pmatrix} a \\ b \end{pmatrix} + \begin{pmatrix} -a \\ -b
 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} = \vec{0}.$$
 
