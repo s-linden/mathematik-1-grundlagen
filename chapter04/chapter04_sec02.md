@@ -197,11 +197,11 @@ ist das **Distributivgesetz**. Es gelten für alle Vektoren $\vec{a}, \vec{b},
 \vec{c} \in \mathbb{R}^n$ die beiden Distributivgesetze
 
 $\begin{align*}
-(\vec{a}+\vec{b})\cdot\vec{c} &= \vec{a}\cdot\vec{c} + \vec{a}\cdot\vec{c} \\
+(\vec{a}+\vec{b})\cdot\vec{c} &= \vec{a}\cdot\vec{c} + \vec{b}\cdot\vec{c} \\
 \vec{a}\cdot(\vec{b}+\vec{c}) &= \vec{a}\cdot\vec{b} + \vec{a}\cdot\vec{c} \\
 \end{align*}$
 
-Aufgrund der beiden letzten Eigenschaften, dem gemischten Assoziativgesetzt und
+Aufgrund der beiden letzten Eigenschaften, dem gemischten Assoziativgesetz und
 dem Distributivgesetz, wird das Skalarprodukt **bilinear** genannt.
 
 Wir fassen zusammen: Das Skalarprodukt ist eine positiv definite, symmetrische
