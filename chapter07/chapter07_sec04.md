@@ -27,12 +27,12 @@ Ein lineares Gleichungssystem kann kompakt in Matrixform dargestellt werden.
 Betrachten wir ein allgemeines lineares Gleichungssystem mit $n$ Gleichungen und
 $n$ Unbekannten:
 
-\begin{align*}
+$\begin{align*}
 a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n &= b_1 \\
 a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n &= b_2 \\
 \vdots \\
 a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n &= b_n.
-\end{align*}
+\end{align*}$
 
 Dies lässt sich in kompakter Matrixschreibweise darstellen als:
 

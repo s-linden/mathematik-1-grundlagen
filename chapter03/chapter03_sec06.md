@@ -74,10 +74,10 @@ s_2 \cdot \begin{pmatrix} 3 \\ 1 \end{pmatrix} =
 Wir können die Gleichung komponentenweise in Form eines linearen
 Gleichungssystems hinschreiben:
 
-\begin{align*}
+$\begin{align*}
 2\cdot s_1 + 3\cdot s_2 &= 19 \\
 -1\cdot s_1 + 1\cdot s_2 &= 3
-\end{align*}
+\end{align*}$
 
 Lösen des Gleichungssystems liefert $s_1 = 2$ und $s_2 = 5$, also
 

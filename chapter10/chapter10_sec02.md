@@ -20,12 +20,12 @@ $$f(x)=x^{n} \; (n\in\mathbb{N})\; \Rightarrow f'(x)=n\cdot x^{n-1}.$$
 $$f(x)=\sqrt{x} \Rightarrow f'(x)=\frac{1}{2\sqrt{x}}.$$
 
 * Sie können die trigonometrischen Funktionen ableiten, d.h.
-\begin{align*}
+$\begin{align*}
 f(x)=\sin(x) &\Rightarrow f'(x)=\cos(x) \\ 
 f(x)=\cos(x) &\Rightarrow f'(x)=-\sin(x) \\ 
 f(x)=\tan(x) &\Rightarrow f'(x)=\frac{1}{\cos^2(x)} \\ 
 f(x)=\cot(x) &\Rightarrow f'(x)=-\frac{1}{\sin^2(x)} \\ 
-\end{align*}
+\end{align*}$
 * Sie können die Exponentialfunktion ableiten, d.h. 
 
 $$f(x)=e^{x}=\exp(x) \Rightarrow f'(x)=e^{x}=\exp(x).$$
@@ -44,27 +44,27 @@ $f(x) = x^2$. Zunächst berechnen wir die Ableitung an einer einzelnen Stelle,
 beispielsweise für $x_1 = 2$. Dazu bilden wir den Grenzwert der Folge der
 Differentialquotienten:
 
-\begin{align*}
+$\begin{align*}
 f'(2)
 &= \lim_{x_2 \to 2} \frac{f(x_2) - f(2)}{x_2 - 2} = \\
 &= \lim_{x_2 \to 2} \frac{x_2^2 - 4}{x_2 - 2} = \\
 &= \lim_{x_2 \to 2} \frac{(x_2 - 2) \cdot (x_2 + 2)}{x_2 - 2} = \\
 &= \lim_{x_2 \to 2} x_2 + 2 = \\
 &= 4.
-\end{align*}
+\end{align*}$
 
 Jetzt verallgemeinern wir die Grenzwertbildung auf beliebige Stellen
 $x\in\mathbb{R}$. Die Vorgehensweise zur Berechnung des Grenzwertes bleibt dabei
 gleich:
 
-\begin{align*}
+$\begin{align*}
 f'(x)
 &= \lim_{x_2 \to x} \frac{f(x_2) - f(x)}{x_2 - x} = \\
 &= \lim_{x_2 \to x} \frac{x_2^2 - x^2}{x_2 - x} = \\
 &= \lim_{x_2 \to x} \frac{(x_2 - x) \cdot (x_2 + x)}{x_2 - x} = \\
 &= \lim_{x_2 \to x} x_2 + x = \\
 &= 2x.
-\end{align*}
+\end{align*}$
 
 Wir haben also zu jeder Stelle $x\in\mathbb{R}$ einen Wert für die Ableitung
 $f'(x)$ an dieser Stelle gefunden, nämlich $f'(x) = 2x$. Damit ist $f'$ eine
@@ -121,12 +121,12 @@ berechnet werden:
 $$f(x) = x^{\frac{1}{2}} \Rightarrow f'(x) = \frac{1}{2} x^{-\frac{1}{2}} = \frac{1}{2} \frac{1}{x^{\frac{1}{2}}} = \frac{1}{2}\frac{1}{\sqrt{x}}.$$
 
 Die Liste der Ableitungen der trigonometrischen Funktionen lautet:
-\begin{align*}
+$\begin{align*}
 f(x)=\sin(x) &\Rightarrow f'(x)=\cos(x) \\
 f(x)=\cos(x) &\Rightarrow f'(x)=-\sin(x) \\
 f(x)=\tan(x) &\Rightarrow f'(x)=\frac{1}{\cos^2(x)} \\
 f(x)=\cot(x) &\Rightarrow f'(x)=-\frac{1}{\sin^2(x)} \\
-\end{align*}
+\end{align*}$
 
 Am einfachsten lässt sich die Exponentialfunktion ableiten, sie bleibt sie
 selbst.

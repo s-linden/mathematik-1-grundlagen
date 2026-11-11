@@ -16,10 +16,10 @@ Betrachtungsweise von Funktionsgrenzwerten.
 \lim_{x\rightarrow x_0} f(x) = F \quad \text{ oder } \quad f(x)\rightarrow F \text{ für } x \rightarrow x_0. 
 \end{equation*}
 * Sie können Funktionsgrenzwerte von links und von rechts unterscheiden. Mit Funktionsgrenzwert von links meint man, dass man nur Zahlenfolgen betrachtet, für die $(x_n)$ kleiner als $x_0$ ist und die sich $x_0$ von links annähern. Umgekehrt meint der Funktionsgrenzwert von rechts, das man nur Zahlenfolgen $(x_n)$ nimmt, die sich $x_0$ von rechts annähern. Man verwendet die beiden Schreibweisen
-\begin{align*}
+$\begin{align*}
 \text{linksseitig:} \quad \lim_{x\rightarrow x_0^{\textcolor{blue}{-}}} f(x) = F \quad &\text{ bzw.} \quad \lim_{x\textcolor{blue}{\nearrow} x_0} f(x) = F \\
 \text{rechtsseitig:} \quad \lim_{x\rightarrow x_0^{\textcolor{blue}{+}}} f(x) = F \quad &\text{ bzw.} \quad \lim_{x\textcolor{blue}{\searrow} x_0} f(x) = F 
-\end{align*}
+\end{align*}$
 * Sie kennen die Rechenregeln für Funktionsgrenzwerte, also wenn $f$ und $g$ Funktionen sind mit $\lim_{x\rightarrow x_0}f(x)=F$ und $\lim_{x\rightarrow x_0}g(x)=G$, dann gilt
     * Addition: $\lim_{x\rightarrow x_0} (f(x)+g(x)) = F+G$
     * Subtraktion: $\lim_{x\rightarrow x_0} (f(x)-g(x)) = F-G$

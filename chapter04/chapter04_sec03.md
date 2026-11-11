@@ -130,11 +130,11 @@ Da aber $\vec{c} = \vec{a} - \vec{b}$ gilt, können wir mit Hilfe der 2.
 binomischen Formel den Term $|\vec{c}|^2$ durch das Skalarprodukt von
 $(\vec{a}-\vec{b})$ mit sich selbst ersetzen:
 
-\begin{align*}
+$\begin{align*}
 |\vec{c}|^2 &= |\vec{a}-\vec{b}|^2 = \\
 &= (\vec{a}-\vec{b}) \cdot (\vec{a}-\vec{b}) = \\
 &= \vec{a}\cdot\vec{a} - 2\cdot\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{b}.
-\end{align*}
+\end{align*}$
 
 Letzteres setzen wir nun auf der linken Seite von Gleichung
 {eq}`chap04sec03eq01` ein:
