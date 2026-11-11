@@ -167,6 +167,8 @@ Also gleiche Richtung durch gemeinsamen Punkt Q, also eine Linie. Längen
 
 $$\left|PQ\right|:\left|QR\right|=1:1$$
 
+Betrag von $\overrightarrow{PQ}$ (nicht gefragt): $\left|\overrightarrow{PQ}\right|=\sqrt{35}\approx 5{,}92$
+
 ```{dropdown} Lösungsweg
 $$
 \begin{aligned}
@@ -182,6 +184,10 @@ $$\overrightarrow{PQ}=\overrightarrow{QR}=\begin{pmatrix} 1 \\ 5 \\ -3 \end{pmat
 Also gleiche Richtung durch gemeinsamen Punkt Q, also eine Linie. Längen
 
 $$\left|PQ\right|:\left|QR\right|=1:1$$
+
+Betrag von $\overrightarrow{PQ}$ (nicht gefragt):
+
+$$\left|\overrightarrow{PQ}\right|=\sqrt{{1}^{2}+{5}^{2}+{(-3)}^{2}}=\sqrt{35}\approx 5{,}92$$
 ```
 ````
 
@@ -218,18 +224,26 @@ Damit:
 
 a)
 
-$$\overrightarrow{AB}=\begin{pmatrix} -2 \\ 4 \end{pmatrix},\quad d(A,\ B)=\sqrt{{(-2)}^{2}+{4}^{2}}=\sqrt{20},\quad M=\begin{pmatrix} 7 \\ 11 \end{pmatrix}+\begin{pmatrix} -1 \\ 2 \end{pmatrix}=\begin{pmatrix} 6 \\ 13 \end{pmatrix}$$
+$$\overrightarrow{AB}=\begin{pmatrix} -2 \\ 4 \end{pmatrix},\quad d(A,\ B)=\sqrt{{(-2)}^{2}+{4}^{2}}=\sqrt{20}$$
+
+$$M=A+\frac{1}{2}\overrightarrow{AB}=\begin{pmatrix} 7 \\ 11 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} -2 \\ 4 \end{pmatrix}=\begin{pmatrix} 7 \\ 11 \end{pmatrix}+\begin{pmatrix} -1 \\ 2 \end{pmatrix}=\begin{pmatrix} 6 \\ 13 \end{pmatrix}$$
 
 b)
 
-$$\overrightarrow{AB}=\begin{pmatrix} 12 \\ 4 \end{pmatrix},\quad d(A,\ B)=\sqrt{{12}^{2}+{4}^{2}}=\sqrt{160},\quad M=\begin{pmatrix} -8 \\ -3 \end{pmatrix}+\begin{pmatrix} 6 \\ 2 \end{pmatrix}=\begin{pmatrix} -2 \\ -1 \end{pmatrix}$$
+$$\overrightarrow{AB}=\begin{pmatrix} 12 \\ 4 \end{pmatrix},\quad d(A,\ B)=\sqrt{{12}^{2}+{4}^{2}}=\sqrt{160}$$
+
+$$M=A+\frac{1}{2}\overrightarrow{AB}=\begin{pmatrix} -8 \\ -3 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 12 \\ 4 \end{pmatrix}=\begin{pmatrix} -8 \\ -3 \end{pmatrix}+\begin{pmatrix} 6 \\ 2 \end{pmatrix}=\begin{pmatrix} -2 \\ -1 \end{pmatrix}$$
 
 c)
 
-$$\overrightarrow{AB}=\begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix},\quad d(A,\ B)=\sqrt{{2}^{2}+{2}^{2}+{2}^{2}}=\sqrt{12},\quad M=\begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}+\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}=\begin{pmatrix} 2 \\ 3 \\ 4 \end{pmatrix}$$
+$$\overrightarrow{AB}=\begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix},\quad d(A,\ B)=\sqrt{{2}^{2}+{2}^{2}+{2}^{2}}=\sqrt{12}$$
+
+$$M=A+\frac{1}{2}\overrightarrow{AB}=\begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}+\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}=\begin{pmatrix} 2 \\ 3 \\ 4 \end{pmatrix}$$
 
 d)
 
-$$\overrightarrow{AB}=\begin{pmatrix} 4 \\ -2 \\ -8 \end{pmatrix},\quad d(A,\ B)=\sqrt{{4}^{2}+{(-2)}^{2}+{(-8)}^{2}}=\sqrt{84},\quad M=\begin{pmatrix} -1 \\ -2 \\ 3 \end{pmatrix}+\begin{pmatrix} 2 \\ -1 \\ -4 \end{pmatrix}=\begin{pmatrix} 1 \\ -3 \\ -1 \end{pmatrix}$$
+$$\overrightarrow{AB}=\begin{pmatrix} 4 \\ -2 \\ -8 \end{pmatrix},\quad d(A,\ B)=\sqrt{{4}^{2}+{(-2)}^{2}+{(-8)}^{2}}=\sqrt{84}$$
+
+$$M=A+\frac{1}{2}\overrightarrow{AB}=\begin{pmatrix} -1 \\ -2 \\ 3 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 4 \\ -2 \\ -8 \end{pmatrix}=\begin{pmatrix} -1 \\ -2 \\ 3 \end{pmatrix}+\begin{pmatrix} 2 \\ -1 \\ -4 \end{pmatrix}=\begin{pmatrix} 1 \\ -3 \\ -1 \end{pmatrix}$$
 ```
 ````
