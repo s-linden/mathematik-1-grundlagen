@@ -183,13 +183,14 @@ $s\in\mathbb{R}$, dann gilt
 $$(s\cdot\vec{a})\cdot\vec{b} = s\cdot (\vec{a}\cdot\vec{b}) = \vec{a}\cdot
 (s\cdot\vec{b}).$$
 
-Ein richtiges Assoziativgesetz gilt für das Skalarprodukt nicht. Im Allgemeinen
-gilt also
+Ein Assoziativgesetz gibt es für das Skalarprodukt nicht, denn
+$\vec{a}\cdot\vec{b}$ ist eine Zahl. Klammern darf man deshalb nicht
+verschieben. Im Allgemeinen gilt
 
 $$(\vec{a}\cdot\vec{b})\cdot\vec{c} \textcolor{red}{\neq}
-\vec{a}\cdot(\vec{b}\cdot\vec{c}).$$
+\vec{a}\cdot(\vec{b}\cdot\vec{c}):$$
 
-Das Skalarprodukt ist **nicht assoziativ**.
+Links steht ein Vielfaches von $\vec{c}$, rechts ein Vielfaches von $\vec{a}$.
 
 Die letzte Eigenschaft, mit der wir uns in diesem Kapitel beschäftigen wollen,
 ist das **Distributivgesetz**. Es gelten für alle Vektoren $\vec{a}, \vec{b},
