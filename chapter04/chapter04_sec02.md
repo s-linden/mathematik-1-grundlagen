@@ -167,10 +167,10 @@ $$\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a},$$
 
 was auch leicht nachgerechnet werden kann:
 
-\begin{align*} \vec{a}\cdot\vec{b} &= a_1\cdot b_1 + a_2\cdot b_2 + \ldots +
+$\begin{align*} \vec{a}\cdot\vec{b} &= a_1\cdot b_1 + a_2\cdot b_2 + \ldots +
 a_n\cdot b_n =\\
 &= b_1\cdot a_1 + b_2\cdot a_2 + \ldots + b_n\cdot a_n = \vec{b}\cdot\vec{a}\\
-\end{align*}
+\end{align*}$
 
 Es überträgt sich sozusagen die Symmetrie der "normalen" Multiplikation von
 den reellen Zahlen auf das Skalarprodukt.
