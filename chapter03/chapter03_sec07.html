@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Übungen zum Selbststudium</a></li>
@@ -637,6 +637,7 @@
 <p>Also gleiche Richtung durch gemeinsamen Punkt Q, also eine Linie. Längen</p>
 <div class="math notranslate nohighlight">
 \[\left|PQ\right|:\left|QR\right|=1:1\]</div>
+<p>Betrag von <span class="math notranslate nohighlight">\(\overrightarrow{PQ}\)</span> (nicht gefragt): <span class="math notranslate nohighlight">\(\left|\overrightarrow{PQ}\right|=\sqrt{35}\approx 5{,}92\)</span></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -653,6 +654,9 @@
 <p class="sd-card-text">Also gleiche Richtung durch gemeinsamen Punkt Q, also eine Linie. Längen</p>
 <div class="math notranslate nohighlight">
 \[\left|PQ\right|:\left|QR\right|=1:1\]</div>
+<p class="sd-card-text">Betrag von <span class="math notranslate nohighlight">\(\overrightarrow{PQ}\)</span> (nicht gefragt):</p>
+<div class="math notranslate nohighlight">
+\[\left|\overrightarrow{PQ}\right|=\sqrt{{1}^{2}+{5}^{2}+{(-3)}^{2}}=\sqrt{35}\approx 5{,}92\]</div>
 </div>
 </details></div>
 <div class="miniexercise admonition">
@@ -678,16 +682,24 @@
 <p class="sd-card-text">Damit:</p>
 <p class="sd-card-text">a)</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\overrightarrow{AB}=\begin{pmatrix} -2 \\ 4 \end{pmatrix},\quad d(A,\ B)=\sqrt{{(-2)}^{2}+{4}^{2}}=\sqrt{20},\quad M=\begin{pmatrix} 7 \\ 11 \end{pmatrix}+\begin{pmatrix} -1 \\ 2 \end{pmatrix}=\begin{pmatrix} 6 \\ 13 \end{pmatrix}\end{split}\]</div>
+\[\begin{split}\overrightarrow{AB}=\begin{pmatrix} -2 \\ 4 \end{pmatrix},\quad d(A,\ B)=\sqrt{{(-2)}^{2}+{4}^{2}}=\sqrt{20}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}M=A+\frac{1}{2}\overrightarrow{AB}=\begin{pmatrix} 7 \\ 11 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} -2 \\ 4 \end{pmatrix}=\begin{pmatrix} 7 \\ 11 \end{pmatrix}+\begin{pmatrix} -1 \\ 2 \end{pmatrix}=\begin{pmatrix} 6 \\ 13 \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">b)</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\overrightarrow{AB}=\begin{pmatrix} 12 \\ 4 \end{pmatrix},\quad d(A,\ B)=\sqrt{{12}^{2}+{4}^{2}}=\sqrt{160},\quad M=\begin{pmatrix} -8 \\ -3 \end{pmatrix}+\begin{pmatrix} 6 \\ 2 \end{pmatrix}=\begin{pmatrix} -2 \\ -1 \end{pmatrix}\end{split}\]</div>
+\[\begin{split}\overrightarrow{AB}=\begin{pmatrix} 12 \\ 4 \end{pmatrix},\quad d(A,\ B)=\sqrt{{12}^{2}+{4}^{2}}=\sqrt{160}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}M=A+\frac{1}{2}\overrightarrow{AB}=\begin{pmatrix} -8 \\ -3 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 12 \\ 4 \end{pmatrix}=\begin{pmatrix} -8 \\ -3 \end{pmatrix}+\begin{pmatrix} 6 \\ 2 \end{pmatrix}=\begin{pmatrix} -2 \\ -1 \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">c)</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\overrightarrow{AB}=\begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix},\quad d(A,\ B)=\sqrt{{2}^{2}+{2}^{2}+{2}^{2}}=\sqrt{12},\quad M=\begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}+\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}=\begin{pmatrix} 2 \\ 3 \\ 4 \end{pmatrix}\end{split}\]</div>
+\[\begin{split}\overrightarrow{AB}=\begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix},\quad d(A,\ B)=\sqrt{{2}^{2}+{2}^{2}+{2}^{2}}=\sqrt{12}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}M=A+\frac{1}{2}\overrightarrow{AB}=\begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 2 \\ 2 \\ 2 \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}+\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}=\begin{pmatrix} 2 \\ 3 \\ 4 \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">d)</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\overrightarrow{AB}=\begin{pmatrix} 4 \\ -2 \\ -8 \end{pmatrix},\quad d(A,\ B)=\sqrt{{4}^{2}+{(-2)}^{2}+{(-8)}^{2}}=\sqrt{84},\quad M=\begin{pmatrix} -1 \\ -2 \\ 3 \end{pmatrix}+\begin{pmatrix} 2 \\ -1 \\ -4 \end{pmatrix}=\begin{pmatrix} 1 \\ -3 \\ -1 \end{pmatrix}\end{split}\]</div>
+\[\begin{split}\overrightarrow{AB}=\begin{pmatrix} 4 \\ -2 \\ -8 \end{pmatrix},\quad d(A,\ B)=\sqrt{{4}^{2}+{(-2)}^{2}+{(-8)}^{2}}=\sqrt{84}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}M=A+\frac{1}{2}\overrightarrow{AB}=\begin{pmatrix} -1 \\ -2 \\ 3 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 4 \\ -2 \\ -8 \end{pmatrix}=\begin{pmatrix} -1 \\ -2 \\ 3 \end{pmatrix}+\begin{pmatrix} 2 \\ -1 \\ -4 \end{pmatrix}=\begin{pmatrix} 1 \\ -3 \\ -1 \end{pmatrix}\end{split}\]</div>
 </div>
 </details></div>
 </section>
