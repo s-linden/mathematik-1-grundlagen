@@ -21,7 +21,6 @@
 </style>
 </head>
 <body>
-<h1>Richtungswinkel eines Vektors <i>a</i></h1>
 <div class="bar">
   <button id="bA" onclick="toggle('zeigeA')">Winkel α (1-Achse)</button>
   <button id="bB" onclick="toggle('zeigeB')">Winkel β (2-Achse)</button>
@@ -35,14 +34,7 @@
   <label>a<sub>3</sub> = <input type="number" id="i3" step="0.5"></label>
   <span class="werte" id="werte"></span>
 </div>
-<div class="bar legend">
-  <span><i class="sw" style="background:#333"></i>Vektor <i>a</i></span>
-  <span><i class="sw dash"></i>Quader aus den Komponenten</span>
-  <span><i class="sw" style="background:#D32F2F"></i>α</span>
-  <span><i class="sw" style="background:#2E7D32"></i>β</span>
-  <span><i class="sw" style="background:#1565C0"></i>γ</span>
-  <span class="hinweis">Spitze von <i>a</i> ziehen: parallel zur 1-2-Ebene; nochmal anklicken, dann in 3-Richtung.</span>
-</div>
+<div class="hinweis">Spitze von <i>a</i> ziehen: parallel zur 1-2-Ebene; nochmal anklicken, dann in 3-Richtung.</div>
 <div id="ggb"></div>
 
 <script>
@@ -198,6 +190,8 @@ function setupAxes(){
     .replace(/<axesColored[^>]*\/>/, "")
     .replace(/(<evSettings[^>]*\/>)/, '$1\n\t<axesColored val="false"/>'));
   api.setXML(xml);
+  // nur die 3D-Ansicht, ohne Algebra-Fenster
+  api.setPerspective("T");
 }
 
 // 1 zum Betrachter (nach links unten), 2 nach rechts, 3 nach oben
@@ -245,7 +239,7 @@ function saveGgb(){
 new GGBApplet({
   appName: "3d",
   width: Math.max(500, window.innerWidth - 24),
-  height: Math.max(420, window.innerHeight - 150),
+  height: Math.max(420, window.innerHeight - 110),
   showToolBar: false,
   showAlgebraInput: false,
   showMenuBar: false,
