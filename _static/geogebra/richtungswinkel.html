@@ -198,6 +198,8 @@ function setupAxes(){
     .replace(/<axesColored[^>]*\/>/, "")
     .replace(/(<evSettings[^>]*\/>)/, '$1\n\t<axesColored val="false"/>'));
   api.setXML(xml);
+  // nur die 3D-Ansicht, ohne Algebra-Fenster
+  api.setPerspective("T");
 }
 
 // 1 zum Betrachter (nach links unten), 2 nach rechts, 3 nach oben
