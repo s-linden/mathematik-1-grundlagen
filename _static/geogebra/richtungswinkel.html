@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Richtungswinkel eines Vektors</title>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; padding: 12px; background: #fafafa; color: #222; }
+  h1 { font-size: 1.2rem; margin: 0 0 8px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; align-items: center; }
+  button { padding: 6px 10px; border: 1px solid #bbb; background: #fff; border-radius: 6px; cursor: pointer; }
+  button:hover { background: #eee; }
+  button.on { background: #e3e3e3; border-color: #888; }
+  input[type=number] { width: 4.5em; padding: 4px; border: 1px solid #bbb; border-radius: 6px; }
+  .legend span { margin-right: 14px; white-space: nowrap; }
+  .sw { display: inline-block; width: 14px; height: 4px; vertical-align: middle; margin-right: 4px; }
+  .dash { background: repeating-linear-gradient(90deg, #888 0 4px, transparent 4px 7px); }
+  .werte { font-variant-numeric: tabular-nums; }
+  .hinweis { font-size: 0.85rem; color: #555; }
+</style>
+</head>
+<body>
+<h1>Richtungswinkel eines Vektors <i>a</i></h1>
+<div class="bar">
+  <button id="bA" onclick="toggle('zeigeA')">Winkel α (1-Achse)</button>
+  <button id="bB" onclick="toggle('zeigeB')">Winkel β (2-Achse)</button>
+  <button id="bG" onclick="toggle('zeigeG')">Winkel γ (3-Achse)</button>
+  <button onclick="view()">Standardansicht</button>
+  <button onclick="saveGgb()">Als .ggb speichern</button>
+</div>
+<div class="bar">
+  <label>a<sub>1</sub> = <input type="number" id="i1" step="0.5"></label>
+  <label>a<sub>2</sub> = <input type="number" id="i2" step="0.5"></label>
+  <label>a<sub>3</sub> = <input type="number" id="i3" step="0.5"></label>
+  <span class="werte" id="werte"></span>
+</div>
+<div class="bar legend">
+  <span><i class="sw" style="background:#333"></i>Vektor <i>a</i></span>
+  <span><i class="sw dash"></i>Quader aus den Komponenten</span>
+  <span><i class="sw" style="background:#D32F2F"></i>α</span>
+  <span><i class="sw" style="background:#2E7D32"></i>β</span>
+  <span><i class="sw" style="background:#1565C0"></i>γ</span>
+  <span class="hinweis">Spitze von <i>a</i> ziehen: parallel zur 1-2-Ebene; nochmal anklicken, dann in 3-Richtung.</span>
+</div>
+<div id="ggb"></div>
+
+<script>
+const CMDS = [
+  "O = (0, 0, 0)",
+  // Endpunkt des Vektors: frei beweglich
+  "A = (2, 3, 2.5)",
+  "a = Vector(O, A)",
+  // nur eine 0 am Ursprung statt Skala
+  "t0 = Text(\"0\", (0, -0.3, -0.35))",
+  "aL = sqrt(x(A)^2 + y(A)^2 + z(A)^2)",
+
+  // --- Quader aus den Projektionen auf die Achsen (grau gestrichelt) ---
+  "A1 = (x(A), 0, 0)",
+  "A2 = (0, y(A), 0)",
+  "A3 = (0, 0, z(A))",
+  "A12 = (x(A), y(A), 0)",
+  "A13 = (x(A), 0, z(A))",
+  "A23 = (0, y(A), z(A))",
+  "q1 = Segment(O, A1)",
+  "q2 = Segment(O, A2)",
+  "q3 = Segment(O, A3)",
+  "q4 = Segment(A1, A12)",
+  "q5 = Segment(A1, A13)",
+  "q6 = Segment(A2, A12)",
+  "q7 = Segment(A2, A23)",
+  "q8 = Segment(A3, A13)",
+  "q9 = Segment(A3, A23)",
+  "q10 = Segment(A12, A)",
+  "q11 = Segment(A13, A)",
+  "q12 = Segment(A23, A)",
+
+  // --- Richtungswinkel ---
+  "wA = acos(x(A) / aL)",
+  "wB = acos(y(A) / aL)",
+  "wG = acos(z(A) / aL)",
+  // Radius der Winkelbögen
+  "rw = Min(1, 0.35 aL)",
+  // Einheitsvektoren senkrecht zur jeweiligen Achse in der Ebene aus Achse und a
+  "u1 = UnitVector(Vector((0, y(A), z(A))))",
+  "u2 = UnitVector(Vector((x(A), 0, z(A))))",
+  "u3 = UnitVector(Vector((x(A), y(A), 0)))",
+  // Winkelsektoren als Polygone (liegen in der Ebene aus Achse und a)
+  "sA = Polygon(Join({O}, Sequence(O + rw * (cos(t wA / 40) Vector((1, 0, 0)) + sin(t wA / 40) u1), t, 0, 40)))",
+  "sB = Polygon(Join({O}, Sequence(O + rw * (cos(t wB / 40) Vector((0, 1, 0)) + sin(t wB / 40) u2), t, 0, 40)))",
+  "sG = Polygon(Join({O}, Sequence(O + rw * (cos(t wG / 40) Vector((0, 0, 1)) + sin(t wG / 40) u3), t, 0, 40)))",
+  "tA = Text(\"\\LARGE \\alpha\", O + 1.35 rw * (cos(wA / 2) Vector((1, 0, 0)) + sin(wA / 2) u1), false, true)",
+  "tB = Text(\"\\LARGE \\beta\", O + 1.35 rw * (cos(wB / 2) Vector((0, 1, 0)) + sin(wB / 2) u2), false, true)",
+  "tG = Text(\"\\LARGE \\gamma\", O + 1.35 rw * (cos(wG / 2) Vector((0, 0, 1)) + sin(wG / 2) u3), false, true)",
+  // rechtwinkliges Dreieck: von der Spitze senkrecht auf die Achse (cos = a_i / |a|)
+  "hA = Segment(A, A1)",
+  "hB = Segment(A, A2)",
+  "hG = Segment(A, A3)",
+
+  // Schalter
+  "zeigeA = false",
+  "zeigeB = false",
+  "zeigeG = false",
+];
+
+const STYLE = {
+  a:  ["#333333", 4, 0],
+  hA: ["#D32F2F", 2, 1],
+  hB: ["#2E7D32", 2, 1],
+  hG: ["#1565C0", 2, 1],
+};
+for (let i = 1; i <= 12; i++) STYLE["q" + i] = ["#888888", 2, 1];
+
+const SECT = { sA: "#D32F2F", sB: "#2E7D32", sG: "#1565C0" };
+const TXT  = { tA: "#D32F2F", tB: "#2E7D32", tG: "#1565C0" };
+const COND = { zeigeA: ["sA", "tA", "hA"], zeigeB: ["sB", "tB", "hB"], zeigeG: ["sG", "tG", "hG"] };
+const BTN  = { zeigeA: "bA", zeigeB: "bB", zeigeG: "bG" };
+
+function hex(h){ return [1,3,5].map(i => parseInt(h.substr(i,2),16)); }
+
+let api;
+
+function build(g) {
+  api = g;
+  CMDS.forEach(c => api.evalCommand(c));
+  for (const [n,[col,th,dash]] of Object.entries(STYLE)) {
+    api.setColor(n, ...hex(col));
+    api.setLineThickness(n, th);
+    api.setLineStyle(n, dash);
+    api.setLabelVisible(n, false);
+  }
+  // Hilfsobjekte unsichtbar
+  ["aL", "wA", "wB", "wG", "rw", "u1", "u2", "u3"].forEach(n => api.setVisible(n, false));
+  ["A1", "A2", "A3", "A12", "A13", "A23"].forEach(n => {
+    api.setColor(n, 136, 136, 136);
+    api.setPointSize(n, 2);
+    api.setLabelVisible(n, false);
+    api.setFixed(n, true, false);
+  });
+  // Komponenten a1, a2, a3 an den Achsen beschriften
+  [["A1", "a_1"], ["A2", "a_2"], ["A3", "a_3"]].forEach(([n, c]) => {
+    api.setCaption(n, "$" + c + "$");
+    api.setLabelStyle(n, 3);
+    api.setLabelVisible(n, true);
+  });
+  api.setColor("O", 0, 0, 0);
+  api.setPointSize("O", 2);
+  api.setLabelVisible("O", false);
+  api.setFixed("O", true, false);
+
+  api.setColor("A", 51, 51, 51);
+  api.setPointSize("A", 5);
+  api.setLabelVisible("A", false);
+  api.setCaption("a", "$\\large\\boldsymbol{\\vec{a}}$");
+  api.setLabelStyle("a", 3);
+  api.setLabelVisible("a", true);
+
+  for (const [n, col] of Object.entries(SECT)) {
+    api.setColor(n, ...hex(col));
+    api.setFilling(n, 0.35);
+    api.setLineThickness(n, 1);
+    api.setLabelVisible(n, false);
+    api.evalCommand(`SetLabelMode(${n}, 0)`);
+  }
+  // Seitenkanten der Sektor-Polygone ausblenden (sonst viele Labels/Segmente)
+  api.getAllObjectNames("segment").forEach(n => {
+    if (!(n in STYLE)) { api.setVisible(n, false); }
+  });
+  for (const [n, col] of Object.entries(TXT)) {
+    api.setColor(n, ...hex(col));
+    api.setFixed(n, true, false);
+  }
+  api.setFixed("t0", true, false);
+  for (const [b, objs] of Object.entries(COND)) {
+    api.setVisible(b, false);
+    objs.forEach(n => api.evalCommand(`SetConditionToShowObject(${n}, ${b})`));
+  }
+
+  setupAxes();
+  api.registerObjectUpdateListener("A", "update");
+  Object.keys(COND).forEach(b => api.registerObjectUpdateListener(b, "update"));
+  ["i1", "i2", "i3"].forEach(id => document.getElementById(id).addEventListener("change", fromInputs));
+  view();
+  update();
+}
+
+// Achsen heißen 1, 2, 3 und sind schwarz; ohne Grundebene und Gitter
+function setupAxes(){
+  let xml = api.getXML();
+  xml = xml.replace(/(<euclidianView3D>[\s\S]*?<\/euclidianView3D>)/, ev => ev
+    .replace(/(<axis id="0"[^>]*label=")[^"]*/, "$11")
+    .replace(/(<axis id="1"[^>]*label=")[^"]*/, "$12")
+    .replace(/(<axis id="2"[^>]*label=")[^"]*/, "$13")
+    .replace(/(<axis id="[012]"[^>]*tickStyle=")\d+/g, "$12")
+    .replace(/(<axis id="[012]"[^>]*showNumbers=")true/g, "$1false")
+    .replace(/<plate val="true"\/>/, '<plate val="false"/>')
+    .replace(/<grid val="true"\/>/, '<grid val="false"/>')
+    .replace(/<axesColored[^>]*\/>/, "")
+    .replace(/(<evSettings[^>]*\/>)/, '$1\n\t<axesColored val="false"/>'));
+  api.setXML(xml);
+}
+
+// 1 zum Betrachter (nach links unten), 2 nach rechts, 3 nach oben
+function view(){
+  if (!api) return;
+  api.evalCommand("ZoomIn(-1, -1, -1, 5, 5, 4)");
+  api.evalCommand("SetViewDirection(Vector((-1, -0.45, -0.35)))");
+}
+
+function toggle(n){ api.setValue(n, !api.getValue(n)); }
+
+function fmt(v, d){ return (Math.round(v * 10 ** d) / 10 ** d).toLocaleString("de-DE"); }
+
+function update(){
+  const x = api.getXcoord("A"), y = api.getYcoord("A"), z = api.getZcoord("A");
+  const L = Math.hypot(x, y, z);
+  const deg = n => fmt(api.getValue(n) * 180 / Math.PI, 1) + "°";
+  [["i1", x], ["i2", y], ["i3", z]].forEach(([id, v]) => {
+    const el = document.getElementById(id);
+    if (document.activeElement !== el) el.value = Math.round(v * 100) / 100;
+  });
+  let s = "|a| = " + fmt(L, 2);
+  if (api.getValue("zeigeA")) s += "   α = " + deg("wA");
+  if (api.getValue("zeigeB")) s += "   β = " + deg("wB");
+  if (api.getValue("zeigeG")) s += "   γ = " + deg("wG");
+  document.getElementById("werte").textContent = s;
+  for (const [b, id] of Object.entries(BTN)) document.getElementById(id).classList.toggle("on", !!api.getValue(b));
+}
+
+function fromInputs(){
+  const v = ["i1", "i2", "i3"].map(id => parseFloat(document.getElementById(id).value.replace(",", ".")));
+  if (v.some(isNaN)) return;
+  api.setCoords("A", ...v);
+}
+
+function saveGgb(){
+  api.getBase64(b64 => {
+    const el = document.createElement("a");
+    el.href = "data:application/vnd.geogebra.file;base64," + b64;
+    el.download = "richtungswinkel.ggb";
+    el.click();
+  });
+}
+
+new GGBApplet({
+  appName: "3d",
+  width: Math.max(500, window.innerWidth - 24),
+  height: Math.max(420, window.innerHeight - 150),
+  showToolBar: false,
+  showAlgebraInput: false,
+  showMenuBar: false,
+  showKeyboardOnFocus: false,
+  enableRightClick: true,
+  showResetIcon: true,
+  perspective: "T",
+  appletOnLoad: build
+}, true).inject("ggb");
+</script>
+</body>
+</html>

@@ -216,6 +216,14 @@ $\begin{align*}
 berechnet werden.
 ```
 
+```{raw} html
+<iframe src="../_static/geogebra/richtungswinkel.html"
+width="100%" height="680"
+frameborder="0" scrolling="no"
+title="Interaktive Darstellung der Richtungswinkel">
+</iframe>
+```
+
 ## Zusammenfassung und Ausblick
 
 Kollineare und orthogonale Vektoren, speziell die senkrechten
