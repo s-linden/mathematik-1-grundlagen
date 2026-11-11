@@ -218,7 +218,7 @@ berechnet werden.
 
 ```{raw} html
 <iframe src="../_static/geogebra/richtungswinkel.html"
-width="100%" height="680"
+width="100%" height="640"
 frameborder="0" scrolling="no"
 title="Interaktive Darstellung der Richtungswinkel">
 </iframe>
