@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -535,52 +535,52 @@ Wurzelziehen für komplexe Zahlen.</p>
 <h2>Potenzen von komplexen Zahlen<a class="headerlink" href="#potenzen-von-komplexen-zahlen" title="Link to this heading">#</a></h2>
 <p>Die Potenz einer komplexen Zahl ist – genau wie bei den reellen Zahlen – eine
 Abkürzung für das wiederholte Multiplizieren einer Zahl mit sich selbst.</p>
-<p>\begin{align*}
-z^2 &amp;= z\cdot z \
-z^3 &amp;= z \cdot z \cdot z \
-z^4 &amp;= z \cdot z \cdot z \cdot z \
-z^5 &amp;= z \cdot z \cdot z \cdot z \cdot z\
+<p><span class="math notranslate nohighlight">\(\begin{align*}
+z^2 &amp;= z\cdot z \\
+z^3 &amp;= z \cdot z \cdot z \\
+z^4 &amp;= z \cdot z \cdot z \cdot z \\
+z^5 &amp;= z \cdot z \cdot z \cdot z \cdot z\\
 \vdots
-\end{align*}</p>
+\end{align*}\)</span></p>
 <p>Die Zahl <span class="math notranslate nohighlight">\(z\)</span> heißt Basis und die Anzahl, wie oft die Basis mit sich selbst
 multipliziert wird, heißt Exponent oder Hochzahl. Es gibt auch negative Potenzen:</p>
-<p>\begin{align*}
-z^{-2} &amp;= \frac{1}{z\cdot z} \
-z^{-3} &amp;= \frac{1}{z \cdot z \cdot z} \
-z^{-4} &amp;= \frac{1}{z \cdot z \cdot z \cdot z} \
-z^{-5} &amp;= \frac{1}{z \cdot z \cdot z \cdot z \cdot z}\
+<p><span class="math notranslate nohighlight">\(\begin{align*}
+z^{-2} &amp;= \frac{1}{z\cdot z} \\
+z^{-3} &amp;= \frac{1}{z \cdot z \cdot z} \\
+z^{-4} &amp;= \frac{1}{z \cdot z \cdot z \cdot z} \\
+z^{-5} &amp;= \frac{1}{z \cdot z \cdot z \cdot z \cdot z}\\
 \vdots
-\end{align*}</p>
+\end{align*}\)</span></p>
 <p>Wenn nun konkret eine Potenz einer komplexen Zahl ausgerechnet werden soll, ist
 die Exponentialform am besten geeignet, wie das folgende Beispiel zeigt. Wir
 möchten von der komplexen Zahl <span class="math notranslate nohighlight">\(z = 3e^{\frac{\pi}{4}\mathrm{i}}\)</span> die Potenzen
 bis 4 bilden.</p>
 <p>Für die 2. Potenz erhalten wir zufälligerweise eine rein imaginäre Zahl, wie die
 folgende Rechnung zeigt:</p>
-<p>\begin{align*}
+<p><span class="math notranslate nohighlight">\(\begin{align*}
 z^2
-&amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\
-&amp;= 3^2 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \
-&amp;= 9 , e^{\frac{\pi}{2} \mathrm{i}} \
+&amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
+&amp;= 3^2 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
+&amp;= 9 \, e^{\frac{\pi}{2} \mathrm{i}} \\
 &amp;= 9\mathrm{i}.
-\end{align*}</p>
+\end{align*}\)</span></p>
 <p>Für die 3. Potenz erhalten wir</p>
-<p>\begin{align*}
+<p><span class="math notranslate nohighlight">\(\begin{align*}
 z^3
-&amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\
-&amp;= 3^3 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \
-&amp;= 27 , e^{\frac{3}{4}\pi \mathrm{i}} \
-&amp;\approx -19.0919 + 19.0919 , \mathrm{i}.
-\end{align*}</p>
+&amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
+&amp;= 3^3 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
+&amp;= 27 \, e^{\frac{3}{4}\pi \mathrm{i}} \\
+&amp;\approx -19.0919 + 19.0919 \, \mathrm{i}.
+\end{align*}\)</span></p>
 <p>Und die 4. Potenz ist zufälligerweise rein reell:</p>
-<p>\begin{align*}
+<p><span class="math notranslate nohighlight">\(\begin{align*}
 z^4
-&amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\
-&amp;= 3^4 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \
-&amp;= 81 \cdot e^{\pi \mathrm{i}} \
-&amp;= 81 \cdot (-1) \
+&amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
+&amp;= 3^4 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
+&amp;= 81 \cdot e^{\pi \mathrm{i}} \\
+&amp;= 81 \cdot (-1) \\
 &amp;= -81.
-\end{align*}</p>
+\end{align*}\)</span></p>
 <p>Zusammengefasst gilt für das Potenzieren von komplexen Zahlen die folgende
 Rechenregel.</p>
 <div class="note admonition">
@@ -635,19 +635,19 @@ Wurzel und teilen das Argument <span class="math notranslate nohighlight">\(53.1
 <div class="math notranslate nohighlight">
 \[z_1 = \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}}.\]</div>
 <p>Zur Kontrolle berechnen wir <span class="math notranslate nohighlight">\(z_1^2\)</span>:</p>
-<p>\begin{align*}
-z_1^2 &amp;= \sqrt{5} , e^{\frac{53.13^{\circ}}{2}\mathrm{i}} \cdot \sqrt{5} , e^{\frac{53.13^{\circ}}{2}\mathrm{i}}\
-&amp;= \sqrt{5}\cdot\sqrt{5}, e^{\left( \frac{53.13^{\circ}}{2} +  \frac{53.13^{\circ}}{2} \right) \mathrm{i}} \
+<p><span class="math notranslate nohighlight">\(\begin{align*}
+z_1^2 &amp;= \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}} \cdot \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}}\\
+&amp;= \sqrt{5}\cdot\sqrt{5}\, e^{\left( \frac{53.13^{\circ}}{2} +  \frac{53.13^{\circ}}{2} \right) \mathrm{i}} \\
 &amp;= 5 e^{53.13^{\circ}\mathrm{i}}.
-\end{align*}</p>
+\end{align*}\)</span></p>
 <p>Und die zweite Lösung? Wenn wir auf das Argument der ersten Lösung <span class="math notranslate nohighlight">\(\varphi_1 =
 \frac{53.13^{\circ}}{2} = 26.565^{\circ}\)</span> den Winkel <span class="math notranslate nohighlight">\(180^{\circ}\)</span> addieren,
 erhalten wir die zweite Lösung. Testen wir, ob das stimmt.</p>
-<p>\begin{align*}
-z_2^2 &amp;= \sqrt{5} , e^{206.565^{\circ}\mathrm{i}} \cdot \sqrt{5} ,  e^{206.565^{\circ}\mathrm{i}}\
-&amp;= \sqrt{5}\cdot\sqrt{5}, e^{\left( 206.565^{\circ} +  206.565^{\circ} \right) \mathrm{i}} \
+<p><span class="math notranslate nohighlight">\(\begin{align*}
+z_2^2 &amp;= \sqrt{5} \, e^{206.565^{\circ}\mathrm{i}} \cdot \sqrt{5} \,  e^{206.565^{\circ}\mathrm{i}}\\
+&amp;= \sqrt{5}\cdot\sqrt{5}\, e^{\left( 206.565^{\circ} +  206.565^{\circ} \right) \mathrm{i}} \\
 &amp;= 5 e^{413.13^{\circ}\mathrm{i}}.
-\end{align*}</p>
+\end{align*}\)</span></p>
 <p>Zunächst sieht es nicht so aus, als ob <span class="math notranslate nohighlight">\(z_2 = 5 \, e^{53.130^{\circ}\mathrm{i}}\)</span>
 gelte. Aber das Argument <span class="math notranslate nohighlight">\(413.13^{\circ}\)</span> ist ja größer als <span class="math notranslate nohighlight">\(360^{\circ}\)</span>.
 Ziehen wir die <span class="math notranslate nohighlight">\(360^{\circ}\)</span> ab, um ein Argument zwischen <span class="math notranslate nohighlight">\(0^{\circ}\)</span> und

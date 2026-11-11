@@ -39,10 +39,10 @@ $$e^{\varphi \mathrm{i}} = \cos(\varphi) + \sin(\varphi)\,\mathrm{i}$$
 gilt. Mit der eulerschen Formel folgt sofort, dass eine komplexe Zahl in
 trigonometrischer Form als
 
-\begin{align*}
+$\begin{align*}
 z &= r \, \left( \cos(\varphi) + \sin(\varphi) \, \mathrm{i}\right) \\
   &= r \, e^{\varphi  \mathrm{i}} \\
-\end{align*}
+\end{align*}$
 
 geschrieben werden kann. Diese Darstellung mit der komplexen Exponentialfunktion
 wird **Exponentialform** genannt.
@@ -119,10 +119,10 @@ Kosinus- und Sinus-Funktion.
 ```{admonition} Wie können Kosinus/Sinus durch komplexe Exponentialfunktionen dargestellt werden?
 :class: note
 Der Kosinus und der Sinus lässt sich folgendermaßen durch komplexe Exponentialfunktionen darstellen:
-\begin{align*}
+$\begin{align*}
 \cos(\varphi) &= \frac{1}{2} \big( e^{\varphi \, \mathrm{i}} + e^{-\varphi \, \mathrm{i}} \big), \\
 \sin(\varphi) &= \frac{1}{2\mathrm{i}} \big( e^{\varphi \, \mathrm{i}} - e^{-\varphi \, \mathrm{i}} \big).
-\end{align*}
+\end{align*}$
 ```
 
 ## Weiteres Lernmaterial

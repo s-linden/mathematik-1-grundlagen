@@ -167,10 +167,10 @@ $$\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a},$$
 
 was auch leicht nachgerechnet werden kann:
 
-\begin{align*} \vec{a}\cdot\vec{b} &= a_1\cdot b_1 + a_2\cdot b_2 + \ldots +
+$\begin{align*} \vec{a}\cdot\vec{b} &= a_1\cdot b_1 + a_2\cdot b_2 + \ldots +
 a_n\cdot b_n =\\
 &= b_1\cdot a_1 + b_2\cdot a_2 + \ldots + b_n\cdot a_n = \vec{b}\cdot\vec{a}\\
-\end{align*}
+\end{align*}$
 
 Es überträgt sich sozusagen die Symmetrie der "normalen" Multiplikation von
 den reellen Zahlen auf das Skalarprodukt.
@@ -183,24 +183,25 @@ $s\in\mathbb{R}$, dann gilt
 $$(s\cdot\vec{a})\cdot\vec{b} = s\cdot (\vec{a}\cdot\vec{b}) = \vec{a}\cdot
 (s\cdot\vec{b}).$$
 
-Ein richtiges Assoziativgesetz gilt für das Skalarprodukt nicht. Im Allgemeinen
-gilt also
+Ein Assoziativgesetz gibt es für das Skalarprodukt nicht, denn
+$\vec{a}\cdot\vec{b}$ ist eine Zahl. Klammern darf man deshalb nicht
+verschieben. Im Allgemeinen gilt
 
 $$(\vec{a}\cdot\vec{b})\cdot\vec{c} \textcolor{red}{\neq}
-\vec{a}\cdot(\vec{b}\cdot\vec{c}).$$
+\vec{a}\cdot(\vec{b}\cdot\vec{c}):$$
 
-Das Skalarprodukt ist **nicht assoziativ**.
+Links steht ein Vielfaches von $\vec{c}$, rechts ein Vielfaches von $\vec{a}$.
 
 Die letzte Eigenschaft, mit der wir uns in diesem Kapitel beschäftigen wollen,
 ist das **Distributivgesetz**. Es gelten für alle Vektoren $\vec{a}, \vec{b},
 \vec{c} \in \mathbb{R}^n$ die beiden Distributivgesetze
 
 $\begin{align*}
-(\vec{a}+\vec{b})\cdot\vec{c} &= \vec{a}\cdot\vec{c} + \vec{a}\cdot\vec{c} \\
+(\vec{a}+\vec{b})\cdot\vec{c} &= \vec{a}\cdot\vec{c} + \vec{b}\cdot\vec{c} \\
 \vec{a}\cdot(\vec{b}+\vec{c}) &= \vec{a}\cdot\vec{b} + \vec{a}\cdot\vec{c} \\
 \end{align*}$
 
-Aufgrund der beiden letzten Eigenschaften, dem gemischten Assoziativgesetzt und
+Aufgrund der beiden letzten Eigenschaften, dem gemischten Assoziativgesetz und
 dem Distributivgesetz, wird das Skalarprodukt **bilinear** genannt.
 
 Wir fassen zusammen: Das Skalarprodukt ist eine positiv definite, symmetrische

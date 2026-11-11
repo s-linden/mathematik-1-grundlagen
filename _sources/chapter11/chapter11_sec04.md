@@ -34,7 +34,7 @@ $$f(x) = 2x^4 + 5x^3 -7x^2 + x +2$$
 
 ist unendlich oft differenzierbar. Die ersten sieben Ableitungen lauten:
 
-\begin{align*}
+$\begin{align*}
 f'(x)      &= 8x^3 + 15x^2 - 14x + 1 \\
 f''(x)     &= 24x^2 + 30x - 14 \\
 f'''(x)    &= 48x + 30 \\
@@ -43,7 +43,7 @@ f^{(5)}(x) &= 0 \\
 f^{(6)}(x) &= 0 \\
 f^{(7)}(x) &= 0 \\
 \vdots\; &= \;\vdots \\
-\end{align*}
+\end{align*}$
 
 ## Monotonie
 

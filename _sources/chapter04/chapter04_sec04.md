@@ -207,11 +207,11 @@ durchführen. Insgesamt erhalten wir die folgenden Formeln.
 Die Winkel, die ein Vektor $\vec{a}=(a_1,a_2,a_3)$ mit den Koordinatenachsen
 bildet, werden als Richtungswinkel bezeichnet. Sie können über die Formeln
 
-\begin{align*}
+$\begin{align*}
 \cos(\alpha) &= \frac{a_1}{|\vec{a}|},\\
 \cos(\beta)  &= \frac{a_2}{|\vec{a}|},\\
 \cos(\gamma) &= \frac{a_3}{|\vec{a}|}
-\end{align*}
+\end{align*}$
 
 berechnet werden.
 ```

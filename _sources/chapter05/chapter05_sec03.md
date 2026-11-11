@@ -35,11 +35,11 @@ einem Beispiel demonstriert.
 
 Gegeben ist das folgende lineare Gleichungssystem:
 
-\begin{align*}
+$\begin{align*}
 3x_1  - 4x_2 - 4x_3 &= -4  \\
 6x_1  - 6x_2 - 7x_3 &= -11 \\
 -3x_1 + 6x_2 + 7x_3 &= 11 \\
-\end{align*}
+\end{align*}$
 
 Wir wollen das lineare Gleichungssystem in die Dreiecksform bringen. Um einen
 besseren Überblick zu behalten, welche Umformungen dabei vorgenommen werden,

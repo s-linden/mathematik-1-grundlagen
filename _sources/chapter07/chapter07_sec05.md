@@ -83,12 +83,12 @@ $$
 
 Diese quadratische Gleichung lösen wir mit der pq-Formel:
 
-\begin{align*}
+$\begin{align*}
 \lambda_{1/2}
 &= \frac{-(-9)}{2} \pm \sqrt{\frac{81}{4} - 14} \\
 &= \frac{9}{2} \pm \sqrt{\frac{81-56}{4}} \\
 &= \frac{9}{2} \pm \frac{5}{2}.
-\end{align*}
+\end{align*}$
 
 Damit erhalten wir die beiden Eigenwerte
 
@@ -143,10 +143,10 @@ $$
 
 lösen. Dies ergibt zwei Gleichungen:
 
-\begin{align*}
+$\begin{align*}
 -1 x + 2 y &= 0 \quad \text{(I)}\\
 2 x - 4 y &= 0 \quad \text{(II)}
-\end{align*}
+\end{align*}$
 
 Gleichung (I) lösen wir nach $x$ auf:
 
@@ -192,10 +192,10 @@ $$
 
 Dies ergibt zwei Gleichungen:
 
-\begin{align*}
+$\begin{align*}
 4 x + 2 y &= 0 \quad \text{(I)}\\
 2 x + 1 y &= 0 \quad \text{(II)}
-\end{align*}
+\end{align*}$
 
 Gleichung (II) lösen wir nach $y$ auf:
 
