@@ -270,7 +270,7 @@ f) $(\vec{p}\times\vec{r})\times\vec{q}$
 ````{admonition} Lösung
 :class: miniexercise, toggle
 
-a) Vektor: $\vec{p}\times\vec{q}=\begin{pmatrix} 3 \\ -2 \\ {\color{red} -1} \end{pmatrix}$
+a) Vektor: $\vec{p}\times\vec{q}=\begin{pmatrix} 3 \\ -2 \\ -1 \end{pmatrix}$
 
 b) Vektor: $\vec{p}\times\vec{r}=\begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}$
 
@@ -287,7 +287,7 @@ a)
 
 Das Vektorprodukt liefert einen Vektor:
 
-$$\vec{p}\times\vec{q}=\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}\times\begin{pmatrix} 0 \\ -1 \\ 2 \end{pmatrix}=\begin{pmatrix} 3 \\ -2 \\ {\color{red} -1} \end{pmatrix}$$
+$$\vec{p}\times\vec{q}=\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}\times\begin{pmatrix} 0 \\ -1 \\ 2 \end{pmatrix}=\begin{pmatrix} 3 \\ -2 \\ -1 \end{pmatrix}$$
 
 b)
 
