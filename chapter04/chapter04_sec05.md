@@ -169,14 +169,14 @@ auf $\vec{a}$ und $\vec{b}$ steht, muss das nicht immer so sein. Das könnte auc
 Zufall gewesen sein. Schauen wir uns also allgemein an, was
 $\vec{n}\cdot\vec{a}$ und $\vec{n}\cdot\vec{b}$ ergeben.
 
-$\begin{align*}
+$$\begin{aligned}
 \vec{n}\cdot\vec{a} &= (\vec{a}\times\vec{b})\cdot\vec{a} =
 \begin{pmatrix}a_2 b_3 - a_3 b_2 \\ a_3 b_1 - a_1 b_3\\a_1 b_2 - a_2 b_1\end{pmatrix}
 \cdot \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} \\
 &= (a_2 b_3 - a_3 b_2)\cdot a_1 + (a_3 b_1 - a_1 b_3)\cdot a_2 + (a_1 b_2 - a_2 b_1)\cdot a_3\\
 &= a_1 a_2 b_3 - a_1 a_3 b_2 + a_2 a_3 b_1 - a_1 a_2 b_3 + a_1 a_2 b_3 - a_2 a_3 b_1 \\
 &= 0
-\end{align*}$
+\end{aligned}$$
 
 Die Rechnung $\vec{n}\cdot\vec{b}$ funktioniert genauso und ergibt ebenfalls $0$.
 

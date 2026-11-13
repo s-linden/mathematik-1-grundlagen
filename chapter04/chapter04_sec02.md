@@ -167,10 +167,10 @@ $$\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a},$$
 
 was auch leicht nachgerechnet werden kann:
 
-$\begin{align*} \vec{a}\cdot\vec{b} &= a_1\cdot b_1 + a_2\cdot b_2 + \ldots +
+$$\begin{aligned} \vec{a}\cdot\vec{b} &= a_1\cdot b_1 + a_2\cdot b_2 + \ldots +
 a_n\cdot b_n =\\
 &= b_1\cdot a_1 + b_2\cdot a_2 + \ldots + b_n\cdot a_n = \vec{b}\cdot\vec{a}\\
-\end{align*}$
+\end{aligned}$$
 
 Es überträgt sich sozusagen die Symmetrie der "normalen" Multiplikation von
 den reellen Zahlen auf das Skalarprodukt.
@@ -196,10 +196,10 @@ Die letzte Eigenschaft, mit der wir uns in diesem Kapitel beschäftigen wollen,
 ist das **Distributivgesetz**. Es gelten für alle Vektoren $\vec{a}, \vec{b},
 \vec{c} \in \mathbb{R}^n$ die beiden Distributivgesetze
 
-$\begin{align*}
+$$\begin{aligned}
 (\vec{a}+\vec{b})\cdot\vec{c} &= \vec{a}\cdot\vec{c} + \vec{b}\cdot\vec{c} \\
 \vec{a}\cdot(\vec{b}+\vec{c}) &= \vec{a}\cdot\vec{b} + \vec{a}\cdot\vec{c} \\
-\end{align*}$
+\end{aligned}$$
 
 Aufgrund der beiden letzten Eigenschaften, dem gemischten Assoziativgesetz und
 dem Distributivgesetz, wird das Skalarprodukt **bilinear** genannt.

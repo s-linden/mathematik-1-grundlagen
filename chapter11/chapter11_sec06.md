@@ -18,12 +18,14 @@ In der Mathematik nennt man einen Punkt, an dem sich das Krümmungsverhalten
 einer Funktion ändert, Wendepunkt. In dem folgenden Beispiel geht der
 Funktionsgraph bei $W$ von einer Rechtskrümmung in eine Linkskrümmung über.
 
-```{figure} pics/inflection_point.png
+```{figure} pics/Inflection_point.png
 ---
 width: 50%
 name: inflection_point
 ---
-Quelle: Wolfgang Dvorak - Eigenes Werk, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=1283725>
+Wendepunkt $W$: Übergang von einer Rechtskrümmung in eine Linkskrümmung
+(Quelle: Wolfgang Dvorak, [Wikimedia
+Commons](https://commons.wikimedia.org/w/index.php?curid=1283725); Lizenz: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/))
 ```
 
 Ist eine Funktion zweimal differenzierbar, dann hat die erste Ableitung bei
@@ -52,7 +54,8 @@ zwei Sattelpunkten.
 width: 50%
 name: Two_saddle_points
 ---
-Quelle: HilberTraum - Eigenes Werk, CC BY-SA 4.0, <https://commons.wikimedia.org/w/index.php?curid=34972980>
+Funktion mit zwei Sattelpunkten (Quelle: HilberTraum, [Wikimedia
+Commons](https://commons.wikimedia.org/w/index.php?curid=34972980); Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ```{dropdown} Video "Wendestellen und Sattelstellen" von Mathematische Methoden

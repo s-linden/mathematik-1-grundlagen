@@ -30,8 +30,7 @@ name: kugelbahn_gerade_w800px
 ---
 Kugelbahn der Marke
 [GraviTrax](https://www.ravensburger.de/de-DE/entdecken/gravitrax)
-(Quelle: eigene Darstellung; Lizenz: [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Um die Höhe mathematisch zu beschreiben, benötigen wir ein Koordinatensystem.
@@ -115,8 +114,7 @@ width: 75%
 name: function_marble_track
 ---
 Graph bzw. Plot der Höhenfunktion der Kugel in der Kugelbahn
-(Quelle: eigene Darstellung; Lizenz: [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Der Graph macht den Funktionsverlauf sofort sichtbar und ist besonders nützlich

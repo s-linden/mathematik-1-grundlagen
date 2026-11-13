@@ -45,8 +45,8 @@ $\mathbf{A}$, wie die folgende Animation zeigt.
 width: 25%
 name: Matrix_transpose
 ---
-Transponieren einer Matrix, Quelle:
-Von Lucas Vieira, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=50327598), Lizenz: gemeinfrei
+Transponieren einer Matrix (Quelle: Lucas Vieira, [Wikimedia
+Commons](https://commons.wikimedia.org/w/index.php?curid=50327598); Lizenz: gemeinfrei)
 ```
 
 ```{dropdown} Video "Transponierte Matrizen" von Mathematische Methoden

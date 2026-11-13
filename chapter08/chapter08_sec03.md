@@ -78,14 +78,15 @@ $$\bar{z} = 3 \textcolor{red}{-} 2\mathrm{i}.$$
 Dabei wird die konjugiert komplexe Zahl durch einen Strich gekennzeichnet. Als
 nächstes zeichnen wir $z$ und $\bar{z}$ in der Gaußschen Zahlenebene ein.
 
-<img src="pics/konjugiert_komplexe_zahl_light43.svg"
-alt="Komplexe Zahl und ihre konjugiert komplexe Zahl in der Gaußschen Zahlenebene"
-class="image43"
-width=100%>
-<img src="pics/konjugiert_komplexe_zahl_light169.svg"
-alt="Komplexe Zahl und ihre konjugiert komplexe Zahl in der Gaußschen Zahlenebene"
-class="image169"
-width=100%>
+```{figure} pics/konjugiert_komplexe_zahl_light43.svg
+---
+width: 75%
+name: konjugiert_komplexe_zahl
+---
+Die komplexe Zahl $z = 3 + 2\mathrm{i}$ und ihre konjugiert komplexe Zahl
+$\bar{z} = 3 - 2\mathrm{i}$ in der Gaußschen Zahlenebene
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 Wir können den Prozess des »Vorzeichentauschens«, die sogenannte **komplexe
 Konjugation** geometrisch als eine Spiegelung an der Realteil-Achse

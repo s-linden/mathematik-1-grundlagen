@@ -161,9 +161,9 @@ Die folgende Grafik fasst die Bezeichnungen der Bestandteile einer Matrix
 width: 50%
 name: matrix_bezeichnungen
 ---
-Bezeichnungen einer Matrix, Quelle:
-Ralf Pfeifer [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=50327598),
-Lizenz: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+Bezeichnungen einer Matrix (Quelle: Ralf Pfeifer, [Wikimedia
+Commons](https://commons.wikimedia.org/w/index.php?curid=50327598);
+Lizenz: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/))
 ```
 
 ## Quadratische Matrizen

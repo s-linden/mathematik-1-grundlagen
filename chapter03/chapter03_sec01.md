@@ -34,7 +34,8 @@ durch Buchstaben (A bis H) und Zahlen (1 bis 8) gekennzeichnet wird. Die Angabe
 width: 50%
 name: schachbrett
 ---
-Quelle: https://schachliebe.de/schach-aufstellung/  
+Schachbrett mit Koordinaten: Buchstaben A bis H für die Linien, Zahlen 1 bis 8
+für die Reihen (Quelle: [schachliebe.de](https://schachliebe.de/schach-aufstellung/))
 ```
 
 Um die Schachfigur korrekt zu platzieren, benötigen wir zwei Angaben: „D“ steht
@@ -119,10 +120,10 @@ $x_1$-Achse und $x_2$-Achse benannt werden.
 width: 50%
 name: kartesisches_koordinatensystem_1d2d
 ---
-Eindimensionales kartesisches Koordinantensystem (oben) und zweidimensionales
-Koordinatensystem (unten), Quelle: [Wikimedia
-Commons](https://commons.wikimedia.org/wiki/File:Koordinaten-1d2d.svg) von
-Ag2gaeh, Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Eindimensionales kartesisches Koordinatensystem (oben) und zweidimensionales
+Koordinatensystem (unten) (Quelle: Ag2gaeh, [Wikimedia
+Commons](https://commons.wikimedia.org/wiki/File:Koordinaten-1d2d.svg);
+Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Zur Beschreibung von Positionen im dreidimensionalen Raum benötigen wir ein
@@ -135,9 +136,9 @@ $x_2$-Achse und $x_3$-Achse bezeichnet werden.
 width: 50%
 name: rectangular_coordinates
 ---
-Dreidimensionales kartesisches Koordinatensystem, Quelle: [Wikimedia
-Commons](https://commons.wikimedia.org/wiki/File:Rectangular_coordinates.svg)
-von Cronholm144, Lizenz: gemeinfrei
+Dreidimensionales kartesisches Koordinatensystem (Quelle: Cronholm144, [Wikimedia
+Commons](https://commons.wikimedia.org/wiki/File:Rectangular_coordinates.svg);
+Lizenz: gemeinfrei)
 ```
 
 Es gibt zwei Möglichkeiten, die Orientierung der Koordinatenachsen in einem
@@ -189,8 +190,8 @@ Polarkoordinaten dann durch ein Paar $(r, \varphi)$ beschrieben, wobei
 width: 50%
 name: polar_coordinates
 ---
-Polarkoordinatensystem, Quelle: eigene Darstellung, Lizenz: [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Polarkoordinatensystem
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Alternativ kann der Winkel relativ zur Polarachse auch im Bogenmaß angegeben

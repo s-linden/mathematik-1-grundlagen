@@ -89,9 +89,8 @@ width: 50%
 name: eingeschlossener_winkel
 ---
 Eingeschlossener Winkel $\varphi = \angle (\vec{a},\vec{b})$ zwischen den Vektoren $\vec{a}$
-und $\vec{b}$;
-Quelle: eigene Darstellung,
-Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+und $\vec{b}$
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Wenn die beiden Vektoren $\vec{a}$ und $\vec{b}$ die gleiche Richtung haben, ist
@@ -114,8 +113,8 @@ Abbildung zeigt.
 width: 50%
 name: kosinussatz
 ---
-Kosinussatz; Quelle: eigene Darstellung,
-Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Kosinussatz
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Für das Dreieck gilt der **Kosinussatz**:
@@ -130,11 +129,11 @@ Da aber $\vec{c} = \vec{a} - \vec{b}$ gilt, können wir mit Hilfe der 2.
 binomischen Formel den Term $|\vec{c}|^2$ durch das Skalarprodukt von
 $(\vec{a}-\vec{b})$ mit sich selbst ersetzen:
 
-$\begin{align*}
+$$\begin{aligned}
 |\vec{c}|^2 &= |\vec{a}-\vec{b}|^2 = \\
 &= (\vec{a}-\vec{b}) \cdot (\vec{a}-\vec{b}) = \\
 &= \vec{a}\cdot\vec{a} - 2\cdot\vec{a}\cdot\vec{b} + \vec{b}\cdot\vec{b}.
-\end{align*}$
+\end{aligned}$$
 
 Letzteres setzen wir nun auf der linken Seite von Gleichung
 {eq}`chap04sec03eq01` ein:

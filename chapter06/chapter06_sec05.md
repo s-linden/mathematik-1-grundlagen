@@ -35,9 +35,9 @@ Dieses Prinzip wird in der folgenden Skizze verdeutlicht.
 width: 50%
 name: Matrix_multiplication
 ---
-Anforderungen an Spaltenanzahl der ersten Matrix und Zeilenanzahl der zweiten Matrix,
-Quelle: Quartl [Wikimedia Commons](https://de.wikipedia.org/wiki/Datei:Matrix_multiplication_qtl1.svg#/media/Datei:Matrix_multiplication_qtl1.svg),
-Lizenz: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+Anforderungen an Spaltenanzahl der ersten Matrix und Zeilenanzahl der zweiten Matrix
+(Quelle: Quartl, [Wikimedia Commons](https://de.wikipedia.org/wiki/Datei:Matrix_multiplication_qtl1.svg#/media/Datei:Matrix_multiplication_qtl1.svg);
+Lizenz: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/))
 ```
 
 Nun kennen wir die Bedingungen, unter denen zwei Matrizen multipliziert werden
@@ -113,7 +113,7 @@ Um die zweite Zeile der Produktmatrix zu berechnen, berechnen wir das
 Skalarprodukt der zweiten Zeile von $\mathbf{A}$ mit der ersten, zweiten und
 dritten Spalte von $\mathbf{B}$:
 
-$\begin{align*}
+$$\begin{aligned}
 c_{21} &=
 \begin{pmatrix} 2 & -1 \end{pmatrix} \cdot \begin{pmatrix} -1 \\ 2 \end{pmatrix} =
 2\cdot (-1) + (-1)\cdot 2 = -4, \\
@@ -123,7 +123,7 @@ c_{22} &=
 c_{23} &=
 \begin{pmatrix} 2 & -1 \end{pmatrix} \cdot \begin{pmatrix} 2 \\ 5 \end{pmatrix} =
 2\cdot 2 + (-1)\cdot 5 = -1. \\
-\end{align*}$
+\end{aligned}$$
 
 Damit haben wir die Hälfte der Elemente von $\mathbf{C}$ berechnet:
 
@@ -250,11 +250,11 @@ $$
 Glücklicherweise gelten für die Matrizenmultiplikation das Assoziativgesetz und
 das Distributivgesetz, die uns das Rechnen mit Matrizen häufig erleichtern:
 
-$\begin{align*}
+$$\begin{aligned}
 (\mathbf{A}\cdot\mathbf{B})\cdot\mathbf{C} &= \mathbf{A}\cdot(\mathbf{B}\cdot\mathbf{C}) \\
 \mathbf{A}\cdot(\mathbf{B}+\mathbf{C}) &= \mathbf{A}\cdot\mathbf{B} + \mathbf{A}\cdot\mathbf{C} \\
 (\mathbf{A}+\mathbf{B})\cdot\mathbf{C} &= \mathbf{A}\cdot\mathbf{C} + \mathbf{B}\cdot\mathbf{C}
-\end{align*}$
+\end{aligned}$$
 
 Diese Regeln sind besonders nützlich, wenn es darum geht, komplexere
 Matrizenprodukte zu berechnen. In den folgenden Videos wird auf die Rechenregeln

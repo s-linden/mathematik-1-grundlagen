@@ -27,7 +27,9 @@ Abbildung visualisiert.
 width: 50%
 name: extrema_example
 ---
-Quelle: Georg-Johann - Eigenes Werk, Gemeinfrei, <https://commons.wikimedia.org/w/index.php?curid=11692680>
+Graph von $f(x) = \frac{\cos(3\pi x)}{x}$ im Intervall $0.1 \leq x \leq 1.1$ mit lokalen
+und globalen Extrema (Quelle: Georg-Johann, [Wikimedia
+Commons](https://commons.wikimedia.org/w/index.php?curid=11692680); Lizenz: gemeinfrei)
 ```
 
 In diesem Intervall hat die Funktion je ein lokales und globales Minimum und je

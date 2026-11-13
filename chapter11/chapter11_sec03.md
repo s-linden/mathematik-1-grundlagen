@@ -28,6 +28,7 @@ folgende Abbildung zeigt.
 width: 75%
 name: neigungswinkel
 ---
+Neigungswinkel $\alpha$ einer Geraden, bestimmt über das Steigungsdreieck
 ```
 
 Die Steigung $m$ einer Gerade $f(x) = m\cdot x + b$ ist gegeben als
@@ -77,8 +78,9 @@ Winkel, den die beiden Tangenten einschließen.
 width: 50%
 name: schnittwinkel
 ---
-Quelle: MushroomCloud - selbst gezeichnet, Bild-frei,
-<https://de.wikipedia.org/w/index.php?curid=2905230>
+Schnittwinkel $\alpha$ zweier Funktionen als Winkel zwischen ihren Tangenten
+(Quelle: MushroomCloud, [Wikipedia](https://de.wikipedia.org/w/index.php?curid=2905230);
+Lizenz: gemeinfrei)
 ```
 
 Man kann diesen Winkel $\alpha$ auch als Differenz der beiden Neigungswinkel
