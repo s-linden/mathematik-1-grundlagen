@@ -27,9 +27,13 @@ html:
             async src="//gc.zgo.at/count.js"></script>
 
 sphinx:
+  local_extensions:
+    abbildungsnummern: _ext/   # Abbildungen kapitelweise nummerieren (Abb. 2.1, 2.2, ...)
   config:
     html_static_path: ["_static"]
     togglebutton_hint: ""       # kein "Click to show" an den Lösungen
+    numfig_format:              # Bildunterschriften "Abb. 1:" statt "Fig. 1"
+      figure: "Abb. %s:"
     togglebutton_hint_hide: ""  # kein "Click to hide"
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     html_css_files:

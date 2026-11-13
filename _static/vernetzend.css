@@ -39,3 +39,9 @@ div.admonition.miniexercise.toggle > .admonition-title {
 div.admonition.toggle:not(.toggle-hidden) > details.sd-dropdown {
   margin-top: 1rem;
 }
+
+/* Bildunterschriften: Nummer "Abb. 1:" nicht kursiv
+   (Sphinx setzt die Abbildungsnummer standardmäßig kursiv). */
+figcaption span.caption-number {
+  font-style: normal;
+}
