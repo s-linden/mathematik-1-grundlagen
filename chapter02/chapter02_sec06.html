@@ -61,6 +61,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter02/chapter02_sec06';</script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.3.5/jsxgraphcore.js"></script>
@@ -500,6 +502,12 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lernziele">Lernziele</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#die-frage-umdrehen">Die Frage umdrehen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wann-ist-eine-funktion-umkehrbar">Wann ist eine Funktion umkehrbar?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#umkehrfunktion-berechnen">Umkehrfunktion berechnen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitionsmenge-einschranken">Definitionsmenge einschränken</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zusammenfassung-und-ausblick">Zusammenfassung und Ausblick</a></li>
 </ul>
             </nav>
         </div>
@@ -520,10 +528,155 @@
 <section id="lernziele">
 <h2>Lernziele<a class="headerlink" href="#lernziele" title="Link to this heading">#</a></h2>
 <div class="goals admonition">
-<p class="admonition-title">Lernziele</p>
-<p>[[Inhalt fehlt]]</p>
+<p class="admonition-title">Lernziele Umkehrfunktion</p>
+<ul class="simple">
+<li><p>Sie wissen, was eine <strong>Umkehrfunktion</strong> ist und wann eine Funktion
+<strong>umkehrbar</strong> ist.</p></li>
+<li><p>Sie können am Funktionsgraphen entscheiden, ob eine Funktion umkehrbar ist.</p></li>
+<li><p>Sie können die Umkehrfunktion berechnen, indem Sie die Funktionsgleichung nach
+<span class="math notranslate nohighlight">\(x\)</span> auflösen.</p></li>
+<li><p>Sie können eine Funktion durch Einschränken der Definitionsmenge umkehrbar
+machen.</p></li>
+<li><p>Sie wissen, dass der Graph der Umkehrfunktion durch Spiegelung an der
+Winkelhalbierenden <span class="math notranslate nohighlight">\(y = x\)</span> entsteht.</p></li>
+</ul>
 </div>
-<p>[[Inhalt fehlt]]</p>
+</section>
+<section id="die-frage-umdrehen">
+<h2>Die Frage umdrehen<a class="headerlink" href="#die-frage-umdrehen" title="Link to this heading">#</a></h2>
+<p>Bei unserer Kugelbahn aus <a class="reference internal" href="chapter02_sec01.html"><span class="doc">2.1 Grundlagen und Definition</span></a> haben wir gefragt: <em>Wie hoch
+ist die Kugel an der Position <span class="math notranslate nohighlight">\(x\)</span>?</em> Die Antwort liefert die Funktion</p>
+<div class="math notranslate nohighlight">
+\[h(x) = -\frac{1}{4}x + 6, \quad x \in [0; 24].\]</div>
+<p>Genauso gut können wir die Frage umdrehen: <em>An welcher Position ist die Kugel
+<span class="math notranslate nohighlight">\(h\)</span> cm hoch?</em> Dazu lösen wir die Funktionsgleichung nach <span class="math notranslate nohighlight">\(x\)</span> auf:</p>
+<div class="math notranslate nohighlight">
+\[h = -\frac{1}{4}x + 6 \quad\Leftrightarrow\quad \frac{1}{4}x = 6 - h \quad\Leftrightarrow\quad x = 24 - 4h.\]</div>
+<p>Für eine Höhe von <span class="math notranslate nohighlight">\(h = 3~\text{cm}\)</span> erhalten wir zum Beispiel
+<span class="math notranslate nohighlight">\(x = 24 - 4 \cdot 3 = 12~\text{cm}\)</span>. Die neue Zuordnung <span class="math notranslate nohighlight">\(h \mapsto x\)</span> ordnet
+jeder Höhe aus <span class="math notranslate nohighlight">\([0; 6]\)</span> genau eine Position aus <span class="math notranslate nohighlight">\([0; 24]\)</span> zu. Sie ist also
+wieder eine Funktion, die sogenannte <strong>Umkehrfunktion</strong>.</p>
+</section>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">#</a></h2>
+<p>Eine Funktion <span class="math notranslate nohighlight">\(f: D \to W, \; x \mapsto f(x) = y\)</span> ordnet jedem <span class="math notranslate nohighlight">\(x\)</span> <em>genau ein</em>
+<span class="math notranslate nohighlight">\(y\)</span> zu. Für die Umkehrfunktion brauchen wir zusätzlich, dass auch die
+umgekehrte Zuordnung <span class="math notranslate nohighlight">\(y \mapsto x\)</span> eindeutig ist.</p>
+<div class="note admonition">
+<p class="admonition-title">Was ist … eine Umkehrfunktion?</p>
+<p>Sei <span class="math notranslate nohighlight">\(f: D \to W, \; x \mapsto f(x) = y\)</span> eine Funktion. Wenn auch die Zuordnung
+<span class="math notranslate nohighlight">\(y = f(x) \mapsto x\)</span> eindeutig ist, dann heißt</p>
+<div class="math notranslate nohighlight">
+\[f^{-1}: W \to D, \quad y = f(x) \mapsto x\]</div>
+<p>die <strong>Umkehrfunktion</strong> von <span class="math notranslate nohighlight">\(f\)</span>, und <span class="math notranslate nohighlight">\(f\)</span> heißt <strong>umkehrbar</strong>.</p>
+</div>
+<p>Die Umkehrfunktion vertauscht die Rollen von Definitionsmenge und Wertemenge:</p>
+<div class="math notranslate nohighlight">
+\[D_{f^{-1}} = W_f \quad \text{und} \quad W_{f^{-1}} = D_f.\]</div>
+</section>
+<section id="wann-ist-eine-funktion-umkehrbar">
+<h2>Wann ist eine Funktion umkehrbar?<a class="headerlink" href="#wann-ist-eine-funktion-umkehrbar" title="Link to this heading">#</a></h2>
+<p>Ob eine Funktion umkehrbar ist, sieht man am Funktionsgraphen. Wir wählen einen
+Wert <span class="math notranslate nohighlight">\(y_0\)</span> auf der <span class="math notranslate nohighlight">\(y\)</span>-Achse und suchen alle <span class="math notranslate nohighlight">\(x\)</span>, die auf <span class="math notranslate nohighlight">\(y_0\)</span> abgebildet werden.</p>
+<figure class="align-default" id="umkehrfunktion-eindeutig">
+<a class="reference internal image-reference" href="../_images/umkehrfunktion_eindeutig.svg"><img alt="../_images/umkehrfunktion_eindeutig.svg" src="../_images/umkehrfunktion_eindeutig.svg" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Links ist die Zuordnung <span class="math notranslate nohighlight">\(y \mapsto x\)</span> eindeutig, rechts nicht
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
+4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-eindeutig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Bei <span class="math notranslate nohighlight">\(f(x) = x^3\)</span> gehört zu jedem <span class="math notranslate nohighlight">\(y_0\)</span> genau ein <span class="math notranslate nohighlight">\(x_0\)</span>. Die Zuordnung
+<span class="math notranslate nohighlight">\(y \mapsto x\)</span> ist eindeutig, <span class="math notranslate nohighlight">\(f\)</span> ist umkehrbar.</p></li>
+<li><p>Bei <span class="math notranslate nohighlight">\(f(x) = x^2\)</span> gehören zu <span class="math notranslate nohighlight">\(y_0 &gt; 0\)</span> die beiden Werte <span class="math notranslate nohighlight">\(x_0\)</span> und <span class="math notranslate nohighlight">\(-x_0\)</span>, denn
+<span class="math notranslate nohighlight">\(x_0^2 = (-x_0)^2\)</span>. Die Zuordnung <span class="math notranslate nohighlight">\(y \mapsto x\)</span> ist nicht eindeutig, <span class="math notranslate nohighlight">\(f\)</span> ist
+nicht umkehrbar.</p></li>
+</ul>
+<p>Anschaulich bedeutet das: Eine Funktion ist umkehrbar, wenn jede waagerechte
+Gerade den Graphen höchstens einmal schneidet. Das ist zum Beispiel bei jeder
+<strong>streng monotonen</strong> Funktion der Fall (siehe <a class="reference internal" href="chapter02_sec02.html"><span class="doc">2.2 Eigenschaften von Funktionen</span></a>).</p>
+</section>
+<section id="umkehrfunktion-berechnen">
+<h2>Umkehrfunktion berechnen<a class="headerlink" href="#umkehrfunktion-berechnen" title="Link to this heading">#</a></h2>
+<p>Die Umkehrfunktion berechnen wir in zwei Schritten:</p>
+<ol class="arabic simple">
+<li><p>Die Gleichung <span class="math notranslate nohighlight">\(y = f(x)\)</span> nach <span class="math notranslate nohighlight">\(x\)</span> auflösen. Das ergibt <span class="math notranslate nohighlight">\(x = f^{-1}(y)\)</span>.</p></li>
+<li><p>Für die Darstellung im selben Koordinatensystem die Variablen umbenennen:
+<span class="math notranslate nohighlight">\(y\)</span> wird zu <span class="math notranslate nohighlight">\(x\)</span>. Das ergibt <span class="math notranslate nohighlight">\(f^{-1}(x)\)</span>.</p></li>
+</ol>
+<p><strong>Beispiel:</strong> Gesucht ist die Umkehrfunktion von
+<span class="math notranslate nohighlight">\(y = f(x) = \frac{1}{4}x^3 - 2\)</span> mit <span class="math notranslate nohighlight">\(D_f = W_f = \mathbb{R}\)</span>.</p>
+<p>Wir lösen nach <span class="math notranslate nohighlight">\(x\)</span> auf:</p>
+<p><span class="math notranslate nohighlight">\(\begin{align*}
+&amp; &amp; y &amp;= \frac{1}{4}x^3 - 2 &amp; &amp; | +2\\
+&amp;\Leftrightarrow &amp; \frac{1}{4}x^3 &amp;= y + 2 &amp; &amp; | \cdot 4\\
+&amp;\Leftrightarrow &amp; x^3 &amp;= 4y + 8 &amp; &amp; | \sqrt[3]{\phantom{x}}\\
+&amp;\Leftrightarrow &amp; x &amp;= \sqrt[3]{4y + 8}
+\end{align*}\)</span></p>
+<p>Die Umkehrfunktion ist also <span class="math notranslate nohighlight">\(f^{-1}(y) = \sqrt[3]{4y + 8}\)</span>. Zur Darstellung im
+selben Koordinatensystem schreiben wir</p>
+<div class="math notranslate nohighlight">
+\[f^{-1}(x) = \sqrt[3]{4x + 8}.\]</div>
+<p>Probe mit einem Zahlenwert: <span class="math notranslate nohighlight">\(f(2) = \frac{1}{4} \cdot 2^3 - 2 = 0\)</span> und
+<span class="math notranslate nohighlight">\(f^{-1}(0) = \sqrt[3]{4 \cdot 0 + 8} = 2\)</span>.</p>
+<figure class="align-default" id="umkehrfunktion-kubisch">
+<a class="reference internal image-reference" href="../_images/umkehrfunktion_kubisch.svg"><img alt="../_images/umkehrfunktion_kubisch.svg" src="../_images/umkehrfunktion_kubisch.svg" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Funktion <span class="math notranslate nohighlight">\(f\)</span> (blau) und Umkehrfunktion <span class="math notranslate nohighlight">\(f^{-1}\)</span> (rot) liegen spiegelbildlich
+zur Winkelhalbierenden <span class="math notranslate nohighlight">\(y = x\)</span>
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
+4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-kubisch" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Durch das Umbenennen der Variablen tauschen die <span class="math notranslate nohighlight">\(x\)</span>- und <span class="math notranslate nohighlight">\(y\)</span>-Koordinaten jedes
+Punktes ihre Rollen. Aus dem Punkt <span class="math notranslate nohighlight">\((0, -2)\)</span> auf dem Graphen von <span class="math notranslate nohighlight">\(f\)</span> wird der
+Punkt <span class="math notranslate nohighlight">\((-2, 0)\)</span> auf dem Graphen von <span class="math notranslate nohighlight">\(f^{-1}\)</span>. Der Graph der Umkehrfunktion
+entsteht daher durch <strong>Spiegelung an der Winkelhalbierenden</strong> <span class="math notranslate nohighlight">\(y = x\)</span>.</p>
+</section>
+<section id="definitionsmenge-einschranken">
+<h2>Definitionsmenge einschränken<a class="headerlink" href="#definitionsmenge-einschranken" title="Link to this heading">#</a></h2>
+<p>Die Funktion <span class="math notranslate nohighlight">\(y = f(x) = x^2\)</span> mit <span class="math notranslate nohighlight">\(D_f = \mathbb{R}\)</span> ist nicht umkehrbar, denn zu
+einem <span class="math notranslate nohighlight">\(y &gt; 0\)</span> gibt es zwei <span class="math notranslate nohighlight">\(x\)</span>-Werte <span class="math notranslate nohighlight">\(x_1\)</span> und <span class="math notranslate nohighlight">\(x_2 = -x_1\)</span>. Wir können sie aber
+umkehrbar machen, indem wir die <strong>Definitionsmenge einschränken</strong>, zum Beispiel
+auf</p>
+<div class="math notranslate nohighlight">
+\[D_f = \{x \in \mathbb{R} : x \geq 0\} \quad \Rightarrow \quad W_f = \{y \in \mathbb{R} : y \geq 0\}.\]</div>
+<p>Jetzt lösen wir nach <span class="math notranslate nohighlight">\(x\)</span> auf:</p>
+<p><span class="math notranslate nohighlight">\(\begin{align*}
+&amp; &amp; y &amp;= x^2 &amp; &amp; | \sqrt{\phantom{x}}\\
+&amp;\Leftrightarrow &amp; \sqrt{y} &amp;= \sqrt{x^2}\\
+&amp;\Leftrightarrow &amp; \sqrt{y} &amp;= |x| &amp; &amp; | \; x \geq 0\\
+&amp;\Leftrightarrow &amp; \sqrt{y} &amp;= x
+\end{align*}\)</span></p>
+<p>Die Umkehrfunktion ist also <span class="math notranslate nohighlight">\(x = f^{-1}(y) = \sqrt{y}\)</span>, im selben
+Koordinatensystem <span class="math notranslate nohighlight">\(f^{-1}(x) = \sqrt{x}\)</span>, mit</p>
+<div class="math notranslate nohighlight">
+\[D_{f^{-1}} = W_f = \{x \in \mathbb{R} : x \geq 0\} \quad \text{und} \quad W_{f^{-1}} = D_f = \{x \in \mathbb{R} : x \geq 0\}.\]</div>
+<figure class="align-default" id="umkehrfunktion-wurzel">
+<a class="reference internal image-reference" href="../_images/umkehrfunktion_wurzel.svg"><img alt="../_images/umkehrfunktion_wurzel.svg" src="../_images/umkehrfunktion_wurzel.svg" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Die Normalparabel für <span class="math notranslate nohighlight">\(x \geq 0\)</span> (blau) und die Wurzelfunktion (rot)
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
+4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-wurzel" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Hätten wir stattdessen <span class="math notranslate nohighlight">\(D_f = \{x \in \mathbb{R} : x \leq 0\}\)</span> gewählt, wäre im
+dritten Schritt <span class="math notranslate nohighlight">\(|x| = -x\)</span> und die Umkehrfunktion <span class="math notranslate nohighlight">\(f^{-1}(x) = -\sqrt{x}\)</span>.</p>
+</section>
+<section id="zusammenfassung-und-ausblick">
+<h2>Zusammenfassung und Ausblick<a class="headerlink" href="#zusammenfassung-und-ausblick" title="Link to this heading">#</a></h2>
+<p>Eine Funktion ist umkehrbar, wenn auch die umgekehrte Zuordnung <span class="math notranslate nohighlight">\(y \mapsto x\)</span>
+eindeutig ist. Die Umkehrfunktion <span class="math notranslate nohighlight">\(f^{-1}\)</span> berechnen wir, indem wir <span class="math notranslate nohighlight">\(y = f(x)\)</span>
+nach <span class="math notranslate nohighlight">\(x\)</span> auflösen und anschließend die Variablen umbenennen. Ihr Graph ist das
+Spiegelbild des Graphen von <span class="math notranslate nohighlight">\(f\)</span> an der Winkelhalbierenden. Ist eine Funktion
+nicht umkehrbar, hilft oft eine Einschränkung der Definitionsmenge.</p>
+<p>Umkehrfunktionen begegnen Ihnen immer wieder: Der Logarithmus ist die
+Umkehrfunktion der Exponentialfunktion (siehe <a class="reference internal" href="chapter02_sec04.html"><span class="doc">2.4 Exponential- und Logarithmusfunktion</span></a>), und in
+Kapitel 10 lernen Sie, wie man Umkehrfunktionen ableitet.</p>
 </section>
 </section>
 
@@ -594,6 +747,12 @@
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lernziele">Lernziele</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#die-frage-umdrehen">Die Frage umdrehen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wann-ist-eine-funktion-umkehrbar">Wann ist eine Funktion umkehrbar?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#umkehrfunktion-berechnen">Umkehrfunktion berechnen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitionsmenge-einschranken">Definitionsmenge einschränken</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zusammenfassung-und-ausblick">Zusammenfassung und Ausblick</a></li>
 </ul>
   </nav></div>
 
