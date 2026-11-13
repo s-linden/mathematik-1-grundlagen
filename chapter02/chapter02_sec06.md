@@ -1,4 +1,4 @@
-# 2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen
+# 2.6 Umkehrfunktion
 
 ```{admonition} Hinweis
 :class: warning
