@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -552,8 +552,8 @@ müssen im betrachteten Intervall differenzierbar sein.</p></li>
 <p>Seien <span class="math notranslate nohighlight">\(f(x)\)</span> und <span class="math notranslate nohighlight">\(g(x)\)</span> differenzierbar in einem Intervall um <span class="math notranslate nohighlight">\(x_0\)</span> mit Ausnahme
 von <span class="math notranslate nohighlight">\(x_0\)</span> selbst. Wenn <span class="math notranslate nohighlight">\(\lim_{x \to x_0} f(x) = \lim_{x \to x_0} g(x) = 0\)</span> oder
 <span class="math notranslate nohighlight">\(\pm\infty\)</span>, dann gilt:</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \to x_0} \frac{f(x)}{g(x)} = \lim_{x \to x_0} \frac{f'(x)}{g'(x)},\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-1">
+<span class="eqno">(11.11)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-1" title="Link to this equation">#</a></span>\[\lim_{x \to x_0} \frac{f(x)}{g(x)} = \lim_{x \to x_0} \frac{f'(x)}{g'(x)},\]</div>
 <p>vorausgesetzt, der Grenzwert auf der rechten Seite existiert.</p>
 </section>
 <section id="beispiele">
@@ -562,35 +562,35 @@ von <span class="math notranslate nohighlight">\(x_0\)</span> selbst. Wenn <span
 <h3>Beispiel 1: <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{\sin(x)}{x}\)</span><a class="headerlink" href="#beispiel-1-lim-x-to-0-frac-sin-x-x" title="Link to this heading">#</a></h3>
 <p>Die Funktionsgrenzwerte der Zählerfunktion <span class="math notranslate nohighlight">\(f(x)=\sin(x)\)</span> und der Nennerfunktion
 <span class="math notranslate nohighlight">\(g(x)=x\)</span> lauten</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to 0}\sin(x) = 0, \; \lim_{x\to 0}x = 0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-2">
+<span class="eqno">(11.12)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-2" title="Link to this equation">#</a></span>\[\lim_{x\to 0}\sin(x) = 0, \; \lim_{x\to 0}x = 0.\]</div>
 <p>Damit hat der Grenzwert</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \to 0}\frac{\sin(x)}{x}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-3">
+<span class="eqno">(11.13)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-3" title="Link to this equation">#</a></span>\[\lim_{x \to 0}\frac{\sin(x)}{x}\]</div>
 <p>die Form <span class="math notranslate nohighlight">\(\frac{0}{0}\)</span>. Sowohl die Zählerfunktion als auch die Nennerfunktion
 sind differenzierbar, ihre Ableitungen lauten</p>
-<div class="math notranslate nohighlight">
-\[f'(x) = \cos(x), \; g'(x) = 1.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-4">
+<span class="eqno">(11.14)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-4" title="Link to this equation">#</a></span>\[f'(x) = \cos(x), \; g'(x) = 1.\]</div>
 <p>Damit können wir die Regel von L’Hospital anwenden:</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \to 0} \frac{\sin(x)}{x} = \lim_{x \to 0} \frac{\cos(x)}{1} = \cos(0) = 1.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-5">
+<span class="eqno">(11.15)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-5" title="Link to this equation">#</a></span>\[\lim_{x \to 0} \frac{\sin(x)}{x} = \lim_{x \to 0} \frac{\cos(x)}{1} = \cos(0) = 1.\]</div>
 </section>
 <section id="beispiel-2-lim-x-to-infty-frac-ln-x-x">
 <h3>Beispiel 2: <span class="math notranslate nohighlight">\(\lim_{x \to \infty} \frac{\ln(x)}{x}\)</span><a class="headerlink" href="#beispiel-2-lim-x-to-infty-frac-ln-x-x" title="Link to this heading">#</a></h3>
 <p>Die Funktionsgrenzwerte der Zählerfunktion <span class="math notranslate nohighlight">\(f(x)=\ln(x)\)</span> und der Nennerfunktion
 <span class="math notranslate nohighlight">\(g(x)=x\)</span> lauten</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to\infty}\ln(x)=\infty, \; \lim_{x\to\infty}x = \infty.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-6">
+<span class="eqno">(11.16)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-6" title="Link to this equation">#</a></span>\[\lim_{x\to\infty}\ln(x)=\infty, \; \lim_{x\to\infty}x = \infty.\]</div>
 <p>Damit hat der Grenzwert</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to\infty}\frac{\ln(x)}{x}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-7">
+<span class="eqno">(11.17)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-7" title="Link to this equation">#</a></span>\[\lim_{x\to\infty}\frac{\ln(x)}{x}\]</div>
 <p>die Form <span class="math notranslate nohighlight">\(\frac{\infty}{\infty}\)</span>. Beide Funktionen sind differenzierbar, ihre
 Ableitungen lauten</p>
-<div class="math notranslate nohighlight">
-\[f'(x) = \frac{1}{x}, \;  g'(x) = 1.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-8">
+<span class="eqno">(11.18)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-8" title="Link to this equation">#</a></span>\[f'(x) = \frac{1}{x}, \;  g'(x) = 1.\]</div>
 <p>Damit können wir die Regel von L’Hospital anwenden:</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \to \infty} \frac{\ln(x)}{x} = \lim_{x \to \infty}
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-9">
+<span class="eqno">(11.19)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-9" title="Link to this equation">#</a></span>\[\lim_{x \to \infty} \frac{\ln(x)}{x} = \lim_{x \to \infty}
 \frac{\frac{1}{x}}{1} = \lim_{x \to \infty} \frac{1}{x} = 0.\]</div>
 </section>
 </section>
@@ -600,18 +600,18 @@ Ableitungen lauten</p>
 muss, wenn der Grenzwert nach dem ersten Schritt noch eine unbestimmte Form hat.
 Ein Beispiel dafür ist <span class="math notranslate nohighlight">\(\lim_{x \to 0} \frac{1 - \cos(x)}{x^2}\)</span>.</p>
 <p>Wir setzen <span class="math notranslate nohighlight">\(f(x) = 1 - \cos(x)\)</span> und <span class="math notranslate nohighlight">\(g(x) = x^2\)</span>. Die ersten Ableitungen sind</p>
-<div class="math notranslate nohighlight">
-\[f'(x) = \sin(x), \; g'(x) = 2x.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-10">
+<span class="eqno">(11.20)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-10" title="Link to this equation">#</a></span>\[f'(x) = \sin(x), \; g'(x) = 2x.\]</div>
 <p>Die einmalige Anwendung der Regel von L’Hospital reicht diesmal nicht aus:</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \to 0} \frac{1 - \cos(x)}{x^2} = \lim_{x \to 0} \frac{\sin(x)}{2x}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-11">
+<span class="eqno">(11.21)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-11" title="Link to this equation">#</a></span>\[\lim_{x \to 0} \frac{1 - \cos(x)}{x^2} = \lim_{x \to 0} \frac{\sin(x)}{2x}.\]</div>
 <p>Es liegt immer noch die Form <span class="math notranslate nohighlight">\(\frac{0}{0}\)</span> vor. Aber wir können ein weiteres Mal
 ableiten und die Regel von L’Hospital erneut anwenden:</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \to 0} \frac{\sin(x)}{2x} = \lim_{x \to 0} \frac{\cos(x)}{2} = \frac{1}{2}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-12">
+<span class="eqno">(11.22)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-12" title="Link to this equation">#</a></span>\[\lim_{x \to 0} \frac{\sin(x)}{2x} = \lim_{x \to 0} \frac{\cos(x)}{2} = \frac{1}{2}.\]</div>
 <p>Somit gilt insgesamt</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x \to 0} \frac{1 - \cos(x)}{x^2} = \lim_{x \to 0} \frac{\sin(x)}{2x} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec02-13">
+<span class="eqno">(11.23)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec02-13" title="Link to this equation">#</a></span>\[\lim_{x \to 0} \frac{1 - \cos(x)}{x^2} = \lim_{x \to 0} \frac{\sin(x)}{2x} =
 \lim_{x \to 0} \frac{\cos(x)}{2} = \frac{1}{2}.\]</div>
 <p>Weitere Beispiele finden Sie in dem folgenden Video.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">

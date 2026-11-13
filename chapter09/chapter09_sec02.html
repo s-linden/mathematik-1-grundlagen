@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -573,8 +573,8 @@ gegen unendlich geht. Diesen Wert nennt man den Grenzwert der Folge.</p>
 <p>Eine Folge <span class="math notranslate nohighlight">\((a_n)\)</span> besitzt den Grenzwert <span class="math notranslate nohighlight">\(a\)</span>, wenn für jede (sehr kleine) Zahl
 <span class="math notranslate nohighlight">\(\varepsilon &gt;0\)</span> alle Folgenglieder <span class="math notranslate nohighlight">\(a_n\)</span> ab einem bestimmten Index <span class="math notranslate nohighlight">\(N\)</span> in dem
 offenen Intervall um <span class="math notranslate nohighlight">\(a\)</span> liegen, d.h.</p>
-<div class="math notranslate nohighlight">
-\[|a_{n} - a| &lt; \varepsilon, \quad \text{ falls } n \geq N.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-1">
+<span class="eqno">(9.14)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-1" title="Link to this equation">#</a></span>\[|a_{n} - a| &lt; \varepsilon, \quad \text{ falls } n \geq N.\]</div>
 </div>
 <p>Eine Zahlenfolge, die einen Grenzwert besitzt, heißt <strong>konvergent</strong>. Wenn dieser
 Grenzwert Null ist, wird die Folge eine <strong>Nullfolge</strong> genannt.</p>
@@ -606,12 +606,12 @@ encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="stric
 wollen wir überprüfen. Wir probieren zunächst mit einem Taschenrechner aus, ob
 wir für verschiedene (sehr kleine) Werte von <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> einen Index <span class="math notranslate nohighlight">\(N\)</span>
 finden, so dass</p>
-<div class="math notranslate nohighlight">
-\[\left|2 + \frac{1}{n} - 2\right| &lt; \varepsilon\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-2">
+<span class="eqno">(9.15)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-2" title="Link to this equation">#</a></span>\[\left|2 + \frac{1}{n} - 2\right| &lt; \varepsilon\]</div>
 <p>gilt. Da <span class="math notranslate nohighlight">\(\frac{1}{n}\)</span> für alle natürlichen Zahlen <span class="math notranslate nohighlight">\(n\)</span> positiv ist, können wir
 obige Ungleichung vereinfachen zu</p>
-<div class="math notranslate nohighlight">
-\[\frac{1}{n} &lt; \varepsilon.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-3">
+<span class="eqno">(9.16)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-3" title="Link to this equation">#</a></span>\[\frac{1}{n} &lt; \varepsilon.\]</div>
 <p>Damit finden wir leicht die folgenden Indizes <span class="math notranslate nohighlight">\(N\)</span> mit dem Taschenrechner:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\varepsilon = 0.1\)</span>: Index <span class="math notranslate nohighlight">\(N = 11\)</span></p></li>
@@ -621,8 +621,8 @@ obige Ungleichung vereinfachen zu</p>
 <p>Allgemein können wir festhalten, dass die Ungleichung <span class="math notranslate nohighlight">\(\frac{1}{n} &lt;
 \varepsilon\)</span> erfüllt ist, wenn <span class="math notranslate nohighlight">\(N\)</span> größer gewählt wird als
 <span class="math notranslate nohighlight">\(\frac{1}{\varepsilon}\)</span>. Damit gilt für dieses Beispiel</p>
-<div class="math notranslate nohighlight">
-\[ \left(2+\frac{1}{n}\right) \rightarrow 2 \; \text{ für } \; n \rightarrow
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-4">
+<span class="eqno">(9.17)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-4" title="Link to this equation">#</a></span>\[ \left(2+\frac{1}{n}\right) \rightarrow 2 \; \text{ für } \; n \rightarrow
 \infty \quad \text{ oder } \quad \lim_{n\rightarrow\infty} \left(2+\frac{1}{n}\right) = 2.\]</div>
 </section>
 <section id="divergente-zahlenfolgen">
@@ -654,8 +654,8 @@ konvergent sind.</p>
 </div>
 <p>Die Umkehrung gilt nicht unbedingt. Zwar ist jede konvergent Folge beschränkt,
 aber nicht jede konvergente Folge ist monoton. Beispielsweise ist die Folge</p>
-<div class="math notranslate nohighlight">
-\[a_n = \frac{(-1)^n}{n}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-5">
+<span class="eqno">(9.18)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-5" title="Link to this equation">#</a></span>\[a_n = \frac{(-1)^n}{n}\]</div>
 <p>eine Nullfolge, d.h. sie hat den Grenzwert Null. Dennoch ist sie nicht monoton.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">

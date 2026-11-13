@@ -31,10 +31,10 @@ ist, also eine Funktion, die injektiv und surjektiv ist. $D$ ist die
 Definitionsmenge und $W$ die Wertemenge. Die Umkehrfunktion $f^{-1}$ ist
 definiert durch:
 
-$\begin{align*}
+$$\begin{aligned}
 f^{-1}(f(x)) = x, \quad & \text{ für alle } x \in D,\\
 f(f^{-1}(y)) = y, \quad & \text{ für alle } y \in W.
-\end{align*}$
+\end{aligned}$$
 
 ## Ableitung der Umkehrfunktion
 

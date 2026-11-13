@@ -31,8 +31,8 @@ $A(2,1)$.
 width: 75%
 name: haus_vom_nikolaus
 ---
-Haus vom Nikolaus; Quelle: eigene Darstellung; 
-Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Haus vom Nikolaus
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Um die Strecke von $A$ nach $B$ zu beschreiben, bewegen wir uns 3 Einheiten nach
@@ -152,8 +152,8 @@ Verschiebungen in die gleiche Richtung hintereinander auszuführen.
 width: 75%
 name: skalarmultiplikation_verschiebung
 ---
-Skalarmultiplikation als Verschiebung geometrisch interpretiert; Quelle: eigene Darstellung;
-Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Skalarmultiplikation als Verschiebung geometrisch interpretiert
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Der Skalar muss jedoch nicht immer eine ganze Zahl wie in diesem Beispiel sein.

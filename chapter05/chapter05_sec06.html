@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -543,8 +543,8 @@ gekennzeichnet.</p>
 <a class="reference internal image-reference" href="../_images/schnittwinkel_geraden.png"><img alt="../_images/schnittwinkel_geraden.png" src="../_images/schnittwinkel_geraden.png" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Winkel zwischen zwei Geraden; Quelle: eigene Darstellung;
-Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a></span><a class="headerlink" href="#schnittwinkel-geraden" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 5.3: </span><span class="caption-text">Winkel zwischen zwei Geraden
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</span><a class="headerlink" href="#schnittwinkel-geraden" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Als <strong>Schnittwinkel zweier Geraden</strong> mit dem mathematischen Symbol
@@ -554,8 +554,8 @@ Richtungsvektoren der Geraden berechnen. Ist die erste Geradengleichung gegeben
 als <span class="math notranslate nohighlight">\(g_1: X = P_1 + s\cdot\vec{v_1}\)</span> und die zweite Geradengleichung als <span class="math notranslate nohighlight">\(g_2: X
 = P_2 + t\cdot\vec{v_2}\)</span>, dann können wir die geometrische Interpretation des
 Skalarproduktes nutzen:</p>
-<div class="math notranslate nohighlight">
-\[\cos(\varphi) = \frac{\vec{v_1}\cdot\vec{v_2}}{|\vec{v_1}| \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec06-1">
+<span class="eqno">(5.30)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec06-1" title="Link to this equation">#</a></span>\[\cos(\varphi) = \frac{\vec{v_1}\cdot\vec{v_2}}{|\vec{v_1}| \cdot
 |\vec{v_2}|}.\]</div>
 <p>Dabei ist <span class="math notranslate nohighlight">\(\varphi=\angle(\vec{v_1},\vec{v_2})\)</span> der zwischen den beiden
 Richtungsvektoren <span class="math notranslate nohighlight">\(\vec{v_1}\)</span> und <span class="math notranslate nohighlight">\(\vec{v_2}\)</span> eingeschlossene Winkel. Ist das
@@ -565,8 +565,8 @@ stumpfen Winkel. Um diese Fallunterscheidung zu umgehen, bilden wir zuerst den
 Betrag des Skalarproduktes und können dann die Umkehrfunktion Arkuskosinus
 nutzen. Damit lautet die Formel zur Berechnung des Schnittwinkels
 <span class="math notranslate nohighlight">\(\angle(g_1,g_2)\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\angle(g_1,g_2) = \arccos\left(\frac{|\vec{v_1}\cdot\vec{v_2}|}{|\vec{v_1}| \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec06-2">
+<span class="eqno">(5.31)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec06-2" title="Link to this equation">#</a></span>\[\angle(g_1,g_2) = \arccos\left(\frac{|\vec{v_1}\cdot\vec{v_2}|}{|\vec{v_1}| \cdot
 |\vec{v_2}|}\right).\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -600,15 +600,15 @@ zwischen dem Normalenvektor und dem Richungsvektor der Geraden gerade
 <span class="math notranslate nohighlight">\(90^{\circ}-\varphi\)</span> ist. Um uns erneut Fallunterscheidungen zwischen spitzen
 und stumpfen Winkel zu ersparen, nehmen wir auch hier den Betrag des
 Skalarproduktes:</p>
-<div class="math notranslate nohighlight">
-\[\cos(90^{\circ}-\varphi) = \frac{|\vec{v}\cdot\vec{n}|}{|\vec{v}|\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec06-3">
+<span class="eqno">(5.32)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec06-3" title="Link to this equation">#</a></span>\[\cos(90^{\circ}-\varphi) = \frac{|\vec{v}\cdot\vec{n}|}{|\vec{v}|\cdot
 |\vec{n}|}.\]</div>
 <p>Wir könnten nun erneut den Arkuskosinus anwenden und dann die entstehende
 Gleichung nach dem gesuchten Schnittwinkel <span class="math notranslate nohighlight">\(\varphi\)</span> auflösen. Da aber
 <span class="math notranslate nohighlight">\(\cos(90^{\circ}-\varphi)=\sin(\varphi)\)</span> gilt, können wir auch direkt den
 Schnittwinkel über die Formel</p>
-<div class="math notranslate nohighlight">
-\[\angle(g,E) = \arcsin\left(\frac{|\vec{v}\cdot\vec{n}|}{|\vec{v}| \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec06-4">
+<span class="eqno">(5.33)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec06-4" title="Link to this equation">#</a></span>\[\angle(g,E) = \arcsin\left(\frac{|\vec{v}\cdot\vec{n}|}{|\vec{v}| \cdot
 |\vec{n}|}\right)\]</div>
 <p>berechnen.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -638,8 +638,8 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" refe
 Normalenvektoren genommen. <span class="math notranslate nohighlight">\(\vec{n_1}\)</span> bezeichne einen Normalenvektor der ersten
 Ebene und <span class="math notranslate nohighlight">\(\vec{n_2}\)</span> einen Normalenvektor der zweiten Ebene. Dann gilt wiederum
 für den Schnittwinkel</p>
-<div class="math notranslate nohighlight">
-\[\angle(E_1,E_1) = \arccos \left(\frac{|\vec{n_1}\cdot\vec{n_2}|}
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec06-5">
+<span class="eqno">(5.34)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec06-5" title="Link to this equation">#</a></span>\[\angle(E_1,E_1) = \arccos \left(\frac{|\vec{n_1}\cdot\vec{n_2}|}
 {|\vec{n_1}|\cdot |\vec{n_2}|}\right).\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">

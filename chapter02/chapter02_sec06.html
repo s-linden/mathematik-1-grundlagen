@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -546,12 +546,12 @@ Winkelhalbierenden <span class="math notranslate nohighlight">\(y = x\)</span> e
 <h2>Die Frage umdrehen<a class="headerlink" href="#die-frage-umdrehen" title="Link to this heading">#</a></h2>
 <p>Bei unserer Kugelbahn aus <a class="reference internal" href="chapter02_sec01.html"><span class="doc">2.1 Grundlagen und Definition</span></a> haben wir gefragt: <em>Wie hoch
 ist die Kugel an der Position <span class="math notranslate nohighlight">\(x\)</span>?</em> Die Antwort liefert die Funktion</p>
-<div class="math notranslate nohighlight">
-\[h(x) = -\frac{1}{4}x + 6, \quad x \in [0; 24].\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-1">
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-1" title="Link to this equation">#</a></span>\[h(x) = -\frac{1}{4}x + 6, \quad x \in [0; 24].\]</div>
 <p>Genauso gut können wir die Frage umdrehen: <em>An welcher Position ist die Kugel
 <span class="math notranslate nohighlight">\(h\)</span> cm hoch?</em> Dazu lösen wir die Funktionsgleichung nach <span class="math notranslate nohighlight">\(x\)</span> auf:</p>
-<div class="math notranslate nohighlight">
-\[h = -\frac{1}{4}x + 6 \quad\Leftrightarrow\quad \frac{1}{4}x = 6 - h \quad\Leftrightarrow\quad x = 24 - 4h.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-2">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-2" title="Link to this equation">#</a></span>\[h = -\frac{1}{4}x + 6 \quad\Leftrightarrow\quad \frac{1}{4}x = 6 - h \quad\Leftrightarrow\quad x = 24 - 4h.\]</div>
 <p>Für eine Höhe von <span class="math notranslate nohighlight">\(h = 3~\text{cm}\)</span> erhalten wir zum Beispiel
 <span class="math notranslate nohighlight">\(x = 24 - 4 \cdot 3 = 12~\text{cm}\)</span>. Die neue Zuordnung <span class="math notranslate nohighlight">\(h \mapsto x\)</span> ordnet
 jeder Höhe aus <span class="math notranslate nohighlight">\([0; 6]\)</span> genau eine Position aus <span class="math notranslate nohighlight">\([0; 24]\)</span> zu. Sie ist also
@@ -566,13 +566,13 @@ umgekehrte Zuordnung <span class="math notranslate nohighlight">\(y \mapsto x\)<
 <p class="admonition-title">Was ist … eine Umkehrfunktion?</p>
 <p>Sei <span class="math notranslate nohighlight">\(f: D \to W, \; x \mapsto f(x) = y\)</span> eine Funktion. Wenn auch die Zuordnung
 <span class="math notranslate nohighlight">\(y = f(x) \mapsto x\)</span> eindeutig ist, dann heißt</p>
-<div class="math notranslate nohighlight">
-\[f^{-1}: W \to D, \quad y = f(x) \mapsto x\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-3">
+<span class="eqno">(2.14)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-3" title="Link to this equation">#</a></span>\[f^{-1}: W \to D, \quad y = f(x) \mapsto x\]</div>
 <p>die <strong>Umkehrfunktion</strong> von <span class="math notranslate nohighlight">\(f\)</span>, und <span class="math notranslate nohighlight">\(f\)</span> heißt <strong>umkehrbar</strong>.</p>
 </div>
 <p>Die Umkehrfunktion vertauscht die Rollen von Definitionsmenge und Wertemenge:</p>
-<div class="math notranslate nohighlight">
-\[D_{f^{-1}} = W_f \quad \text{und} \quad W_{f^{-1}} = D_f.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-4">
+<span class="eqno">(2.15)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-4" title="Link to this equation">#</a></span>\[D_{f^{-1}} = W_f \quad \text{und} \quad W_{f^{-1}} = D_f.\]</div>
 </section>
 <section id="wann-ist-eine-funktion-umkehrbar">
 <h2>Wann ist eine Funktion umkehrbar?<a class="headerlink" href="#wann-ist-eine-funktion-umkehrbar" title="Link to this heading">#</a></h2>
@@ -582,9 +582,8 @@ Wert <span class="math notranslate nohighlight">\(y_0\)</span> auf der <span cla
 <a class="reference internal image-reference" href="../_images/umkehrfunktion_eindeutig.svg"><img alt="../_images/umkehrfunktion_eindeutig.svg" src="../_images/umkehrfunktion_eindeutig.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Links ist die Zuordnung <span class="math notranslate nohighlight">\(y \mapsto x\)</span> eindeutig, rechts nicht
-(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
-4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-eindeutig" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 2.3: </span><span class="caption-text">Links ist die Zuordnung <span class="math notranslate nohighlight">\(y \mapsto x\)</span> eindeutig, rechts nicht
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-eindeutig" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -609,26 +608,26 @@ Gerade den Graphen höchstens einmal schneidet. Das ist zum Beispiel bei jeder
 <p><strong>Beispiel:</strong> Gesucht ist die Umkehrfunktion von
 <span class="math notranslate nohighlight">\(y = f(x) = \frac{1}{4}x^3 - 2\)</span> mit <span class="math notranslate nohighlight">\(D_f = W_f = \mathbb{R}\)</span>.</p>
 <p>Wir lösen nach <span class="math notranslate nohighlight">\(x\)</span> auf:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-5">
+<span class="eqno">(2.16)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-5" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 &amp; &amp; y &amp;= \frac{1}{4}x^3 - 2 &amp; &amp; | +2\\
 &amp;\Leftrightarrow &amp; \frac{1}{4}x^3 &amp;= y + 2 &amp; &amp; | \cdot 4\\
 &amp;\Leftrightarrow &amp; x^3 &amp;= 4y + 8 &amp; &amp; | \sqrt[3]{\phantom{x}}\\
 &amp;\Leftrightarrow &amp; x &amp;= \sqrt[3]{4y + 8}
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Die Umkehrfunktion ist also <span class="math notranslate nohighlight">\(f^{-1}(y) = \sqrt[3]{4y + 8}\)</span>. Zur Darstellung im
 selben Koordinatensystem schreiben wir</p>
-<div class="math notranslate nohighlight">
-\[f^{-1}(x) = \sqrt[3]{4x + 8}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-6">
+<span class="eqno">(2.17)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-6" title="Link to this equation">#</a></span>\[f^{-1}(x) = \sqrt[3]{4x + 8}.\]</div>
 <p>Probe mit einem Zahlenwert: <span class="math notranslate nohighlight">\(f(2) = \frac{1}{4} \cdot 2^3 - 2 = 0\)</span> und
 <span class="math notranslate nohighlight">\(f^{-1}(0) = \sqrt[3]{4 \cdot 0 + 8} = 2\)</span>.</p>
 <figure class="align-default" id="umkehrfunktion-kubisch">
 <a class="reference internal image-reference" href="../_images/umkehrfunktion_kubisch.svg"><img alt="../_images/umkehrfunktion_kubisch.svg" src="../_images/umkehrfunktion_kubisch.svg" style="width: 60%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Funktion <span class="math notranslate nohighlight">\(f\)</span> (blau) und Umkehrfunktion <span class="math notranslate nohighlight">\(f^{-1}\)</span> (rot) liegen spiegelbildlich
+<p><span class="caption-number">Abb. 2.4: </span><span class="caption-text">Funktion <span class="math notranslate nohighlight">\(f\)</span> (blau) und Umkehrfunktion <span class="math notranslate nohighlight">\(f^{-1}\)</span> (rot) liegen spiegelbildlich
 zur Winkelhalbierenden <span class="math notranslate nohighlight">\(y = x\)</span>
-(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
-4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-kubisch" title="Link to this image">#</a></p>
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-kubisch" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Durch das Umbenennen der Variablen tauschen die <span class="math notranslate nohighlight">\(x\)</span>- und <span class="math notranslate nohighlight">\(y\)</span>-Koordinaten jedes
@@ -642,26 +641,26 @@ entsteht daher durch <strong>Spiegelung an der Winkelhalbierenden</strong> <span
 einem <span class="math notranslate nohighlight">\(y &gt; 0\)</span> gibt es zwei <span class="math notranslate nohighlight">\(x\)</span>-Werte <span class="math notranslate nohighlight">\(x_1\)</span> und <span class="math notranslate nohighlight">\(x_2 = -x_1\)</span>. Wir können sie aber
 umkehrbar machen, indem wir die <strong>Definitionsmenge einschränken</strong>, zum Beispiel
 auf</p>
-<div class="math notranslate nohighlight">
-\[D_f = \{x \in \mathbb{R} : x \geq 0\} \quad \Rightarrow \quad W_f = \{y \in \mathbb{R} : y \geq 0\}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-7">
+<span class="eqno">(2.18)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-7" title="Link to this equation">#</a></span>\[D_f = \{x \in \mathbb{R} : x \geq 0\} \quad \Rightarrow \quad W_f = \{y \in \mathbb{R} : y \geq 0\}.\]</div>
 <p>Jetzt lösen wir nach <span class="math notranslate nohighlight">\(x\)</span> auf:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-8">
+<span class="eqno">(2.19)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-8" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 &amp; &amp; y &amp;= x^2 &amp; &amp; | \sqrt{\phantom{x}}\\
 &amp;\Leftrightarrow &amp; \sqrt{y} &amp;= \sqrt{x^2}\\
 &amp;\Leftrightarrow &amp; \sqrt{y} &amp;= |x| &amp; &amp; | \; x \geq 0\\
 &amp;\Leftrightarrow &amp; \sqrt{y} &amp;= x
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Die Umkehrfunktion ist also <span class="math notranslate nohighlight">\(x = f^{-1}(y) = \sqrt{y}\)</span>, im selben
 Koordinatensystem <span class="math notranslate nohighlight">\(f^{-1}(x) = \sqrt{x}\)</span>, mit</p>
-<div class="math notranslate nohighlight">
-\[D_{f^{-1}} = W_f = \{x \in \mathbb{R} : x \geq 0\} \quad \text{und} \quad W_{f^{-1}} = D_f = \{x \in \mathbb{R} : x \geq 0\}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter02-chapter02-sec06-9">
+<span class="eqno">(2.20)<a class="headerlink" href="#equation-auto-chapter02-chapter02-sec06-9" title="Link to this equation">#</a></span>\[D_{f^{-1}} = W_f = \{x \in \mathbb{R} : x \geq 0\} \quad \text{und} \quad W_{f^{-1}} = D_f = \{x \in \mathbb{R} : x \geq 0\}.\]</div>
 <figure class="align-default" id="umkehrfunktion-wurzel">
 <a class="reference internal image-reference" href="../_images/umkehrfunktion_wurzel.svg"><img alt="../_images/umkehrfunktion_wurzel.svg" src="../_images/umkehrfunktion_wurzel.svg" style="width: 60%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Die Normalparabel für <span class="math notranslate nohighlight">\(x \geq 0\)</span> (blau) und die Wurzelfunktion (rot)
-(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
-4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-wurzel" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 2.5: </span><span class="caption-text">Die Normalparabel für <span class="math notranslate nohighlight">\(x \geq 0\)</span> (blau) und die Wurzelfunktion (rot)
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</span><a class="headerlink" href="#umkehrfunktion-wurzel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Hätten wir stattdessen <span class="math notranslate nohighlight">\(D_f = \{x \in \mathbb{R} : x \leq 0\}\)</span> gewählt, wäre im

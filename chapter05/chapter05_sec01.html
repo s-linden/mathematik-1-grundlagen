@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -539,23 +539,23 @@ zunächst einmal davon aus, dass wir einen Punkt kennen, der Teil der Gerade ist
 Diesen Punkt nennen wir <span class="math notranslate nohighlight">\(P\)</span>. Kennen wir einen zweiten Punkt <span class="math notranslate nohighlight">\(Q\)</span>, der Teil der
 Gerade ist, dann können wir den sogenannten <strong>Richtungsvektor</strong> <span class="math notranslate nohighlight">\(\vec{u}\)</span>
 einführen, der die beiden Punkte <span class="math notranslate nohighlight">\(P\)</span> und <span class="math notranslate nohighlight">\(Q\)</span> verbindet:</p>
-<div class="math notranslate nohighlight">
-\[\vec{u} = \overrightarrow{PQ}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec01-1">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec01-1" title="Link to this equation">#</a></span>\[\vec{u} = \overrightarrow{PQ}.\]</div>
 <p>Dann können wir jeden Punkt <span class="math notranslate nohighlight">\(X\)</span> der Gerade erreichen, indem wir bei <span class="math notranslate nohighlight">\(P\)</span> starten
 und ein Vielfaches des Richtungsvektors <span class="math notranslate nohighlight">\(\vec{u}\)</span> addieren. Wir schreiben</p>
-<div class="math notranslate nohighlight">
-\[X = P + s\cdot\vec{u}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec01-2">
+<span class="eqno">(5.2)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec01-2" title="Link to this equation">#</a></span>\[X = P + s\cdot\vec{u}\]</div>
 <p>mit dem <strong>Parameter</strong> <span class="math notranslate nohighlight">\(s\in\mathbb{R}\)</span>.</p>
 <p>Für jeden Wert des Parameters <span class="math notranslate nohighlight">\(s\)</span> erhalten wir einen anderen Punkt auf der
 Geraden und umgekehrt. Um diese Abhängigkeit vom Parameter <span class="math notranslate nohighlight">\(s\)</span> auszudrücken,
 wird auch manchmal die folgende Notation verwendet:</p>
-<div class="math notranslate nohighlight">
-\[X(s) = P + s\cdot\vec{u}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec01-3">
+<span class="eqno">(5.3)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec01-3" title="Link to this equation">#</a></span>\[X(s) = P + s\cdot\vec{u}.\]</div>
 <div class="note admonition">
 <p class="admonition-title">Wie lautet … die Parameterdarstellung der Geraden?</p>
 <p>Eine Gerade <span class="math notranslate nohighlight">\(g\)</span> ist eine Menge aus Punkten, die sich schreiben lässt als</p>
-<div class="math notranslate nohighlight">
-\[g = \{X \,|\, X = P + s\cdot\vec{u}, \; s\in\mathbb{R}\}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter05-chapter05-sec01-4">
+<span class="eqno">(5.4)<a class="headerlink" href="#equation-auto-chapter05-chapter05-sec01-4" title="Link to this equation">#</a></span>\[g = \{X \,|\, X = P + s\cdot\vec{u}, \; s\in\mathbb{R}\}.\]</div>
 <p>Wir notieren auch kurz <span class="math notranslate nohighlight">\(g: X = P + s\cdot\vec{v}, \; s\in\mathbb{R}\)</span>.</p>
 </div>
 <p>Das folgende Video erklärt die Parameterdarstellung einer Gerade. Bei Zeitmarke

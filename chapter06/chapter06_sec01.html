@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -600,8 +600,8 @@ Einnahmen, negative Zahlen für Ausgaben.</p>
 Beschriftungen der Zeilen und Spalten sowie Einheiten weggelassen werden. Die
 Zahlen werden stattdessen rechteckig angeordnet und mit runden Klammern
 umrandet:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-1">
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-1" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix}
 956 &amp; 956 &amp; 956 &amp; 956 \\
 -530 &amp; -530 &amp; -530 &amp; -530 \\
 -24.99 &amp; -24.99 &amp; -24.99 &amp; -24.99 \\
@@ -609,8 +609,8 @@ umrandet:</p>
 -12.99 &amp; -12.99 &amp; -17.99 &amp; -17.99 \\
 \end{pmatrix}.\end{split}\]</div>
 <p>Im englischsprachigen Raum werden auch eckige Klammern verwendet:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-2">
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-2" title="Link to this equation">#</a></span>\[\begin{split}\begin{bmatrix}
 956 &amp; 956 &amp; 956 &amp; 956 \\
 -530 &amp; -530 &amp; -530 &amp; -530 \\
 -24.99 &amp; -24.99 &amp; -24.99 &amp; -24.99 \\
@@ -637,8 +637,8 @@ die Fachbegriffe für die einzelnen Bestandteile einer Matrix kennen.</p>
 <p>Ein wichtiges Merkmal einer Matrix ist die Anzahl ihrer Zeilen und die Anzahl
 ihrer Spalten. In unserem obigen Beispiel hatten wir fünf Zeilen und vier
 Spalten. Die Einträge in der Matrix sind reelle Zahlen. Wir schreiben daher</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-3">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-3" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix}
 956 &amp; 956 &amp; 956 &amp; 956 \\
 -530 &amp; -530 &amp; -530 &amp; -530 \\
 -24.99 &amp; -24.99 &amp; -24.99 &amp; -24.99 \\
@@ -654,37 +654,37 @@ in der Matrix angeben. Beispielsweise steht in 5. Zeile und in der 2. Spalte die
 Zahl -12.99. Anstatt Position wird in der Mathematik der Fachbegriff <strong>Index</strong>
 verwendet und der Eintrag an dieser Stelle heißt <strong>Element</strong>. Wir schreiben das
 Element mit Zeilenindex 5 und Spaltenindex 2 als</p>
-<div class="math notranslate nohighlight">
-\[a_{5 2} = -12.99.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-4">
+<span class="eqno">(6.4)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-4" title="Link to this equation">#</a></span>\[a_{5 2} = -12.99.\]</div>
 <p>Der Zeilenindex und der Spaltenindex werden klein an den Variablennamen
 geschrieben, der üblicherweise mit einem kleinen Buchstaben bezeichnet wird. Die
 Angabe</p>
-<div class="math notranslate nohighlight">
-\[a_{5 3}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-5">
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-5" title="Link to this equation">#</a></span>\[a_{5 3}\]</div>
 <p>bedeutet also, dass das Element der Matrix in der 5. Zeile und 3. Spalte gemeint
 ist und wir lesen ab, dass</p>
-<div class="math notranslate nohighlight">
-\[a_{5 3}=-17.99.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-6">
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-6" title="Link to this equation">#</a></span>\[a_{5 3}=-17.99.\]</div>
 <p>Das Netflix-Abo ist also teurer geworden. Vergleichen wir zwei Matrizen, dann
 sind die beiden Matrizen <strong>gleich</strong>, wenn jedes Element <span class="math notranslate nohighlight">\(a_{ij}\)</span> der ersten
 Matrix <span class="math notranslate nohighlight">\(A\)</span> mit jedem Element <span class="math notranslate nohighlight">\(b_{ij}\)</span> der zweiten Matrix <span class="math notranslate nohighlight">\(B\)</span> übereinstimmt.</p>
 <p>Üblicherweise werden Matrizen mit einem großen fettgedrucktem Buchstaben
 bezeichnet, so dass beispielsweise eine <span class="math notranslate nohighlight">\(3\times 2\)</span>-Matrix die folgende
 allgemeine Struktur hat:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A} = \begin{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-7">
+<span class="eqno">(6.7)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-7" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix}
 a_{11} &amp; a_{12} \\
 a_{21} &amp; a_{22} \\
 a_{31} &amp; a_{32} \\
 \end{pmatrix}.\end{split}\]</div>
 <p>Schneiden wir aus der Matrix eine ganze Zeile aus, z.B. die 4. Zeile, erhalten
 wir einen Vektor</p>
-<div class="math notranslate nohighlight">
-\[\vec{z}_{4} = (-108.74 \; -90.56 \; -110.50 \; -95.80),\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-8">
+<span class="eqno">(6.8)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-8" title="Link to this equation">#</a></span>\[\vec{z}_{4} = (-108.74 \; -90.56 \; -110.50 \; -95.80),\]</div>
 <p>der auch als <strong>Zeilenvektor</strong> bezeichnet wird. Ein <strong>Spaltenvektor</strong> ist eine
 ganze Spalte der Matrix, z.B. die erste Spalte</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{s}_{1} = \begin{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-9">
+<span class="eqno">(6.9)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-9" title="Link to this equation">#</a></span>\[\begin{split}\vec{s}_{1} = \begin{pmatrix}
 956 \\
 -530 \\
 -24.99 \\
@@ -702,9 +702,9 @@ einer Matrix sind die Elemente, bei der Zeilenindex und Spaltenindex
 <a class="reference internal image-reference" href="../_images/matrix_bezeichnungen.svg"><img alt="../_images/matrix_bezeichnungen.svg" src="../_images/matrix_bezeichnungen.svg" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Bezeichnungen einer Matrix, Quelle:
-Ralf Pfeifer <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=50327598">Wikimedia Commons</a>,
-Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span><a class="headerlink" href="#matrix-bezeichnungen" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 6.1: </span><span class="caption-text">Bezeichnungen einer Matrix (Quelle: Ralf Pfeifer, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=50327598">Wikimedia
+Commons</a>;
+Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>)</span><a class="headerlink" href="#matrix-bezeichnungen" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -714,8 +714,8 @@ Lizenz: <a class="reference external" href="https://creativecommons.org/licenses
 Matrix ist die <strong>quadratische Matrix</strong>. Bei einer quadratischen Matrix ist die
 Anzahl der Zeilen <span class="math notranslate nohighlight">\(m\)</span> gleich der Anzahl der Spalten <span class="math notranslate nohighlight">\(n\)</span>, also <span class="math notranslate nohighlight">\(m = n\)</span>.
 Beispielsweise ist die <span class="math notranslate nohighlight">\(2\times 2\)</span>-Matrix</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A} = \begin{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-10">
+<span class="eqno">(6.10)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-10" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix}
 1 &amp; -1 \\
 0.5 &amp; 17 \\
 \end{pmatrix} \in \mathbb{R}^{2\times 2}\end{split}\]</div>

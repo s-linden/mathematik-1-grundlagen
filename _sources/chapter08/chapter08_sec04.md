@@ -44,14 +44,14 @@ man jetzt die Verbindungslinie vom Punkt zum Ursprung ein, bildet sie einen
 Winkel von $\varphi = 30^{\circ}$ zur klassischen x-Achse. Diesen Winkel nennt
 man auch Polarwinkel oder Azimuth.
 
-<img src="pics/polarform_light43.svg"
-alt="Mehrere komplexe Zahlen in trigonometrischer Form"
-class="image43"
-width=100%>
-<img src="pics/polarform_light169.svg"
-alt="Mehrere komplexe Zahlen in trigonometrischer Form"
-class="image169"
-width=100%>
+```{figure} pics/polarform_light43.svg
+---
+width: 75%
+name: polarform
+---
+Mehrere komplexe Zahlen in trigonometrischer Form
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 Komplexe Zahlen in der Gaußschen Zahlenebene können ebenfalls in
 Polarkoordinaten dargestellt werden. Zu der komplexen Zahl $z = \sqrt{3} +
@@ -109,14 +109,14 @@ Die umgekehrte Richtung ist etwas schwieriger, lässt sich aber auch mit
 bekannten Formeln aus der Trigonometrie lösen. Dazu zeichnen wir ein
 rechtwinkliges Dreieck ein.
 
-<img src="pics/normal2polarform_light43.svg"
-alt="Rechtwinkliges Dreieck zur Berechnung der Poloarform"
-class="image43"
-width=100%>
-<img src="pics/normal2polarform_light169.svg"
-alt="Rechtwinkliges Dreieck zur Berechnung der Poloarform"
-class="image169"
-width=100%>
+```{figure} pics/normal2polarform_light43.svg
+---
+width: 75%
+name: normal2polarform
+---
+Rechtwinkliges Dreieck zur Berechnung der Polarform von $z = \sqrt{3} + \mathrm{i}$
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
+```
 
 Der Betrag der komplexen Zahl $z = \sqrt{3} + \mathrm{i}$ ergibt sich aus dem
 Satz des Pythagoras:

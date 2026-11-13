@@ -28,9 +28,9 @@ einfachsten ist es, hier ein Bild zu betrachten.
 width: 50%
 name: spat
 ---
-Spat, Quelle: [Wikimedia
-Commons](https://de.wikipedia.org/wiki/Spatprodukt#/media/Datei:Parallelepiped2.svg) von
-Ag2gaeh, Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Spat (Quelle: Ag2gaeh, [Wikimedia
+Commons](https://de.wikipedia.org/wiki/Spatprodukt#/media/Datei:Parallelepiped2.svg);
+Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ## Spatprodukt

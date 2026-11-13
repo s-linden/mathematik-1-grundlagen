@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -526,8 +526,8 @@
 <ul class="simple">
 <li><p>Sie können die Umkehrfunktion ableiten, also</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\left(f^{-1}(y)\right)' = \frac{1}{f'(x)},\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec06-1">
+<span class="eqno">(10.33)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec06-1" title="Link to this equation">#</a></span>\[\left(f^{-1}(y)\right)' = \frac{1}{f'(x)},\]</div>
 <p>wobei <span class="math notranslate nohighlight">\(y=f(x)\)</span> und <span class="math notranslate nohighlight">\(x=f^{-1}(y)\)</span>.</p>
 </div>
 </section>
@@ -546,23 +546,24 @@ existiert. Wir setzen also voraus, dass <span class="math notranslate nohighligh
 ist, also eine Funktion, die injektiv und surjektiv ist. <span class="math notranslate nohighlight">\(D\)</span> ist die
 Definitionsmenge und <span class="math notranslate nohighlight">\(W\)</span> die Wertemenge. Die Umkehrfunktion <span class="math notranslate nohighlight">\(f^{-1}\)</span> ist
 definiert durch:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec06-2">
+<span class="eqno">(10.34)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec06-2" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 f^{-1}(f(x)) = x, \quad &amp; \text{ für alle } x \in D,\\
 f(f^{-1}(y)) = y, \quad &amp; \text{ für alle } y \in W.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 </section>
 <section id="id1">
 <h2>Ableitung der Umkehrfunktion<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>Nachdem wir wiederholt haben, was eine Umkehrfunktion ist, wenden wir uns nun
 der Ableitung zu. Dazu setzen wir voraus, dass die Funktion <span class="math notranslate nohighlight">\(f\)</span> differenzierbar
 ist und dass <span class="math notranslate nohighlight">\(f^{-1}\)</span> existiert und ebenfalls differenzierbar ist. Dann gilt</p>
-<div class="math notranslate nohighlight">
-\[\left(f^{-1}(y)\right)' = \frac{1}{f'(x)},\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec06-3">
+<span class="eqno">(10.35)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec06-3" title="Link to this equation">#</a></span>\[\left(f^{-1}(y)\right)' = \frac{1}{f'(x)},\]</div>
 <p>wobei <span class="math notranslate nohighlight">\(y=f(x)\)</span> und <span class="math notranslate nohighlight">\(x=f^{-1}(y)\)</span>.</p>
 <p>Diese Formel ergibt sich aus der Kettenregel. Zur Herleitung setzen wir <span class="math notranslate nohighlight">\(y =
 f(x)\)</span> und differenzieren die Identität <span class="math notranslate nohighlight">\(f(f^{-1}(y)) = y\)</span> nach y:</p>
-<div class="math notranslate nohighlight">
-\[\left(f(f^{-1}(y))\right)' \cdot (f^{-1}(y))' = 1.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec06-4">
+<span class="eqno">(10.36)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec06-4" title="Link to this equation">#</a></span>\[\left(f(f^{-1}(y))\right)' \cdot (f^{-1}(y))' = 1.\]</div>
 <p>Auflösen nach <span class="math notranslate nohighlight">\((f^{-1}(y))'\)</span> liefert die obige Beziehung.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">

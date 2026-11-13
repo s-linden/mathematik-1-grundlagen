@@ -48,11 +48,11 @@ $$w_1 = (8, 8, 6, 8, 10).$$
 In der zweiten, dritten und vierten Woche des Januars könnte eine Person
 folgende Arbeitsstunden geleistet haben:
 
-$\begin{align*}
+$$\begin{aligned}
 w_2 &= (7, 7, 10, 8, 8) \\
 w_3 &= (8, 8, 8, 8, 8) \\
 w_4 &= (7, 9, 8, 7, 9) \\
-\end{align*}$
+\end{aligned}$$
 
 Sollen nun die Arbeitsstunden im Januar ausgewertet werden, können wir
 beispielsweise fragen, wie viele Stunden insgesamt in den beiden ersten Wochen

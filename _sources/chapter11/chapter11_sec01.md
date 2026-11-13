@@ -35,8 +35,9 @@ in dem Punkt $(0, 1)$ durch die lineare Funktion **approximiert**.
 width: 50%
 name: Exp_e
 ---
-Quelle: Von Marcel Marnitz, reworked by user:Georg-Johann - Selbst erstellt (own work using GeoGebra),
-completely reworked 2010-08-22, Gemeinfrei, https://commons.wikimedia.org/w/index.php?curid=5905583
+Die Exponentialfunktion $f(x) = \exp(x)$ und ihre Tangente $T(x) = x + 1$ im Punkt
+$(0, 1)$ (Quelle: Marcel Marnitz, überarbeitet von Georg-Johann, [Wikimedia
+Commons](https://commons.wikimedia.org/w/index.php?curid=5905583); Lizenz: gemeinfrei)
 ```
 
 Im Folgenden beschreiben wir, wie man auf die Funktionsgleichung der linearen Funktion kommt.
@@ -114,6 +115,8 @@ Linearisierung im Arbeitspunkt $(\frac{\pi}{4}, \frac{\sqrt{2}}{2})$.
 width: 75%
 name: tangente_sinus
 ---
+Die Sinusfunktion und ihre Linearisierung im Arbeitspunkt
+$(\frac{\pi}{4}, \frac{\sqrt{2}}{2})$
 ```
 
 ## Zusammenfassung und Ausblick

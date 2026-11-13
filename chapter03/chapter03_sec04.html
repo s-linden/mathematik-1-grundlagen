@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -544,8 +544,8 @@ welche nicht.</p></li>
 <p>Ein <strong>Punkt</strong> beschreibt einen Ort, zum Beispiel <span class="math notranslate nohighlight">\(P(3,2)\)</span>. Ein <strong>Vektor</strong>
 beschreibt eine Verschiebung, also eine Bewegung um eine bestimmte Strecke in
 eine bestimmte Richtung, zum Beispiel</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-1">
+<span class="eqno">(3.25)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-1" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}.\end{split}\]</div>
 <p>Ein Vektor hat keinen festen Ort. Jeder Pfeil, der zwei Einheiten nach rechts
 und eine Einheit nach oben zeigt, stellt denselben Vektor <span class="math notranslate nohighlight">\(\vec{v}\)</span> dar, egal
 wo er gezeichnet wird.</p>
@@ -554,12 +554,12 @@ wo er gezeichnet wird.</p>
 <h2>Punkt plus Vektor ergibt Punkt<a class="headerlink" href="#punkt-plus-vektor-ergibt-punkt" title="Link to this heading">#</a></h2>
 <p>Wenden wir die Verschiebung <span class="math notranslate nohighlight">\(\vec{v}\)</span> auf den Punkt <span class="math notranslate nohighlight">\(P\)</span> an, landen wir bei
 einem neuen Punkt <span class="math notranslate nohighlight">\(Q\)</span>. Wir schreiben dafür</p>
-<div class="math notranslate nohighlight">
-\[P + \vec{v} = Q.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-2">
+<span class="eqno">(3.26)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-2" title="Link to this equation">#</a></span>\[P + \vec{v} = Q.\]</div>
 <p>Gerechnet wird komponentenweise. Dazu schreiben wir auch die Koordinaten des
 Punktes als Spalte:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} 3 \\ 2 \end{pmatrix} + \begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 5 \\ 3 \end{pmatrix},\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-3">
+<span class="eqno">(3.27)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-3" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix} 3 \\ 2 \end{pmatrix} + \begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 5 \\ 3 \end{pmatrix},\end{split}\]</div>
 <p>also <span class="math notranslate nohighlight">\(Q(5,3)\)</span>.</p>
 <p>Die Schreibweise sieht aus wie eine Vektoraddition, es werden aber zwei
 verschiedene Objekte verknüpft: ein Ort und eine Bewegung. Das Ergebnis ist
@@ -567,33 +567,32 @@ wieder ein Ort.</p>
 <p>Führen wir zwei Verschiebungen nacheinander aus, ist es egal, ob wir den Punkt
 zweimal verschieben oder die beiden Verschiebungen erst zu einer
 zusammenfassen:</p>
-<div class="math notranslate nohighlight">
-\[(P + \vec{v}) + \vec{w} = P + (\vec{v} + \vec{w}).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-4">
+<span class="eqno">(3.28)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-4" title="Link to this equation">#</a></span>\[(P + \vec{v}) + \vec{w} = P + (\vec{v} + \vec{w}).\]</div>
 <figure class="align-default" id="affiner-punktraum-2d">
 <a class="reference internal image-reference" href="../_images/affiner_punktraum_2D.png"><img alt="../_images/affiner_punktraum_2D.png" src="../_images/affiner_punktraum_2D.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Verschieben von <span class="math notranslate nohighlight">\(P(3,2)\)</span> erst um <span class="math notranslate nohighlight">\(\vec{v}\)</span> und dann um <span class="math notranslate nohighlight">\(\vec{w}\)</span> führt zum
-selben Punkt <span class="math notranslate nohighlight">\(R(1,6)\)</span> wie das Verschieben um <span class="math notranslate nohighlight">\(\vec{v}+\vec{w}\)</span>; Quelle: eigene
-Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
-4.0</a></span><a class="headerlink" href="#affiner-punktraum-2d" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 3.8: </span><span class="caption-text">Verschieben von <span class="math notranslate nohighlight">\(P(3,2)\)</span> erst um <span class="math notranslate nohighlight">\(\vec{v}\)</span> und dann um <span class="math notranslate nohighlight">\(\vec{w}\)</span> führt zum
+selben Punkt <span class="math notranslate nohighlight">\(R(1,6)\)</span> wie das Verschieben um <span class="math notranslate nohighlight">\(\vec{v}+\vec{w}\)</span>
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</span><a class="headerlink" href="#affiner-punktraum-2d" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Mit <span class="math notranslate nohighlight">\(\vec{w} = \begin{pmatrix} -4 \\ 3 \end{pmatrix}\)</span> ergibt sich auf beiden
 Wegen</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} 3 \\ 2 \end{pmatrix} + \begin{pmatrix} 2 \\ 1 \end{pmatrix} + \begin{pmatrix} -4 \\ 3 \end{pmatrix} = \begin{pmatrix} 1 \\ 6 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-5">
+<span class="eqno">(3.29)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-5" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix} 3 \\ 2 \end{pmatrix} + \begin{pmatrix} 2 \\ 1 \end{pmatrix} + \begin{pmatrix} -4 \\ 3 \end{pmatrix} = \begin{pmatrix} 1 \\ 6 \end{pmatrix}.\end{split}\]</div>
 </section>
 <section id="punkt-minus-punkt-ergibt-vektor">
 <h2>Punkt minus Punkt ergibt Vektor<a class="headerlink" href="#punkt-minus-punkt-ergibt-vektor" title="Link to this heading">#</a></h2>
 <p>Zu zwei Punkten <span class="math notranslate nohighlight">\(P\)</span> und <span class="math notranslate nohighlight">\(Q\)</span> gibt es genau eine Verschiebung, die <span class="math notranslate nohighlight">\(P\)</span> nach <span class="math notranslate nohighlight">\(Q\)</span>
 bringt. Sie heißt <strong>Verbindungsvektor</strong> und wird mit <span class="math notranslate nohighlight">\(\overrightarrow{PQ}\)</span>
 bezeichnet. Aus <span class="math notranslate nohighlight">\(P + \overrightarrow{PQ} = Q\)</span> folgt</p>
-<div class="math notranslate nohighlight">
-\[\overrightarrow{PQ} = Q - P.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-6">
+<span class="eqno">(3.30)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-6" title="Link to this equation">#</a></span>\[\overrightarrow{PQ} = Q - P.\]</div>
 <p>Man rechnet also »Spitze minus Fuß«. Im Beispiel:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\overrightarrow{PQ} = \begin{pmatrix} 5 \\ 3 \end{pmatrix} - \begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-7">
+<span class="eqno">(3.31)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-7" title="Link to this equation">#</a></span>\[\begin{split}\overrightarrow{PQ} = \begin{pmatrix} 5 \\ 3 \end{pmatrix} - \begin{pmatrix} 3 \\ 2 \end{pmatrix} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}.\end{split}\]</div>
 <p>Wählt man für <span class="math notranslate nohighlight">\(P\)</span> den Koordinatenursprung <span class="math notranslate nohighlight">\(O\)</span>, erhält man den <strong>Ortsvektor</strong>
 <span class="math notranslate nohighlight">\(\overrightarrow{OQ}\)</span>. Er hat dieselben Komponenten wie die Koordinaten von
 <span class="math notranslate nohighlight">\(Q\)</span>. Deshalb dürfen wir mit den Koordinaten von Punkten so rechnen wie mit
@@ -618,15 +617,15 @@ Koordinatensystems hinlegt.</p>
 <p>Eine Ausnahme scheint der <strong>Mittelpunkt</strong> <span class="math notranslate nohighlight">\(M\)</span> der Strecke <span class="math notranslate nohighlight">\(PQ\)</span> zu sein, den man
 oft als <span class="math notranslate nohighlight">\(M = \frac{1}{2}(P + Q)\)</span> schreibt. Sauber gelesen ist das aber Punkt
 plus Vektor, denn man geht von <span class="math notranslate nohighlight">\(P\)</span> aus die halbe Strecke in Richtung <span class="math notranslate nohighlight">\(Q\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[M = P + \tfrac{1}{2}\,\overrightarrow{PQ}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-8">
+<span class="eqno">(3.32)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-8" title="Link to this equation">#</a></span>\[M = P + \tfrac{1}{2}\,\overrightarrow{PQ}.\]</div>
 <p>Mit <span class="math notranslate nohighlight">\(\overrightarrow{PQ} = Q - P\)</span> und komponentenweiser Rechnung in
 Koordinaten erhalten wir daraus wieder die bekannte Formel:</p>
-<div class="math notranslate nohighlight">
-\[M = P + \tfrac{1}{2}(Q - P) = P + \tfrac{1}{2}Q - \tfrac{1}{2}P = \tfrac{1}{2}P + \tfrac{1}{2}Q = \tfrac{1}{2}(P + Q).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-9">
+<span class="eqno">(3.33)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-9" title="Link to this equation">#</a></span>\[M = P + \tfrac{1}{2}(Q - P) = P + \tfrac{1}{2}Q - \tfrac{1}{2}P = \tfrac{1}{2}P + \tfrac{1}{2}Q = \tfrac{1}{2}(P + Q).\]</div>
 <p>Im Beispiel ist</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}M = \begin{pmatrix} 3 \\ 2 \end{pmatrix} + \frac{1}{2}\begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 4 \\ 2{,}5 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-10">
+<span class="eqno">(3.34)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-10" title="Link to this equation">#</a></span>\[\begin{split}M = \begin{pmatrix} 3 \\ 2 \end{pmatrix} + \frac{1}{2}\begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 4 \\ 2{,}5 \end{pmatrix}.\end{split}\]</div>
 <p>Alles hier gilt genauso im <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> und allgemein im <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>:
 Gerechnet wird immer komponentenweise.</p>
 </section>
@@ -649,8 +648,8 @@ wenn gilt:</p>
 <p class="sd-card-text">Eigenschaft 2 liefert den Verbindungsvektor <span class="math notranslate nohighlight">\(\overrightarrow{PQ}\)</span>, Eigenschaft 3
 das Hintereinanderausführen von Verschiebungen.</p>
 <p class="sd-card-text">Für <span class="math notranslate nohighlight">\(A = \mathbb{R}^n\)</span> mit der komponentenweisen Addition</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} P_1 \\ \vdots \\ P_n \end{pmatrix} + \begin{pmatrix} v_1 \\ \vdots \\ v_n \end{pmatrix} = \begin{pmatrix} P_1 + v_1 \\ \vdots \\ P_n + v_n \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec04-11">
+<span class="eqno">(3.35)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec04-11" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix} P_1 \\ \vdots \\ P_n \end{pmatrix} + \begin{pmatrix} v_1 \\ \vdots \\ v_n \end{pmatrix} = \begin{pmatrix} P_1 + v_1 \\ \vdots \\ P_n + v_n \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">sind alle drei Eigenschaften erfüllt. Eigenschaft 1 gilt, weil <span class="math notranslate nohighlight">\(P_i + 0 = P_i\)</span>
 ist. Für Eigenschaft 2 ist <span class="math notranslate nohighlight">\(v_i = Q_i - P_i\)</span> die einzige Wahl. Eigenschaft 3
 folgt aus <span class="math notranslate nohighlight">\(P_i + (v_i + w_i) = (P_i + v_i) + w_i\)</span>, also aus dem

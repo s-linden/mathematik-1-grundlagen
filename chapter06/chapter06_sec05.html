@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -555,17 +555,17 @@ Dieses Prinzip wird in der folgenden Skizze verdeutlicht.</p>
 <a class="reference internal image-reference" href="../_images/Matrix_multiplication_qtl1.svg"><img alt="../_images/Matrix_multiplication_qtl1.svg" src="../_images/Matrix_multiplication_qtl1.svg" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Anforderungen an Spaltenanzahl der ersten Matrix und Zeilenanzahl der zweiten Matrix,
-Quelle: Quartl <a class="reference external" href="https://de.wikipedia.org/wiki/Datei:Matrix_multiplication_qtl1.svg#/media/Datei:Matrix_multiplication_qtl1.svg">Wikimedia Commons</a>,
-Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></span><a class="headerlink" href="#matrix-multiplication" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 6.2: </span><span class="caption-text">Anforderungen an Spaltenanzahl der ersten Matrix und Zeilenanzahl der zweiten Matrix
+(Quelle: Quartl, <a class="reference external" href="https://de.wikipedia.org/wiki/Datei:Matrix_multiplication_qtl1.svg#/media/Datei:Matrix_multiplication_qtl1.svg">Wikimedia Commons</a>;
+Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>)</span><a class="headerlink" href="#matrix-multiplication" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Nun kennen wir die Bedingungen, unter denen zwei Matrizen multipliziert werden
 dürfen, und wissen, welche Dimension die Produktmatrix hat. Aber wie wird die
 Matrizenmultiplikation tatsächlich durchgeführt? Dazu betrachten wir ein
 Beispiel. Gegeben seien die beiden Matrizen:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-1">
+<span class="eqno">(6.30)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-1" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} =
 \begin{pmatrix}
 1 &amp; 0  \\
 2 &amp; -1 \\
@@ -582,8 +582,8 @@ die Spaltenanzahl der ersten Matrix <span class="math notranslate nohighlight">\
 zweiten Matrix <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> ebenfalls zwei ist, dürfen wir das Matrixprodukt
 berechnen. Die Produktmatrix wird die Dimension <span class="math notranslate nohighlight">\(4\times 3\)</span> haben und die
 folgende Form annehmen:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{C} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-2">
+<span class="eqno">(6.31)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-2" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{C} =
 \begin{pmatrix}
 c_{11} &amp; c_{12} &amp; c_{13} \\
 c_{21} &amp; c_{22} &amp; c_{23} \\
@@ -593,30 +593,30 @@ c_{41} &amp; c_{42} &amp; c_{43} \\
 <p>Um das Element in der ersten Zeile und ersten Spalte, also <span class="math notranslate nohighlight">\(c_{11}\)</span>, zu
 berechnen, nehmen wir die erste Zeile von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> und die erste Spalte von
 <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> und bilden das <em>Skalarprodukt</em> dieser beiden Vektoren:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}c_{11} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-3">
+<span class="eqno">(6.32)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-3" title="Link to this equation">#</a></span>\[\begin{split}c_{11} =
 \begin{pmatrix} 1 &amp; 0 \end{pmatrix} \cdot \begin{pmatrix} -1 \\ 2 \end{pmatrix} =
 1\cdot(-1)+0\cdot 2 = -1.
 \end{split}\]</div>
 <p>Dann berechnen wir das Element <span class="math notranslate nohighlight">\(c_{12}\)</span>, indem wir die erste Zeile von
 <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> mit der zweiten Spalte von <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> elementweise multiplizieren
 und aufaddieren:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}c_{12} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-4">
+<span class="eqno">(6.33)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-4" title="Link to this equation">#</a></span>\[\begin{split}c_{12} =
 \begin{pmatrix} 1 &amp; 0 \end{pmatrix} \cdot \begin{pmatrix} 0 \\ 3 \end{pmatrix} =
 1\cdot 0 + 0\cdot 3 = 0.
 \end{split}\]</div>
 <p>Das Element <span class="math notranslate nohighlight">\(c_{13}\)</span> berechnen wir analog aus dem Skalarprodukt der ersten Zeile
 von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> mit der dritten Spalte von <span class="math notranslate nohighlight">\(\mathbf{B}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}c_{13} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-5">
+<span class="eqno">(6.34)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-5" title="Link to this equation">#</a></span>\[\begin{split}c_{13} =
 \begin{pmatrix} 1 &amp; 0 \end{pmatrix} \cdot \begin{pmatrix} 2 \\ 5 \end{pmatrix} =
 1\cdot 2 + 0\cdot 5 = 2.
 \end{split}\]</div>
 <p>Damit haben wir die ersten drei Elemente der Produktmatrix <span class="math notranslate nohighlight">\(\mathbf{C}\)</span>
 berechnet:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{C} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-6">
+<span class="eqno">(6.35)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-6" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{C} =
 \begin{pmatrix}
 -1 &amp; 0 &amp; 2 \\
 c_{21} &amp; c_{22} &amp; c_{23} \\
@@ -626,7 +626,8 @@ c_{41} &amp; c_{42} &amp; c_{43} \\
 <p>Um die zweite Zeile der Produktmatrix zu berechnen, berechnen wir das
 Skalarprodukt der zweiten Zeile von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> mit der ersten, zweiten und
 dritten Spalte von <span class="math notranslate nohighlight">\(\mathbf{B}\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-7">
+<span class="eqno">(6.36)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-7" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 c_{21} &amp;=
 \begin{pmatrix} 2 &amp; -1 \end{pmatrix} \cdot \begin{pmatrix} -1 \\ 2 \end{pmatrix} =
 2\cdot (-1) + (-1)\cdot 2 = -4, \\
@@ -636,10 +637,10 @@ c_{22} &amp;=
 c_{23} &amp;=
 \begin{pmatrix} 2 &amp; -1 \end{pmatrix} \cdot \begin{pmatrix} 2 \\ 5 \end{pmatrix} =
 2\cdot 2 + (-1)\cdot 5 = -1. \\
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Damit haben wir die Hälfte der Elemente von <span class="math notranslate nohighlight">\(\mathbf{C}\)</span> berechnet:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{C} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-8">
+<span class="eqno">(6.37)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-8" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{C} =
 \begin{pmatrix}
 -1 &amp; 0 &amp; 2 \\
 -4 &amp; -3 &amp; -1 \\
@@ -650,8 +651,8 @@ c_{41} &amp; c_{42} &amp; c_{43} \\
 dritten Zeile von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> mit der ersten, zweiten und dritten Spalte von
 <span class="math notranslate nohighlight">\(\mathbf{B}\)</span>. Und zuletzt berechnen wir noch die vierte Zeile von <span class="math notranslate nohighlight">\(\mathbf{C}\)</span>
 auf die gleiche Weise. Insgesamt erhalten wir</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}\cdot\mathbf{B} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-9">
+<span class="eqno">(6.38)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-9" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}\cdot\mathbf{B} =
 \begin{pmatrix}
 1 &amp; 0  \\
 2 &amp; -1 \\
@@ -705,8 +706,8 @@ bei der Matrizenmultiplikation nicht der Fall, weshalb das Kommutativgesetz
 nicht gilt. Es gibt zwar Ausnahmen, in denen <span class="math notranslate nohighlight">\(\mathbf{A}\cdot\mathbf{B} =
 \mathbf{B}\cdot\mathbf{A}\)</span> gilt, doch in den meisten Fällen ist das nicht so.</p>
 <p>Im obigen Beispiel haben wir berechnet:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}\cdot\mathbf{B} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-10">
+<span class="eqno">(6.39)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-10" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}\cdot\mathbf{B} =
 \begin{pmatrix}
 1 &amp; 0  \\
 2 &amp; -1 \\
@@ -725,8 +726,8 @@ nicht gilt. Es gibt zwar Ausnahmen, in denen <span class="math notranslate nohig
 \end{pmatrix}.
 \end{split}\]</div>
 <p>Wenn wir jedoch <span class="math notranslate nohighlight">\(\mathbf{B}\cdot\mathbf{A}\)</span> berechnen wollen, also</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{B}\cdot\mathbf{A} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-11">
+<span class="eqno">(6.40)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-11" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B}\cdot\mathbf{A} =
 \begin{pmatrix}
 -1 &amp; 0 &amp; 2 \\
  2 &amp; 3 &amp; 5 \\
@@ -742,26 +743,27 @@ nicht gilt. Es gibt zwar Ausnahmen, in denen <span class="math notranslate nohig
 die Anzahl der Zeilen der zweiten Matrix vier ist. Selbst wenn die Dimensionen
 der beiden Matrizen passen würden, gilt das Kommutativgesetz meist nicht, wie
 das folgende Beispiel zeigt. Es gilt:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}\cdot\mathbf{B} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-12">
+<span class="eqno">(6.41)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-12" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}\cdot\mathbf{B} =
 \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ \end{pmatrix} \cdot
 \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \\ \end{pmatrix} =
 \begin{pmatrix} 2 &amp; 1 \\ 4 &amp; 3 \\ \end{pmatrix},
 \end{split}\]</div>
 <p>doch für <span class="math notranslate nohighlight">\(\mathbf{B}\cdot\mathbf{A}\)</span> erhalten wir:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{B}\cdot\mathbf{A} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-13">
+<span class="eqno">(6.42)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-13" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B}\cdot\mathbf{A} =
 \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \\ \end{pmatrix} \cdot
 \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ \end{pmatrix} =
 \begin{pmatrix} 3 &amp; 4 \\ 1 &amp; 2 \\ \end{pmatrix}.
 \end{split}\]</div>
 <p>Glücklicherweise gelten für die Matrizenmultiplikation das Assoziativgesetz und
 das Distributivgesetz, die uns das Rechnen mit Matrizen häufig erleichtern:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec05-14">
+<span class="eqno">(6.43)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec05-14" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 (\mathbf{A}\cdot\mathbf{B})\cdot\mathbf{C} &amp;= \mathbf{A}\cdot(\mathbf{B}\cdot\mathbf{C}) \\
 \mathbf{A}\cdot(\mathbf{B}+\mathbf{C}) &amp;= \mathbf{A}\cdot\mathbf{B} + \mathbf{A}\cdot\mathbf{C} \\
 (\mathbf{A}+\mathbf{B})\cdot\mathbf{C} &amp;= \mathbf{A}\cdot\mathbf{C} + \mathbf{B}\cdot\mathbf{C}
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Diese Regeln sind besonders nützlich, wenn es darum geht, komplexere
 Matrizenprodukte zu berechnen. In den folgenden Videos wird auf die Rechenregeln
 für Matrizen ausführlich eingegangen.</p>

@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -542,13 +542,13 @@ Vektorraum ein normierter Raum.</p>
 also der Verschiebung. Wird das kartesische Koordinatensystem genutzt, können
 wir eine Formel zu Berechnung des Betrages angeben. Ist <span class="math notranslate nohighlight">\(\vec{v}\in
 \mathbb{R}^n\)</span> ein Vektor, so wird sein Betrag mit dem Symbol</p>
-<div class="math notranslate nohighlight">
-\[|\vec{v}| \; \text{ oder } \; ||\vec{v}||\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-1">
+<span class="eqno">(3.36)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-1" title="Link to this equation">#</a></span>\[|\vec{v}| \; \text{ oder } \; ||\vec{v}||\]</div>
 <p>abgekürzt. Um nun den Betrag eines Vektors des reellen Standardvektors berechnen
 zu können, fertigen wir zunächst eine Skizze an. Als Beispiel nehmen wir einen
 Vektor <span class="math notranslate nohighlight">\(v\in\mathbb{R}^2\)</span> mit</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = \begin{pmatrix} 6 \\ 2.5 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-2">
+<span class="eqno">(3.37)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-2" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = \begin{pmatrix} 6 \\ 2.5 \end{pmatrix}.\end{split}\]</div>
 <p>Es gibt unendlich viele Pfeile, die geometrisch diesen Vektor im kartesischen
 Koordinatensystem repräsentieren. In der Skizze haben wir die Verschiebung
 eingezeichnet, die beim Punkt <span class="math notranslate nohighlight">\((1.5, 2)\)</span> startet.</p>
@@ -556,23 +556,23 @@ eingezeichnet, die beim Punkt <span class="math notranslate nohighlight">\((1.5,
 <a class="reference internal image-reference" href="../_images/betrag_vektor.png"><img alt="../_images/betrag_vektor.png" src="../_images/betrag_vektor.png" style="width: 75%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Beispiel eines Vektors im <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>; Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA
-4.0</a></span><a class="headerlink" href="#betrag-vektor" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 3.9: </span><span class="caption-text">Beispiel eines Vektors im <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</span><a class="headerlink" href="#betrag-vektor" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Ergänzen wir jetzt zwei Strecken wie in der Skizze ersichtlich, so ergibt sich
 ein rechtwinkliges Dreieck. Die Länge der Katheten entspricht den Elementen des
 Vektors. Daher können wir mit dem Satz des Pythagoras direkt die Länge bzw. den
 Betrag <span class="math notranslate nohighlight">\(|\vec{v}|\)</span> des Vektors berechnen:</p>
-<div class="math notranslate nohighlight">
-\[|\vec{v}| = \sqrt{6^2 + 2.5^2} = \sqrt{42.25} = 6.5.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-3">
+<span class="eqno">(3.38)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-3" title="Link to this equation">#</a></span>\[|\vec{v}| = \sqrt{6^2 + 2.5^2} = \sqrt{42.25} = 6.5.\]</div>
 <p>Dieses Vorgehen können wir verallgemeinern. Allgemein kann der Betrag
 <span class="math notranslate nohighlight">\(|\vec{v}|\)</span> eines Vektors</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_2 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-4">
+<span class="eqno">(3.39)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-4" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_2 \end{pmatrix}\end{split}\]</div>
 <p>des reellen Standardvektorraumes <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> folgendermaßen berechnet werden:</p>
-<div class="math notranslate nohighlight">
-\[|\vec{v}| = \sqrt{v_1^2 + v_2^2 + \ldots + v_n^2}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-5">
+<span class="eqno">(3.40)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-5" title="Link to this equation">#</a></span>\[|\vec{v}| = \sqrt{v_1^2 + v_2^2 + \ldots + v_n^2}.\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Video “Betrag / euklidische Norm” von Mathematische Methoden</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -586,11 +586,11 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 <h2>Einheitsvektor bzw. Vektoren normieren<a class="headerlink" href="#einheitsvektor-bzw-vektoren-normieren" title="Link to this heading">#</a></h2>
 <p>Ein Vektor, der die Länge bzw. den Betrag Eins hat, für den also <span class="math notranslate nohighlight">\(|\vec{v}|=1\)</span>
 gilt, wird <strong>Einheitsvektor</strong> genannt. Beispielsweise ist der Vektor</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = \begin{pmatrix} 0.1 \\ 0.5 \\ 0.7 \\ 0.5 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-6">
+<span class="eqno">(3.41)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-6" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = \begin{pmatrix} 0.1 \\ 0.5 \\ 0.7 \\ 0.5 \end{pmatrix}\end{split}\]</div>
 <p>ein Einheitsvektor, denn es gilt</p>
-<div class="math notranslate nohighlight">
-\[|\vec{v}| = \sqrt{0.1^2 + 0.5^2 + 0.7^2 + 0.5^2} = \sqrt{1/100 + 25/100 +
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-7">
+<span class="eqno">(3.42)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-7" title="Link to this equation">#</a></span>\[|\vec{v}| = \sqrt{0.1^2 + 0.5^2 + 0.7^2 + 0.5^2} = \sqrt{1/100 + 25/100 +
 49/100 + 25/100} = 1.\]</div>
 <p>Sehr häufig ist ein Vektor kein Einheitsvektor. In den Ingenieurwissenschaften
 wird jedoch oft gefordert, Richtungen durch Einheitsvektoren zu beschreiben. Es
@@ -598,22 +598,22 @@ gibt die Möglichkeit, aus jedem Vektor (wenn es nicht gerade der Nullvektor
 ist), einen Einheitsvektor zu machen. Diesen Vorgang nennt man <strong>Normierung</strong>.
 Ein Vektor wird normiert, indem jede Komponente durch den Betrag des Vektors
 geteilt wird. In unserem obigen Beispiel galt</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = \begin{pmatrix} 6 \\ 2.5 \end{pmatrix} \Rightarrow |\vec{v}| =
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-8">
+<span class="eqno">(3.43)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-8" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = \begin{pmatrix} 6 \\ 2.5 \end{pmatrix} \Rightarrow |\vec{v}| =
 6.5.\end{split}\]</div>
 <p>Teilen wir die beiden Komponenten jeweils durch <span class="math notranslate nohighlight">\(6.5=\frac{13}{2}\)</span>, erhalten wir
 den normierten Vektor</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{e}_v = \begin{pmatrix} \frac{12}{13} \\ \frac{5}{13} \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-9">
+<span class="eqno">(3.44)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-9" title="Link to this equation">#</a></span>\[\begin{split}\vec{e}_v = \begin{pmatrix} \frac{12}{13} \\ \frac{5}{13} \end{pmatrix}.\end{split}\]</div>
 <p>Einheitsvektoren, die durch Normierung aus einem Vektor <span class="math notranslate nohighlight">\(\vec{v}\)</span> entstanden
 sind, werden üblicherweise als <span class="math notranslate nohighlight">\(\vec{e}_{v}\)</span> notiert. Wir rechnen noch nach, ob
 der Vektor <span class="math notranslate nohighlight">\(\vec{e}_v\)</span> tatsächlich ein Einheitsvektor ist:</p>
-<div class="math notranslate nohighlight">
-\[|\vec{e}_v| = \sqrt{\left(\frac{12}{13}\right)^2 + \left(\frac{5}{13}\right)^2}
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-10">
+<span class="eqno">(3.45)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-10" title="Link to this equation">#</a></span>\[|\vec{e}_v| = \sqrt{\left(\frac{12}{13}\right)^2 + \left(\frac{5}{13}\right)^2}
 = \sqrt{\frac{144}{169}+\frac{25}{169}} = \sqrt{\frac{169}{169}} = 1.\]</div>
 <p>Allgemein lautet die Formel zur Normierung eines Vektors <span class="math notranslate nohighlight">\(\vec{v}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\vec{e}_v = \frac{1}{|\vec{v}|} \vec{v}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-11">
+<span class="eqno">(3.46)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-11" title="Link to this equation">#</a></span>\[\vec{e}_v = \frac{1}{|\vec{v}|} \vec{v}.\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Video “Vektor normieren (Normalenvektor Einheitsvektor)” von Mathematrick</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -631,17 +631,17 @@ berechnen.</p>
 entsprechend als <span class="math notranslate nohighlight">\(P(P_1, P_2, \ldots, P_n)\)</span> und <span class="math notranslate nohighlight">\(Q(Q_1, Q_2, \ldots, Q_n)\)</span>
 bezeichnet. Zu zwei Punkten gibt es genau einen Vektor <span class="math notranslate nohighlight">\(\vec{v}\)</span>, der <span class="math notranslate nohighlight">\(P\)</span> und
 <span class="math notranslate nohighlight">\(Q\)</span> verbindet, also</p>
-<div class="math notranslate nohighlight">
-\[P + \vec{v} = Q.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-12">
+<span class="eqno">(3.47)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-12" title="Link to this equation">#</a></span>\[P + \vec{v} = Q.\]</div>
 <p>Im vorherigen Kapitel haben wir schon gelernt, dass dieser Vektor aus den
 komponentenweisen Differenzen der Punktkoordinaten besteht:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = \begin{pmatrix} Q_1 - P_1 \\ Q_2 - P_2 \\ \vdots \\ Q_n - P_n
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-13">
+<span class="eqno">(3.48)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-13" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = \begin{pmatrix} Q_1 - P_1 \\ Q_2 - P_2 \\ \vdots \\ Q_n - P_n
 \end{pmatrix}.\end{split}\]</div>
 <p>Von diesem Vektor brauchen wir also nur noch den Betrag berechnen, um den
 Abstand <span class="math notranslate nohighlight">\(d(P,Q)\)</span> zwischen dem Punkt <span class="math notranslate nohighlight">\(P\)</span> und dem Punkt <span class="math notranslate nohighlight">\(Q\)</span> zu erhalten:</p>
-<div class="math notranslate nohighlight">
-\[d(P,Q) = \sqrt{(Q_1 - P_1)^2 + (Q_2 - P_2)^2 + \ldots + (Q_n - P_n)^2}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-14">
+<span class="eqno">(3.49)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-14" title="Link to this equation">#</a></span>\[d(P,Q) = \sqrt{(Q_1 - P_1)^2 + (Q_2 - P_2)^2 + \ldots + (Q_n - P_n)^2}.\]</div>
 <p>Das »d« steht dabei für das Wort <strong>Distanz</strong>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -656,14 +656,14 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 <h2>Mittelpunkt einer Strecke berechnen<a class="headerlink" href="#mittelpunkt-einer-strecke-berechnen" title="Link to this heading">#</a></h2>
 <p>Sind zwei Punkte <span class="math notranslate nohighlight">\(P\)</span> und <span class="math notranslate nohighlight">\(Q\)</span> gegeben, können wir die Richtung zwischen den
 beiden Punkten als</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\overrightarrow{PQ} = \begin{pmatrix} Q_1 - P_1 \\ Q_2 - P_2 \\ \vdots \\ Q_n - P_n
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-15">
+<span class="eqno">(3.50)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-15" title="Link to this equation">#</a></span>\[\begin{split}\overrightarrow{PQ} = \begin{pmatrix} Q_1 - P_1 \\ Q_2 - P_2 \\ \vdots \\ Q_n - P_n
 \end{pmatrix}\end{split}\]</div>
 <p>angeben. Ist nun die Position den Punktes <span class="math notranslate nohighlight">\(M\)</span> als Mittelpunkt zwischen <span class="math notranslate nohighlight">\(P\)</span> und
 <span class="math notranslate nohighlight">\(Q\)</span> gefragt, so müssen wir den Punkt <span class="math notranslate nohighlight">\(P\)</span> um die Hälfte von <span class="math notranslate nohighlight">\(\overrightarrow{PQ}\)</span>
 verschieben. Es gilt also</p>
-<div class="math notranslate nohighlight">
-\[M = P + \frac{1}{2}\vec{PQ}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec05-16">
+<span class="eqno">(3.51)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec05-16" title="Link to this equation">#</a></span>\[M = P + \frac{1}{2}\vec{PQ}.\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Video “Vektorrechnung Mittelpunkt berechnen” von Mathematrick</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">

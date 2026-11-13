@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -527,35 +527,38 @@ sind für viele wichtige Funktionen die Ableitungen schon bekannt.</p>
 <ul class="simple">
 <li><p>Sie können eine konstante Funktion ableiten, d.h.</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[f(x)=C \Rightarrow f'(x)=0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-1">
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-1" title="Link to this equation">#</a></span>\[f(x)=C \Rightarrow f'(x)=0.\]</div>
 <ul class="simple">
 <li><p>Sie können eine Potenzfunktion ableiten, d.h.</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[f(x)=x^{n} \; (n\in\mathbb{N})\; \Rightarrow f'(x)=n\cdot x^{n-1}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-2">
+<span class="eqno">(10.5)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-2" title="Link to this equation">#</a></span>\[f(x)=x^{n} \; (n\in\mathbb{N})\; \Rightarrow f'(x)=n\cdot x^{n-1}.\]</div>
 <ul class="simple">
 <li><p>Sie können die Wurzelfunktion ableiten, d.h.</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[f(x)=\sqrt{x} \Rightarrow f'(x)=\frac{1}{2\sqrt{x}}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-3">
+<span class="eqno">(10.6)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-3" title="Link to this equation">#</a></span>\[f(x)=\sqrt{x} \Rightarrow f'(x)=\frac{1}{2\sqrt{x}}.\]</div>
 <ul class="simple">
-<li><p>Sie können die trigonometrischen Funktionen ableiten, d.h.
-<span class="math notranslate nohighlight">\(\begin{align*}
+<li><p>Sie können die trigonometrischen Funktionen ableiten, d.h.</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-4">
+<span class="eqno">(10.7)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-4" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 f(x)=\sin(x) &amp;\Rightarrow f'(x)=\cos(x) \\ 
 f(x)=\cos(x) &amp;\Rightarrow f'(x)=-\sin(x) \\ 
 f(x)=\tan(x) &amp;\Rightarrow f'(x)=\frac{1}{\cos^2(x)} \\ 
 f(x)=\cot(x) &amp;\Rightarrow f'(x)=-\frac{1}{\sin^2(x)} \\ 
-\end{align*}\)</span></p></li>
+\end{aligned}\end{split}\]</div>
+<ul class="simple">
 <li><p>Sie können die Exponentialfunktion ableiten, d.h.</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[f(x)=e^{x}=\exp(x) \Rightarrow f'(x)=e^{x}=\exp(x).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-5">
+<span class="eqno">(10.8)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-5" title="Link to this equation">#</a></span>\[f(x)=e^{x}=\exp(x) \Rightarrow f'(x)=e^{x}=\exp(x).\]</div>
 <ul class="simple">
 <li><p>Sie können die Logarithmusfunktion ableiten, d.h.</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[f(x)=\ln(x) \Rightarrow f'(x)=\frac{1}{x}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-6">
+<span class="eqno">(10.9)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-6" title="Link to this equation">#</a></span>\[f(x)=\ln(x) \Rightarrow f'(x)=\frac{1}{x}.\]</div>
 </div>
 </section>
 <section id="die-ableitungsfunktion">
@@ -566,25 +569,27 @@ auf ein Intervall verallgemeinern. Wir betrachten dazu als Beispiel die Funktion
 <span class="math notranslate nohighlight">\(f(x) = x^2\)</span>. Zunächst berechnen wir die Ableitung an einer einzelnen Stelle,
 beispielsweise für <span class="math notranslate nohighlight">\(x_1 = 2\)</span>. Dazu bilden wir den Grenzwert der Folge der
 Differentialquotienten:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-7">
+<span class="eqno">(10.10)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-7" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 f'(2)
 &amp;= \lim_{x_2 \to 2} \frac{f(x_2) - f(2)}{x_2 - 2} = \\
 &amp;= \lim_{x_2 \to 2} \frac{x_2^2 - 4}{x_2 - 2} = \\
 &amp;= \lim_{x_2 \to 2} \frac{(x_2 - 2) \cdot (x_2 + 2)}{x_2 - 2} = \\
 &amp;= \lim_{x_2 \to 2} x_2 + 2 = \\
 &amp;= 4.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Jetzt verallgemeinern wir die Grenzwertbildung auf beliebige Stellen
 <span class="math notranslate nohighlight">\(x\in\mathbb{R}\)</span>. Die Vorgehensweise zur Berechnung des Grenzwertes bleibt dabei
 gleich:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-8">
+<span class="eqno">(10.11)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-8" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 f'(x)
 &amp;= \lim_{x_2 \to x} \frac{f(x_2) - f(x)}{x_2 - x} = \\
 &amp;= \lim_{x_2 \to x} \frac{x_2^2 - x^2}{x_2 - x} = \\
 &amp;= \lim_{x_2 \to x} \frac{(x_2 - x) \cdot (x_2 + x)}{x_2 - x} = \\
 &amp;= \lim_{x_2 \to x} x_2 + x = \\
 &amp;= 2x.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Wir haben also zu jeder Stelle <span class="math notranslate nohighlight">\(x\in\mathbb{R}\)</span> einen Wert für die Ableitung
 <span class="math notranslate nohighlight">\(f'(x)\)</span> an dieser Stelle gefunden, nämlich <span class="math notranslate nohighlight">\(f'(x) = 2x\)</span>. Damit ist <span class="math notranslate nohighlight">\(f'\)</span> eine
 Funktion, denn jedem x-Wert wird eindeutig ein y-Wert f’(x) zugeordnet. Diese
@@ -607,46 +612,47 @@ Ableitungsfunktion von <span class="math notranslate nohighlight">\(f\)</span> g
 <h2>Ableitungen von wichtigen Grundfunktionen<a class="headerlink" href="#ableitungen-von-wichtigen-grundfunktionen" title="Link to this heading">#</a></h2>
 <p>Eine <strong>konstante Funktion</strong> ist besonders leicht abzuleiten, denn die Ableitung
 ist an jeder Stelle Null:</p>
-<div class="math notranslate nohighlight">
-\[f(x)=C \Rightarrow f'(x)=0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-9">
+<span class="eqno">(10.12)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-9" title="Link to this equation">#</a></span>\[f(x)=C \Rightarrow f'(x)=0.\]</div>
 <p>Beispiel:</p>
-<div class="math notranslate nohighlight">
-\[f(x) = 5 \Rightarrow f'(x) = 0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-10">
+<span class="eqno">(10.13)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-10" title="Link to this equation">#</a></span>\[f(x) = 5 \Rightarrow f'(x) = 0.\]</div>
 <p>Die Ableitung einer Potenzfunktion ergibt wieder eine Potenzfunktion, allerdings
 wird der Exponent um Eins verringert und der alte Exponent wird ein neuer
 Vorfaktor. Für natürliche Exponenten <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span> lautet die
 Ableitung:</p>
-<div class="math notranslate nohighlight">
-\[f(x)=x^{n} \Rightarrow f'(x)=n\cdot x^{n-1}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-11">
+<span class="eqno">(10.14)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-11" title="Link to this equation">#</a></span>\[f(x)=x^{n} \Rightarrow f'(x)=n\cdot x^{n-1}.\]</div>
 <p>Die Wurzelfunktion ist etwas schwieriger abzuleiten.</p>
-<div class="math notranslate nohighlight">
-\[f(x)=\sqrt{x} \Rightarrow f'(x)=\frac{1}{2\sqrt{x}}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-12">
+<span class="eqno">(10.15)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-12" title="Link to this equation">#</a></span>\[f(x)=\sqrt{x} \Rightarrow f'(x)=\frac{1}{2\sqrt{x}}.\]</div>
 <p>Tatsächlich kann die Wurzelfunktion auch als Potenzfunktion interpretiert
 werden, also <span class="math notranslate nohighlight">\(\sqrt{x} = x^{\frac{1}{2}}\)</span>. Für Potenzfunktionen, bei denen der
 Exponent ein Bruch oder gar eine reelle Zahl ist, gelten dieselben
 Ableitungsregeln wie für Potenzfunktionen mit natürlichem Expoenten. Die einzige
 Einschränkung dabei ist, dass <span class="math notranslate nohighlight">\(x\)</span> positiv sein muss.</p>
-<div class="math notranslate nohighlight">
-\[f(x) = x^{r} \Rightarrow f'(x) = r\cdot x^{r-1}, \quad x &gt;0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-13">
+<span class="eqno">(10.16)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-13" title="Link to this equation">#</a></span>\[f(x) = x^{r} \Rightarrow f'(x) = r\cdot x^{r-1}, \quad x &gt;0.\]</div>
 <p>Mit diesem Wissen kann die Ableitung der Wurzelfunktion auch folgendermaßen
 berechnet werden:</p>
-<div class="math notranslate nohighlight">
-\[f(x) = x^{\frac{1}{2}} \Rightarrow f'(x) = \frac{1}{2} x^{-\frac{1}{2}} = \frac{1}{2} \frac{1}{x^{\frac{1}{2}}} = \frac{1}{2}\frac{1}{\sqrt{x}}.\]</div>
-<p>Die Liste der Ableitungen der trigonometrischen Funktionen lautet:
-<span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-14">
+<span class="eqno">(10.17)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-14" title="Link to this equation">#</a></span>\[f(x) = x^{\frac{1}{2}} \Rightarrow f'(x) = \frac{1}{2} x^{-\frac{1}{2}} = \frac{1}{2} \frac{1}{x^{\frac{1}{2}}} = \frac{1}{2}\frac{1}{\sqrt{x}}.\]</div>
+<p>Die Liste der Ableitungen der trigonometrischen Funktionen lautet:</p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-15">
+<span class="eqno">(10.18)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-15" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 f(x)=\sin(x) &amp;\Rightarrow f'(x)=\cos(x) \\
 f(x)=\cos(x) &amp;\Rightarrow f'(x)=-\sin(x) \\
 f(x)=\tan(x) &amp;\Rightarrow f'(x)=\frac{1}{\cos^2(x)} \\
 f(x)=\cot(x) &amp;\Rightarrow f'(x)=-\frac{1}{\sin^2(x)} \\
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Am einfachsten lässt sich die Exponentialfunktion ableiten, sie bleibt sie
 selbst.</p>
-<div class="math notranslate nohighlight">
-\[f(x)=e^{x}=\exp(x) \Rightarrow f'(x)=e^{x}=\exp(x).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-16">
+<span class="eqno">(10.19)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-16" title="Link to this equation">#</a></span>\[f(x)=e^{x}=\exp(x) \Rightarrow f'(x)=e^{x}=\exp(x).\]</div>
 <p>Zum Abschluss der Liste mit den wichtigsten Ableitungsfunktionen notieren wir
 noch die Ableitung der Logarithmsfunktion:</p>
-<div class="math notranslate nohighlight">
-\[f(x)=\ln(x) \Rightarrow f'(x)=\frac{1}{x}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter10-chapter10-sec02-17">
+<span class="eqno">(10.20)<a class="headerlink" href="#equation-auto-chapter10-chapter10-sec02-17" title="Link to this equation">#</a></span>\[f(x)=\ln(x) \Rightarrow f'(x)=\frac{1}{x}.\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Video zu “Wichtige Ableitungen” von Mathematische Methoden</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">

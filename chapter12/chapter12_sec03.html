@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -528,32 +528,32 @@ Integralen präsentiert.</p>
 <li><p>Sie wissen, wie sich das Integral verändert, wenn die beiden Integrationsgrenzen
 miteinander vertauscht werden:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(x)\,dx = - \int_{b}^{a} f(x)\, dx.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-1">
+<span class="eqno">(12.8)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-1" title="Link to this equation">#</a></span>\[\int_{a}^{b} f(x)\,dx = - \int_{b}^{a} f(x)\, dx.\]</div>
 <ul class="simple">
 <li><p>Sie wissen, dass das Integral Null ist, wenn die untere Integrationsgrenze
 gleich der oberen Integrationsgrenze ist:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{a} f(x)\, dx = 0.\Rule{0 px}{0 em}{1.5 em}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-2">
+<span class="eqno">(12.9)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-2" title="Link to this equation">#</a></span>\[\int_{a}^{a} f(x)\, dx = 0.\Rule{0 px}{0 em}{1.5 em}\]</div>
 <ul class="simple">
 <li><p>Sie wissen, dass ein Integral mit dem Punkt <span class="math notranslate nohighlight">\(c\)</span> in zwei Integrale aufgespalten
 werden kann:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(x) \,dx = \int_{a}^{c} f(x) \,dx + \int_{c}^{b} f(x) \,dx.
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-3">
+<span class="eqno">(12.10)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-3" title="Link to this equation">#</a></span>\[\int_{a}^{b} f(x) \,dx = \int_{a}^{c} f(x) \,dx + \int_{c}^{b} f(x) \,dx.
 \Rule{0 px}{0 em}{1.5 em}\]</div>
 <ul class="simple">
 <li><p>Sie kennen die <strong>Faktorregel</strong>:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} c\cdot f(x)\, dx = c\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-4">
+<span class="eqno">(12.11)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-4" title="Link to this equation">#</a></span>\[\int_{a}^{b} c\cdot f(x)\, dx = c\cdot
 \int_{a}^{b} f(x)\, dx.\]</div>
 <ul class="simple">
 <li><p>Sie kennen die <strong>Summenregel</strong>:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(x) \pm g(x) \, dx = \int_{a}^{b}f(x)\, dx \pm \int_{a}^{b}
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-5">
+<span class="eqno">(12.12)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-5" title="Link to this equation">#</a></span>\[\int_{a}^{b} f(x) \pm g(x) \, dx = \int_{a}^{b}f(x)\, dx \pm \int_{a}^{b}
 g(x)\, dx.\]</div>
 </div>
 </section>
@@ -565,8 +565,8 @@ g(x)\, dx.\]</div>
 des Integrals. Integrieren wir also die Funktion <span class="math notranslate nohighlight">\(f\)</span> von <span class="math notranslate nohighlight">\(b\)</span> nach <span class="math notranslate nohighlight">\(a\)</span> anstatt
 von <span class="math notranslate nohighlight">\(a\)</span> nach <span class="math notranslate nohighlight">\(b\)</span>, müssen wir dieses Integral nur mit <span class="math notranslate nohighlight">\(-1\)</span> multiplizieren, um das
 ursprüngliche Integral von <span class="math notranslate nohighlight">\(a\)</span> nach <span class="math notranslate nohighlight">\(b\)</span> zu erhalten. In Formeln sieht das so aus:</p>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(x)\,dx = - \int_{\textcolor{red}{b}}^{\textcolor{red}{a}}
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-6">
+<span class="eqno">(12.13)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-6" title="Link to this equation">#</a></span>\[\int_{a}^{b} f(x)\,dx = - \int_{\textcolor{red}{b}}^{\textcolor{red}{a}}
 f(x)\, dx.\]</div>
 <p>Gar nicht erst rechnen müssen wir, wenn das Integral über <span class="math notranslate nohighlight">\(f\)</span> von <span class="math notranslate nohighlight">\(a\)</span> bis <span class="math notranslate nohighlight">\(a\)</span>
 geht. In anderen Worten betrachten wir jetzt ein Integral, bei dem die untere
@@ -577,8 +577,8 @@ Anstatt eines Rechtecke liegt sozusagen nur noch ein unendlich dünner Strich an
 der Stelle <span class="math notranslate nohighlight">\(x=a\)</span> vor, weil es ja von <span class="math notranslate nohighlight">\(a\)</span> nach <span class="math notranslate nohighlight">\(a\)</span> geht. Ein Strich hat keinen
 Flächeninhalt, das Integral ist also Null. Als mathematische Formel notiert
 heißt das:</p>
-<div class="math notranslate nohighlight">
-\[\int_{\textcolor{red}{a}}^{\textcolor{red}{a}} f(x)\, dx = 0.\Rule{0 px}{0
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-7">
+<span class="eqno">(12.14)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-7" title="Link to this equation">#</a></span>\[\int_{\textcolor{red}{a}}^{\textcolor{red}{a}} f(x)\, dx = 0.\Rule{0 px}{0
 em}{1.5 em}\]</div>
 <p>Weiter geht es… wiederum hilft die Flächeninterpretation weiter. Diesmal
 erfinden wir einen neuen Punkt <span class="math notranslate nohighlight">\(c\)</span>. Dann kann die Fläche zwischen
@@ -587,8 +587,8 @@ werden. Die erste Fläche ist die Fläche zwischen Funktionsgraph und x-Achse vo
 <span class="math notranslate nohighlight">\(a\)</span> nach <span class="math notranslate nohighlight">\(c\)</span>. Die zweite Fläche ist die Fläche zwischen Funktionsgraph und
 x-Achse von <span class="math notranslate nohighlight">\(c\)</span> nach <span class="math notranslate nohighlight">\(b\)</span>. Und beide Flächen zusammen müssen wieder die
 ursprüngliche Fläche ergeben. Also:</p>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(x) \,dx = \int_{a}^{\textcolor{red}{c}} f(x) \,dx +
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-8">
+<span class="eqno">(12.15)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-8" title="Link to this equation">#</a></span>\[\int_{a}^{b} f(x) \,dx = \int_{a}^{\textcolor{red}{c}} f(x) \,dx +
 \int_{\textcolor{red}{c}}^{b} f(x) \,dx. \Rule{0 px}{0 em}{1.5 em}\]</div>
 <p>Alle drei Eigenschaften werden nochmal in dem folgenden Video erläutert.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -606,14 +606,14 @@ wird und dann integriert werden soll, dann können wir auch zuerst das Integral
 von <span class="math notranslate nohighlight">\(f\)</span> berechnen und danach das Ergebnis <span class="math notranslate nohighlight">\(c\)</span> multiplizieren. Oder anders
 ausgedrückt: wenn im Integranden ein konstanter Faktor ist, dann darf man diesen
 konstanten Faktor auch vor das Integral ziehen.</p>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} c\cdot f(x)\, dx = c\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-9">
+<span class="eqno">(12.16)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-9" title="Link to this equation">#</a></span>\[\int_{a}^{b} c\cdot f(x)\, dx = c\cdot
 \int_{a}^{b} f(x)\, dx.\]</div>
 <p>Summenregel: Soll die Summe oder die Differenz zweier Funktionen integriert
 werden, dürfen auch zuerst die beiden Einzelintegrale berechnet werden und
 danach Summe oder Differenz gebildet werden:</p>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(x) \pm g(x) \, dx = \int_{a}^{b}f(x)\, dx \pm \int_{a}^{b}
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec03-10">
+<span class="eqno">(12.17)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec03-10" title="Link to this equation">#</a></span>\[\int_{a}^{b} f(x) \pm g(x) \, dx = \int_{a}^{b}f(x)\, dx \pm \int_{a}^{b}
 g(x)\, dx.\]</div>
 <p>In dem folgenden Video werden beide Eigenschaften erläutert und anhand eines
 Beispiels demonstriert.</p>

@@ -34,8 +34,9 @@ bezeichnet.
 width: 50%
 name: Lot-g-fp-2d
 ---
-2D: Lotgerade (rot) durch den Punkt $P$ auf die Gerade $g: A + s\cdot\vec{r}$; Quelle: [Wikimedia Ag2gaeh](https://commons.wikimedia.org/w/index.php?curid=109190191),
-Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+2D: Lotgerade (rot) durch den Punkt $P$ auf die Gerade $g: A + s\cdot\vec{r}$
+(Quelle: Ag2gaeh, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=109190191);
+Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ```{figure} pics/Lot-f-e-pg-3d.svg
@@ -43,8 +44,9 @@ Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
 width: 50%
 name: Lot-f-e-pg-3d
 ---
-3D: Lotgerade (rot) durch den Punkt $P$ auf die Gerade $g: A + s\cdot\vec{r}$; Quelle: [Wikimedia Ag2gaeh](https://commons.wikimedia.org/w/index.php?curid=109190192),
-Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+3D: Lotgerade (rot) durch den Punkt $P$ auf die Gerade $g: A + s\cdot\vec{r}$
+(Quelle: Ag2gaeh, [Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=109190192);
+Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ## Abstand eines Punktes zu einer Ebene

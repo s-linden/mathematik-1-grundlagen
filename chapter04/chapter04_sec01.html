@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -550,17 +550,17 @@ bleibt frei, um weitere Aktionen der Spielfigur zu kontrollieren.</p>
 <p>Die Bewegung oben/unten wird von dem Computerspiel folgendermaßen interpretiert.
 Jeder Tastendruck von W bewirkt, dass die Spielfigur einen Schritt nach oben
 bewegt wird. Wird dreimal gedrückt, ist die neue y-Koordinate der Spielfigur</p>
-<div class="math notranslate nohighlight">
-\[y_{\text{neu}} = y_{\text{alt}} + 3\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-1">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-1" title="Link to this equation">#</a></span>\[y_{\text{neu}} = y_{\text{alt}} + 3\]</div>
 <p>und die reine Bewegung in y-Richtung <span class="math notranslate nohighlight">\(v_y = 3\)</span>. Wird danach fünfmal die S-Taste
 gedrückt, bewegt sich die Spielfigur um fünf Schritte nach unten. Nimmt man
 jetzt beide Bewegungen zusammen, dann ist die neue y-Position</p>
-<div class="math notranslate nohighlight">
-\[y_{\text{neu}} = \left( y_{\text{alt}} + 3 \right) - 5 = y_{\text{alt}} -2.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-2">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-2" title="Link to this equation">#</a></span>\[y_{\text{neu}} = \left( y_{\text{alt}} + 3 \right) - 5 = y_{\text{alt}} -2.\]</div>
 <p>Allgemein können wir die Bewegung der Spielfigur beschreiben als
 Linearkombination</p>
-<div class="math notranslate nohighlight">
-\[v_y = W \cdot (+1) + S \cdot (-1),\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-3">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-3" title="Link to this equation">#</a></span>\[v_y = W \cdot (+1) + S \cdot (-1),\]</div>
 <p>wobei die <span class="math notranslate nohighlight">\(+1\)</span> für einen Schritt nach oben steht und die <span class="math notranslate nohighlight">\(-1\)</span> für einen Schritt
 nach unten.</p>
 <p>Analog dazu können wir die Bewegung links/rechts durch die Tasten A und D
@@ -568,11 +568,11 @@ beschreiben. Wird erst dreimal die Taste A gedrückt und dann einmal die Taste D
 so läuft die Spielfigure drei Schritte nach links und dann einen Schritt nach
 rechts. Insgesamt befindet sich die Figure dann zwei Schritte links von der
 ursprünglichen Position, also</p>
-<div class="math notranslate nohighlight">
-\[x_{\text{neu}} = x_{\text{alt}} - 2.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-4">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-4" title="Link to this equation">#</a></span>\[x_{\text{neu}} = x_{\text{alt}} - 2.\]</div>
 <p>Die reine Bewegung können wir durch</p>
-<div class="math notranslate nohighlight">
-\[v_x = D\cdot (+1) + A \cdot (-1)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-5">
+<span class="eqno">(4.5)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-5" title="Link to this equation">#</a></span>\[v_x = D\cdot (+1) + A \cdot (-1)\]</div>
 <p>berechnen. Diesmal steht <span class="math notranslate nohighlight">\(+1\)</span> für einen Schritt nach rechts und <span class="math notranslate nohighlight">\(-1\)</span> für einen
 Schritt nach links.</p>
 <p>Jetzt beschreiben wir die beiden Bewegungsarten gemeinsam. Fünfmal W, dreimal D
@@ -581,12 +581,12 @@ Schritte nach oben und einen Schritt nach rechts gegangen ist. Wir nutzen die
 Vektornotation, d.h. Bewegungen links/rechts werden als erste Komponente notiert
 und die zweite Komponente repräsentiert die Bewegung oben/unten. Die drei
 Bewegungen sind also</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = \begin{pmatrix} 0 \\ 5 \end{pmatrix} + \begin{pmatrix} 3 \\ 0
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-6">
+<span class="eqno">(4.6)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-6" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = \begin{pmatrix} 0 \\ 5 \end{pmatrix} + \begin{pmatrix} 3 \\ 0
 \end{pmatrix} + \begin{pmatrix} -2 \\ 0 \end{pmatrix}.\end{split}\]</div>
 <p>Allgemein können wir jede Bewegung der Spielfigur folgendermaßen zusammensetzen:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = W \cdot \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-7">
+<span class="eqno">(4.7)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-7" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = W \cdot \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 + A \cdot \begin{pmatrix} -1 \\ 0 \end{pmatrix}
 + S \cdot \begin{pmatrix} 0 \\ -1 \end{pmatrix}
 + D\cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix}.\end{split}\]</div>
@@ -601,8 +601,8 @@ die linear kombiniert jeden Vektor des Vektorraumes erzeugen, ein
 <strong>Erzeugendensystem</strong> von <span class="math notranslate nohighlight">\(V\)</span> genannt, wenn jeder Vektor <span class="math notranslate nohighlight">\(\vec{v}\in V\)</span> als
 Linearkombination von den Vektoren aus <span class="math notranslate nohighlight">\(E\)</span> dargestellt werden kann. Jeder Vektor
 <span class="math notranslate nohighlight">\(\vec{v}\in V\)</span> hat also eine Zerlegung der Form</p>
-<div class="math notranslate nohighlight">
-\[\vec{v} = s_1\cdot \vec{e}_1 + s_2 \cdot \vec{e}_2 + \ldots + s_n \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-8">
+<span class="eqno">(4.8)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-8" title="Link to this equation">#</a></span>\[\vec{v} = s_1\cdot \vec{e}_1 + s_2 \cdot \vec{e}_2 + \ldots + s_n \cdot
 \vec{e}_n\]</div>
 <p>mit den Skalaren <span class="math notranslate nohighlight">\(s_1, s_2, \ldots, s_n\)</span> und den Erzeugendensystem-Vektoren
 <span class="math notranslate nohighlight">\(\vec{e}_1, \vec{e}_2, \ldots, \vec{e}_n \in E\)</span>.</p>
@@ -620,8 +620,8 @@ encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="stric
 <p>Bei dem obigen Beispiel des Erzeugendensystems für ein 2D-Computerspiel haben
 wir vier Vektoren benutzt, um die Bewegungen der Spielfigur auf dem Spielfeld zu
 beschreiben:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v} = W \cdot \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-9">
+<span class="eqno">(4.9)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-9" title="Link to this equation">#</a></span>\[\begin{split}\vec{v} = W \cdot \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 + A \cdot \begin{pmatrix} -1 \\ 0 \end{pmatrix}
 + S \cdot \begin{pmatrix} 0 \\ -1 \end{pmatrix}
 + D\cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix}.\end{split}\]</div>
@@ -631,44 +631,45 @@ einen Transport zulassen, bei der die Figur sich von einer Position zu einer
 anderen Position teleportiert, ohne dass die Bewegung selbst sichtbar wird (z.B.
 beim Spawnen), dann ist es einfacher, nur die Gesamtbewegung
 <span class="math notranslate nohighlight">\(\vec{v}_{\text{gesamt}}\)</span> zu betrachten:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v}_{\text{gesamt}} = \begin{pmatrix} 0 \\ 5 \end{pmatrix} + \begin{pmatrix} 3 \\ 0
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-10">
+<span class="eqno">(4.10)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-10" title="Link to this equation">#</a></span>\[\begin{split}\vec{v}_{\text{gesamt}} = \begin{pmatrix} 0 \\ 5 \end{pmatrix} + \begin{pmatrix} 3 \\ 0
 \end{pmatrix} + \begin{pmatrix} -2 \\ 0 \end{pmatrix} =
 \begin{pmatrix} 1 \\ 5 \end{pmatrix}.\end{split}\]</div>
 <p>Die Spielfigur teleportiert also zu der neuen Position</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-11">
+<span class="eqno">(4.11)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-11" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 x_{\text{neu}} &amp;= x_{\text{alt}} + 1, \\
 y_{\text{neu}} &amp;= y_{\text{alt}} + 5. \\
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Am einfachsten lässt sich die Teleportation durch ein Erzeugendensystem
 beschreiben, bei dem nur zwei Vektoren verwendet werden. Der erste Vektor
 beschreibt die Bewegung links/rechts, der zweite Vektor die Bewegung oben/unten:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v}_{\text{gesamt}} = (D - A) \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} +
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-12">
+<span class="eqno">(4.12)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-12" title="Link to this equation">#</a></span>\[\begin{split}\vec{v}_{\text{gesamt}} = (D - A) \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} +
 (W - s) \cdot \begin{pmatrix} 0 \\ 1 \end{pmatrix}.\end{split}\]</div>
 <p>Bei der Gesamtbewegung werden erst die resultierenden Schritte links/rechts als
 <span class="math notranslate nohighlight">\(D-A\)</span> berechnet und dann die resultierenden Schritte oben/unten als <span class="math notranslate nohighlight">\(W-S\)</span>.
 Dennoch können wir immer noch jede Bewegung auf dem Spielfeld darstellen, die
 gebraucht wird, um jede Position auf dem Spielfeld zu erreichen. Lassen wir
 jedoch einen der beiden Vektoren weg und benutzen beispielsweise nur noch</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{v}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix},\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-13">
+<span class="eqno">(4.13)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-13" title="Link to this equation">#</a></span>\[\begin{split}\vec{v}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix},\end{split}\]</div>
 <p>so können wir nur noch links/rechts-Bewegungen erzeugen. Die Spielfigure könnte
 sich nur noch entlang einer horizontalen Linie bewegen, die auf der Höhe ihrer
 Startposition liegt. Weniger als zwei Vektoren darf das Erzeugendensystem nicht
 haben. Das minimale Erzeugendensystem, mit dem durch Linearkombination alle
 Vektoren eines Vektorraums dargestellt werden können, nennt man <strong>Basis</strong>. Für
 unser 2D-Computerspiel bildet die Menge</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}E = \left\{
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-14">
+<span class="eqno">(4.14)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-14" title="Link to this equation">#</a></span>\[\begin{split}E = \left\{
 \begin{pmatrix} 0 \\ 1 \end{pmatrix},
 \begin{pmatrix} -1 \\ 0 \end{pmatrix},
 \begin{pmatrix} 0 \\ -1 \end{pmatrix},
 \begin{pmatrix} 1 \\ 0 \end{pmatrix}
 \right\} \end{split}\]</div>
 <p>ein Erzeugendensystem. Die Menge</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}B = \left\{
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-15">
+<span class="eqno">(4.15)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-15" title="Link to this equation">#</a></span>\[\begin{split}B = \left\{
 \begin{pmatrix} 1 \\ 0 \end{pmatrix},
 \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 \right\} \end{split}\]</div>
@@ -688,21 +689,21 @@ erzeugt werden (= minimal).</p>
 <p>Im dreidimensionalen kartesischen <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> Koordinatensystem wird
 normalerweise die folgende Standardbasis verwendet, um die Richtungen der drei
 Koordinatenachsen zu beschreiben:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{e}_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-16">
+<span class="eqno">(4.16)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-16" title="Link to this equation">#</a></span>\[\begin{split}\vec{e}_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
 \vec{e}_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad
 \vec{e}_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.\end{split}\]</div>
 <p>Dabei werden die Koordinatenachsen als <span class="math notranslate nohighlight">\(x_1\)</span>-Achse, <span class="math notranslate nohighlight">\(x_2\)</span>-Achse und <span class="math notranslate nohighlight">\(x_3\)</span>-Achse
 bezeichnet. Manchmal werden auch andere Bezeichnungen verwendet. Lauten die
 Namen der Koordinatenachsen beispielsweise <span class="math notranslate nohighlight">\(x\)</span>-Achse, <span class="math notranslate nohighlight">\(y\)</span>-Achse und <span class="math notranslate nohighlight">\(z\)</span>-Achse,
 dann werden die Vektoren der Standardbasis folgendermaßen bezeichnet:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{e}_x = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-17">
+<span class="eqno">(4.17)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-17" title="Link to this equation">#</a></span>\[\begin{split}\vec{e}_x = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
 \vec{e}_y = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad
 \vec{e}_z = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.\end{split}\]</div>
 <p>In den Naturwissenschaften sind auch die Bezeichnungen</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{i} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-18">
+<span class="eqno">(4.18)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-18" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{i} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
 \mathbf{j} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad
 \mathbf{k} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}\end{split}\]</div>
 <p>üblich. Da alle Vektoren die Länge Eins haben, sind es Einheitsvektoren. Um
@@ -717,14 +718,14 @@ Vektorraumes. Bei unserem Computerspiel führt die Eigenschaft, dass mindestens
 zwei Basisvektoren gebraucht werden, um die Bewegungen links/rechts und
 oben/unten zu beschreiben, dazu, dass vier Finger für die Steuerung der
 Spielfigur benötigt werden. A - D steuern entlang des Vektors</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{b}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-19">
+<span class="eqno">(4.19)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-19" title="Link to this equation">#</a></span>\[\begin{split}\vec{b}_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}\end{split}\]</div>
 <p>und W - S entlang</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{b}_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-20">
+<span class="eqno">(4.20)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-20" title="Link to this equation">#</a></span>\[\begin{split}\vec{b}_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}.\end{split}\]</div>
 <p>Wir könnten auch eine andere Basis wählen. Auch die Vektoren</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}B' = \left\{\begin{pmatrix} 1 \\ 1 \end{pmatrix}, \begin{pmatrix} -1 \\ 1 \end{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec01-21">
+<span class="eqno">(4.21)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec01-21" title="Link to this equation">#</a></span>\[\begin{split}B' = \left\{\begin{pmatrix} 1 \\ 1 \end{pmatrix}, \begin{pmatrix} -1 \\ 1 \end{pmatrix}
 \right\}\end{split}\]</div>
 <p>ermöglichen es, jede Bewegung auf dem Spielfeld darzustellen. Die Spielfigure
 bewegt sich dann diagonal auf dem Spielfeld, kann aber dennoch durch geschickte

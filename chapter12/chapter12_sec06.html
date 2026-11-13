@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -534,12 +534,12 @@ erhalten wir die sogenannte Integralfunktion.</p>
 <section id="was-ist-die-integralfunktion">
 <h2>Was ist die Integralfunktion?<a class="headerlink" href="#was-ist-die-integralfunktion" title="Link to this heading">#</a></h2>
 <p>Wenn wir einen Punkt <span class="math notranslate nohighlight">\(a\in\mathbb{R}\)</span> festlegen, dann ist das bestimmte Integral</p>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{x} f(t)\, dt\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec06-1">
+<span class="eqno">(12.38)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec06-1" title="Link to this equation">#</a></span>\[\int_{a}^{x} f(t)\, dt\]</div>
 <p>eine Funktion, denn für jeden Wert <span class="math notranslate nohighlight">\(x\in\mathbb{R}\)</span> wird durch diese Vorschrift
 ein Funktionswert</p>
-<div class="math notranslate nohighlight">
-\[I_{a}(x) = \int_{a}^{x} f(t)\, dt\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec06-2">
+<span class="eqno">(12.39)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec06-2" title="Link to this equation">#</a></span>\[I_{a}(x) = \int_{a}^{x} f(t)\, dt\]</div>
 <p>erzeugt. Wichtig dabei ist, dass die untere Grenze <span class="math notranslate nohighlight">\(a\)</span> festgelegt ist. Diese
 Funktion wird <strong>Integralfunktion</strong> genannt.</p>
 <p>Weitere Informationen finden Sie hier:</p>
@@ -555,11 +555,11 @@ Integral ist eine Erweiterung des bestimmten Integrals und erlaubt die Analyse
 von Flächeninhalten oder Summen, die auf den ersten Blick divergieren könnten.</p>
 <p>Wir gehen jetzt davon aus, dass <span class="math notranslate nohighlight">\(f\)</span> eine Funktion ist, die auf jedem Intervall
 <span class="math notranslate nohighlight">\([a,b]\)</span> mit <span class="math notranslate nohighlight">\(b\in (a,\infty)\)</span> definiert ist. Wenn der Grenzwert</p>
-<div class="math notranslate nohighlight">
-\[\lim_{t \to b}\int_{a}^{t} f(x)\, dx\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec06-3">
+<span class="eqno">(12.40)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec06-3" title="Link to this equation">#</a></span>\[\lim_{t \to b}\int_{a}^{t} f(x)\, dx\]</div>
 <p>existiert, dann nennt man</p>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{\infty} f(x)\, dx = \lim_{t \to b}\int_{a}^{t} f(x)\, dx\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec06-4">
+<span class="eqno">(12.41)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec06-4" title="Link to this equation">#</a></span>\[\int_{a}^{\infty} f(x)\, dx = \lim_{t \to b}\int_{a}^{t} f(x)\, dx\]</div>
 <p>das uneigentliche Integral von <span class="math notranslate nohighlight">\(f\)</span> über <span class="math notranslate nohighlight">\([a,\infty)\)</span>.</p>
 <p>Falls die untere Grenze unendlich sein sollte, wird analog vorgegangen. Ebenso
 wird das Integral über einen Grenzwert definiiert, wenn der Integrand ein

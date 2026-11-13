@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -544,18 +544,21 @@ folgende Abbildung zeigt.</p>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/neigungswinkel.svg"><img alt="../_images/neigungswinkel.svg" src="../_images/neigungswinkel.svg" style="width: 75%;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Abb. 11.3: </span><span class="caption-text">Neigungswinkel <span class="math notranslate nohighlight">\(\alpha\)</span> einer Geraden, bestimmt über das Steigungsdreieck</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <p>Die Steigung <span class="math notranslate nohighlight">\(m\)</span> einer Gerade <span class="math notranslate nohighlight">\(f(x) = m\cdot x + b\)</span> ist gegeben als</p>
-<div class="math notranslate nohighlight">
-\[m = \frac{\Delta y}{\Delta x}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec03-1">
+<span class="eqno">(11.24)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec03-1" title="Link to this equation">#</a></span>\[m = \frac{\Delta y}{\Delta x}.\]</div>
 <p>Wenn wir das Steigungsdreieck einzeichnen, sehen wir aber auch, dass der
 Neigungswinkel <span class="math notranslate nohighlight">\(\alpha\)</span> über den Tangens berechnet werden kann. Es gilt also</p>
-<div class="math notranslate nohighlight">
-\[m = \tan(\alpha).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec03-2">
+<span class="eqno">(11.25)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec03-2" title="Link to this equation">#</a></span>\[m = \tan(\alpha).\]</div>
 <p>Wenden wir die Arkustangensfunktion an, können wir so den Neigungswinkel aus der
 Steigung der Geraden berechnen:</p>
-<div class="math notranslate nohighlight">
-\[\alpha = \arctan(m).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec03-3">
+<span class="eqno">(11.26)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec03-3" title="Link to this equation">#</a></span>\[\alpha = \arctan(m).\]</div>
 <p>Der Begriff des Neigungs- oder Steigungswinkel lässt sich von Geraden auch auf
 andere Funktionen übertragen. Handelt es sich jedoch nicht um eine Gerade, so
 variiert der Winkel und ist abhängig von dem Punkt <span class="math notranslate nohighlight">\((x_0, y_0)\)</span> auf dem
@@ -566,8 +569,8 @@ Funktionsgraphen, an dem der Neigungswinkel bestimmt werden soll.</p>
 <span class="math notranslate nohighlight">\(\alpha\)</span>, den ihre Tangente an dieser Stelle mit der x-Achse bildet. Da die
 Steigung der Tangente an dieser Stelle durch die erste Ableitung <span class="math notranslate nohighlight">\(f'(x_0)\)</span>
 gegeben ist, erhalten wir</p>
-<div class="math notranslate nohighlight">
-\[\tan(\alpha) = f'(x_0).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec03-4">
+<span class="eqno">(11.27)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec03-4" title="Link to this equation">#</a></span>\[\tan(\alpha) = f'(x_0).\]</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -587,23 +590,24 @@ Winkel, den die beiden Tangenten einschließen.</p>
 <a class="reference internal image-reference" href="../_images/Schnittwinkel.svg"><img alt="../_images/Schnittwinkel.svg" src="../_images/Schnittwinkel.svg" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Quelle: MushroomCloud - selbst gezeichnet, Bild-frei,
-<a class="reference external" href="https://de.wikipedia.org/w/index.php?curid=2905230">https://de.wikipedia.org/w/index.php?curid=2905230</a></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 11.4: </span><span class="caption-text">Schnittwinkel <span class="math notranslate nohighlight">\(\alpha\)</span> zweier Funktionen als Winkel zwischen ihren Tangenten
+(Quelle: MushroomCloud, <a class="reference external" href="https://de.wikipedia.org/w/index.php?curid=2905230">Wikipedia</a>;
+Lizenz: gemeinfrei)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Man kann diesen Winkel <span class="math notranslate nohighlight">\(\alpha\)</span> auch als Differenz der beiden Neigungswinkel
 berechnen. Wenn <span class="math notranslate nohighlight">\(\alpha_f\)</span> der Neigungswinkel der Funktion <span class="math notranslate nohighlight">\(f\)</span> ist und
 <span class="math notranslate nohighlight">\(\alpha_g\)</span> der Neigungswinkel der Funktion <span class="math notranslate nohighlight">\(g\)</span>, dann ist der gesuchte
 Schnitwinkel</p>
-<div class="math notranslate nohighlight">
-\[\alpha = \left|\alpha_f - \alpha_g\right|.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec03-5">
+<span class="eqno">(11.28)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec03-5" title="Link to this equation">#</a></span>\[\alpha = \left|\alpha_f - \alpha_g\right|.\]</div>
 <p>Da wir beide Neigungswinkel auch mit den Ableitungen formulieren können und ein
 Additionstheorem für den Tangens gilt, erhalten wir</p>
-<div class="math notranslate nohighlight">
-\[\tan(\alpha) = \left|\frac{f'(x_0) - g'(x_0)}{1 + f'(x_0)g'(x_0)}\right|.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec03-6">
+<span class="eqno">(11.29)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec03-6" title="Link to this equation">#</a></span>\[\tan(\alpha) = \left|\frac{f'(x_0) - g'(x_0)}{1 + f'(x_0)g'(x_0)}\right|.\]</div>
 <p>Sind die beiden Tangenten senkrecht zueinander, dann ist</p>
-<div class="math notranslate nohighlight">
-\[f'(x_0)\cdot g'(x_0)=-1.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec03-7">
+<span class="eqno">(11.30)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec03-7" title="Link to this equation">#</a></span>\[f'(x_0)\cdot g'(x_0)=-1.\]</div>
 <p>Und sie berühren sich nur, wenn <span class="math notranslate nohighlight">\(f'(x_0) = g'(x_0)\)</span> gilt. Weitere Deteils findem
 Sie hier:</p>
 <blockquote>

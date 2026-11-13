@@ -59,9 +59,8 @@ width: 75%
 name: affiner_punktraum_2D
 ---
 Verschieben von $P(3,2)$ erst um $\vec{v}$ und dann um $\vec{w}$ führt zum
-selben Punkt $R(1,6)$ wie das Verschieben um $\vec{v}+\vec{w}$; Quelle: eigene
-Darstellung; Lizenz: [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0)
+selben Punkt $R(1,6)$ wie das Verschieben um $\vec{v}+\vec{w}$
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Mit $\vec{w} = \begin{pmatrix} -4 \\ 3 \end{pmatrix}$ ergibt sich auf beiden

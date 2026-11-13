@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -562,14 +562,14 @@ Er liegt sozusagen auf einem Kreis um den Ursprung mit Radius <span class="math 
 man jetzt die Verbindungslinie vom Punkt zum Ursprung ein, bildet sie einen
 Winkel von <span class="math notranslate nohighlight">\(\varphi = 30^{\circ}\)</span> zur klassischen x-Achse. Diesen Winkel nennt
 man auch Polarwinkel oder Azimuth.</p>
-<p><img src="pics/polarform_light43.svg"
-alt="Mehrere komplexe Zahlen in trigonometrischer Form"
-class="image43"
-width=100%>
-<img src="pics/polarform_light169.svg"
-alt="Mehrere komplexe Zahlen in trigonometrischer Form"
-class="image169"
-width=100%></p>
+<figure class="align-default" id="polarform">
+<a class="reference internal image-reference" href="../_images/polarform_light431.svg"><img alt="../_images/polarform_light431.svg" src="../_images/polarform_light431.svg" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Abb. 8.7: </span><span class="caption-text">Mehrere komplexe Zahlen in trigonometrischer Form
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</span><a class="headerlink" href="#polarform" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Komplexe Zahlen in der Gaußschen Zahlenebene können ebenfalls in
 Polarkoordinaten dargestellt werden. Zu der komplexen Zahl <span class="math notranslate nohighlight">\(z = \sqrt{3} +
 \mathrm{i}\)</span> gehören die kartesischen Koordinaten <span class="math notranslate nohighlight">\((\sqrt{3},1)\)</span>. In
@@ -578,12 +578,12 @@ deutlich zu machen, dass es sich um eine komplexe Zahl handelt, werden
 allerdings nicht die Polarkoordinaten selbst benutzt, sondern die sogenannte
 Polarform. Es gibt zwei Varianten der Polarform. Zunächst betrachten wir die
 <strong>trigonometrische Form</strong>:</p>
-<div class="math notranslate nohighlight">
-\[z = 2\cos(30^{\circ}) + 2\sin(30^{\circ})\mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-1">
+<span class="eqno">(8.41)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-1" title="Link to this equation">#</a></span>\[z = 2\cos(30^{\circ}) + 2\sin(30^{\circ})\mathrm{i}.\]</div>
 <p>Ein Vorteil dieser Schreibweise ist, dass der Betrag der komplexen Zahl sofort
 abgelesen werden kann, weil er dem Radius entspricht:</p>
-<div class="math notranslate nohighlight">
-\[|z| = 2.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-2">
+<span class="eqno">(8.42)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-2" title="Link to this equation">#</a></span>\[|z| = 2.\]</div>
 <p>Wir werden noch sehen, dass der Winkel entscheidend für die Multiplikation,
 Division und vor allem auch für das Potenzieren von komplexen Zahlen ist. Um
 diese Bedeutung hervorzuheben, wird der Winkel als <strong>Argument</strong> der komplexen
@@ -593,8 +593,8 @@ trigonometrischen Form einer komplexen Zahl.</p>
 <p class="admonition-title">Was ist … die trigonometrische Form?</p>
 <p>Die trigonometrische Form ist eine alternative Schreibweise einer komplexen Zahl
 <span class="math notranslate nohighlight">\(z\)</span>. In trigonometrischer Form wird eine komplexe Zahl geschrieben als</p>
-<div class="math notranslate nohighlight">
-\[z = r \, \cos(\varphi) + r \, \sin(\varphi)\, \mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-3">
+<span class="eqno">(8.43)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-3" title="Link to this equation">#</a></span>\[z = r \, \cos(\varphi) + r \, \sin(\varphi)\, \mathrm{i}.\]</div>
 <p>Dabei ist <span class="math notranslate nohighlight">\(r\)</span> der Betrag der komplexen Zahl (also <span class="math notranslate nohighlight">\(r = |z|\)</span>) und <span class="math notranslate nohighlight">\(\varphi\)</span> ihr
 Argument.</p>
 </div>
@@ -605,40 +605,40 @@ Argument.</p>
 Tatsächlich müssen wir ja nur die Kosinus- und Sinuswerte konkret ausrechnen und
 jeweils mit dem Betrag multiplizieren. Die komplexe Zahl <span class="math notranslate nohighlight">\(z = 2\cos(30^{\circ})+
 2 \sin(\varphi) \mathrm{i}\)</span> hat den Realteil</p>
-<div class="math notranslate nohighlight">
-\[\text{Re}(z) = 2 \cos(30^{\circ}) = 2 \cdot \frac{\sqrt{3}}{2}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-4">
+<span class="eqno">(8.44)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-4" title="Link to this equation">#</a></span>\[\text{Re}(z) = 2 \cos(30^{\circ}) = 2 \cdot \frac{\sqrt{3}}{2}
 = \sqrt{3}\]</div>
 <p>und den Imaginärteil</p>
-<div class="math notranslate nohighlight">
-\[\text{Im}(z) = 2 \sin(30^{\circ}) = 2 \cdot \frac{1}{2} = 1.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-5">
+<span class="eqno">(8.45)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-5" title="Link to this equation">#</a></span>\[\text{Im}(z) = 2 \sin(30^{\circ}) = 2 \cdot \frac{1}{2} = 1.\]</div>
 <p>Daher ist <span class="math notranslate nohighlight">\(z = 2 \cos(30^{\circ}) + 2\sin(\varphi) \mathrm{i}\)</span> in der Normalform
 die Zahl</p>
-<div class="math notranslate nohighlight">
-\[z = \sqrt{3} + \mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-6">
+<span class="eqno">(8.46)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-6" title="Link to this equation">#</a></span>\[z = \sqrt{3} + \mathrm{i}.\]</div>
 <p>Die umgekehrte Richtung ist etwas schwieriger, lässt sich aber auch mit
 bekannten Formeln aus der Trigonometrie lösen. Dazu zeichnen wir ein
 rechtwinkliges Dreieck ein.</p>
-<p><img src="pics/normal2polarform_light43.svg"
-alt="Rechtwinkliges Dreieck zur Berechnung der Poloarform"
-class="image43"
-width=100%>
-<img src="pics/normal2polarform_light169.svg"
-alt="Rechtwinkliges Dreieck zur Berechnung der Poloarform"
-class="image169"
-width=100%></p>
+<figure class="align-default" id="normal2polarform">
+<a class="reference internal image-reference" href="../_images/normal2polarform_light43.svg"><img alt="../_images/normal2polarform_light43.svg" src="../_images/normal2polarform_light43.svg" style="width: 75%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Abb. 8.8: </span><span class="caption-text">Rechtwinkliges Dreieck zur Berechnung der Polarform von <span class="math notranslate nohighlight">\(z = \sqrt{3} + \mathrm{i}\)</span>
+(Quelle: eigene Darstellung; Lizenz: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</span><a class="headerlink" href="#normal2polarform" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Der Betrag der komplexen Zahl <span class="math notranslate nohighlight">\(z = \sqrt{3} + \mathrm{i}\)</span> ergibt sich aus dem
 Satz des Pythagoras:</p>
-<div class="math notranslate nohighlight">
-\[\textcolor[RGB]{230,0,0}{|z|} = \sqrt{(\sqrt{3})^2 + 1^2} = \sqrt{3 + 1} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-7">
+<span class="eqno">(8.47)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-7" title="Link to this equation">#</a></span>\[\textcolor[RGB]{230,0,0}{|z|} = \sqrt{(\sqrt{3})^2 + 1^2} = \sqrt{3 + 1} =
 \textcolor[RGB]{230,0,0}{2}.\]</div>
 <p>Den Winkel bzw. das Argument <span class="math notranslate nohighlight">\(\varphi\)</span> der komplexen Zahl können wir nun über
 den Kosinus bestimmen. Der Kosinus ist Ankathete geteilt durch Hypotenuse, also</p>
-<div class="math notranslate nohighlight">
-\[\cos(\varphi) = \frac{\textcolor[RGB]{0,90,148}{\sqrt{3}}}{\textcolor[RGB]{230,0,0}{2}}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-8">
+<span class="eqno">(8.48)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-8" title="Link to this equation">#</a></span>\[\cos(\varphi) = \frac{\textcolor[RGB]{0,90,148}{\sqrt{3}}}{\textcolor[RGB]{230,0,0}{2}}.\]</div>
 <p>Nun wenden wir auf beiden Seiten dieser Gleichung die Umkehrfunktion
 Arkuskosinus an:</p>
-<div class="math notranslate nohighlight">
-\[\varphi = \arccos(\cos(\varphi)) = \arccos\left( \frac{\sqrt{3}}{2} \right)
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-9">
+<span class="eqno">(8.49)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-9" title="Link to this equation">#</a></span>\[\varphi = \arccos(\cos(\varphi)) = \arccos\left( \frac{\sqrt{3}}{2} \right)
 = 30^{\circ}.\]</div>
 <p>Für das obige Beispiel hat das gut geklappt. Ein kleines Problem tritt auf, wenn
 der Imaginärteil der komplexen Zahl negativ ist. Der Wertebereich der
@@ -649,12 +649,12 @@ komplexen Zahl <span class="math notranslate nohighlight">\(z = \sqrt{3} - \math
 Uhrzeigersinn angegeben werden und ist somit negativ.</p>
 <p>Insgesamt lautet die Formeln zur Berechnung des Betrages <span class="math notranslate nohighlight">\(|z|\)</span> für eine
 beliebige komplexe Zahl <span class="math notranslate nohighlight">\(z = a + b\mathrm{i}\)</span> wie folgt:</p>
-<div class="math notranslate nohighlight">
-\[|z| = \sqrt{a^2 + b^2}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-10">
+<span class="eqno">(8.50)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-10" title="Link to this equation">#</a></span>\[|z| = \sqrt{a^2 + b^2}.\]</div>
 <p>Das Argument <span class="math notranslate nohighlight">\(\varphi\)</span> im wird für eine beliebige komplexe Zahl
 <span class="math notranslate nohighlight">\(z = a + b\mathrm{i}\)</span> folgendermaßen berechnet:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \varphi = \arg(z) =
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-11">
+<span class="eqno">(8.51)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-11" title="Link to this equation">#</a></span>\[\begin{split} \varphi = \arg(z) =
 \begin{cases}
 \arccos\left(\frac{a}{|z|}\right), \quad &amp; \text{falls } b\geq 0, \\
 * \arccos\left(\frac{a}{|z|}\right), \quad &amp; \text{falls } b &lt; 0.
@@ -683,13 +683,13 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 Zahlen in trigonometrischer Form. Hat die erste Zahl <span class="math notranslate nohighlight">\(z_1\)</span> den Betrag <span class="math notranslate nohighlight">\(r\)</span> und
 das Argument <span class="math notranslate nohighlight">\(\alpha\)</span> und die zweite Zahl <span class="math notranslate nohighlight">\(z_2\)</span> den Betrag <span class="math notranslate nohighlight">\(s\)</span> und das Argument
 <span class="math notranslate nohighlight">\(\beta\)</span>, dann ist das Produkt der beiden komplexen Zahlen</p>
-<div class="math notranslate nohighlight">
-\[z_1 \cdot z_2 = r\cdot s \cdot \left(\cos(\alpha+\beta) +
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-12">
+<span class="eqno">(8.52)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-12" title="Link to this equation">#</a></span>\[z_1 \cdot z_2 = r\cdot s \cdot \left(\cos(\alpha+\beta) +
 \sin(\alpha+\beta)\cdot \mathrm{i} \right).\]</div>
 <p>Die beiden Beträge werden multipliziert und die beiden Argumente werden addiert.</p>
 <p>Für die Division erhalten wir</p>
-<div class="math notranslate nohighlight">
-\[\frac{z_1}{z_2} = \frac{r}{s} \left(\cos(\alpha-\beta) +
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec04-13">
+<span class="eqno">(8.53)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec04-13" title="Link to this equation">#</a></span>\[\frac{z_1}{z_2} = \frac{r}{s} \left(\cos(\alpha-\beta) +
 \sin(\alpha - \beta)\cdot\mathrm{i} \right).\]</div>
 <p>Die beiden Beträge werden dividiert und die beiden Argumente subtrahiert.</p>
 </section>

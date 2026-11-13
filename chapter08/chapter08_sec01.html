@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -558,8 +558,8 @@ bestimmen.</p></li>
 <h2>Die imaginäre Einheit i und die imaginären Zahlen<a class="headerlink" href="#die-imaginare-einheit-i-und-die-imaginaren-zahlen" title="Link to this heading">#</a></h2>
 <p>Innerhalb der Menge der reellen Zahlen <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> stößt man an Grenzen, wie
 beispielsweise bei der Lösung der quadratischen Gleichung</p>
-<div class="math notranslate nohighlight">
-\[x^2 = -1.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-1">
+<span class="eqno">(8.1)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-1" title="Link to this equation">#</a></span>\[x^2 = -1.\]</div>
 <p>Dies liegt daran, dass das Produkt zweier reeller Zahlen, egal ob positiv oder
 negativ, immer positiv ist, und somit die Gleichung in diesem Zahlensystem
 unlösbar ist. Selbst die Zahl 0 kann diese Gleichung nicht lösen.</p>
@@ -567,42 +567,42 @@ unlösbar ist. Selbst die Zahl 0 kann diese Gleichung nicht lösen.</p>
 neue Zahl, die sogenannte <strong>imaginäre Einheit</strong> und bezeichneten sie mit dem
 Symbol <span class="math notranslate nohighlight">\(\mathrm{i}\)</span>. Von dieser neuen Zahl forderten sie, dass sie mit sich
 selbst multipliziert -1 ergibt, also die Eigenschaft</p>
-<div class="math notranslate nohighlight">
-\[\mathrm{i}^2 = -1\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-2">
+<span class="eqno">(8.2)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-2" title="Link to this equation">#</a></span>\[\mathrm{i}^2 = -1\]</div>
 <p>erfüllen soll. Der Name »imaginär« wurde von <a class="reference external" href="https://de.wikipedia.org/wiki/Ren%C3%A9_Descartes">René
 Descartes</a> eingeführt. Imaginär
 ist ein lateinisches Adjektiv und bedeutet, dass etwas nicht wirklich vorhanden
 ist, sondern nur in der Einbildung oder Vorstellung einer Person existiert.</p>
 <p>Die imaginäre Einheit kann ähnlich wie eine physikalische Einheit benutzt
 werden. Beispielsweise gilt</p>
-<div class="math notranslate nohighlight">
-\[3\mathrm{i} + 2\mathrm{i} = 5\mathrm{i}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-3">
+<span class="eqno">(8.3)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-3" title="Link to this equation">#</a></span>\[3\mathrm{i} + 2\mathrm{i} = 5\mathrm{i}\]</div>
 <p>oder</p>
-<div class="math notranslate nohighlight">
-\[2.5\mathrm{i} -3\mathrm{i} = -0.5 \mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-4">
+<span class="eqno">(8.4)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-4" title="Link to this equation">#</a></span>\[2.5\mathrm{i} -3\mathrm{i} = -0.5 \mathrm{i}.\]</div>
 <p>Bei der Multiplikation oder dem Potenzieren können wir die Definition
 <span class="math notranslate nohighlight">\(\mathrm{i}^2 = -1\)</span> ausnutzen. Es gilt beispielsweise</p>
-<div class="math notranslate nohighlight">
-\[3\mathrm{i} \cdot 4\mathrm{i} = 12 \mathrm{i}^2 = 12 \cdot (-1) = -12\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-5">
+<span class="eqno">(8.5)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-5" title="Link to this equation">#</a></span>\[3\mathrm{i} \cdot 4\mathrm{i} = 12 \mathrm{i}^2 = 12 \cdot (-1) = -12\]</div>
 <p>oder</p>
-<div class="math notranslate nohighlight">
-\[\mathrm{i}^3 = \mathrm{i}^2 \cdot \mathrm{i} = -1\cdot \mathrm{i} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-6">
+<span class="eqno">(8.6)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-6" title="Link to this equation">#</a></span>\[\mathrm{i}^3 = \mathrm{i}^2 \cdot \mathrm{i} = -1\cdot \mathrm{i} =
 -\mathrm{i}.\]</div>
 <p>Die imaginäre Einheit ist also zusammengefasst folgendermaßen definiert.</p>
 <div class="note admonition">
 <p class="admonition-title">Was ist … die imaginäre Einheit i?</p>
 <p>Die imaginäre Einheit <span class="math notranslate nohighlight">\(\mathrm{i}\)</span> ist eine spezielle, nicht-reelle Zahl mit der
 Eigenschaft</p>
-<div class="math notranslate nohighlight">
-\[\mathrm{i}^2 = -1.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-7">
+<span class="eqno">(8.7)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-7" title="Link to this equation">#</a></span>\[\mathrm{i}^2 = -1.\]</div>
 </div>
 <p>Aus der imaginären Einheit <span class="math notranslate nohighlight">\(\mathrm{i}\)</span> wird dann eine sogenannte <strong>imaginäre
 Zahl</strong> gebildet, indem die imaginäre Einheit <span class="math notranslate nohighlight">\(\mathrm{i}\)</span> mit einem <em>reellen</em>
 Faktor <span class="math notranslate nohighlight">\(b\)</span>  multipliziert wird. Eine imaginäre Zahl ist also ein Vielfaches der
 imaginären Einheit. In Mengenschreibweise werden die imaginären Zahlen
 folgendermaßen notiert:</p>
-<div class="math notranslate nohighlight">
-\[\{b \cdot \mathrm{i} \, | \, b\in\mathbb{R} \text{ und } \mathrm{i}^2=-1\}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-8">
+<span class="eqno">(8.8)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-8" title="Link to this equation">#</a></span>\[\{b \cdot \mathrm{i} \, | \, b\in\mathbb{R} \text{ und } \mathrm{i}^2=-1\}.\]</div>
 <p>Für diese Menge gibt es kein besonderes Symbol wie beispielsweise für die
 reellen Zahlen <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>.</p>
 </section>
@@ -615,18 +615,18 @@ eine komplett neue Zahlenart entstanden, die wir nun mit den reellen Zahlen
 kombinieren wollen, um die komplexen Zahlen zu bilden.</p>
 <p>Eine komplexe Zahl <span class="math notranslate nohighlight">\(z\)</span> ist definiert als die Summe einer reellen Zahl und
 einer imaginären Zahl, also beispielsweise</p>
-<div class="math notranslate nohighlight">
-\[z = 2  + 3\mathrm{i}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-9">
+<span class="eqno">(8.9)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-9" title="Link to this equation">#</a></span>\[z = 2  + 3\mathrm{i}\]</div>
 <p>oder</p>
-<div class="math notranslate nohighlight">
-\[z = -\frac{5}{2} - \sqrt{3}\mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-10">
+<span class="eqno">(8.10)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-10" title="Link to this equation">#</a></span>\[z = -\frac{5}{2} - \sqrt{3}\mathrm{i}.\]</div>
 <p>Und warum werden diese Zahlen komplex genannt? Das Adjektiv »komplex« ist
 wiederum ein lateinisches Wort und bedeutet vielschichtig oder zusammengesetzt.
 Komplexe Zahlen sind also Zahlen, die aus einer reellen Zahl und einer
 imaginären Zahl zusammengesetzt sind. Formal wird eine komplexe Zahl wie folgt
 notiert:</p>
-<div class="math notranslate nohighlight">
-\[z = a + b\mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-11">
+<span class="eqno">(8.11)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-11" title="Link to this equation">#</a></span>\[z = a + b\mathrm{i}.\]</div>
 <p>Dabei sind <span class="math notranslate nohighlight">\(a\)</span> und <span class="math notranslate nohighlight">\(b\)</span> reelle Zahlen, d.h. <span class="math notranslate nohighlight">\(a, b \in \mathbb{R}\)</span>. Diese
 Darstellung ist als <strong>Normalform</strong> der komplexen Zahlen bekannt. In späteren
 Abschnitten werden weitere Darstellungsformen wie die trigonometrische Form und
@@ -641,8 +641,8 @@ durch das Symbol <span class="math notranslate nohighlight">\(\mathbb{C}\)</span
 <p class="admonition-title">Was ist … eine komplexe Zahl?</p>
 <p>Eine komplexe Zahl ist eine zusammengesetzte Zahl aus einer reellen Zahl und
 einer imaginären Zahl</p>
-<div class="math notranslate nohighlight">
-\[z = a + b\mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-12">
+<span class="eqno">(8.12)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-12" title="Link to this equation">#</a></span>\[z = a + b\mathrm{i}.\]</div>
 <p>Dabei ist <span class="math notranslate nohighlight">\(a\)</span> eine reelle Zahl und <span class="math notranslate nohighlight">\(b\mathrm{i}\)</span> eine imaginäre Zahl. Die Menge
 der komplexen Zahlen wird mit <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> bezeichnet.</p>
 </div>
@@ -656,23 +656,35 @@ Auch die Addition und die Subtraktion können so intuitiv erklärt werden.</p>
 <figure class="align-default" id="zahlenstrahl-n">
 <a class="reference internal image-reference" href="../_images/zahlenstrahl_N.svg"><img alt="../_images/zahlenstrahl_N.svg" src="../_images/zahlenstrahl_N.svg" style="width: 100%;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Abb. 8.1: </span><span class="caption-text">Die natürlichen Zahlen auf dem Zahlenstrahl</span><a class="headerlink" href="#zahlenstrahl-n" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <p>Mit der Einführung der ganzen Zahlen wird der Zahlenstrahl zu einer
 Zahlengeraden erweitert.</p>
 <figure class="align-default" id="zahlenstrahl-z">
 <a class="reference internal image-reference" href="../_images/zahlenstrahl_Z.svg"><img alt="../_images/zahlenstrahl_Z.svg" src="../_images/zahlenstrahl_Z.svg" style="width: 100%;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Abb. 8.2: </span><span class="caption-text">Die ganzen Zahlen auf der Zahlengeraden</span><a class="headerlink" href="#zahlenstrahl-z" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <p>Die rationalen Zahlen werden zwischen den ganzen Zahlen
 eingefügt.</p>
 <figure class="align-default" id="zahlenstrahl-q">
 <a class="reference internal image-reference" href="../_images/zahlenstrahl_Q.svg"><img alt="../_images/zahlenstrahl_Q.svg" src="../_images/zahlenstrahl_Q.svg" style="width: 100%;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Abb. 8.3: </span><span class="caption-text">Die rationalen Zahlen auf der Zahlengeraden</span><a class="headerlink" href="#zahlenstrahl-q" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <p>Und letztendlich werden auch noch die reellen Zahlen dazugepackt.</p>
 <figure class="align-default" id="zahlenstrahl-r">
 <a class="reference internal image-reference" href="../_images/zahlenstrahl_R.svg"><img alt="../_images/zahlenstrahl_R.svg" src="../_images/zahlenstrahl_R.svg" style="width: 100%;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Abb. 8.4: </span><span class="caption-text">Die reellen Zahlen auf der Zahlengeraden</span><a class="headerlink" href="#zahlenstrahl-r" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <p>Die imaginäre Einheit <span class="math notranslate nohighlight">\(\mathrm{i}\)</span> ist jedoch keine reelle Zahl und darf deshalb
 nicht auf der reellen Zahlengeraden <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> eingezeichnet werden. Sie liegt
@@ -682,6 +694,10 @@ aufgetragen, so dass ein zweidimensionales Koordinatensystem entsteht.</p>
 <figure class="align-default" id="zahlenebene">
 <a class="reference internal image-reference" href="../_images/zahlenebene.svg"><img alt="../_images/zahlenebene.svg" src="../_images/zahlenebene.svg" style="width: 100%;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Abb. 8.5: </span><span class="caption-text">Die Gaußsche Zahlenebene mit reeller Achse (Realteil) und imaginärer Achse
+(Imaginärteil)</span><a class="headerlink" href="#zahlenebene" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 <p>Auf der horizontalen Achse (Rechtsachse) werden die reellen Zahlen aufgetragen.
 Der reelle Teil einer komplexen Zahl wird als <strong>Realteil</strong> bezeichnet. Man
@@ -690,13 +706,13 @@ augetragen würden. Dies ist aber nicht der Fall, sondern es werden die reellen
 Zahlen aufgetragen, mit denen die imaginäre Einheit <span class="math notranslate nohighlight">\(\mathrm{i}\)</span> multipliziert
 wird. Dieser Teil der komplexen Zahl wird <strong>Imaginärteil</strong> genannt.</p>
 <p><strong>Beispiel 1:</strong> Die komplexe Zahl</p>
-<div class="math notranslate nohighlight">
-\[z = 2 + 3\mathrm{i}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-13">
+<span class="eqno">(8.13)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-13" title="Link to this equation">#</a></span>\[z = 2 + 3\mathrm{i}\]</div>
 <p>hat den Realteil <span class="math notranslate nohighlight">\(2\)</span> und den Imaginärteil <span class="math notranslate nohighlight">\(3\)</span>. In der Gaußschen Zahlenebene wird
 <span class="math notranslate nohighlight">\(z = 2+3\mathrm{i}\)</span> als Punkt <span class="math notranslate nohighlight">\((2,3)\)</span> notiert.</p>
 <p><strong>Beispiel 2:</strong> Die komplexe Zahl</p>
-<div class="math notranslate nohighlight">
-\[z = -\frac{5}{2} - \sqrt{3}\mathrm{i}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-14">
+<span class="eqno">(8.14)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-14" title="Link to this equation">#</a></span>\[z = -\frac{5}{2} - \sqrt{3}\mathrm{i}\]</div>
 <p>hat den Realteil <span class="math notranslate nohighlight">\(-\frac{5}{2}\)</span> und den Imaginärteil <span class="math notranslate nohighlight">\(-\sqrt{3}\)</span>. In der
 Gaußschen Zahlenebene wird <span class="math notranslate nohighlight">\(z = -\frac{5}{2} - \sqrt{3}\mathrm{i}\)</span> als Punkt
 <span class="math notranslate nohighlight">\((-\frac{5}{2},-\sqrt{3})\)</span> notiert.</p>
@@ -706,21 +722,21 @@ Gaußschen Zahlenebene wird <span class="math notranslate nohighlight">\(z = -\f
 <p>Ist <span class="math notranslate nohighlight">\(z\)</span> eine komplexe Zahl in der Normalform <span class="math notranslate nohighlight">\(z = a + b\mathrm{i}\)</span>, dann nennt
 man die reelle Zahl <span class="math notranslate nohighlight">\(a\)</span> den Realteil von <span class="math notranslate nohighlight">\(z\)</span>. Als Abkürzung wird das Symbol
 <span class="math notranslate nohighlight">\(\mathrm{Re}\)</span> benutzt und als Formel schreibt man</p>
-<div class="math notranslate nohighlight">
-\[\mathrm{Re}(z) = \mathrm{Re}(a+b\mathrm{i}) = a.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-15">
+<span class="eqno">(8.15)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-15" title="Link to this equation">#</a></span>\[\mathrm{Re}(z) = \mathrm{Re}(a+b\mathrm{i}) = a.\]</div>
 <p>Die reelle Zahl <span class="math notranslate nohighlight">\(b\)</span>, die zusammen mit der imaginären Einheit <span class="math notranslate nohighlight">\(\mathrm{i}\)</span> die
 imaginäre Zahl <span class="math notranslate nohighlight">\(b\mathrm{i}\)</span> bildet, heißt Imaginärteil von <span class="math notranslate nohighlight">\(z\)</span>. Der
 Imaginärteil wird mit <span class="math notranslate nohighlight">\(\mathrm{Im}\)</span> abgekürzt. Als Formel schreibt man</p>
-<div class="math notranslate nohighlight">
-\[\mathrm{Im}(z) = \mathrm{Im}(a+b\mathrm{i}) = b.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-16">
+<span class="eqno">(8.16)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-16" title="Link to this equation">#</a></span>\[\mathrm{Im}(z) = \mathrm{Im}(a+b\mathrm{i}) = b.\]</div>
 </div>
 <p>Für die beiden obigen Beispiele gilt also:</p>
-<div class="math notranslate nohighlight">
-\[\mathrm{Re}(2+3\mathrm{i}) = 2 \; \text{ und } \;
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-17">
+<span class="eqno">(8.17)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-17" title="Link to this equation">#</a></span>\[\mathrm{Re}(2+3\mathrm{i}) = 2 \; \text{ und } \;
 \mathrm{Im}(2+3\mathrm{i}) = 3\]</div>
 <p>und</p>
-<div class="math notranslate nohighlight">
-\[\mathrm{Re}\left(-\frac{5}{2} - \sqrt{3}\mathrm{i}\right) = -\frac{5}{2}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec01-18">
+<span class="eqno">(8.18)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec01-18" title="Link to this equation">#</a></span>\[\mathrm{Re}\left(-\frac{5}{2} - \sqrt{3}\mathrm{i}\right) = -\frac{5}{2}
 \; \text{ und } \;
 \mathrm{Im}\left(-\frac{5}{2} - \sqrt{3}\mathrm{i}\right) = -\sqrt{3}.\]</div>
 <p>Das folgende Video fasst die oben eingeführten Begriffe zusammen.</p>

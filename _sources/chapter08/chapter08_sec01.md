@@ -160,6 +160,7 @@ Auch die Addition und die Subtraktion können so intuitiv erklärt werden.
 width: 100%
 name: zahlenstrahl_N
 ---
+Die natürlichen Zahlen auf dem Zahlenstrahl
 ```
 
 Mit der Einführung der ganzen Zahlen wird der Zahlenstrahl zu einer
@@ -170,6 +171,7 @@ Zahlengeraden erweitert.
 width: 100%
 name: zahlenstrahl_Z
 ---
+Die ganzen Zahlen auf der Zahlengeraden
 ```
 
 Die rationalen Zahlen werden zwischen den ganzen Zahlen
@@ -180,6 +182,7 @@ eingefügt.
 width: 100%
 name: zahlenstrahl_Q
 ---
+Die rationalen Zahlen auf der Zahlengeraden
 ```
 
 Und letztendlich werden auch noch die reellen Zahlen dazugepackt.
@@ -189,6 +192,7 @@ Und letztendlich werden auch noch die reellen Zahlen dazugepackt.
 width: 100%
 name: zahlenstrahl_R
 ---
+Die reellen Zahlen auf der Zahlengeraden
 ```
 
 Die imaginäre Einheit $\mathrm{i}$ ist jedoch keine reelle Zahl und darf deshalb
@@ -202,6 +206,8 @@ aufgetragen, so dass ein zweidimensionales Koordinatensystem entsteht.
 width: 100%
 name: zahlenebene
 ---
+Die Gaußsche Zahlenebene mit reeller Achse (Realteil) und imaginärer Achse
+(Imaginärteil)
 ```
 
 Auf der horizontalen Achse (Rechtsachse) werden die reellen Zahlen aufgetragen.

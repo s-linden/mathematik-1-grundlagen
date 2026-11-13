@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -544,18 +544,19 @@ linearen Gleichungssystemen anwenden.</p></li>
 <p>Ein lineares Gleichungssystem kann kompakt in Matrixform dargestellt werden.
 Betrachten wir ein allgemeines lineares Gleichungssystem mit <span class="math notranslate nohighlight">\(n\)</span> Gleichungen und
 <span class="math notranslate nohighlight">\(n\)</span> Unbekannten:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-1">
+<span class="eqno">(7.34)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-1" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n &amp;= b_1 \\
 a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n &amp;= b_2 \\
 \vdots \\
 a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n &amp;= b_n.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Dies lässt sich in kompakter Matrixschreibweise darstellen als:</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{A} \vec{x} = \vec{b},\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-2">
+<span class="eqno">(7.35)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-2" title="Link to this equation">#</a></span>\[\mathbf{A} \vec{x} = \vec{b},\]</div>
 <p>wobei <span class="math notranslate nohighlight">\(\mathbf{A} \in \mathbb{R}^{n \times n}\)</span> die <strong>Koeffizientenmatrix</strong></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-3">
+<span class="eqno">(7.36)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-3" title="Link to this equation">#</a></span>\[\begin{split}
   \mathbf{A} = \begin{pmatrix}
   a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} \\
   a_{21} &amp; a_{22} &amp; \dots &amp; a_{2n} \\
@@ -564,8 +565,8 @@ a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n &amp;= b_n.
   \end{pmatrix}
 \end{split}\]</div>
 <p>ist und <span class="math notranslate nohighlight">\(\vec{x} \in \mathbb{R}^n\)</span> der <strong>Vektor der Unbekannten</strong> mit</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-4">
+<span class="eqno">(7.37)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-4" title="Link to this equation">#</a></span>\[\begin{split}
   \vec{x} = \begin{pmatrix}
   x_1 \\
   x_2 \\
@@ -575,8 +576,8 @@ a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n &amp;= b_n.
 \end{split}\]</div>
 <p>Die rechte Seite des linearen Gleichungssystems wird im <strong>Ergebnisvektor</strong>
 <span class="math notranslate nohighlight">\(\vec{b} \in \mathbb{R}^n \)</span> zusammengefasst:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-5">
+<span class="eqno">(7.38)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-5" title="Link to this equation">#</a></span>\[\begin{split}
   \vec{b} = \begin{pmatrix}
   b_1 \\
   b_2 \\
@@ -585,8 +586,8 @@ a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n &amp;= b_n.
   \end{pmatrix}.
 \end{split}\]</div>
 <p>Betrachten wir das folgende lineare Gleichungssystem:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-6">
+<span class="eqno">(7.39)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-6" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{align*}
 3x_1 - 4x_2 - 4x_3 &amp;= -4  \\
 6x_1 - 6x_2 - 7x_3 &amp;= -11 \\
@@ -595,8 +596,8 @@ a_{n1}x_1 + a_{n2}x_2 + \dots + a_{nn}x_n &amp;= b_n.
 \end{split}\]</div>
 <p>Dieses Gleichungssystem können wir in Matrixform darstellen. Die
 Koeffizientenmatrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> ist:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-7">
+<span class="eqno">(7.40)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-7" title="Link to this equation">#</a></span>\[\begin{split}
 \mathbf{A} = \begin{pmatrix}
 3 &amp; -4 &amp; -4 \\
 6 &amp; -6 &amp; -7 \\
@@ -604,8 +605,8 @@ Koeffizientenmatrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</s
 \end{pmatrix}.
 \end{split}\]</div>
 <p>Der Vektor der Unbekannten <span class="math notranslate nohighlight">\(\vec{x}\)</span> ist:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-8">
+<span class="eqno">(7.41)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-8" title="Link to this equation">#</a></span>\[\begin{split}
 \vec{x} = \begin{pmatrix}
 x_1 \\
 x_2 \\
@@ -613,8 +614,8 @@ x_3
 \end{pmatrix}
 \end{split}\]</div>
 <p>und der Ergebnisvektor <span class="math notranslate nohighlight">\(\vec{b}\)</span> ist:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-9">
+<span class="eqno">(7.42)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-9" title="Link to this equation">#</a></span>\[\begin{split}
 \vec{b} = \begin{pmatrix}
 -4 \\
 -11 \\
@@ -623,8 +624,8 @@ x_3
 \end{split}\]</div>
 <p>Das gesamte lineare Gleichungssystem lässt sich nun in Matrixform schreiben als
 <span class="math notranslate nohighlight">\(\mathbf{A} \vec{x} = \vec{b}\)</span>, also</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-10">
+<span class="eqno">(7.43)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-10" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{pmatrix}
 3 &amp; -4 &amp; -4 \\
 6 &amp; -6 &amp; -7 \\
@@ -648,28 +649,28 @@ x_3
 Inverse der Koeffizientenmatrix <span class="math notranslate nohighlight">\( \mathbf{A}\)</span> berechnen, sofern
 <span class="math notranslate nohighlight">\(\det(\mathbf{A})\neq 0\)</span> ist. Die Lösung eines linearen Gleichungssystems der
 Form</p>
-<div class="math notranslate nohighlight">
-\[ \mathbf{A} \vec{x} = \vec{b} \]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-11">
+<span class="eqno">(7.44)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-11" title="Link to this equation">#</a></span>\[ \mathbf{A} \vec{x} = \vec{b} \]</div>
 <p>kann dann durch die folgende Gleichung bestimmt werden:</p>
-<div class="math notranslate nohighlight">
-\[ \vec{x} = \mathbf{A}^{-1} \vec{b} \]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-12">
+<span class="eqno">(7.45)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-12" title="Link to this equation">#</a></span>\[ \vec{x} = \mathbf{A}^{-1} \vec{b} \]</div>
 <p>Diese Rechnung führen wir nun für das Beispiel aus.</p>
 <p>Zuerst überprüfen wir, ob die Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> eine Inverse besitzt, indem
 wir ihre Determinante berechnen. Die Determinante von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> berechnet
 sich wie folgt:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \det(\mathbf{A}) = 3 \cdot \det\begin{pmatrix} -6 &amp; -7 \\ 6 &amp; 7 \end{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-13">
+<span class="eqno">(7.46)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-13" title="Link to this equation">#</a></span>\[\begin{split} \det(\mathbf{A}) = 3 \cdot \det\begin{pmatrix} -6 &amp; -7 \\ 6 &amp; 7 \end{pmatrix}
 - (-4) \cdot \det\begin{pmatrix} 6 &amp; -7 \\ -3 &amp; 7 \end{pmatrix}
 - 4 \cdot \det\begin{pmatrix} 6 &amp; -6 \\ -3 &amp; 6 \end{pmatrix}. \end{split}\]</div>
 <p>Dies ergibt:</p>
-<div class="math notranslate nohighlight">
-\[ \det(\mathbf{A}) = 3 \cdot (-42 + 42) + 4 \cdot (42 - 21) - 4 \cdot (36 - 18)
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-14">
+<span class="eqno">(7.47)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-14" title="Link to this equation">#</a></span>\[ \det(\mathbf{A}) = 3 \cdot (-42 + 42) + 4 \cdot (42 - 21) - 4 \cdot (36 - 18)
 = 12. \]</div>
 <p>Da <span class="math notranslate nohighlight">\(\det(\mathbf{A}) \neq 0\)</span> gilt, hat die Koeffizientenmatrix eine Inverse. Wir
 rechnen die inverse Matrix <span class="math notranslate nohighlight">\(\mathbf{A}^{-1}\)</span> mit dem Gauß-Algorithmus aus und
 erhalten</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{-1} = \frac{1}{12}\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-15">
+<span class="eqno">(7.48)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-15" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{-1} = \frac{1}{12}\cdot
 \begin{pmatrix}
 0 &amp; 4 &amp; 4 \\
 -21 &amp; 9 &amp; -3 \\
@@ -678,8 +679,8 @@ erhalten</p>
 \end{split}\]</div>
 <p>Die gesuchte Lösung des linearen Gleichungssystems erhalten wir nun, indem wir
 die Inverse mit dem Ergebnisvektor multiplizieren:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{x}=\mathbf{A}^{-1}\cdot\vec{b}=
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec04-16">
+<span class="eqno">(7.49)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec04-16" title="Link to this equation">#</a></span>\[\begin{split}\vec{x}=\mathbf{A}^{-1}\cdot\vec{b}=
 \frac{1}{12}\cdot
 \begin{pmatrix}
 0 &amp; 4 &amp; 4 \\

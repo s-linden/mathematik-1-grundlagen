@@ -130,10 +130,10 @@ $$\vec{v}_{\text{gesamt}} = \begin{pmatrix} 0 \\ 5 \end{pmatrix} + \begin{pmatri
 
 Die Spielfigur teleportiert also zu der neuen Position
 
-$\begin{align*}
+$$\begin{aligned}
 x_{\text{neu}} &= x_{\text{alt}} + 1, \\
 y_{\text{neu}} &= y_{\text{alt}} + 5. \\
-\end{align*}$
+\end{aligned}$$
 
 Am einfachsten lässt sich die Teleportation durch ein Erzeugendensystem
 beschreiben, bei dem nur zwei Vektoren verwendet werden. Der erste Vektor

@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -550,18 +550,19 @@ imaginären Zahlen.</p>
 <p><strong>Beispiel:</strong> Es sollen die beiden komplexen Zahlen <span class="math notranslate nohighlight">\(z_1 = 1.3 +
 0.4\mathrm{i}\)</span> und <span class="math notranslate nohighlight">\(z_2 =  0.3 + 1.3\mathrm{i}\)</span> addiert werden. Dann ist die
 Summe der beiden komplexen Zahlen</p>
-<div class="math notranslate nohighlight">
-\[z_1 + z_2 = (1.3 + 0.3) + (0.4 \mathrm{i} + 1.3\mathrm{i}) = 1.6 + 1.7
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-1">
+<span class="eqno">(8.19)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-1" title="Link to this equation">#</a></span>\[z_1 + z_2 = (1.3 + 0.3) + (0.4 \mathrm{i} + 1.3\mathrm{i}) = 1.6 + 1.7
 \mathrm{i}.\]</div>
 <p>Natürlich können wir die Addition zweier komplexen Zahlen in Normalform auch
 signaformulieren. Für zwei komplexe Zahlen <span class="math notranslate nohighlight">\(z_1\)</span> und <span class="math notranslate nohighlight">\(z_2\)</span></p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-2">
+<span class="eqno">(8.20)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-2" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z_1 &amp;= a_1 + b_1 \mathrm{i}\\
 z_2 &amp;= a_2 + b_2 \mathrm{i}\\
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>ist die Summe der beiden komplexen Zahlen wieder eine komplexe Zahl:</p>
-<div class="math notranslate nohighlight">
-\[z_1 + z_2 = (a_1 + a_2) + (b_1 + b_2) \cdot \mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-3">
+<span class="eqno">(8.21)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-3" title="Link to this equation">#</a></span>\[z_1 + z_2 = (a_1 + a_2) + (b_1 + b_2) \cdot \mathrm{i}.\]</div>
 <p>Die beiden Realteile werden addiert <span class="math notranslate nohighlight">\(a_1 + a_2\)</span> und die beiden Imaginärteile
 <span class="math notranslate nohighlight">\(b_1 + b_2\)</span> werden addiert.</p>
 <p>Werden die beiden komplexen Zahlen in der Gaußschen Zahlenebene dargestellt, so
@@ -589,17 +590,18 @@ für Realteil und Imaginärteil.</p>
 <p><strong>Beispiel:</strong> Es sollen die beiden komplexen Zahlen <span class="math notranslate nohighlight">\(z_1 = 1.3 + 0.4\mathrm{i}\)</span>
 und <span class="math notranslate nohighlight">\(z_2 =  0.3 + 1.3\mathrm{i}\)</span> subtrahiert werden. Dann ist die Differenz der
 beiden komplexen Zahlen</p>
-<div class="math notranslate nohighlight">
-\[z_1 - z_2 = (1.3 - 0.3) + (0.4 \mathrm{i} - 1.3\mathrm{i}) = 1 - 0.9
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-4">
+<span class="eqno">(8.22)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-4" title="Link to this equation">#</a></span>\[z_1 - z_2 = (1.3 - 0.3) + (0.4 \mathrm{i} - 1.3\mathrm{i}) = 1 - 0.9
 \mathrm{i}.\]</div>
 <p>Allgemein formuliert ist die Differenz zweier komplexer Zahlen <span class="math notranslate nohighlight">\(z_1\)</span> und <span class="math notranslate nohighlight">\(z_2\)</span> mit</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-5">
+<span class="eqno">(8.23)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-5" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z_1 &amp;= a_1 + b_1 \mathrm{i}\\
 z_2 &amp;= a_2 + b_2 \mathrm{i}\\
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>die folgende komplexe Zahl:</p>
-<div class="math notranslate nohighlight">
-\[z_1 - z_2 = (a_1 - a_2) + (b_1 - b_2) \cdot \mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-6">
+<span class="eqno">(8.24)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-6" title="Link to this equation">#</a></span>\[z_1 - z_2 = (a_1 - a_2) + (b_1 - b_2) \cdot \mathrm{i}.\]</div>
 <p>Die beiden Realteile werden subtrahiert <span class="math notranslate nohighlight">\(a_1 - a_2\)</span> und die beiden Imaginärteile
 <span class="math notranslate nohighlight">\(b_1 - b_2\)</span> werden subtrahiert.</p>
 </section>
@@ -607,22 +609,24 @@ z_2 &amp;= a_2 + b_2 \mathrm{i}\\
 <h2>Multiplikation komplexer Zahlen<a class="headerlink" href="#multiplikation-komplexer-zahlen" title="Link to this heading">#</a></h2>
 <p>Die Multiplikation zweier komplexer Zahlen ist nicht weiter schwer, wenn wir die Regel <span class="math notranslate nohighlight">\(\mathrm{i}^2 = -1\)</span> beachten. Dann können wir einfach Ausmultiplizieren.</p>
 <p><strong>Beispiel:</strong> Die beiden komplexen Zahlen <span class="math notranslate nohighlight">\(z_1 = 2 + 3\mathrm{i}\)</span> und <span class="math notranslate nohighlight">\(z_2 = -4 + 2\mathrm{i}\)</span> sollen multipliziert werden. Dann gilt</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-7">
+<span class="eqno">(8.25)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-7" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z_1 \cdot z_2
 &amp;= (2 + 3\mathrm{i}) \cdot (-4 + 2\mathrm{i}) = \\
 &amp;= 2\cdot(-4) + 4\mathrm{i} - 12\mathrm{i} + 6 \mathrm{i}^2 = \\
 &amp;= -8 -8\mathrm{i} + 6\cdot(-1) = \\
 &amp;= -14 - 8\mathrm{i}.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Allgmein können wir folgende Formel für die Multiplikation zweier komplexer
 Zahlen notieren. Gegeben sind zwei komplexe Zahlen <span class="math notranslate nohighlight">\(z_1\)</span> und <span class="math notranslate nohighlight">\(z_2\)</span> mit</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-8">
+<span class="eqno">(8.26)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-8" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z_1 &amp;= a_1 + b_1 \mathrm{i},\\
 z_2 &amp;= a_2 + b_2 \mathrm{i}.\\
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Dann ist das Produkt dieser beiden komplexen Zahlen die folgende Zahl:</p>
-<div class="math notranslate nohighlight">
-\[z_1 \cdot z_2 = (a_1 + b_1\mathrm{i}) \cdot (a_2 + b_2\mathrm{i}) = (a_1 a_2 -
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec02-9">
+<span class="eqno">(8.27)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec02-9" title="Link to this equation">#</a></span>\[z_1 \cdot z_2 = (a_1 + b_1\mathrm{i}) \cdot (a_2 + b_2\mathrm{i}) = (a_1 a_2 -
 b_1 b_2) + (a_1 b_2 + b_1 a_2) \cdot\mathrm{i}.\]</div>
 <p>Tatsächlich ist es aufwendiger, sich die Formel einzuprägen, als einfach
 auszumultiplizieren.</p>

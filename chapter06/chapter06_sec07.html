@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -508,16 +508,16 @@
 <div class="miniexercise admonition">
 <p class="admonition-title">Übung 6.1</p>
 <p>Gegeben seien die Matrizen</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 0 &amp; 1 \\ 2 &amp; 1 &amp; 2 \end{pmatrix}\qquad \mathbf{B}=\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}\qquad \mathbf{C}=\begin{pmatrix} 2 &amp; 1 \\ -1 &amp; 2 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-1">
+<span class="eqno">(6.60)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-1" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 0 &amp; 1 \\ 2 &amp; 1 &amp; 2 \end{pmatrix}\qquad \mathbf{B}=\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}\qquad \mathbf{C}=\begin{pmatrix} 2 &amp; 1 \\ -1 &amp; 2 \end{pmatrix}\end{split}\]</div>
 <p>Berechnen Sie die folgenden Matrizen, wenn möglich:</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{A}\cdot\mathbf{B},\quad \mathbf{B}\cdot\mathbf{A},\quad \mathbf{B}\cdot\mathbf{C},\quad \mathbf{C}\cdot\mathbf{B},\quad \mathbf{C}\cdot\mathbf{A},\quad \mathbf{A}\cdot\mathbf{C}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-2">
+<span class="eqno">(6.61)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-2" title="Link to this equation">#</a></span>\[\mathbf{A}\cdot\mathbf{B},\quad \mathbf{B}\cdot\mathbf{A},\quad \mathbf{B}\cdot\mathbf{C},\quad \mathbf{C}\cdot\mathbf{B},\quad \mathbf{C}\cdot\mathbf{A},\quad \mathbf{A}\cdot\mathbf{C}.\]</div>
 </div>
 <div class="miniexercise toggle admonition">
 <p class="admonition-title">Lösung</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-3">
+<span class="eqno">(6.62)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-3" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 \mathbf{A}\cdot\mathbf{B}&amp;=\begin{pmatrix} 0 &amp; 2 \\ 1 &amp; 4 \end{pmatrix} \\
 \mathbf{B}\cdot\mathbf{A}&amp;=\begin{pmatrix} 2 &amp; 1 &amp; 2 \\ 1 &amp; 0 &amp; 1 \\ 2 &amp; 1 &amp; 2 \end{pmatrix} \\
@@ -530,8 +530,8 @@
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-4">
+<span class="eqno">(6.63)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-4" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 \mathbf{A}\cdot\mathbf{B}&amp;=\begin{pmatrix} 1\cdot0+0\cdot1+1\cdot0 &amp; 1\cdot1+0\cdot0+1\cdot1 \\ 2\cdot0+1\cdot1+2\cdot0 &amp; 2\cdot1+1\cdot0+2\cdot1 \end{pmatrix}=\begin{pmatrix} 0 &amp; 2 \\ 1 &amp; 4 \end{pmatrix} \\
 \mathbf{B}\cdot\mathbf{A}&amp;=\begin{pmatrix} 2 &amp; 1 &amp; 2 \\ 1 &amp; 0 &amp; 1 \\ 2 &amp; 1 &amp; 2 \end{pmatrix} \\
@@ -546,8 +546,8 @@
 <div class="miniexercise admonition">
 <p class="admonition-title">Übung 6.2</p>
 <p>Gegeben seien die Matrizen</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\qquad \mathbf{B}=\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-5">
+<span class="eqno">(6.64)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-5" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\qquad \mathbf{B}=\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}\end{split}\]</div>
 <p>a) Berechnen Sie <span class="math notranslate nohighlight">\((\mathbf{A}+\mathbf{B})^{2}\)</span> und <span class="math notranslate nohighlight">\(\mathbf{A}^{2}+2\mathbf{A}\cdot\mathbf{B}+\mathbf{B}^{2}\)</span>.</p>
 <p>b) Berechnen Sie <span class="math notranslate nohighlight">\((\mathbf{A}+\mathbf{B})\cdot(\mathbf{A}-\mathbf{B})\)</span> und <span class="math notranslate nohighlight">\(\mathbf{A}^{2}-\mathbf{B}^{2}\)</span>.</p>
 <p>Hinweis: Es ist <span class="math notranslate nohighlight">\(\mathbf{A}^{2}=\mathbf{A}\cdot\mathbf{A}\)</span> usw.</p>
@@ -555,16 +555,16 @@
 <div class="miniexercise toggle admonition">
 <p class="admonition-title">Lösung</p>
 <p>a)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-6">
+<span class="eqno">(6.65)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-6" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 (\mathbf{A}+\mathbf{B})^{2}&amp;=\begin{pmatrix} 3 &amp; 4 \\ 2 &amp; 3 \end{pmatrix} \\
 \mathbf{A}^{2}+2\mathbf{A}\cdot\mathbf{B}+\mathbf{B}^{2}&amp;=\begin{pmatrix} 4 &amp; 4 \\ 2 &amp; 2 \end{pmatrix}
 \end{aligned}
 \end{split}\]</div>
 <p>b)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-7">
+<span class="eqno">(6.66)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-7" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 (\mathbf{A}+\mathbf{B})\cdot(\mathbf{A}-\mathbf{B})&amp;=\begin{pmatrix} -1 &amp; 2 \\ 0 &amp; 1 \end{pmatrix} \\
 \mathbf{A}^{2}-\mathbf{B}^{2}&amp;=\begin{pmatrix} 0 &amp; 2 \\ 0 &amp; 0 \end{pmatrix}
@@ -574,8 +574,8 @@
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">a)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-8">
+<span class="eqno">(6.67)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-8" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 (\mathbf{A}+\mathbf{B})^{2}&amp;={\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 1 \end{pmatrix}}^{2}=\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 1 \end{pmatrix}\cdot\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 1 \end{pmatrix}=\begin{pmatrix} 3 &amp; 4 \\ 2 &amp; 3 \end{pmatrix} \\
 \mathbf{A}^{2}+2\mathbf{A}\cdot\mathbf{B}+\mathbf{B}^{2}&amp;=\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\cdot\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}+2\cdot\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\cdot\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}+\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}\cdot\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix} \\
@@ -583,8 +583,8 @@
 \end{aligned}
 \end{split}\]</div>
 <p class="sd-card-text">b)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-9">
+<span class="eqno">(6.68)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-9" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 (\mathbf{A}+\mathbf{B})\cdot(\mathbf{A}-\mathbf{B})&amp;=\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 1 \end{pmatrix}\cdot\begin{pmatrix} 1 &amp; 0 \\ -1 &amp; 1 \end{pmatrix}=\begin{pmatrix} -1 &amp; 2 \\ 0 &amp; 1 \end{pmatrix} \\
 \mathbf{A}^{2}-\mathbf{B}^{2}&amp;=\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}\cdot\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}-\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}\cdot\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}=\begin{pmatrix} 1 &amp; 2 \\ 0 &amp; 1 \end{pmatrix}-\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}=\begin{pmatrix} 0 &amp; 2 \\ 0 &amp; 0 \end{pmatrix}
@@ -595,28 +595,28 @@
 <div class="miniexercise admonition">
 <p class="admonition-title">Übung 6.3</p>
 <p>Wiederholen Sie Aufgabe 6.2 nun mit diesen Matrizen:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 2 \\ 5 &amp; 2 \end{pmatrix}\qquad \mathbf{B}=\begin{pmatrix} 2 &amp; -2 \\ -5 &amp; 1 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-10">
+<span class="eqno">(6.69)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-10" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 2 \\ 5 &amp; 2 \end{pmatrix}\qquad \mathbf{B}=\begin{pmatrix} 2 &amp; -2 \\ -5 &amp; 1 \end{pmatrix}\end{split}\]</div>
 <p>Können Sie die Unterschiede erklären?</p>
 </div>
 <div class="miniexercise toggle admonition">
 <p class="admonition-title">Lösung</p>
 <p>a)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}(\mathbf{A}+\mathbf{B})^{2}=\begin{pmatrix} 9 &amp; 0 \\ 0 &amp; 9 \end{pmatrix}=\mathbf{A}^{2}+2\mathbf{A}\cdot\mathbf{B}+\mathbf{B}^{2}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-11">
+<span class="eqno">(6.70)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-11" title="Link to this equation">#</a></span>\[\begin{split}(\mathbf{A}+\mathbf{B})^{2}=\begin{pmatrix} 9 &amp; 0 \\ 0 &amp; 9 \end{pmatrix}=\mathbf{A}^{2}+2\mathbf{A}\cdot\mathbf{B}+\mathbf{B}^{2}\end{split}\]</div>
 <p>b)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}(\mathbf{A}+\mathbf{B})\cdot(\mathbf{A}-\mathbf{B})=\begin{pmatrix} -3 &amp; 12 \\ 30 &amp; 3 \end{pmatrix}=\mathbf{A}^{2}-\mathbf{B}^{2}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-12">
+<span class="eqno">(6.71)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-12" title="Link to this equation">#</a></span>\[\begin{split}(\mathbf{A}+\mathbf{B})\cdot(\mathbf{A}-\mathbf{B})=\begin{pmatrix} -3 &amp; 12 \\ 30 &amp; 3 \end{pmatrix}=\mathbf{A}^{2}-\mathbf{B}^{2}\end{split}\]</div>
 <p>Die Matrizen aus 6.3 kommutieren, die aus 6.2 nicht.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">a)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}(\mathbf{A}+\mathbf{B})^{2}=\begin{pmatrix} 9 &amp; 0 \\ 0 &amp; 9 \end{pmatrix}=\mathbf{A}^{2}+2\mathbf{A}\cdot\mathbf{B}+\mathbf{B}^{2}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-13">
+<span class="eqno">(6.72)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-13" title="Link to this equation">#</a></span>\[\begin{split}(\mathbf{A}+\mathbf{B})^{2}=\begin{pmatrix} 9 &amp; 0 \\ 0 &amp; 9 \end{pmatrix}=\mathbf{A}^{2}+2\mathbf{A}\cdot\mathbf{B}+\mathbf{B}^{2}\end{split}\]</div>
 <p class="sd-card-text">b)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}(\mathbf{A}+\mathbf{B})\cdot(\mathbf{A}-\mathbf{B})=\begin{pmatrix} -3 &amp; 12 \\ 30 &amp; 3 \end{pmatrix}=\mathbf{A}^{2}-\mathbf{B}^{2}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-14">
+<span class="eqno">(6.73)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-14" title="Link to this equation">#</a></span>\[\begin{split}(\mathbf{A}+\mathbf{B})\cdot(\mathbf{A}-\mathbf{B})=\begin{pmatrix} -3 &amp; 12 \\ 30 &amp; 3 \end{pmatrix}=\mathbf{A}^{2}-\mathbf{B}^{2}\end{split}\]</div>
 <p class="sd-card-text">Die Matrizen aus 6.3 kommutieren, die aus 6.2 nicht.</p>
 <p class="sd-card-text">D.h. für die Matrizen aus 6.2 gilt <span class="math notranslate nohighlight">\(\mathbf{A}\cdot\mathbf{B}\neq\mathbf{B}\cdot\mathbf{A}\)</span>, aber für die Matrizen aus 6.3 gilt in der Tat <span class="math notranslate nohighlight">\(\mathbf{A}\cdot\mathbf{B}=\mathbf{B}\cdot\mathbf{A}\)</span>.</p>
 </div>
@@ -635,8 +635,8 @@
 <p>b) <span class="math notranslate nohighlight">\({\mathbf{A}}^{T}\cdot\mathbf{A}\)</span> ist symmetrisch.</p>
 <p>c) Im Allgemeinen ist <span class="math notranslate nohighlight">\(\mathbf{A}\cdot{\mathbf{A}}^{T}\neq{\mathbf{A}}^{T}\cdot\mathbf{A}\)</span>.</p>
 <p>d) Test mit <span class="math notranslate nohighlight">\(\mathbf{A}=\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-15">
+<span class="eqno">(6.74)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-15" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 \begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}{\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}}^{T}&amp;=\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}\begin{pmatrix} 1 &amp; 1 \\ 2 &amp; 0 \end{pmatrix}=\begin{pmatrix} 5 &amp; 1 \\ 1 &amp; 1 \end{pmatrix} \\
 {\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}}^{T}\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}&amp;=\begin{pmatrix} 1 &amp; 1 \\ 2 &amp; 0 \end{pmatrix}\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}=2\begin{pmatrix} 1 &amp; 1 \\ 1 &amp; 2 \end{pmatrix}
@@ -649,18 +649,18 @@
 <p class="sd-card-text">Zu zeigen ist, dass das Produkt gleich seiner Transponierten ist.</p>
 <p class="sd-card-text">a)</p>
 <p class="sd-card-text">Es ist</p>
-<div class="math notranslate nohighlight">
-\[{(\mathbf{A}\cdot{\mathbf{A}}^{T})}^{T}={({\mathbf{A}}^{T})}^{T}\cdot{\mathbf{A}}^{T}=\mathbf{A}\cdot{\mathbf{A}}^{T}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-16">
+<span class="eqno">(6.75)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-16" title="Link to this equation">#</a></span>\[{(\mathbf{A}\cdot{\mathbf{A}}^{T})}^{T}={({\mathbf{A}}^{T})}^{T}\cdot{\mathbf{A}}^{T}=\mathbf{A}\cdot{\mathbf{A}}^{T}.\]</div>
 <p class="sd-card-text">Also ist <span class="math notranslate nohighlight">\(\mathbf{A}\cdot{\mathbf{A}}^{T}\)</span> gleich seiner Transponierten, also ist <span class="math notranslate nohighlight">\(\mathbf{A}\cdot{\mathbf{A}}^{T}\)</span> symmetrisch.</p>
 <p class="sd-card-text">b)</p>
-<div class="math notranslate nohighlight">
-\[{({\mathbf{A}}^{T}\cdot\mathbf{A})}^{T}={\mathbf{A}}^{T}\cdot{({\mathbf{A}}^{T})}^{T}={\mathbf{A}}^{T}\cdot\mathbf{A}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-17">
+<span class="eqno">(6.76)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-17" title="Link to this equation">#</a></span>\[{({\mathbf{A}}^{T}\cdot\mathbf{A})}^{T}={\mathbf{A}}^{T}\cdot{({\mathbf{A}}^{T})}^{T}={\mathbf{A}}^{T}\cdot\mathbf{A}\]</div>
 <p class="sd-card-text">analog.</p>
 <p class="sd-card-text">c)</p>
 <p class="sd-card-text">Im Allgemeinen ist <span class="math notranslate nohighlight">\(\mathbf{A}\cdot{\mathbf{A}}^{T}\neq{\mathbf{A}}^{T}\cdot\mathbf{A}\)</span>.</p>
 <p class="sd-card-text">d) Test mit <span class="math notranslate nohighlight">\(\mathbf{A}=\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-18">
+<span class="eqno">(6.77)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-18" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 \begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}{\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}}^{T}&amp;=\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}\begin{pmatrix} 1 &amp; 1 \\ 2 &amp; 0 \end{pmatrix}=\begin{pmatrix} 5 &amp; 1 \\ 1 &amp; 1 \end{pmatrix} \\
 {\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}}^{T}\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}&amp;=\begin{pmatrix} 1 &amp; 1 \\ 2 &amp; 0 \end{pmatrix}\begin{pmatrix} 1 &amp; 2 \\ 1 &amp; 0 \end{pmatrix}=2\begin{pmatrix} 1 &amp; 1 \\ 1 &amp; 2 \end{pmatrix}
@@ -672,63 +672,63 @@
 <div class="miniexercise admonition">
 <p class="admonition-title">Übung 6.5</p>
 <p>Zerlegen Sie die Matrix</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 3 &amp; 2 \\ 2 &amp; -1 &amp; 0 \\ 1 &amp; 4 &amp; 1 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-19">
+<span class="eqno">(6.78)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-19" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 3 &amp; 2 \\ 2 &amp; -1 &amp; 0 \\ 1 &amp; 4 &amp; 1 \end{pmatrix}\end{split}\]</div>
 <p>in ihren symmetrischen und antisymmetrischen Anteil.</p>
 </div>
 <div class="miniexercise toggle admonition">
 <p class="admonition-title">Lösung</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\frac{1}{2}\begin{pmatrix} 2 &amp; 5 &amp; 3 \\ 5 &amp; -2 &amp; 4 \\ 3 &amp; 4 &amp; 2 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 0 &amp; 1 &amp; 1 \\ -1 &amp; 0 &amp; -4 \\ -1 &amp; 4 &amp; 0 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-20">
+<span class="eqno">(6.79)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-20" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\frac{1}{2}\begin{pmatrix} 2 &amp; 5 &amp; 3 \\ 5 &amp; -2 &amp; 4 \\ 3 &amp; 4 &amp; 2 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 0 &amp; 1 &amp; 1 \\ -1 &amp; 0 &amp; -4 \\ -1 &amp; 4 &amp; 0 \end{pmatrix}\end{split}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\frac{1}{2}(\mathbf{A}+{\mathbf{A}}^{T})+\frac{1}{2}(\mathbf{A}-{\mathbf{A}}^{T})=\frac{1}{2}\begin{pmatrix} 2 &amp; 5 &amp; 3 \\ 5 &amp; -2 &amp; 4 \\ 3 &amp; 4 &amp; 2 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 0 &amp; 1 &amp; 1 \\ -1 &amp; 0 &amp; -4 \\ -1 &amp; 4 &amp; 0 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-21">
+<span class="eqno">(6.80)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-21" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\frac{1}{2}(\mathbf{A}+{\mathbf{A}}^{T})+\frac{1}{2}(\mathbf{A}-{\mathbf{A}}^{T})=\frac{1}{2}\begin{pmatrix} 2 &amp; 5 &amp; 3 \\ 5 &amp; -2 &amp; 4 \\ 3 &amp; 4 &amp; 2 \end{pmatrix}+\frac{1}{2}\begin{pmatrix} 0 &amp; 1 &amp; 1 \\ -1 &amp; 0 &amp; -4 \\ -1 &amp; 4 &amp; 0 \end{pmatrix}\end{split}\]</div>
 </div>
 </details></div>
 <div class="miniexercise admonition">
 <p class="admonition-title">Übung 6.6</p>
 <p>Gegeben seien Matrizen mit folgender Struktur:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=h\begin{pmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; 1 \end{pmatrix}\qquad \mathbf{B}=\begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-22">
+<span class="eqno">(6.81)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-22" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=h\begin{pmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; 1 \end{pmatrix}\qquad \mathbf{B}=\begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}\end{split}\]</div>
 <p>Bestimmen Sie die Werte der Parameter <span class="math notranslate nohighlight">\(h\)</span>, <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(l\)</span> und <span class="math notranslate nohighlight">\(m\)</span> so, dass gilt</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{A}\neq\mathbf{0},\quad \mathbf{B}\neq\mathbf{0},\quad \mathbf{A}^{2}=\mathbf{A},\quad \mathbf{B}^{2}=\mathbf{B},\quad \mathbf{A}\cdot\mathbf{B}=\mathbf{0}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-23">
+<span class="eqno">(6.82)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-23" title="Link to this equation">#</a></span>\[\mathbf{A}\neq\mathbf{0},\quad \mathbf{B}\neq\mathbf{0},\quad \mathbf{A}^{2}=\mathbf{A},\quad \mathbf{B}^{2}=\mathbf{B},\quad \mathbf{A}\cdot\mathbf{B}=\mathbf{0}.\]</div>
 <p>Hinweis: Die Aufgabe ist aufwendig, aber eine gute Übung zum Lösen von Gleichungssystemen.</p>
 </div>
 <div class="miniexercise toggle admonition">
 <p class="admonition-title">Lösung</p>
-<div class="math notranslate nohighlight">
-\[h=\frac{1}{3},\quad k=\frac{2}{3},\quad l=\frac{1}{3},\quad m=\frac{1}{6}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-24">
+<span class="eqno">(6.83)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-24" title="Link to this equation">#</a></span>\[h=\frac{1}{3},\quad k=\frac{2}{3},\quad l=\frac{1}{3},\quad m=\frac{1}{6}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{2}=\mathbf{A}:\qquad \begin{pmatrix} h &amp; h &amp; h \\ h &amp; h &amp; h \\ h &amp; h &amp; h \end{pmatrix}\cdot\begin{pmatrix} h &amp; h &amp; h \\ h &amp; h &amp; h \\ h &amp; h &amp; h \end{pmatrix}=\begin{pmatrix} h &amp; h &amp; h \\ h &amp; h &amp; h \\ h &amp; h &amp; h \end{pmatrix}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{lrcl} \Rightarrow &amp; h^{2}+h^{2}+h^{2} &amp; = &amp; h \\ \Rightarrow &amp; 3h^{2} &amp; = &amp; h \\ \Rightarrow &amp; 3h &amp; = &amp; 1 \\ \Rightarrow &amp; h &amp; = &amp; \frac{1}{3} \end{array}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{B}^{2}=\mathbf{B}:\qquad \begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}\cdot\begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}=\begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}\Rightarrow\quad k^{2}+l^{2}+l^{2}&amp;=k\quad\Rightarrow\quad k^{2}+2l^{2}=k &amp;&amp; \text{(I)} \\ \Rightarrow\quad l^{2}+m^{2}+m^{2}&amp;=m\quad\Rightarrow\quad l^{2}+2m^{2}=m &amp;&amp; \text{(II)} \end{aligned}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}\cdot\mathbf{B}=\mathbf{0}:\qquad \begin{pmatrix} \\tfrac{1}{3} &amp; \\tfrac{1}{3} &amp; \\tfrac{1}{3} \\ \\tfrac{1}{3} &amp; \\tfrac{1}{3} &amp; \\tfrac{1}{3} \\ \\tfrac{1}{3} &amp; \\tfrac{1}{3} &amp; \\tfrac{1}{3} \end{pmatrix}\cdot\begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}=\mathbf{0}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{lrcll} \Rightarrow &amp; \frac{1}{3}k-\frac{1}{3}l-\frac{1}{3}l &amp; = &amp; 0 &amp; \\ \Rightarrow &amp; k-2l &amp; = &amp; 0 &amp; \\ \Rightarrow &amp; k &amp; = &amp; 2l &amp; \text{(III)} \end{array}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{lrcll} \Rightarrow &amp; -\frac{1}{3}l+\frac{1}{3}m+\frac{1}{3}m &amp; = &amp; 0 &amp; \\ \Rightarrow &amp; -l+2m &amp; = &amp; 0 &amp; \\ \Rightarrow &amp; l &amp; = &amp; 2m &amp; \text{(IV)} \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-25">
+<span class="eqno">(6.84)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-25" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{2}=\mathbf{A}:\qquad \begin{pmatrix} h &amp; h &amp; h \\ h &amp; h &amp; h \\ h &amp; h &amp; h \end{pmatrix}\cdot\begin{pmatrix} h &amp; h &amp; h \\ h &amp; h &amp; h \\ h &amp; h &amp; h \end{pmatrix}=\begin{pmatrix} h &amp; h &amp; h \\ h &amp; h &amp; h \\ h &amp; h &amp; h \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-26">
+<span class="eqno">(6.85)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-26" title="Link to this equation">#</a></span>\[\begin{split}\begin{array}{lrcl} \Rightarrow &amp; h^{2}+h^{2}+h^{2} &amp; = &amp; h \\ \Rightarrow &amp; 3h^{2} &amp; = &amp; h \\ \Rightarrow &amp; 3h &amp; = &amp; 1 \\ \Rightarrow &amp; h &amp; = &amp; \frac{1}{3} \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-27">
+<span class="eqno">(6.86)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-27" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B}^{2}=\mathbf{B}:\qquad \begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}\cdot\begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}=\begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-28">
+<span class="eqno">(6.87)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-28" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}\Rightarrow\quad k^{2}+l^{2}+l^{2}&amp;=k\quad\Rightarrow\quad k^{2}+2l^{2}=k &amp;&amp; \text{(I)} \\ \Rightarrow\quad l^{2}+m^{2}+m^{2}&amp;=m\quad\Rightarrow\quad l^{2}+2m^{2}=m &amp;&amp; \text{(II)} \end{aligned}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-29">
+<span class="eqno">(6.88)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-29" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}\cdot\mathbf{B}=\mathbf{0}:\qquad \begin{pmatrix} \\tfrac{1}{3} &amp; \\tfrac{1}{3} &amp; \\tfrac{1}{3} \\ \\tfrac{1}{3} &amp; \\tfrac{1}{3} &amp; \\tfrac{1}{3} \\ \\tfrac{1}{3} &amp; \\tfrac{1}{3} &amp; \\tfrac{1}{3} \end{pmatrix}\cdot\begin{pmatrix} k &amp; -l &amp; -l \\ -l &amp; m &amp; m \\ -l &amp; m &amp; m \end{pmatrix}=\mathbf{0}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-30">
+<span class="eqno">(6.89)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-30" title="Link to this equation">#</a></span>\[\begin{split}\begin{array}{lrcll} \Rightarrow &amp; \frac{1}{3}k-\frac{1}{3}l-\frac{1}{3}l &amp; = &amp; 0 &amp; \\ \Rightarrow &amp; k-2l &amp; = &amp; 0 &amp; \\ \Rightarrow &amp; k &amp; = &amp; 2l &amp; \text{(III)} \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-31">
+<span class="eqno">(6.90)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-31" title="Link to this equation">#</a></span>\[\begin{split}\begin{array}{lrcll} \Rightarrow &amp; -\frac{1}{3}l+\frac{1}{3}m+\frac{1}{3}m &amp; = &amp; 0 &amp; \\ \Rightarrow &amp; -l+2m &amp; = &amp; 0 &amp; \\ \Rightarrow &amp; l &amp; = &amp; 2m &amp; \text{(IV)} \end{array}\end{split}\]</div>
 <p class="sd-card-text">(III) in (I) einsetzen:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{lrcl} \Rightarrow &amp; {(2l)}^{2}+2l^{2} &amp; = &amp; 2l \\ \Rightarrow &amp; 6l^{2} &amp; = &amp; 2l \\ \Rightarrow &amp; 3l &amp; = &amp; 1 \\ \Rightarrow &amp; l &amp; = &amp; \frac{1}{3} \end{array}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\text{(III) }\Rightarrow\quad k=2\cdot\frac{1}{3}=\frac{2}{3}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-32">
+<span class="eqno">(6.91)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-32" title="Link to this equation">#</a></span>\[\begin{split}\begin{array}{lrcl} \Rightarrow &amp; {(2l)}^{2}+2l^{2} &amp; = &amp; 2l \\ \Rightarrow &amp; 6l^{2} &amp; = &amp; 2l \\ \Rightarrow &amp; 3l &amp; = &amp; 1 \\ \Rightarrow &amp; l &amp; = &amp; \frac{1}{3} \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-33">
+<span class="eqno">(6.92)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-33" title="Link to this equation">#</a></span>\[\text{(III) }\Rightarrow\quad k=2\cdot\frac{1}{3}=\frac{2}{3}\]</div>
 <p class="sd-card-text">(IV) in (II) einsetzen:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{lrcl} \Rightarrow &amp; {(2m)}^{2}+2m^{2} &amp; = &amp; m \\ \Rightarrow &amp; 6m^{2} &amp; = &amp; m \\ \Rightarrow &amp; 6m &amp; = &amp; 1 \\ \Rightarrow &amp; m &amp; = &amp; \frac{1}{6} \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-34">
+<span class="eqno">(6.93)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-34" title="Link to this equation">#</a></span>\[\begin{split}\begin{array}{lrcl} \Rightarrow &amp; {(2m)}^{2}+2m^{2} &amp; = &amp; m \\ \Rightarrow &amp; 6m^{2} &amp; = &amp; m \\ \Rightarrow &amp; 6m &amp; = &amp; 1 \\ \Rightarrow &amp; m &amp; = &amp; \frac{1}{6} \end{array}\end{split}\]</div>
 <p class="sd-card-text">Damit:</p>
-<div class="math notranslate nohighlight">
-\[h=\frac{1}{3},\quad k=\frac{2}{3},\quad l=\frac{1}{3},\quad m=\frac{1}{6}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec07-35">
+<span class="eqno">(6.94)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec07-35" title="Link to this equation">#</a></span>\[h=\frac{1}{3},\quad k=\frac{2}{3},\quad l=\frac{1}{3},\quad m=\frac{1}{6}\]</div>
 </div>
 </details></div>
 </section>

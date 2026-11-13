@@ -66,7 +66,7 @@ allerdings selten den Fachbegriff »Element«, sondern spricht von dritten
 **Folgenglied**. Da es bei Folgen auf die Reihenfolge der Elemente ankommt,
 werden die Positionen durchnummeriert, also beispielsweise
 
-$\begin{align*}
+$$\begin{aligned}
 a_1 &= 2 \\
 a_2 &= 4 \\
 a_3 &= 6 \\
@@ -74,7 +74,7 @@ a_4 &= 8 \\
 a_5 &= 10 \\
 a_6 &= 12 \\
 & \; \vdots \\
-\end{align*}$
+\end{aligned}$$
 
 Allgemein schreibt man für eine Folge $(a_i)_{i\in\mathbb{N}}$ oder auch einfach
 $(a_i)$ um anzudeuten, dass es sich hier um eine Aufzählung unendlich vieler

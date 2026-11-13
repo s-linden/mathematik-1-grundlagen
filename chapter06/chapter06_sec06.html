@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -542,15 +542,15 @@ zerlegen.</p></li>
 <h2>Transponierte Matrix<a class="headerlink" href="#transponierte-matrix" title="Link to this heading">#</a></h2>
 <p>Eine <strong>transponierte Matrix</strong> entsteht, indem man die Zeilen und die Spalten
 einer Matrix vertauscht. Gegeben sei beispielsweise die Matrix</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A} = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ 5 &amp; 6 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-1">
+<span class="eqno">(6.44)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-1" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix} 1 &amp; 2 \\ 3 &amp; 4 \\ 5 &amp; 6 \end{pmatrix}.\end{split}\]</div>
 <p>Diese Matrix hat die Dimension <span class="math notranslate nohighlight">\(3\times 2\)</span>, also drei Zeilen und zwei Spalten.
 Die ttansponierte Matrix hat dann zwei Zeilen und drei Spalten. Die erste Zeile
 wird zur ersten Spalte, die zweite Zeile zur zweiten Spalte und die dritte Zeile
 zur dritten Spalte. Insgesamt erhalten wir fúr die transponierte Matrix den
 Ausdruck</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{T} = \begin{pmatrix} 1 &amp; 3 &amp; 5 \\ 2 &amp; 4 &amp; 6 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-2">
+<span class="eqno">(6.45)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-2" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{T} = \begin{pmatrix} 1 &amp; 3 &amp; 5 \\ 2 &amp; 4 &amp; 6 \end{pmatrix}.\end{split}\]</div>
 <p>Die transponierte Matrix von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> wird mit einem großen “T” bezeichnet,
 also als <span class="math notranslate nohighlight">\(\mathbf{A}^{T}\)</span>. Manchmal wird auch ein kleines “t” verwendet, also
 <span class="math notranslate nohighlight">\(\mathbf{A}^{t}\)</span>. Der Vorgang des Zeilen-Spalten-Tauschens wird
@@ -561,8 +561,8 @@ also als <span class="math notranslate nohighlight">\(\mathbf{A}^{T}\)</span>. M
 <a class="reference internal image-reference" href="../_images/Matrix_transpose.gif"><img alt="../_images/Matrix_transpose.gif" src="../_images/Matrix_transpose.gif" style="width: 25%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Transponieren einer Matrix, Quelle:
-Von Lucas Vieira, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=50327598">Wikimedia Commons</a>, Lizenz: gemeinfrei</span><a class="headerlink" href="#matrix-transpose" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 6.3: </span><span class="caption-text">Transponieren einer Matrix (Quelle: Lucas Vieira, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=50327598">Wikimedia
+Commons</a>; Lizenz: gemeinfrei)</span><a class="headerlink" href="#matrix-transpose" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -577,23 +577,23 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 <p>Eine Rechenregel für das zweifache Transponieren einer Matrix haben wir oben
 schon als Animation gesehen. Wir halten fest: wird eine Matrix zweimal
 transponiert, so ist das Ergebnis die ursprüngliche Matrix, also</p>
-<div class="math notranslate nohighlight">
-\[\left( \mathbf{A}^{T} \right)^{T} = \mathbf{A}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-3">
+<span class="eqno">(6.46)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-3" title="Link to this equation">#</a></span>\[\left( \mathbf{A}^{T} \right)^{T} = \mathbf{A}.\]</div>
 <p>Als nächstes betrachten wir die Matrizenaddition und die Skalarmultiplikation in
 Verbindung mit dem Transponieren. Transponieren wir eine Summe von Matrizen,
 können wir auch erst die Matrizen einzeln transponieren und dann die Summe
 berechnen. In Formelschreibweise gilt also</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}+\mathbf{B}\right)^{T} = \mathbf{A}^{T} + \mathbf{B}^{T}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-4">
+<span class="eqno">(6.47)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-4" title="Link to this equation">#</a></span>\[\left(\mathbf{A}+\mathbf{B}\right)^{T} = \mathbf{A}^{T} + \mathbf{B}^{T}.\]</div>
 <p>Auch bei der Skalarmultiplikation ist es irrelevant, ob von dem Ergebnis nach
 der Skalarmultiplikation die transponierte Matrix berechnet wird oder vor der
 Skalarmultiplikation:</p>
-<div class="math notranslate nohighlight">
-\[\left(s\cdot\mathbf{A}\right)^{T} = s\cdot \mathbf{A}^{T}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-5">
+<span class="eqno">(6.48)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-5" title="Link to this equation">#</a></span>\[\left(s\cdot\mathbf{A}\right)^{T} = s\cdot \mathbf{A}^{T}.\]</div>
 <p>Wiederum ist es die Matrizenmultiplikation, die sich besonders verhält. Bei der
 Matrizenmultiplikation ändert sich die Reihenfolge beim Multiplizieren:</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}\cdot\mathbf{B}\right)^{T}=\mathbf{B}^{T}\cdot\mathbf{A}^{T}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-6">
+<span class="eqno">(6.49)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-6" title="Link to this equation">#</a></span>\[\left(\mathbf{A}\cdot\mathbf{B}\right)^{T}=\mathbf{B}^{T}\cdot\mathbf{A}^{T}.\]</div>
 </section>
 <section id="symmetrische-und-antisymmetrische-matrizen">
 <h2>Symmetrische und antisymmetrische Matrizen<a class="headerlink" href="#symmetrische-und-antisymmetrische-matrizen" title="Link to this heading">#</a></h2>
@@ -603,29 +603,29 @@ i-ten Zeile und der j-ten Spalte mit dem Element <span class="math notranslate n
 der i-ten Spalte übereinstimmt. Eine symmetrische Matrix ist also
 spiegelsymmetrisch bezüglich der Hauptdiagonalen. Beispielsweise ist die
 folgende Matrix symmetrisch:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} 2 &amp; 3.5 &amp; -1 \\ 3.5 &amp; 4 &amp; 0 \\ -1 &amp; 0 &amp; 17 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-7">
+<span class="eqno">(6.50)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-7" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix} 2 &amp; 3.5 &amp; -1 \\ 3.5 &amp; 4 &amp; 0 \\ -1 &amp; 0 &amp; 17 \end{pmatrix}.\end{split}\]</div>
 <p>Mit Hilfe der Definition der transponierten Matrix können wir eine symmetrische
 Matrix auch folgendermaßen spezifizieren.</p>
 <div class="note admonition">
 <p class="admonition-title">Was ist … eine symmetrische Matrix?</p>
 <p>Eine quadratische Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> ist symmetrisch, wenn</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{A}^{T} = \mathbf{A}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-8">
+<span class="eqno">(6.51)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-8" title="Link to this equation">#</a></span>\[\mathbf{A}^{T} = \mathbf{A}\]</div>
 <p>gilt, wobei <span class="math notranslate nohighlight">\(\mathbf{A}^{T}\)</span> die transponierte Matrix von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> bezeichnet.</p>
 </div>
 <p>Oder anders ausgedrückt: der Prozess des Transponieren ändert die Matrix nicht.</p>
 <p>Sind zwei Matrizen symmetrisch, dann ist auch ihre Summe wieder symmetrisch,
 denn es gilt</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}+\mathbf{B}\right)^{T} = \mathbf{A}^{T} + \mathbf{B}^{T} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-9">
+<span class="eqno">(6.52)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-9" title="Link to this equation">#</a></span>\[\left(\mathbf{A}+\mathbf{B}\right)^{T} = \mathbf{A}^{T} + \mathbf{B}^{T} =
 \mathbf{A} + \mathbf{B}.\]</div>
 <p>Das gilt auch für eine Matrix, die mit einem Skalar multipliziert wird. Bei der
 Skalarmultiplikation bleibt die Symmetrie erhalten. Anders sieht es wieder
 einmal aus, wenn wir die Matrizenmultiplikation betrachten.</p>
 <p>Im Allgemeinen gilt für symmetrische Matrizen</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}\cdot\mathbf{B}\right)^{T} = \mathbf{B}^{T}\cdot\mathbf{A}^{T}=
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-10">
+<span class="eqno">(6.53)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-10" title="Link to this equation">#</a></span>\[\left(\mathbf{A}\cdot\mathbf{B}\right)^{T} = \mathbf{B}^{T}\cdot\mathbf{A}^{T}=
 \mathbf{B}\cdot\mathbf{A} \overset{i.Allg.}{\neq} \mathbf{A}\cdot\mathbf{B}.\]</div>
 <p>Nur wenn für die beiden Matrizen <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> und <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> <em>zufälligerweise</em>
 <span class="math notranslate nohighlight">\(\mathbf{A}\cdot\mathbf{B} = \mathbf{B}\cdot\mathbf{A}\)</span> gilt, ist auch die
@@ -639,13 +639,13 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 </div>
 </details><p>Der Gegenpart zu einer symmetrischen Matrix ist die <strong>antisymmetrische
 Matrix</strong>. Eine Matrix wird antisymmetrisch genannt, wenn die Eigenschaft</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{A}^{T} = - \mathbf{A}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-11">
+<span class="eqno">(6.54)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-11" title="Link to this equation">#</a></span>\[\mathbf{A}^{T} = - \mathbf{A}\]</div>
 <p>erfüllt ist. Für alle Elemente der Matrix gilt also <span class="math notranslate nohighlight">\(a_{ij} = - a_{ji}\)</span>.
 Manchmal wird eine solche Matrix auch <strong>schiefsymmetrische Matrix</strong> genannt.</p>
 <p>Ein Beispiel für eine schiefsymmetrische Matrix ist die Matrix</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} 2 &amp; 3.5 &amp; -1 \\ -3.5 &amp; 4 &amp; 0 \\ 1 &amp; 0 &amp; 17 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-12">
+<span class="eqno">(6.55)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-12" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix} 2 &amp; 3.5 &amp; -1 \\ -3.5 &amp; 4 &amp; 0 \\ 1 &amp; 0 &amp; 17 \end{pmatrix}.\end{split}\]</div>
 </section>
 <section id="zerlegung-in-symmetrische-und-antisymmetrische-matrix">
 <h2>Zerlegung in symmetrische und antisymmetrische Matrix<a class="headerlink" href="#zerlegung-in-symmetrische-und-antisymmetrische-matrix" title="Link to this heading">#</a></h2>
@@ -658,27 +658,27 @@ dann ist <span class="math notranslate nohighlight">\(\mathbf{A}+\mathbf{A}^{T}\
 <p>Dass diese Aussage wahr ist, können wir folgendermaßen zeigen. Wir starten mit
 dem Ausdruck <span class="math notranslate nohighlight">\((\mathbf{A}+\mathbf{A}^{T})^{T}\)</span> und vereinfachen ihn gemäß der
 obigen Rechenregeln:</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}+\mathbf{A}^{T}\right)^{T}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-13">
+<span class="eqno">(6.56)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-13" title="Link to this equation">#</a></span>\[\left(\mathbf{A}+\mathbf{A}^{T}\right)^{T}
 = \mathbf{A}^{T} + \left(\mathbf{A}^{T}\right)^{T} = \mathbf{A}^{T} + \mathbf{A} =
 \mathbf{A} + \mathbf{A}^{T}.\]</div>
 <p>Das ist aber genau die Eigenschaft, die eine quadratische Matrix zu einer
 symmetrischen Matrix macht.</p>
 <p>Analog dazu können wir zeigen, dass <span class="math notranslate nohighlight">\(\mathbf{A} - \mathbf{A}^{T}\)</span> eine
 antisymmetrische Matrix ist:</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}-\mathbf{A}^{T}\right)^{T}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-14">
+<span class="eqno">(6.57)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-14" title="Link to this equation">#</a></span>\[\left(\mathbf{A}-\mathbf{A}^{T}\right)^{T}
 = \mathbf{A}^{T} - \left(\mathbf{A}^{T}\right)^{T} = \mathbf{A}^{T} - \mathbf{A} =
 -\left(\mathbf{A}-\mathbf{A}^{T}\right).\]</div>
 <p>Wir wissen also, dass <span class="math notranslate nohighlight">\(\mathbf{A}+\mathbf{A}^{T}\)</span> eine symmetrische Matrix und
 <span class="math notranslate nohighlight">\(\mathbf{A}-\mathbf{A}^{T}\)</span> eine antisymmetrische Matrix ist. Addieren wir die
 beiden, erhalten wir</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}+\mathbf{A}^{T}\right) + \left(\mathbf{A}-\mathbf{A}^{T}\right) =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-15">
+<span class="eqno">(6.58)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-15" title="Link to this equation">#</a></span>\[\left(\mathbf{A}+\mathbf{A}^{T}\right) + \left(\mathbf{A}-\mathbf{A}^{T}\right) =
 2\cdot\mathbf{A}.\]</div>
 <p>Teilen wir auf beiden Seiten der Gleichung durch 2 erhalten wir</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{A} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec06-16">
+<span class="eqno">(6.59)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec06-16" title="Link to this equation">#</a></span>\[\mathbf{A} =
 \underbrace{\frac{1}{2}\left(\mathbf{A}+\mathbf{A}^{T}\right)}_{\text{symmetrisch}} +
 \underbrace{\frac{1}{2}\left(\mathbf{A}-\mathbf{A}^{T}\right)}_{\text{antisymmetrisch}}\]</div>
 <p>und haben so die quadratische Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> in eine symmetrischen und

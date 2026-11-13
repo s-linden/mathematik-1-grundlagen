@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -536,15 +536,17 @@ nützlich.</p>
 <section id="minimum-und-maximum">
 <h2>Minimum und Maximum<a class="headerlink" href="#minimum-und-maximum" title="Link to this heading">#</a></h2>
 <p>Als nächstes betrachten wir die Funktion</p>
-<div class="math notranslate nohighlight">
-\[f(x) =\frac{\cos(3\pi x)}{x}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec05-1">
+<span class="eqno">(11.34)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec05-1" title="Link to this equation">#</a></span>\[f(x) =\frac{\cos(3\pi x)}{x}\]</div>
 <p>im Intervall <span class="math notranslate nohighlight">\(0.1 \leq x \leq 1.1\)</span>. Der Funktionsgraph ist in der folgenden
 Abbildung visualisiert.</p>
 <figure class="align-default" id="extrema-example">
 <a class="reference internal image-reference" href="../_images/Extrema_example_de.svg"><img alt="../_images/Extrema_example_de.svg" src="../_images/Extrema_example_de.svg" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Quelle: Georg-Johann - Eigenes Werk, Gemeinfrei, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=11692680">https://commons.wikimedia.org/w/index.php?curid=11692680</a></span><a class="headerlink" href="#extrema-example" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 11.5: </span><span class="caption-text">Graph von <span class="math notranslate nohighlight">\(f(x) = \frac{\cos(3\pi x)}{x}\)</span> im Intervall <span class="math notranslate nohighlight">\(0.1 \leq x \leq 1.1\)</span> mit lokalen
+und globalen Extrema (Quelle: Georg-Johann, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=11692680">Wikimedia
+Commons</a>; Lizenz: gemeinfrei)</span><a class="headerlink" href="#extrema-example" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In diesem Intervall hat die Funktion je ein lokales und globales Minimum und je
@@ -567,8 +569,8 @@ Fachbegriffe lautet Minima, Maxima und Extrema.</p>
 <h2>Vorzeichenwechselkriterium<a class="headerlink" href="#vorzeichenwechselkriterium" title="Link to this heading">#</a></h2>
 <p>Wenn eine Funktion differenzierbar ist, ist die Steigung der Tangente an einer
 Extremstelle 0. Es gilt also</p>
-<div class="math notranslate nohighlight">
-\[f'(x_0)=0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec05-2">
+<span class="eqno">(11.35)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec05-2" title="Link to this equation">#</a></span>\[f'(x_0)=0.\]</div>
 <p>Bei differenzierbaren Funktionen ist es notwendig, dass die erste Ableitung am
 Extremum verschwindet, aber diese Bedingung ist nicht hinreichend. Bei der
 Funktion <span class="math notranslate nohighlight">\(f(x)=x^3\)</span> ist die erste Ableitung <span class="math notranslate nohighlight">\(f'(x)=3x^2\)</span> an der Stelle <span class="math notranslate nohighlight">\(x_0\)</span>
@@ -577,13 +579,13 @@ Zusätzlich zu der Bedingung <span class="math notranslate nohighlight">\(f'(x)=
 von <span class="math notranslate nohighlight">\(x_0\)</span> wechseln.</p>
 <p>Bei einem Minimum wechselt das Vorzeichen der ersten Ableitung von Minus nach
 Plus, d.h. gilt zusätzlich</p>
-<div class="math notranslate nohighlight">
-\[f'(x) &gt; 0, \text{ falls } x &lt; x_0 \; \text{ und } \; f'(x) &lt; 0, \text{ falls }
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec05-3">
+<span class="eqno">(11.36)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec05-3" title="Link to this equation">#</a></span>\[f'(x) &gt; 0, \text{ falls } x &lt; x_0 \; \text{ und } \; f'(x) &lt; 0, \text{ falls }
 x &gt; x_0,\]</div>
 <p>dann hat <span class="math notranslate nohighlight">\(f\)</span> an der Stelle <span class="math notranslate nohighlight">\(x_0\)</span> ein lokales Minimum.</p>
 <p>Bei einem lokalen Maximum erfolgt der Wechsel von Plus nach Minus, also</p>
-<div class="math notranslate nohighlight">
-\[f'(x) &lt; 0, \text{ falls } x &lt; x_0 \; \text{ und } \; f'(x) &gt; 0, \text{ falls }
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec05-4">
+<span class="eqno">(11.37)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec05-4" title="Link to this equation">#</a></span>\[f'(x) &lt; 0, \text{ falls } x &lt; x_0 \; \text{ und } \; f'(x) &gt; 0, \text{ falls }
 x &gt; x_0,\]</div>
 </section>
 <section id="kriterium-mit-2-ableitung">

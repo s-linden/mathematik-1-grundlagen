@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -521,16 +521,16 @@
 <p>Auch verkettete Funktionen lassen sich nicht so einfach integrieren. Wenn <span class="math notranslate nohighlight">\(F\)</span>
 eine Stammfunktion der Funktion <span class="math notranslate nohighlight">\(f\)</span> ist, dann gilt für die der verketten
 Funktion <span class="math notranslate nohighlight">\(F\circ g\)</span> die Kettenregel:</p>
-<div class="math notranslate nohighlight">
-\[\big(F(g(x))\big)^{\prime} = F'(g(x)) \cdot g'(x) = f(g(x))\cdot g'(x).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-1">
+<span class="eqno">(12.29)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-1" title="Link to this equation">#</a></span>\[\big(F(g(x))\big)^{\prime} = F'(g(x)) \cdot g'(x) = f(g(x))\cdot g'(x).\]</div>
 <p>Die Umkehrung davon ist die Integration durch Substitution.</p>
 <section id="lernziele">
 <h2>Lernziele<a class="headerlink" href="#lernziele" title="Link to this heading">#</a></h2>
 <div class="goals admonition">
 <p class="admonition-title">Lernziele</p>
 <p>Sie können die Substitutionsregel</p>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(g(x))\cdot g^{\prime}(x) \, dx = \int_{g(a)}^{g(b)} f(z) \,
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-2">
+<span class="eqno">(12.30)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-2" title="Link to this equation">#</a></span>\[\int_{a}^{b} f(g(x))\cdot g^{\prime}(x) \, dx = \int_{g(a)}^{g(b)} f(z) \,
 dz\]</div>
 <p>anwenden.</p>
 </div>
@@ -541,8 +541,8 @@ dz\]</div>
 Wir gehen jetzt davon aus, dass die Funktion <span class="math notranslate nohighlight">\(f(g(x))\cdot g^{\prime}(x)\)</span> auf
 dem Intervall <span class="math notranslate nohighlight">\([a,b]\)</span> integriert werden soll, also die rechte Seite der obigen
 Kettenregel. Dann ist das Ergebnis</p>
-<div class="math notranslate nohighlight">
-\[\int_{a}^{b} f(g(x))\cdot g^{\prime}(x) \, dx = \int_{g(a)}^{g(b)} f(z) \,
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-3">
+<span class="eqno">(12.31)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-3" title="Link to this equation">#</a></span>\[\int_{a}^{b} f(g(x))\cdot g^{\prime}(x) \, dx = \int_{g(a)}^{g(b)} f(z) \,
 dz.\]</div>
 <p>Das klappt übrigens nur, wenn die Funktion <span class="math notranslate nohighlight">\(g\)</span> stetig differenzierbar ist. In
 den Ingenieurswissenschaften ist das aber meistens der Fall, so dass diese
@@ -550,16 +550,16 @@ Einschränkung kein Problem darstellt. Problematisch ist dahingegen, dass
 meistens nur die verkette Funktion ohne den Term <span class="math notranslate nohighlight">\(g'(x)\)</span> im Integral steht.
 Daher muss sehr oft der Integrand passend erweitert werden, um ihn erstmal auf
 die Form</p>
-<div class="math notranslate nohighlight">
-\[f(g(x))\cdot g^{\prime}(x)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-4">
+<span class="eqno">(12.32)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-4" title="Link to this equation">#</a></span>\[f(g(x))\cdot g^{\prime}(x)\]</div>
 <p>zu bringen.</p>
 </section>
 <section id="beispiel-fur-integration-durch-substitution">
 <h2>Beispiel für Integration durch Substitution<a class="headerlink" href="#beispiel-fur-integration-durch-substitution" title="Link to this heading">#</a></h2>
 <p>Wir wollen die Funktion <span class="math notranslate nohighlight">\(\sqrt{1+3x^2}\cdot x\)</span> auf dem Intervall <span class="math notranslate nohighlight">\([0,1]\)</span>
 integrieren, also</p>
-<div class="math notranslate nohighlight">
-\[\int_{0}^{1} \sqrt{1+3x^2}\cdot x \, dx\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-5">
+<span class="eqno">(12.33)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-5" title="Link to this equation">#</a></span>\[\int_{0}^{1} \sqrt{1+3x^2}\cdot x \, dx\]</div>
 <p>ausrechnen.</p>
 <p>Da die Funktion <span class="math notranslate nohighlight">\(g(x)=1+3x^2\)</span> in die Wurzelfunktion <span class="math notranslate nohighlight">\(f(x)=\sqrt{x}\)</span> eingesetzt
 wird, liegt eine verkettete Funktion vor: <span class="math notranslate nohighlight">\(f(g(x)) = \sqrt{1+3x^2}\)</span>. Wir müssen
@@ -568,8 +568,8 @@ als erstes den Integranden so umformen, dass noch mit der Ableitung
 multipliziert, aber dummerweise nicht mit <span class="math notranslate nohighlight">\(6x\)</span>. Also ergänzen wir noch die
 fehlende <span class="math notranslate nohighlight">\(6\)</span> im Integranden und teilen aber wieder durch <span class="math notranslate nohighlight">\(6\)</span>, da wir ja den
 Integranden nicht verändern wollen. Zusammengefasst also</p>
-<div class="math notranslate nohighlight">
-\[\int_{0}^{1} \sqrt{1+3x^2}\cdot x \, dx =
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-6">
+<span class="eqno">(12.34)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-6" title="Link to this equation">#</a></span>\[\int_{0}^{1} \sqrt{1+3x^2}\cdot x \, dx =
 \textcolor{red}{\frac{1}{6}}\int_{0}^{1} \sqrt{1+3x^2}\cdot \textcolor{red}{6}x \, dx.\]</div>
 <p>Für das so umgeschriebene Integral dürfen wir die Substitutionsregel anwenden.
 Dazu müssen noch die untere und obere neuen Integrationsgrenzen ausgerechnet
@@ -579,17 +579,17 @@ werden:</p>
 <li><p>obere Grenze: <span class="math notranslate nohighlight">\(x = 1 \Rightarrow g(1) = 1 + 3\cdot 1^2 = 4\)</span></p></li>
 </ul>
 <p>Wir erhalten also:</p>
-<div class="math notranslate nohighlight">
-\[\frac{1}{6} \int_{0}^{1} \sqrt{1+3x^2}\cdot 6x \, dx =
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-7">
+<span class="eqno">(12.35)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-7" title="Link to this equation">#</a></span>\[\frac{1}{6} \int_{0}^{1} \sqrt{1+3x^2}\cdot 6x \, dx =
 \frac{1}{6} \int_{\textcolor{red}{1}}^{\textcolor{red}{4}} \sqrt{z} \, dz. \]</div>
 <p>Die Wurzelfunktion zu integrieren ist aber nicht so schwer, also</p>
-<div class="math notranslate nohighlight">
-\[ \frac{1}{6} \int_{1}^{4} \sqrt{z} \, dz = \frac{1}{6} \big[
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-8">
+<span class="eqno">(12.36)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-8" title="Link to this equation">#</a></span>\[ \frac{1}{6} \int_{1}^{4} \sqrt{z} \, dz = \frac{1}{6} \big[
 \frac{2}{3}z^{\frac{3}{2}} \big] = \frac{1}{9} \big( 4^{\frac{3}{2}} -
 1^{\frac{3}{2}}\big) = \frac{7}{9}.\]</div>
 <p>Somit haben wir das Ergebnis</p>
-<div class="math notranslate nohighlight">
-\[\int_{0}^{1} \sqrt{1+3x^2}\cdot x \, dx = \frac{7}{9}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter12-chapter12-sec05-9">
+<span class="eqno">(12.37)<a class="headerlink" href="#equation-auto-chapter12-chapter12-sec05-9" title="Link to this equation">#</a></span>\[\int_{0}^{1} \sqrt{1+3x^2}\cdot x \, dx = \frac{7}{9}.\]</div>
 </section>
 <section id="weiteres-lernmaterial">
 <h2>Weiteres Lernmaterial<a class="headerlink" href="#weiteres-lernmaterial" title="Link to this heading">#</a></h2>

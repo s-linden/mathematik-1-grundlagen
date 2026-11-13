@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -534,11 +534,14 @@ Betrachtungsweise von Funktionsgrenzwerten.</p>
 \begin{equation*}
 \lim_{x\rightarrow x_0} f(x) = F \quad \text{ oder } \quad f(x)\rightarrow F \text{ für } x \rightarrow x_0.
 \end{equation*}</p></li>
-<li><p>Sie können Funktionsgrenzwerte von links und von rechts unterscheiden. Mit Funktionsgrenzwert von links meint man, dass man nur Zahlenfolgen betrachtet, für die <span class="math notranslate nohighlight">\((x_n)\)</span> kleiner als <span class="math notranslate nohighlight">\(x_0\)</span> ist und die sich <span class="math notranslate nohighlight">\(x_0\)</span> von links annähern. Umgekehrt meint der Funktionsgrenzwert von rechts, das man nur Zahlenfolgen <span class="math notranslate nohighlight">\((x_n)\)</span> nimmt, die sich <span class="math notranslate nohighlight">\(x_0\)</span> von rechts annähern. Man verwendet die beiden Schreibweisen
-<span class="math notranslate nohighlight">\(\begin{align*}
+<li><p>Sie können Funktionsgrenzwerte von links und von rechts unterscheiden. Mit Funktionsgrenzwert von links meint man, dass man nur Zahlenfolgen betrachtet, für die <span class="math notranslate nohighlight">\((x_n)\)</span> kleiner als <span class="math notranslate nohighlight">\(x_0\)</span> ist und die sich <span class="math notranslate nohighlight">\(x_0\)</span> von links annähern. Umgekehrt meint der Funktionsgrenzwert von rechts, das man nur Zahlenfolgen <span class="math notranslate nohighlight">\((x_n)\)</span> nimmt, die sich <span class="math notranslate nohighlight">\(x_0\)</span> von rechts annähern. Man verwendet die beiden Schreibweisen</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-1">
+<span class="eqno">(9.39)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-1" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 \text{linksseitig:} \quad \lim_{x\rightarrow x_0^{\textcolor{blue}{-}}} f(x) = F \quad &amp;\text{ bzw.} \quad \lim_{x\textcolor{blue}{\nearrow} x_0} f(x) = F \\
 \text{rechtsseitig:} \quad \lim_{x\rightarrow x_0^{\textcolor{blue}{+}}} f(x) = F \quad &amp;\text{ bzw.} \quad \lim_{x\textcolor{blue}{\searrow} x_0} f(x) = F 
-\end{align*}\)</span></p></li>
+\end{aligned}\end{split}\]</div>
+<ul class="simple">
 <li><p>Sie kennen die Rechenregeln für Funktionsgrenzwerte, also wenn <span class="math notranslate nohighlight">\(f\)</span> und <span class="math notranslate nohighlight">\(g\)</span> Funktionen sind mit <span class="math notranslate nohighlight">\(\lim_{x\rightarrow x_0}f(x)=F\)</span> und <span class="math notranslate nohighlight">\(\lim_{x\rightarrow x_0}g(x)=G\)</span>, dann gilt</p>
 <ul>
 <li><p>Addition: <span class="math notranslate nohighlight">\(\lim_{x\rightarrow x_0} (f(x)+g(x)) = F+G\)</span></p></li>
@@ -555,13 +558,13 @@ Betrachtungsweise von Funktionsgrenzwerten.</p>
 <p>Ein <strong>Funktionsgrenzwert</strong> beschreibt, wie sich eine Funktion <span class="math notranslate nohighlight">\(f(x)\)</span> verhält,
 wenn sich der Wert von <span class="math notranslate nohighlight">\(x\)</span> einem bestimmten Punkt <span class="math notranslate nohighlight">\(x_0\)</span> annähert. Betrachten wir
 die Funktion</p>
-<div class="math notranslate nohighlight">
-\[f(x) = 2x + 1\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-2">
+<span class="eqno">(9.40)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-2" title="Link to this equation">#</a></span>\[f(x) = 2x + 1\]</div>
 <p>und untersuchen, was mit <span class="math notranslate nohighlight">\(f(x)\)</span> passiert, wenn sich <span class="math notranslate nohighlight">\(x\)</span> dem Punkt <span class="math notranslate nohighlight">\(x_0 = 3\)</span>
 annähert. Dazu konstruieren wir eine Folge <span class="math notranslate nohighlight">\((x_n)\)</span>, die gegen <span class="math notranslate nohighlight">\(x_0 = 3\)</span>
 konvergiert, beispielsweise die Folge</p>
-<div class="math notranslate nohighlight">
-\[x_n = 3 - \frac{1}{n^2}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-3">
+<span class="eqno">(9.41)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-3" title="Link to this equation">#</a></span>\[x_n = 3 - \frac{1}{n^2}.\]</div>
 <p>Damit ergeben sich die folgenden Funktionswerte:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -617,8 +620,8 @@ konvergiert, beispielsweise die Folge</p>
 <p>Wir haben die Vermutung, dass sich die Folge der Funktionswerte <span class="math notranslate nohighlight">\(f(x_n)\)</span> dem
 Grenzwert <span class="math notranslate nohighlight">\(F=7\)</span> nähert.</p>
 <p>Wir hätten auch eine andere Folge <span class="math notranslate nohighlight">\((x_n)\)</span> wählen können, z.B.</p>
-<div class="math notranslate nohighlight">
-\[x_n = 3 + \frac{1}{2n}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-4">
+<span class="eqno">(9.42)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-4" title="Link to this equation">#</a></span>\[x_n = 3 + \frac{1}{2n}.\]</div>
 <p>Dann würden sich folgenden Funktionswerte ergeben:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -678,8 +681,8 @@ Grenzwert <span class="math notranslate nohighlight">\(F=7\)</span> nähert.</p>
 <p>Wenn für jede Folge <span class="math notranslate nohighlight">\((x_n)\)</span>, die gegen einen Grenzwert <span class="math notranslate nohighlight">\(x_0\)</span> konvergiert, auch
 die Folge der Funktionswerte <span class="math notranslate nohighlight">\(f(x_n)\)</span> konvergiert, nennt man diesen Grenzwert
 Funktionsgrenzwert. Wir schreiben</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to x_0}f(x) = F \; \text{ oder } \; f(x) \to F \text{ für } x\to x_0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-5">
+<span class="eqno">(9.43)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-5" title="Link to this equation">#</a></span>\[\lim_{x\to x_0}f(x) = F \; \text{ oder } \; f(x) \to F \text{ für } x\to x_0.\]</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -694,11 +697,11 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>In dem Beispiel haben wir zwei verschiedene Zahlenfolgen verwendet, um den
 Funktionsgrenzwert zu bestimmen. Allgemein wird zwischen Folgen unterschieden,
 die sich der Stelle <span class="math notranslate nohighlight">\(x_0\)</span> von links nähern wie die Folge</p>
-<div class="math notranslate nohighlight">
-\[x_n = 3 - \frac{1}{n^2}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-6">
+<span class="eqno">(9.44)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-6" title="Link to this equation">#</a></span>\[x_n = 3 - \frac{1}{n^2}\]</div>
 <p>und Folgen, die sich der Stelle <span class="math notranslate nohighlight">\(x_0\)</span> von rechts nähern, wie die Folge</p>
-<div class="math notranslate nohighlight">
-\[x_n = 3 + \frac{1}{2n}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-7">
+<span class="eqno">(9.45)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-7" title="Link to this equation">#</a></span>\[x_n = 3 + \frac{1}{2n}.\]</div>
 <p>Wenn ein Funktionsgrenzwert existiert, ist es egal, ob wir uns von links oder
 rechts nähern, denn jede Folge muss ja konvergieren. Es gibt aber auch
 Funktionen, die keinen Funktionsgrenzwert an der Stelle <span class="math notranslate nohighlight">\(x_0\)</span> haben,
@@ -711,13 +714,13 @@ kleiner als <span class="math notranslate nohighlight">\(x_0\)</span> bleibt, da
 linksseitiger Grenzwert bezeichnet. In mathematischer Notation schreiben wir
 linksseitige Grenzwerte folgendermaßen (beachten Sie bitte das kleine rote Minus
 bzw. den kleinen roten Pfeil):</p>
-<div class="math notranslate nohighlight">
-\[ \lim_{x\rightarrow x_0^{\textcolor{red}{-}}} f(x) = F \quad \text{ bzw.}
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-8">
+<span class="eqno">(9.46)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-8" title="Link to this equation">#</a></span>\[ \lim_{x\rightarrow x_0^{\textcolor{red}{-}}} f(x) = F \quad \text{ bzw.}
 \quad \lim_{x\textcolor{red}{\nearrow} x_0} f(x) = F \]</div>
 <p>Rechtsseitige Funktionsgrenzwerte sind analog dazu definiert. Die Folgenglieder
 <span class="math notranslate nohighlight">\(x_n\)</span> müssen alle größer sein als die Stelle <span class="math notranslate nohighlight">\(x_0\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\rightarrow x_0^{\textcolor{red}{+}}} f(x) = F \quad \text{ bzw.} \quad
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-9">
+<span class="eqno">(9.47)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-9" title="Link to this equation">#</a></span>\[\lim_{x\rightarrow x_0^{\textcolor{red}{+}}} f(x) = F \quad \text{ bzw.} \quad
 \lim_{x\textcolor{red}{\searrow} x_0} f(x) = F\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -733,32 +736,32 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 konvergenten Folgen. Daher listen wir sie hier nur auf, ohne ins Detail zu
 gehen:</p>
 <p>Wenn <span class="math notranslate nohighlight">\(f\)</span> und <span class="math notranslate nohighlight">\(g\)</span> Funktionen sind mit</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\rightarrow x_0}f(x)=F\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-10">
+<span class="eqno">(9.48)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-10" title="Link to this equation">#</a></span>\[\lim_{x\rightarrow x_0}f(x)=F\]</div>
 <p>und</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\rightarrow x_0}g(x)=G,\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-11">
+<span class="eqno">(9.49)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-11" title="Link to this equation">#</a></span>\[\lim_{x\rightarrow x_0}g(x)=G,\]</div>
 <p>dann gilt</p>
 <ul class="simple">
 <li><p>Addition:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\lim_{x\rightarrow x_0} (f(x)+g(x)) = F+G\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-12">
+<span class="eqno">(9.50)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-12" title="Link to this equation">#</a></span>\[\lim_{x\rightarrow x_0} (f(x)+g(x)) = F+G\]</div>
 <ul class="simple">
 <li><p>Subtraktion:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\lim_{x\rightarrow x_0} (f(x)-g(x)) = F-G\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-13">
+<span class="eqno">(9.51)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-13" title="Link to this equation">#</a></span>\[\lim_{x\rightarrow x_0} (f(x)-g(x)) = F-G\]</div>
 <ul class="simple">
 <li><p>Multiplikation:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\lim_{x\rightarrow x_0} (f(x)\cdot g(x)) = F\cdot G\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-14">
+<span class="eqno">(9.52)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-14" title="Link to this equation">#</a></span>\[\lim_{x\rightarrow x_0} (f(x)\cdot g(x)) = F\cdot G\]</div>
 <ul class="simple">
 <li><p>Division (vorausgesetzt <span class="math notranslate nohighlight">\(g(x)\neq 0, \,G\neq 0\)</span>):</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\lim_{x\rightarrow x_0} \left(\frac{f(x)}{g(x)} \right) = \frac{F}{G}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec04-15">
+<span class="eqno">(9.53)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec04-15" title="Link to this equation">#</a></span>\[\lim_{x\rightarrow x_0} \left(\frac{f(x)}{g(x)} \right) = \frac{F}{G}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Video “Rechenregeln Funktionsgrenzwerte” von Mathematische Methoden</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">

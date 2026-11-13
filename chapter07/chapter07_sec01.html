@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -538,22 +538,22 @@ indem Sie den <strong>Laplaceschen Entwicklungssatz</strong> anwenden.</p></li>
 <h2>Determinante von <span class="math notranslate nohighlight">\(2\times 2\)</span>-Matrizen<a class="headerlink" href="#determinante-von-2-times-2-matrizen" title="Link to this heading">#</a></h2>
 <p>Die Determinante gibt es nur für quadratische Matrizen. Für eine <span class="math notranslate nohighlight">\(2\times
 2\)</span>-Matrix</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A} = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec01-1">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec01-1" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}\end{split}\]</div>
 <p>wird die Determinante durch den Ausdruck <span class="math notranslate nohighlight">\(a\cdot d - c\cdot b\)</span> berechnet.Die
 Determinante ordnet jeder quadratischen Matrix eine reelle Zahl zu. Diese
 Eigenschaft ist also eine Funktion und wird in der Regel mit <span class="math notranslate nohighlight">\(\det\)</span> abgekürzt.
 Es gilt also</p>
-<div class="math notranslate nohighlight">
-\[\det(\mathbf{A}) = a\cdot d - c\cdot b.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec01-2">
+<span class="eqno">(7.2)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec01-2" title="Link to this equation">#</a></span>\[\det(\mathbf{A}) = a\cdot d - c\cdot b.\]</div>
 <p>Manchmal werden auch zwei senkrechte Striche genommen, die die Matrixklammern
 ersetzen, um die Determinante einer Matrix zu kennzeichnen:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\left|\begin{matrix} a &amp; b \\ c &amp; d \end{matrix}\right|
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec01-3">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec01-3" title="Link to this equation">#</a></span>\[\begin{split}\left|\begin{matrix} a &amp; b \\ c &amp; d \end{matrix}\right|
 = a\cdot d - c\cdot b.\end{split}\]</div>
 <p>Wir betrachten ein Beispiel:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\det\begin{pmatrix} 2 &amp; 3 \\ 1 &amp; 5 \end{pmatrix} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec01-4">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec01-4" title="Link to this equation">#</a></span>\[\begin{split}\det\begin{pmatrix} 2 &amp; 3 \\ 1 &amp; 5 \end{pmatrix} =
 \left|\begin{matrix} 2 &amp; 3 \\ 1 &amp; 5 \end{matrix}\right| =
 2\cdot 5 - 1\cdot 3 = 7.\end{split}\]</div>
 </section>
@@ -566,14 +566,14 @@ sogenannten <strong>Laplaceschen Entwicklungssatz</strong>.</p>
 wir die Determinante nach einer Zeile oder einer Spalte. Wenn wir die
 Determinante der Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\in\mathbb{R}^{n\times n}\)</span> nach der i-ten
 Zeile entwickeln, gilt</p>
-<div class="math notranslate nohighlight">
-\[\det(\mathbf{A}) = \sum_{j=1}^{n} a_{ij}\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec01-5">
+<span class="eqno">(7.5)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec01-5" title="Link to this equation">#</a></span>\[\det(\mathbf{A}) = \sum_{j=1}^{n} a_{ij}\cdot
 (-1)^{i+j}\cdot\det(\mathbf{A}_{ij}),\]</div>
 <p>wobei <span class="math notranslate nohighlight">\(\mathbf{A_{ij}}\)</span> diejenige Matrix ist, die entsteht, wenn die i-te Zeile
 und j-te Spalte gestrichen werden.</p>
 <p>Wird hingegen nach der j-ten Spalte entwickelt, lautet die Formel folgendermaßen:</p>
-<div class="math notranslate nohighlight">
-\[\det(\mathbf{A}) = \sum_{i=1}^{n} a_{ij}\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec01-6">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec01-6" title="Link to this equation">#</a></span>\[\det(\mathbf{A}) = \sum_{i=1}^{n} a_{ij}\cdot
 (-1)^{i+j}\cdot \det(\mathbf{A}_{ij}).\]</div>
 <p>Auch hier bezeichnet <span class="math notranslate nohighlight">\(\mathbf{A}_{ij}\)</span> die Untermatrix, die durch Streichen der
 i-ten Zeile und j-ten Spalte entsteht.</p>
@@ -608,15 +608,15 @@ notieren.</p>
 <li><p>Die Determinante der transponierten Marix ist gleich der Determinanten der
 ursprünglichen Matrix.</p></li>
 <li><p>Für quadratische Matrizen gleicher Dimension gilt:</p>
-<div class="math notranslate nohighlight">
-\[\det(\mathbf{A}\cdot\mathbf{B}) = \det(\mathbf{A})\cdot\det(\mathbf{B}).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec01-7">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec01-7" title="Link to this equation">#</a></span>\[\det(\mathbf{A}\cdot\mathbf{B}) = \det(\mathbf{A})\cdot\det(\mathbf{B}).\]</div>
 </li>
 <li><p>Multipliziert man eine Zeile der Matrix mit einem Skalar, so wird auch die
 Determinante mit diesen Skalar multipliziert.</p></li>
 <li><p>Ist <span class="math notranslate nohighlight">\(s\)</span> ein Skalar und <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> eine quadratische Matrix der Dimension
 <span class="math notranslate nohighlight">\(n\times n\)</span>, dann gilt:</p>
-<div class="math notranslate nohighlight">
-\[\det(s\cdot\mathbf{A}) = s^{n}\cdot\det(\mathbf{A}).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec01-8">
+<span class="eqno">(7.8)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec01-8" title="Link to this equation">#</a></span>\[\det(s\cdot\mathbf{A}) = s^{n}\cdot\det(\mathbf{A}).\]</div>
 </li>
 <li><p>Hat die Matrix eine Zeile oder eine Spalte, die komplett aus Nullen besteht,
 dann ist die Determinante Null.</p></li>

@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -171,7 +171,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Vorlesungsskript Mathematik 1: Grundlagen
+                    Mathematik 1: Grundlagen
                 </a>
             </li>
         </ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -549,33 +549,33 @@ Matrix zu berechnen und welche Rolle die Determinante dabei spielt.</p></li>
 <p>Anhand der Überschrift können Sie schon erahnen, dass auch der Fachbegriff
 <strong>inverse Matrix</strong> nur für quadratische Matrizen definiert ist. Wir beginnen mit
 der Inversen einer <span class="math notranslate nohighlight">\(2 \times 2\)</span>-Matrix, also allgemein einer Matrix der Form</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A} = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-1">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-1" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}.\end{split}\]</div>
 <p>Wenn die Determinante dieser Matrix <em>ungleich Null</em> ist, können wir die Inverse
 <span class="math notranslate nohighlight">\(\mathbf{A}^{-1}\)</span> mit der Definition</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{-1}=
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-2">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-2" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{-1}=
 \frac{1}{\det(\mathbf{A})} \begin{pmatrix} d &amp; -b \\ -c &amp; a \end{pmatrix}\end{split}\]</div>
 <p>bilden. Jetzt ist auch ersichtlich, warum wir <span class="math notranslate nohighlight">\(\det{(\mathbf{A})}\)</span> gefordert
 haben, denn das Teilen durch Null ist strikt verboten.</p>
 <p>Betrachten wir als Beispiel die Matrix</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A} = \begin{pmatrix} 2 &amp; 3 \\ 1 &amp; 5 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-3">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-3" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix} 2 &amp; 3 \\ 1 &amp; 5 \end{pmatrix}.\end{split}\]</div>
 <p>Die Determinante lautet</p>
-<div class="math notranslate nohighlight">
-\[\det(\mathbf{A}) = 2 \cdot 5 - 1 \cdot 3 = 10 - 3 = 7 \neq 0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-4">
+<span class="eqno">(7.12)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-4" title="Link to this equation">#</a></span>\[\det(\mathbf{A}) = 2 \cdot 5 - 1 \cdot 3 = 10 - 3 = 7 \neq 0.\]</div>
 <p>Da die Determinante ungleich null ist, können wir die Inverse der Matrix
 berechnen. Wir setzen die Werte in die allgemeine Formel ein:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{-1} = \frac{1}{7} \begin{pmatrix} 5 &amp; -3 \\ -1 &amp; 2 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-5">
+<span class="eqno">(7.13)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-5" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{-1} = \frac{1}{7} \begin{pmatrix} 5 &amp; -3 \\ -1 &amp; 2 \end{pmatrix}.\end{split}\]</div>
 <p>Das ergibt die Inverse:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{-1} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-6">
+<span class="eqno">(7.14)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-6" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{-1} =
 \begin{pmatrix} \frac{5}{7} &amp; \frac{-3}{7} \\ \frac{-1}{7} &amp; \frac{2}{7} \end{pmatrix}.\end{split}\]</div>
 <p>Warum ist die Inverse so interessant? Wir berechnen das Matrizenprodukt
 <span class="math notranslate nohighlight">\(\mathbf{A}\cdot\mathbf{A}^{-1}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} 2 &amp; 3 \\ 1 &amp; 5 \end{pmatrix} \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-7">
+<span class="eqno">(7.15)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-7" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix} 2 &amp; 3 \\ 1 &amp; 5 \end{pmatrix} \cdot
 \frac{1}{7} \begin{pmatrix} 5 &amp; -3 \\ -1 &amp; 2 \end{pmatrix} =
 \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \\ \end{pmatrix}.\end{split}\]</div>
 <p>Das Ergebnis ist die Einheitsmatrix der Dimension <span class="math notranslate nohighlight">\(2\times 2\)</span>. Tatsächlich ist
@@ -585,8 +585,8 @@ das auch die Definition der inversen Matrix.</p>
 <p>Die inverse Matrix <span class="math notranslate nohighlight">\(\mathbf{A}^{-1}\)</span> einer quadratischen Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> ist
 ebenfalls eine quadratische Matrix, die wenn sie mit der ursprünglichen Matrix
 multipliziert wird, die Einheitsmatrix <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> ergibt:</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{A}^{-1}\cdot \mathbf{A} = \mathbf{E}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-8">
+<span class="eqno">(7.16)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-8" title="Link to this equation">#</a></span>\[\mathbf{A}^{-1}\cdot \mathbf{A} = \mathbf{E}.\]</div>
 </div>
 </section>
 <section id="inverse-matrix-von-n-times-n-matrizen">
@@ -635,8 +635,8 @@ Eigenschaften der Inversen einer Matrix auf.</p>
 <h3>Inverse der Einheitsmatrix<a class="headerlink" href="#inverse-der-einheitsmatrix" title="Link to this heading">#</a></h3>
 <p>Die Einheitsmatrix <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> ist immer invertierbar, und ihre Inverse ist sie
 selbst:</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{E}^{-1} = \mathbf{E}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-9">
+<span class="eqno">(7.17)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-9" title="Link to this equation">#</a></span>\[\mathbf{E}^{-1} = \mathbf{E}.\]</div>
 <p>Dies gilt für jede quadratische Einheitsmatrix beliebiger Dimension.</p>
 </section>
 <section id="inverse-des-produkts-zweier-matrizen">
@@ -644,8 +644,8 @@ selbst:</p>
 <p>Wenn <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> und <span class="math notranslate nohighlight">\(\mathbf{B}\)</span> zwei invertierbare Matrizen der gleichen
 Dimension sind, dann ist auch das Produkt <span class="math notranslate nohighlight">\(\mathbf{A} \cdot \mathbf{B}\)</span>
 invertierbar, und es gilt:</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A} \cdot \mathbf{B}\right)^{-1} = \mathbf{B}^{-1} \cdot \mathbf{A}^{-1}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-10">
+<span class="eqno">(7.18)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-10" title="Link to this equation">#</a></span>\[\left(\mathbf{A} \cdot \mathbf{B}\right)^{-1} = \mathbf{B}^{-1} \cdot \mathbf{A}^{-1}.\]</div>
 <p>Die Reihenfolge wird bei der Multiplikation der Inversen umgekehrt. Eine
 Eselsbrücke für diese Rechenregel wird in dem folgenden Video gezeigt.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -660,15 +660,15 @@ encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="stric
 <h3>Inverse der inversen Matrix<a class="headerlink" href="#inverse-der-inversen-matrix" title="Link to this heading">#</a></h3>
 <p>Die Inverse einer Matrix ist eindeutig, und die Inverse der inversen Matrix ist
 die ursprüngliche Matrix:</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}^{-1}\right)^{-1} = \mathbf{A}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-11">
+<span class="eqno">(7.19)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-11" title="Link to this equation">#</a></span>\[\left(\mathbf{A}^{-1}\right)^{-1} = \mathbf{A}.\]</div>
 </section>
 <section id="inverse-der-transponierten">
 <h3>Inverse der Transponierten<a class="headerlink" href="#inverse-der-transponierten" title="Link to this heading">#</a></h3>
 <p>Die Inverse der transponierten Matrix <span class="math notranslate nohighlight">\(\mathbf{A}^T\)</span> ist die Transponierte der
 Inversen von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\left(\mathbf{A}^T\right)^{-1} = (\mathbf{A}^{-1})^T.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-12">
+<span class="eqno">(7.20)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-12" title="Link to this equation">#</a></span>\[\left(\mathbf{A}^T\right)^{-1} = (\mathbf{A}^{-1})^T.\]</div>
 <p>Das bedeutet, dass die Operationen der Inversion und der Transposition
 miteinander vertauschbar sind.</p>
 </section>
@@ -676,8 +676,8 @@ miteinander vertauschbar sind.</p>
 <h3>Inverse bei Skalarmultiplikation<a class="headerlink" href="#inverse-bei-skalarmultiplikation" title="Link to this heading">#</a></h3>
 <p>Ist <span class="math notranslate nohighlight">\(s\)</span> ein Skalar und <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> eine <span class="math notranslate nohighlight">\(n \times n\)</span>-Matrix, dann gilt für die
 Inverse des Produkts von <span class="math notranslate nohighlight">\(s\)</span> und <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[ (s \cdot \mathbf{A})^{-1} = \frac{1}{s} \cdot \mathbf{A}^{-1}, \quad s \neq 0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec02-13">
+<span class="eqno">(7.21)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec02-13" title="Link to this equation">#</a></span>\[ (s \cdot \mathbf{A})^{-1} = \frac{1}{s} \cdot \mathbf{A}^{-1}, \quad s \neq 0.\]</div>
 <p>Das bedeutet, dass wenn der Skalar <span class="math notranslate nohighlight">\(s\)</span> aus der Inversenoperation herausgezogen
 wird, mit dem Kehrwert multipliziert werden muss.</p>
 </section>

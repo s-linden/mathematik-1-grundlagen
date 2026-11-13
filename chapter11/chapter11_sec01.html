@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -529,8 +529,8 @@ wir uns daher mit der Linearisierung von nichtlinearen Funktionen.</p>
 <p>Sie wissen, dass eine nichtlineare Funktion <strong>linearisiert</strong> werden kann. Damit
 ist gemeint, dass die nichtlineare Funktion <span class="math notranslate nohighlight">\(f:\mathbb{R}\to\mathbb{R}\)</span>
 näherungsweise durch die lineare Funktion</p>
-<div class="math notranslate nohighlight">
-\[T(x) = f(x_0) + f'(x_0)\cdot (x-x_0)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-1">
+<span class="eqno">(11.1)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-1" title="Link to this equation">#</a></span>\[T(x) = f(x_0) + f'(x_0)\cdot (x-x_0)\]</div>
 <p>ersetzt werden kann. Das stimmt nur in der Nähe des sogenannten
 <strong>Arbeitspunktes</strong> <span class="math notranslate nohighlight">\((x_0,f(x_0))\)</span>.</p>
 </div>
@@ -541,16 +541,17 @@ näherungsweise durch die lineare Funktion</p>
 eine lineare Funktion an einem bestimmten Punkt. Die folgende Grafik zeigt, wie
 die nichtlineare Exponentialfunktion <span class="math notranslate nohighlight">\(f(x) = \exp(x)\)</span> in dem Punkt <span class="math notranslate nohighlight">\((0, 1)\)</span>
 durch die lineare Funktion</p>
-<div class="math notranslate nohighlight">
-\[T(x) = x + 1\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-2">
+<span class="eqno">(11.2)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-2" title="Link to this equation">#</a></span>\[T(x) = x + 1\]</div>
 <p>angenähert wird. In der Mathematik sagt man auch, die Exponentialfunktion wird
 in dem Punkt <span class="math notranslate nohighlight">\((0, 1)\)</span> durch die lineare Funktion <strong>approximiert</strong>.</p>
 <figure class="align-default" id="exp-e">
 <a class="reference internal image-reference" href="../_images/Exp_e.svg"><img alt="../_images/Exp_e.svg" src="../_images/Exp_e.svg" style="width: 50%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Quelle: Von Marcel Marnitz, reworked by user:Georg-Johann - Selbst erstellt (own work using GeoGebra),
-completely reworked 2010-08-22, Gemeinfrei, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=5905583">https://commons.wikimedia.org/w/index.php?curid=5905583</a></span><a class="headerlink" href="#exp-e" title="Link to this image">#</a></p>
+<p><span class="caption-number">Abb. 11.1: </span><span class="caption-text">Die Exponentialfunktion <span class="math notranslate nohighlight">\(f(x) = \exp(x)\)</span> und ihre Tangente <span class="math notranslate nohighlight">\(T(x) = x + 1\)</span> im Punkt
+<span class="math notranslate nohighlight">\((0, 1)\)</span> (Quelle: Marcel Marnitz, überarbeitet von Georg-Johann, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=5905583">Wikimedia
+Commons</a>; Lizenz: gemeinfrei)</span><a class="headerlink" href="#exp-e" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Im Folgenden beschreiben wir, wie man auf die Funktionsgleichung der linearen Funktion kommt.</p>
@@ -564,16 +565,16 @@ der Nähe eines bestimmten Punktes durch ihre Tangente genähert werden kann.</p
 <p>Geometrisch betrachtet ist die Tangente an einer Funktion die gerade Linie, die
 die Funktion in dem Arbeitspunkt <span class="math notranslate nohighlight">\((x_0, f(x_0)\)</span> berührt und deren Steigung
 <span class="math notranslate nohighlight">\(f'(x_0)\)</span> entspricht. Generell hat die Gerade die Funktionsgleichung</p>
-<div class="math notranslate nohighlight">
-\[y = m\cdot x + b\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-3">
+<span class="eqno">(11.3)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-3" title="Link to this equation">#</a></span>\[y = m\cdot x + b\]</div>
 <p>mit der Steigung <span class="math notranslate nohighlight">\(m\)</span> und dem y-Achsenabschnitt <span class="math notranslate nohighlight">\(b\)</span>. Wenn die Funktion <span class="math notranslate nohighlight">\(f\)</span>
 differenzierbar ist, stimmt die Steigung der Tangente mit der ersten Ableitung
 <span class="math notranslate nohighlight">\(f'(x_0)\)</span> über ein, es gilt also <span class="math notranslate nohighlight">\(m = f'(x_0)\)</span>. Jetzt setzen wir den Punkt
 <span class="math notranslate nohighlight">\((x_0, f(x_0))\)</span> in die Geradengleichung <span class="math notranslate nohighlight">\(y = m\cdot x + b\)</span> ein und erhalten für
 <span class="math notranslate nohighlight">\(b\)</span> den Term <span class="math notranslate nohighlight">\(f(x_0) - f'(x_0)\cdot x_0\)</span>. Somit lässt sich die
 Funktionsvorschrift der Tangente schreiben als</p>
-<div class="math notranslate nohighlight">
-\[T(x) = f(x_0) + f'(x_0) \cdot (x - x_0).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-4">
+<span class="eqno">(11.4)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-4" title="Link to this equation">#</a></span>\[T(x) = f(x_0) + f'(x_0) \cdot (x - x_0).\]</div>
 <p>In der Nähe dieses Punktes liegt die Tangente sehr nah an der Funktion und
 bietet somit eine einfache lineare Beschreibung des ursprünglich nichtlinearen
 Verhaltens.</p>
@@ -590,32 +591,36 @@ encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></ifr
 <p>Linearisiere die Funktion <span class="math notranslate nohighlight">\(f(x)=\sin(x)\)</span> im Punkt <span class="math notranslate nohighlight">\(x_0 = \frac{\pi}{4}\)</span>.</p>
 <p>Als erstes bestimmen wir den Funktionswert an der Stelle <span class="math notranslate nohighlight">\(x_0 = \frac{\pi}{4}\)</span>.
 Es gilt</p>
-<div class="math notranslate nohighlight">
-\[f(x_0)= f\left(\frac{\pi}{4}\right) = \sin\left(\frac{\pi}{4} \right) =
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-5">
+<span class="eqno">(11.5)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-5" title="Link to this equation">#</a></span>\[f(x_0)= f\left(\frac{\pi}{4}\right) = \sin\left(\frac{\pi}{4} \right) =
 \frac{\sqrt{2}}{2}.\]</div>
 <p>Als zweites berechnen wir die Ableitung der Funktion <span class="math notranslate nohighlight">\(f(x)=\sin(x)\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[f'(x) = \cos(x).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-6">
+<span class="eqno">(11.6)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-6" title="Link to this equation">#</a></span>\[f'(x) = \cos(x).\]</div>
 <p>Der Wert der Ableitung an der Stelle <span class="math notranslate nohighlight">\(x_0 = \frac{\pi}{4}\)</span> ist</p>
-<div class="math notranslate nohighlight">
-\[f'\left(\frac{\pi}{4}\right) = \cos\left(\frac{\pi}{4}\right) =
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-7">
+<span class="eqno">(11.7)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-7" title="Link to this equation">#</a></span>\[f'\left(\frac{\pi}{4}\right) = \cos\left(\frac{\pi}{4}\right) =
 \frac{\sqrt{2}}{2}.\]</div>
 <p>Eingesetzt in die Tangentenfunktion</p>
-<div class="math notranslate nohighlight">
-\[T(x) = f(x_0) + f'(x_0) \cdot (x - x_0)\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-8">
+<span class="eqno">(11.8)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-8" title="Link to this equation">#</a></span>\[T(x) = f(x_0) + f'(x_0) \cdot (x - x_0)\]</div>
 <p>erhalten wir somit die Linearisierung von <span class="math notranslate nohighlight">\(f(x)=\sin(x)\)</span></p>
-<div class="math notranslate nohighlight">
-\[T(x) = \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2} \cdot \left(x -
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-9">
+<span class="eqno">(11.9)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-9" title="Link to this equation">#</a></span>\[T(x) = \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2} \cdot \left(x -
 \frac{\pi}{4}\right).\]</div>
 <p>Diese Funktionsvorschrift können wir noch zur</p>
-<div class="math notranslate nohighlight">
-\[T(x) = \frac{\sqrt{2}}{2} \cdot x - \frac{\sqrt{2}\pi}{8} +
+<div class="math notranslate nohighlight" id="equation-auto-chapter11-chapter11-sec01-10">
+<span class="eqno">(11.10)<a class="headerlink" href="#equation-auto-chapter11-chapter11-sec01-10" title="Link to this equation">#</a></span>\[T(x) = \frac{\sqrt{2}}{2} \cdot x - \frac{\sqrt{2}\pi}{8} +
 \frac{\sqrt{2}}{2}\]</div>
 <p>vereinfachen. Die folgende Grafik zeigt die Sinusfunktion und ihre
 Linearisierung im Arbeitspunkt <span class="math notranslate nohighlight">\((\frac{\pi}{4}, \frac{\sqrt{2}}{2})\)</span>.</p>
 <figure class="align-default" id="tangente-sinus">
 <a class="reference internal image-reference" href="../_images/tangente_sinus.svg"><img alt="../_images/tangente_sinus.svg" src="../_images/tangente_sinus.svg" style="width: 75%;" />
 </a>
+<figcaption>
+<p><span class="caption-number">Abb. 11.2: </span><span class="caption-text">Die Sinusfunktion und ihre Linearisierung im Arbeitspunkt
+<span class="math notranslate nohighlight">\((\frac{\pi}{4}, \frac{\sqrt{2}}{2})\)</span></span><a class="headerlink" href="#tangente-sinus" title="Link to this image">#</a></p>
+</figcaption>
 </figure>
 </section>
 <section id="zusammenfassung-und-ausblick">

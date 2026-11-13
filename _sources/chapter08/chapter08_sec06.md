@@ -17,24 +17,24 @@ Wurzelziehen für komplexe Zahlen.
 Die Potenz einer komplexen Zahl ist – genau wie bei den reellen Zahlen – eine
 Abkürzung für das wiederholte Multiplizieren einer Zahl mit sich selbst.
 
-$\begin{align*}
+$$\begin{aligned}
 z^2 &= z\cdot z \\
 z^3 &= z \cdot z \cdot z \\
 z^4 &= z \cdot z \cdot z \cdot z \\
 z^5 &= z \cdot z \cdot z \cdot z \cdot z\\
 \vdots
-\end{align*}$
+\end{aligned}$$
 
 Die Zahl $z$ heißt Basis und die Anzahl, wie oft die Basis mit sich selbst
 multipliziert wird, heißt Exponent oder Hochzahl. Es gibt auch negative Potenzen:
 
-$\begin{align*}
+$$\begin{aligned}
 z^{-2} &= \frac{1}{z\cdot z} \\
 z^{-3} &= \frac{1}{z \cdot z \cdot z} \\
 z^{-4} &= \frac{1}{z \cdot z \cdot z \cdot z} \\
 z^{-5} &= \frac{1}{z \cdot z \cdot z \cdot z \cdot z}\\
 \vdots
-\end{align*}$
+\end{aligned}$$
 
 Wenn nun konkret eine Potenz einer komplexen Zahl ausgerechnet werden soll, ist
 die Exponentialform am besten geeignet, wie das folgende Beispiel zeigt. Wir
@@ -44,34 +44,34 @@ bis 4 bilden.
 Für die 2. Potenz erhalten wir zufälligerweise eine rein imaginäre Zahl, wie die
 folgende Rechnung zeigt:
 
-$\begin{align*}
+$$\begin{aligned}
 z^2
 &= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
 &= 3^2 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
 &= 9 \, e^{\frac{\pi}{2} \mathrm{i}} \\
 &= 9\mathrm{i}.
-\end{align*}$
+\end{aligned}$$
 
 Für die 3. Potenz erhalten wir
 
-$\begin{align*}
+$$\begin{aligned}
 z^3
 &= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
 &= 3^3 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
 &= 27 \, e^{\frac{3}{4}\pi \mathrm{i}} \\
 &\approx -19.0919 + 19.0919 \, \mathrm{i}.
-\end{align*}$
+\end{aligned}$$
 
 Und die 4. Potenz ist zufälligerweise rein reell:
 
-$\begin{align*}
+$$\begin{aligned}
 z^4
 &= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
 &= 3^4 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
 &= 81 \cdot e^{\pi \mathrm{i}} \\
 &= 81 \cdot (-1) \\
 &= -81.
-\end{align*}$
+\end{aligned}$$
 
 Zusammengefasst gilt für das Potenzieren von komplexen Zahlen die folgende
 Rechenregel.
@@ -132,21 +132,21 @@ $$z_1 = \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}}.$$
 
 Zur Kontrolle berechnen wir $z_1^2$:
 
-$\begin{align*}
+$$\begin{aligned}
 z_1^2 &= \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}} \cdot \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}}\\
 &= \sqrt{5}\cdot\sqrt{5}\, e^{\left( \frac{53.13^{\circ}}{2} +  \frac{53.13^{\circ}}{2} \right) \mathrm{i}} \\
 &= 5 e^{53.13^{\circ}\mathrm{i}}.
-\end{align*}$
+\end{aligned}$$
 
 Und die zweite Lösung? Wenn wir auf das Argument der ersten Lösung $\varphi_1 =
 \frac{53.13^{\circ}}{2} = 26.565^{\circ}$ den Winkel $180^{\circ}$ addieren,
 erhalten wir die zweite Lösung. Testen wir, ob das stimmt.
 
-$\begin{align*}
+$$\begin{aligned}
 z_2^2 &= \sqrt{5} \, e^{206.565^{\circ}\mathrm{i}} \cdot \sqrt{5} \,  e^{206.565^{\circ}\mathrm{i}}\\
 &= \sqrt{5}\cdot\sqrt{5}\, e^{\left( 206.565^{\circ} +  206.565^{\circ} \right) \mathrm{i}} \\
 &= 5 e^{413.13^{\circ}\mathrm{i}}.
-\end{align*}$
+\end{aligned}$$
 
 Zunächst sieht es nicht so aus, als ob $z_2 = 5 \, e^{53.130^{\circ}\mathrm{i}}$
 gelte. Aber das Argument $413.13^{\circ}$ ist ja größer als $360^{\circ}$.

@@ -68,8 +68,7 @@ width: 100%
 name: umkehrfunktion_eindeutig
 ---
 Links ist die Zuordnung $y \mapsto x$ eindeutig, rechts nicht
-(Quelle: eigene Darstellung; Lizenz: [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 * Bei $f(x) = x^3$ gehört zu jedem $y_0$ genau ein $x_0$. Die Zuordnung
@@ -95,12 +94,12 @@ $y = f(x) = \frac{1}{4}x^3 - 2$ mit $D_f = W_f = \mathbb{R}$.
 
 Wir lösen nach $x$ auf:
 
-$\begin{align*}
+$$\begin{aligned}
 & & y &= \frac{1}{4}x^3 - 2 & & | +2\\
 &\Leftrightarrow & \frac{1}{4}x^3 &= y + 2 & & | \cdot 4\\
 &\Leftrightarrow & x^3 &= 4y + 8 & & | \sqrt[3]{\phantom{x}}\\
 &\Leftrightarrow & x &= \sqrt[3]{4y + 8}
-\end{align*}$
+\end{aligned}$$
 
 Die Umkehrfunktion ist also $f^{-1}(y) = \sqrt[3]{4y + 8}$. Zur Darstellung im
 selben Koordinatensystem schreiben wir
@@ -117,8 +116,7 @@ name: umkehrfunktion_kubisch
 ---
 Funktion $f$ (blau) und Umkehrfunktion $f^{-1}$ (rot) liegen spiegelbildlich
 zur Winkelhalbierenden $y = x$
-(Quelle: eigene Darstellung; Lizenz: [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Durch das Umbenennen der Variablen tauschen die $x$- und $y$-Koordinaten jedes
@@ -137,12 +135,12 @@ $$D_f = \{x \in \mathbb{R} : x \geq 0\} \quad \Rightarrow \quad W_f = \{y \in \m
 
 Jetzt lösen wir nach $x$ auf:
 
-$\begin{align*}
+$$\begin{aligned}
 & & y &= x^2 & & | \sqrt{\phantom{x}}\\
 &\Leftrightarrow & \sqrt{y} &= \sqrt{x^2}\\
 &\Leftrightarrow & \sqrt{y} &= |x| & & | \; x \geq 0\\
 &\Leftrightarrow & \sqrt{y} &= x
-\end{align*}$
+\end{aligned}$$
 
 Die Umkehrfunktion ist also $x = f^{-1}(y) = \sqrt{y}$, im selben
 Koordinatensystem $f^{-1}(x) = \sqrt{x}$, mit
@@ -155,8 +153,7 @@ width: 60%
 name: umkehrfunktion_wurzel
 ---
 Die Normalparabel für $x \geq 0$ (blau) und die Wurzelfunktion (rot)
-(Quelle: eigene Darstellung; Lizenz: [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0))
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Hätten wir stattdessen $D_f = \{x \in \mathbb{R} : x \leq 0\}$ gewählt, wäre im

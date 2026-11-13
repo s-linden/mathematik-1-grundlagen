@@ -39,8 +39,8 @@ eingezeichnet, die beim Punkt $(1.5, 2)$ startet.
 width: 75%
 name: betrag_vektor
 ---
-Beispiel eines Vektors im $\mathbb{R}^2$; Quelle: eigene Darstellung; Lizenz: [CC BY-SA
-4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Beispiel eines Vektors im $\mathbb{R}^2$
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Ergänzen wir jetzt zwei Strecken wie in der Skizze ersichtlich, so ergibt sich

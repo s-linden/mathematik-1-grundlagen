@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -571,33 +571,34 @@ Donnerstag und der letzte Eintrag erfasst die Arbeitsstunden am Freitag.
 Beispielsweise könnte die Erfassung der Arbeitsstunden für die erste Woche im
 Januar <span class="math notranslate nohighlight">\((8, 8, 6, 8, 10)\)</span> sein. Wir bezeichnen dieses 5-Tupel mit <span class="math notranslate nohighlight">\(w_1\)</span> für
 erste Woche, also</p>
-<div class="math notranslate nohighlight">
-\[w_1 = (8, 8, 6, 8, 10).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-1">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-1" title="Link to this equation">#</a></span>\[w_1 = (8, 8, 6, 8, 10).\]</div>
 <p>In der zweiten, dritten und vierten Woche des Januars könnte eine Person
 folgende Arbeitsstunden geleistet haben:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-2">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-2" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 w_2 &amp;= (7, 7, 10, 8, 8) \\
 w_3 &amp;= (8, 8, 8, 8, 8) \\
 w_4 &amp;= (7, 9, 8, 7, 9) \\
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Sollen nun die Arbeitsstunden im Januar ausgewertet werden, können wir
 beispielsweise fragen, wie viele Stunden insgesamt in den beiden ersten Wochen
 gearbeitet wurden. Dazu müssen wir jeden Eintrag (Wochentag) von <span class="math notranslate nohighlight">\(w_1\)</span> mit jedem
 Eintrag (Wochentag) von <span class="math notranslate nohighlight">\(w_2\)</span> addieren:</p>
-<div class="math notranslate nohighlight">
-\[w_1 \oplus w_2 = (8, 8, 6, 8, 10) \oplus (7, 7, 10, 8, 8) = (15, 15, 16, 16, 18).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-3">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-3" title="Link to this equation">#</a></span>\[w_1 \oplus w_2 = (8, 8, 6, 8, 10) \oplus (7, 7, 10, 8, 8) = (15, 15, 16, 16, 18).\]</div>
 <p>Um deutlich zu machen, dass die »Addition« der beiden 5-Tupel etwas Neues ist,
 haben wir das Symbol <span class="math notranslate nohighlight">\(\oplus\)</span> verwendet. Addieren wir die ersten vier Wochen im
 Januar komponentenweise (also Wochentag für Wochentag), dann erhalten wir</p>
-<div class="math notranslate nohighlight">
-\[\text{Januar} = w_1 \oplus w_2 \oplus w_3 \oplus w_4 = (30, 32, 32, 31, 35).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-4">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-4" title="Link to this equation">#</a></span>\[\text{Januar} = w_1 \oplus w_2 \oplus w_3 \oplus w_4 = (30, 32, 32, 31, 35).\]</div>
 <p>Im Januar hat diese Person mehr Stunden am Freitag gearbeitet als an den anderen
 Tagen. Offensichtlich arbeitet diese Personen jede Woche unterschiedlich. Wenn
 wir nun analysieren wollen, wie eine durchschnittliche Woche im Januar aussieht,
 können wir jede Komponente durch 4 teilen (bzw. mit <span class="math notranslate nohighlight">\(\frac{1}{4}\)</span>
 multiplizieren.</p>
-<div class="math notranslate nohighlight">
-\[\text{Durchschnitt Januar} = \frac{1}{4} \odot (30, 32, 32, 31, 35) = (7.5, 8, 8,
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-5">
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-5" title="Link to this equation">#</a></span>\[\text{Durchschnitt Januar} = \frac{1}{4} \odot (30, 32, 32, 31, 35) = (7.5, 8, 8,
 7.75, 8.75).\]</div>
 <p>Das Rechnen mit n-Tupeln wollen wir nun formalisieren.</p>
 </section>
@@ -606,19 +607,19 @@ multiplizieren.</p>
 <p>Zunächst formalisieren wir die Schreibweise der Menge aller n-Tupel, indem wir
 das kartesische Produkt einführen. Ist <span class="math notranslate nohighlight">\(n\)</span> eine natürliche Zahl und <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>
 die Menge der reellen Zahlen, dann ist das n-fache kartesische Produkt</p>
-<div class="math notranslate nohighlight">
-\[\mathbb{R}^{n} = \{(x_1, x_2, \ldots, x_n) \;|\; x_1, x_2, \dots,x_n \in
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-6">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-6" title="Link to this equation">#</a></span>\[\mathbb{R}^{n} = \{(x_1, x_2, \ldots, x_n) \;|\; x_1, x_2, \dots,x_n \in
 \mathbb{R}\}\]</div>
 <p>die Menge aller n-Tupel <span class="math notranslate nohighlight">\((x_1, x_2, \ldots, x_n)\)</span> mit reellen Zahlen als
 Komponenten. Für diese Tupel definieren wir eine komponentenweise <strong>Vektoraddition</strong>
 <span class="math notranslate nohighlight">\(\oplus: \mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}^n\)</span> durch</p>
-<div class="math notranslate nohighlight">
-\[(x_1, x_2, \ldots, x_n) \oplus (y_1, y_2, \ldots, y_n) = (x_1 + y_1, x_2 + y_2,
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-7">
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-7" title="Link to this equation">#</a></span>\[(x_1, x_2, \ldots, x_n) \oplus (y_1, y_2, \ldots, y_n) = (x_1 + y_1, x_2 + y_2,
 \ldots, x_n+y_n).\]</div>
 <p>Weiterhin definieren wir eine komponentenweise Multiplikation mit einem Skalar
 <span class="math notranslate nohighlight">\(\odot:\mathbb{R}^n \times \mathbb{R}^n \to \mathbb{R}^n\)</span> durch</p>
-<div class="math notranslate nohighlight">
-\[s\odot (x_1, x_2, \ldots, x_n) = (s\cdot x_1, s\cdot x_2, \ldots, s\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-8">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-8" title="Link to this equation">#</a></span>\[s\odot (x_1, x_2, \ldots, x_n) = (s\cdot x_1, s\cdot x_2, \ldots, s\cdot
 x_n),\]</div>
 <p>die <strong>Skalarmultiplikation</strong> genannt wird. Den Begriff <strong>Skalar</strong> haben wir hier
 genommen, um zu verdeutlichen, dass <span class="math notranslate nohighlight">\(s\)</span> nicht ein n-Tupel ist, sondern (in
@@ -633,15 +634,15 @@ halten wir noch eine alternative Schreibweise fest.</p>
 Vektoraddition und der Skalarmultiplikation, da dann zeilenweise addiert und
 mulitpliziert werden kann. Die Vektoraddition in Form von Spaltenvektoren wird
 dann folgendermaßen notiert:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix}x_1 \\x_2\\ \vdots \\ x_n\end{pmatrix} + \begin{pmatrix}y_1
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-9">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-9" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix}x_1 \\x_2\\ \vdots \\ x_n\end{pmatrix} + \begin{pmatrix}y_1
 \\y_2\\ \vdots \\ y_n\end{pmatrix} = \begin{pmatrix}x_1 + y_1 \\x_2 + y_2\\
 \vdots \\ x_n + y_n\end{pmatrix}.\end{split}\]</div>
 <p>Insbesondere wird meist das Symbol <span class="math notranslate nohighlight">\(\oplus\)</span> vereinfacht als <span class="math notranslate nohighlight">\(+\)</span> geschreiben, da
 eine »normale« Addition nicht gemeint sein kann. Die Skalarmultiplikation wird
 folgendermaßen geschrieben:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}s\cdot \begin{pmatrix}x_1 \\x_2\\ \vdots \\ x_n\end{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter03-chapter03-sec02-10">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-auto-chapter03-chapter03-sec02-10" title="Link to this equation">#</a></span>\[\begin{split}s\cdot \begin{pmatrix}x_1 \\x_2\\ \vdots \\ x_n\end{pmatrix}
 = \begin{pmatrix}s\cdot x_1 \\ s\cdot x_2 \\ \vdots \\ s\cdot x_n \end{pmatrix}.\end{split}\]</div>
 <p>Auch hier wird in der Regel anstatt des Symbols <span class="math notranslate nohighlight">\(\odot\)</span> nur das normale
 Multiplikationszeichen <span class="math notranslate nohighlight">\(\cdot\)</span> verwendet, da jeweils aus dem Zusammenhang klar

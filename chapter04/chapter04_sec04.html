@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -554,28 +554,28 @@ entgegengesetzt.</p>
 <p class="admonition-title">Wann sind … zwei Vektoren kollinear?</p>
 <p>Zwei Vektoren sind kollinear, wenn ein Vektor ein Vielfaches vom anderen Vektor
 ist:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a} = s\cdot\vec{b}, \quad s\neq 0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-1">
+<span class="eqno">(4.58)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-1" title="Link to this equation">#</a></span>\[\vec{a} = s\cdot\vec{b}, \quad s\neq 0.\]</div>
 <p>Ist der Skalar <span class="math notranslate nohighlight">\(s &lt; 0\)</span>, so sind die beiden Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span>
 antiparallel. Ist hingegen <span class="math notranslate nohighlight">\(s &gt; 0\)</span>, sind die beiden Vektoren parallel.</p>
 </div>
 <p>Zusammen mit dem Skalarprodukt ergeben sich dann die folgende
 Schlussfolgerungen. Sind zwei Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span>, die beide nicht
 der Nullvektor sind, parallel, dann gilt</p>
-<div class="math notranslate nohighlight">
-\[\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}|.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-2">
+<span class="eqno">(4.59)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-2" title="Link to this equation">#</a></span>\[\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}|.\]</div>
 <p>Das ergibt sich aus der geometrischen Interpretation des Skalarproduktes, denn
 der eingeschlossene Winkel ist bei parallelen Vektoren <span class="math notranslate nohighlight">\(\varphi =
 \angle(\vec{a}, \vec{b}) = 0^{\circ}\)</span> und <span class="math notranslate nohighlight">\(\cos(0^{\circ})=1\)</span>. Also gilt:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}| \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-3">
+<span class="eqno">(4.60)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-3" title="Link to this equation">#</a></span>\[\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}| \cdot
 \underbrace{\cos(0^{\circ})}_{= 1}.\]</div>
 <p>Sind die beiden Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> antiparallel, dann ist der
 zwischen ihnen eingeschlossene Winkel <span class="math notranslate nohighlight">\(\varphi = \angle(\vec{a},\vec{b}) =
 180^{\circ}\)</span> und es gilt <span class="math notranslate nohighlight">\(\cos(180^{\circ})=-1\)</span>. Damit erhalten wir wiederum aus
 der geometrischen Interpreation des Skalarproduktes</p>
-<div class="math notranslate nohighlight">
-\[\vec{a}\cdot\vec{b} = \textcolor{red}{-}|\vec{a}|\cdot|\vec{b}|.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-4">
+<span class="eqno">(4.61)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-4" title="Link to this equation">#</a></span>\[\vec{a}\cdot\vec{b} = \textcolor{red}{-}|\vec{a}|\cdot|\vec{b}|.\]</div>
 </section>
 <section id="orthogonalitat">
 <h2>Orthogonalität<a class="headerlink" href="#orthogonalitat" title="Link to this heading">#</a></h2>
@@ -583,16 +583,16 @@ der geometrischen Interpreation des Skalarproduktes</p>
 <span class="math notranslate nohighlight">\(\varphi=90^{\circ}\)</span> einschließen. Der Kosinus von <span class="math notranslate nohighlight">\(90^{\circ}\)</span> ist aber Null,
 also <span class="math notranslate nohighlight">\(\cos(90^{\circ})=0\)</span>. Damit gilt für die geometrische Interpretation des
 Skalarproduktes für die beiden Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}| \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-5">
+<span class="eqno">(4.62)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-5" title="Link to this equation">#</a></span>\[\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}| \cdot
 \underbrace{\cos(0^{\circ})}_{= 0} = 0.\]</div>
 <p>Wir halten also das folgende <strong>Orthogonalitätskriterium</strong> fest.</p>
 <div class="note admonition">
 <p class="admonition-title">Wann sind … zwei Vektoren orthogonal?</p>
 <p>Zwei Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> sind genau dann orthogonal, wenn ihr
 Skalarprodukt Null ist:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a}\perp\vec{b} \; \Leftrightarrow \; \vec{a}\cdot\vec{b}=0.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-6">
+<span class="eqno">(4.63)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-6" title="Link to this equation">#</a></span>\[\vec{a}\perp\vec{b} \; \Leftrightarrow \; \vec{a}\cdot\vec{b}=0.\]</div>
 </div>
 </section>
 <section id="senkrechte-projektion-eines-vektors-auf-einen-anderen-vektor">
@@ -612,13 +612,13 @@ Vektor <span class="math notranslate nohighlight">\(\vec{a}\)</span>.</p>
 <p>Wir wollen nun den Vektor berechnen, der durch senkrechte Projektion von
 <span class="math notranslate nohighlight">\(\vec{b}\)</span> auf <span class="math notranslate nohighlight">\(\vec{a}\)</span> entsteht. Dieser Vektor ist der Verbindungsvektor vom
 Startpunkt <span class="math notranslate nohighlight">\(S\)</span> zum Lotfußpunkt <span class="math notranslate nohighlight">\(L\)</span>. Er wird üblicherweise mit</p>
-<div class="math notranslate nohighlight">
-\[\vec{b}_{\vec{a}}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-7">
+<span class="eqno">(4.64)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-7" title="Link to this equation">#</a></span>\[\vec{b}_{\vec{a}}\]</div>
 <p>bezeichnet. Ohne weitere Berechnungen können wir die Richtung dieses Vektors
 angeben, denn es ist die gleiche Richtung wie die des Vektors <span class="math notranslate nohighlight">\(\vec{a}\)</span>. Wir
 wissen daher schon, dass <span class="math notranslate nohighlight">\(\vec{b}_{\vec{a}}\)</span> in der Form</p>
-<div class="math notranslate nohighlight">
-\[\vec{b}_{\vec{a}} = x \cdot \frac{\vec{a}}{|\vec{a}|} = x \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-8">
+<span class="eqno">(4.65)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-8" title="Link to this equation">#</a></span>\[\vec{b}_{\vec{a}} = x \cdot \frac{\vec{a}}{|\vec{a}|} = x \cdot
 \vec{e}_{\vec{a}}\]</div>
 <p>dargestellt werden kann. Zur Erinnerung, Richtungen werden normalerweise
 normiert, d.h. als Einheitsvektoren angegeben. Wir haben daher den Vektor
@@ -628,36 +628,36 @@ normiert, d.h. als Einheitsvektoren angegeben. Wir haben daher den Vektor
 nutzen wir aus, dass durch das Lot ein rechtwinkliges Dreieck entstanden ist,
 für das gilt:</p>
 <div class="math notranslate nohighlight" id="equation-chap04sec04eq01">
-<span class="eqno">(2)<a class="headerlink" href="#equation-chap04sec04eq01" title="Link to this equation">#</a></span>\[x = \cos(\varphi) \cdot |\vec{b}|.\]</div>
+<span class="eqno">(4.66)<a class="headerlink" href="#equation-chap04sec04eq01" title="Link to this equation">#</a></span>\[x = \cos(\varphi) \cdot |\vec{b}|.\]</div>
 <p>Den Kosinus des eingeschlossenen Winkels <span class="math notranslate nohighlight">\(\varphi = \angle(\vec{a},\vec{b})\)</span>
 können wir wiederum über die geometrische Interpretation des Skalarproduktes
 bestimmen. Setzen wir</p>
-<div class="math notranslate nohighlight">
-\[\cos(\varphi) = \frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\cdot|\vec{b}|}\]</div>
-<p>in die Gleichung <a class="reference internal" href="#equation-chap04sec04eq01">(2)</a> ein, dann erhalten wir</p>
-<div class="math notranslate nohighlight">
-\[x = \cos(\varphi) \cdot |\vec{b}| =
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-10">
+<span class="eqno">(4.67)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-10" title="Link to this equation">#</a></span>\[\cos(\varphi) = \frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\cdot|\vec{b}|}\]</div>
+<p>in die Gleichung <a class="reference internal" href="#equation-chap04sec04eq01">(4.66)</a> ein, dann erhalten wir</p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-11">
+<span class="eqno">(4.68)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-11" title="Link to this equation">#</a></span>\[x = \cos(\varphi) \cdot |\vec{b}| =
 \frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\cdot|\vec{b}|} \cdot |\vec{b}| =
 \frac{\vec{a}}{|\vec{a}|}\cdot\vec{b}.\]</div>
 <p>Insgesamt lässt sich die senkrechte Projektion <span class="math notranslate nohighlight">\(\vec{b}_{\vec{a}}\)</span> des Vektors
 <span class="math notranslate nohighlight">\(\vec{b}\)</span> auf den Vektor <span class="math notranslate nohighlight">\(\vec{a}\)</span> also berechnen als</p>
-<div class="math notranslate nohighlight">
-\[\vec{b}_{\vec{a}} = \left( \frac{\vec{a}}{|\vec{a}|}\cdot\vec{b}\right) \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-12">
+<span class="eqno">(4.69)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-12" title="Link to this equation">#</a></span>\[\vec{b}_{\vec{a}} = \left( \frac{\vec{a}}{|\vec{a}|}\cdot\vec{b}\right) \cdot
 \vec{e}_{\vec{a}}.\]</div>
 <p>Für den senkrecht projizierten Vektor <span class="math notranslate nohighlight">\(\vec{b}_{\vec{a}}\)</span> gilt also</p>
-<div class="math notranslate nohighlight">
-\[\vec{b}_{\vec{a}} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-13">
+<span class="eqno">(4.70)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-13" title="Link to this equation">#</a></span>\[\vec{b}_{\vec{a}} =
 \left(\vec{e}_{\vec{a}}\cdot\vec{b}\right) \cdot \vec{e}_{\vec{a}}.\]</div>
 <div class="note admonition">
 <p class="admonition-title">Wie wird die senkrechte Projektion berechnet?</p>
 <p>Soll die senkrechte Projektion <span class="math notranslate nohighlight">\(\vec{b}_{\vec{a}}\)</span> des Vektors <span class="math notranslate nohighlight">\(\vec{b}\)</span> auf den
 Vektor <span class="math notranslate nohighlight">\(\vec{a}\)</span> berechnet werden, normiert man als erstes den Vektor <span class="math notranslate nohighlight">\(\vec{a}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\vec{e}_{\vec{a}} = \frac{\vec{a}}{|\vec{a}|}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-14">
+<span class="eqno">(4.71)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-14" title="Link to this equation">#</a></span>\[\vec{e}_{\vec{a}} = \frac{\vec{a}}{|\vec{a}|}.\]</div>
 <p>Dann berechnet man das Skalarprodukt von dem Einheitsvektor <span class="math notranslate nohighlight">\(\vec{e}_{\vec{a}}\)</span>
 mit <span class="math notranslate nohighlight">\(\vec{b}\)</span> und baut den Vektor als</p>
-<div class="math notranslate nohighlight">
-\[\vec{b}_{\vec{a}} = \left(\vec{e}_{\vec{a}} \cdot \vec{b}\right) \cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-15">
+<span class="eqno">(4.72)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-15" title="Link to this equation">#</a></span>\[\vec{b}_{\vec{a}} = \left(\vec{e}_{\vec{a}} \cdot \vec{b}\right) \cdot
 \vec{e}_{\vec{a}}\]</div>
 <p>zusammen.</p>
 </div>
@@ -671,39 +671,40 @@ eines dreidimensionalen kartesischen Koordinatensystems bildet.</p>
 <p>Die drei Vektoren, die die Richtungen der drei Koordinatenachsen beschreiben,
 nennen wir <span class="math notranslate nohighlight">\(\vec{e}_1\)</span>, <span class="math notranslate nohighlight">\(\vec{e}_2\)</span> und <span class="math notranslate nohighlight">\(\vec{e}_3\)</span>. In Komponentenschreibweise
 lauten sie:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{e}_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-16">
+<span class="eqno">(4.73)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-16" title="Link to this equation">#</a></span>\[\begin{split}\vec{e}_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad
 \vec{e}_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad
 \vec{e}_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}, \quad.\end{split}\]</div>
 <p>Der Vektor <span class="math notranslate nohighlight">\(\vec{a}\)</span> lautet in Komponentenschreibweise</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{a}= \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-17">
+<span class="eqno">(4.74)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-17" title="Link to this equation">#</a></span>\[\begin{split}\vec{a}= \begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}\end{split}\]</div>
 <p>und hat die Länge bzw. den Betrag</p>
-<div class="math notranslate nohighlight">
-\[a = |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-18">
+<span class="eqno">(4.75)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-18" title="Link to this equation">#</a></span>\[a = |\vec{a}| = \sqrt{a_1^2 + a_2^2 + a_3^2}.\]</div>
 <p>Für den eingeschlossenen Winkel <span class="math notranslate nohighlight">\(\alpha = \angle(\vec{a},\vec{e}_1)\)</span> des Vektors
 <span class="math notranslate nohighlight">\(\vec{a}\)</span> mit der 1. Koordinatenachse <span class="math notranslate nohighlight">\(\vec{e}_1\)</span> erhalten wir über die
 geometrische Interpretation des Skalarproduktes</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\cos(\alpha) = \frac{\vec{a}\cdot\vec{e}_1}{|\vec{a}|\cdot|\vec{e}_1|} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-19">
+<span class="eqno">(4.76)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-19" title="Link to this equation">#</a></span>\[\begin{split}\cos(\alpha) = \frac{\vec{a}\cdot\vec{e}_1}{|\vec{a}|\cdot|\vec{e}_1|} =
 \frac{\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix}\cdot
 \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}}{a \cdot 1} = \frac{a_1}{a}.\end{split}\]</div>
 <p>Dieser Wert wird als <strong>Richtungskosinus</strong> von <span class="math notranslate nohighlight">\(\vec{a}\)</span> mit der 1.
 Koordinatenachse bezeichnet. Wir können nun daraus den <strong>Richtungswinkel</strong>
 <span class="math notranslate nohighlight">\(\alpha\)</span> berechnen:</p>
-<div class="math notranslate nohighlight">
-\[\alpha = \arccos\left(\frac{a_1}{a}\right).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-20">
+<span class="eqno">(4.77)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-20" title="Link to this equation">#</a></span>\[\alpha = \arccos\left(\frac{a_1}{a}\right).\]</div>
 <p>Die gleiche Rechnungen können wir auch für die beiden anderen Koordinatenachsen
 durchführen. Insgesamt erhalten wir die folgenden Formeln.</p>
 <div class="note admonition">
 <p class="admonition-title">Was sind … die Richtungswinkel?</p>
 <p>Die Winkel, die ein Vektor <span class="math notranslate nohighlight">\(\vec{a}=(a_1,a_2,a_3)\)</span> mit den Koordinatenachsen
 bildet, werden als Richtungswinkel bezeichnet. Sie können über die Formeln</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec04-21">
+<span class="eqno">(4.78)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec04-21" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 \cos(\alpha) &amp;= \frac{a_1}{|\vec{a}|},\\
 \cos(\beta)  &amp;= \frac{a_2}{|\vec{a}|},\\
 \cos(\gamma) &amp;= \frac{a_3}{|\vec{a}|}
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>berechnet werden.</p>
 </div>
 <iframe src="../_static/geogebra/richtungswinkel.html"

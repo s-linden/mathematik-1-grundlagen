@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -204,7 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec01.html">3.1 Koordinaten und Koordinatensysteme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec02.html">3.2 Vektoren und Vektorräume</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec03.html">3.3 Vektoren in der Geometrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Affine Punkträume</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec04.html">3.4 Vektoren und Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec05.html">3.5 Betrag Vektor und Abstand Punkte</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec06.html">3.6 Linearkombination und lineare Unabhängigkeit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter03/chapter03_sec07.html">Übungen zum Selbststudium</a></li>
@@ -521,11 +521,11 @@
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">a)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{-1}=\frac{1}{\det(\mathbf{A})}\cdot\begin{pmatrix} 1 &amp; -2 \\ 0 &amp; 1 \end{pmatrix}=\frac{1}{1\cdot1-0\cdot2}\cdot\begin{pmatrix} 1 &amp; -2 \\ 0 &amp; 1 \end{pmatrix}=\begin{pmatrix} 1 &amp; -2 \\ 0 &amp; 1 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-1">
+<span class="eqno">(7.89)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-1" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{-1}=\frac{1}{\det(\mathbf{A})}\cdot\begin{pmatrix} 1 &amp; -2 \\ 0 &amp; 1 \end{pmatrix}=\frac{1}{1\cdot1-0\cdot2}\cdot\begin{pmatrix} 1 &amp; -2 \\ 0 &amp; 1 \end{pmatrix}=\begin{pmatrix} 1 &amp; -2 \\ 0 &amp; 1 \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">b)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{B}^{-1}=\frac{1}{\det(\mathbf{B})}\cdot\begin{pmatrix} -2 &amp; -3 \\ 1 &amp; 2 \end{pmatrix}=\frac{1}{2\cdot(-2)-(-1\cdot3)}\cdot\begin{pmatrix} -2 &amp; -3 \\ 1 &amp; 2 \end{pmatrix}=-1\cdot\begin{pmatrix} -2 &amp; -3 \\ 1 &amp; 2 \end{pmatrix}=\begin{pmatrix} 2 &amp; 3 \\ -1 &amp; -2 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-2">
+<span class="eqno">(7.90)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-2" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B}^{-1}=\frac{1}{\det(\mathbf{B})}\cdot\begin{pmatrix} -2 &amp; -3 \\ 1 &amp; 2 \end{pmatrix}=\frac{1}{2\cdot(-2)-(-1\cdot3)}\cdot\begin{pmatrix} -2 &amp; -3 \\ 1 &amp; 2 \end{pmatrix}=-1\cdot\begin{pmatrix} -2 &amp; -3 \\ 1 &amp; 2 \end{pmatrix}=\begin{pmatrix} 2 &amp; 3 \\ -1 &amp; -2 \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">c)</p>
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(\det(\mathbf{C})=3\cdot(-1)-(-1\cdot3)={\color{red} 0}\ \Rightarrow\ \mathbf{C}^{-1}\)</span> existiert nicht.</p>
 </div>
@@ -533,19 +533,19 @@
 <div class="miniexercise admonition">
 <p class="admonition-title">Übung 7.2</p>
 <p>Berechnen Sie die Determinante der Matrix</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\begin{pmatrix} 4 &amp; 2 &amp; 1 \\ -2 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 5 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-3">
+<span class="eqno">(7.91)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-3" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\begin{pmatrix} 4 &amp; 2 &amp; 1 \\ -2 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 5 \end{pmatrix}\end{split}\]</div>
 </div>
 <div class="miniexercise toggle admonition">
 <p class="admonition-title">Lösung</p>
-<div class="math notranslate nohighlight">
-\[\det(\mathbf{A})=39\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-4">
+<span class="eqno">(7.92)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-4" title="Link to this equation">#</a></span>\[\det(\mathbf{A})=39\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Entwicklung nach 3. Zeile:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\det(\mathbf{A})=1\cdot(+1)\begin{vmatrix} 2 &amp; 1 \\ 1 &amp; 0 \end{vmatrix}+5\cdot(+1)\begin{vmatrix} 4 &amp; 2 \\ -2 &amp; 1 \end{vmatrix}=1\left( 2\cdot0-1\cdot1 \right)+5\left( 4\cdot1-(-2)\cdot2 \right)=-1+20+20=39\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-5">
+<span class="eqno">(7.93)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-5" title="Link to this equation">#</a></span>\[\begin{split}\det(\mathbf{A})=1\cdot(+1)\begin{vmatrix} 2 &amp; 1 \\ 1 &amp; 0 \end{vmatrix}+5\cdot(+1)\begin{vmatrix} 4 &amp; 2 \\ -2 &amp; 1 \end{vmatrix}=1\left( 2\cdot0-1\cdot1 \right)+5\left( 4\cdot1-(-2)\cdot2 \right)=-1+20+20=39\end{split}\]</div>
 </div>
 </details></div>
 <div class="miniexercise admonition">
@@ -565,8 +565,8 @@
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">a)</p>
 <p class="sd-card-text">Zum Beispiel Entwicklung nach der 1. Spalte:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-6">
+<span class="eqno">(7.94)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-6" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 \begin{vmatrix} -1 &amp; 3 &amp; 1 \\ 1 &amp; 1 &amp; 1 \\ -2 &amp; 18 &amp; 8 \end{vmatrix}&amp;=(-1)\cdot(+1)\cdot\begin{vmatrix} 1 &amp; 1 \\ 18 &amp; 8 \end{vmatrix}+(1)\cdot(-1)\begin{vmatrix} 3 &amp; 1 \\ 18 &amp; 8 \end{vmatrix}+(-2)\cdot(+1)\cdot\begin{vmatrix} 3 &amp; 1 \\ 1 &amp; 1 \end{vmatrix} \\
 &amp;=-(1\cdot8-18\cdot1)-(3\cdot8-18\cdot1)-2(3\cdot1-1\cdot1)=10-6-4=0
@@ -574,8 +574,8 @@
 \end{split}\]</div>
 <p class="sd-card-text">b)</p>
 <p class="sd-card-text">Entwicklung nach 4. Zeile</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-7">
+<span class="eqno">(7.95)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-7" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 \begin{vmatrix} 2 &amp; 5 &amp; 18 &amp; -1 \\ 4 &amp; -3 &amp; 5 &amp; 6 \\ -6 &amp; 3 &amp; -9 &amp; 3 \\ 0 &amp; 2 &amp; 5 &amp; 0 \end{vmatrix}&amp;=2\begin{vmatrix} 2 &amp; 18 &amp; -1 \\ 4 &amp; 5 &amp; 6 \\ -6 &amp; -9 &amp; 3 \end{vmatrix}-5\begin{vmatrix} 2 &amp; 5 &amp; -1 \\ 4 &amp; -3 &amp; 6 \\ -6 &amp; 3 &amp; 3 \end{vmatrix} \\
 \begin{vmatrix} 2 &amp; 18 &amp; -1 \\ 4 &amp; 5 &amp; 6 \\ -6 &amp; -9 &amp; 3 \end{vmatrix}&amp;=2\cdot5\cdot3+18\cdot6\cdot(-6)+(-1)\cdot4\cdot(-9)-[(-6)\cdot5\cdot(-1)+(-9)\cdot6\cdot2+3\cdot4\cdot18]=-720 \\
@@ -584,25 +584,25 @@
 \end{aligned}
 \end{split}\]</div>
 <p class="sd-card-text">c)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{vmatrix} {\color{red} 0} &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ {\color{red} 1} &amp; {\color{red} 0} &amp; {\color{red} 1} &amp; {\color{red} 0} &amp; {\color{red} 0} \\ {\color{red} 0} &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\ {\color{red} 0} &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\ {\color{red} 0} &amp; 0 &amp; 0 &amp; 1 &amp; 0 \end{vmatrix}=-1\begin{vmatrix} {\color{green} 1} &amp; {\color{green} 0} &amp; {\color{green} 0} &amp; {\color{green} 0} \\ {\color{green} 1} &amp; 0 &amp; 1 &amp; 0 \\ {\color{green} 0} &amp; 1 &amp; 0 &amp; 1 \\ {\color{green} 0} &amp; 0 &amp; 1 &amp; 0 \end{vmatrix}=-1\cdot1\begin{vmatrix} {\color{blue} 0} &amp; {\color{blue} 1} &amp; {\color{blue} 0} \\ 1 &amp; {\color{blue} 0} &amp; 1 \\ 0 &amp; {\color{blue} 1} &amp; 0 \end{vmatrix}=(-1)\cdot1\cdot(-1)\begin{vmatrix} 1 &amp; 1 \\ 0 &amp; 0 \end{vmatrix}=(-1)\cdot1\cdot(-1)\cdot0=0\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-8">
+<span class="eqno">(7.96)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-8" title="Link to this equation">#</a></span>\[\begin{split}\begin{vmatrix} {\color{red} 0} &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ {\color{red} 1} &amp; {\color{red} 0} &amp; {\color{red} 1} &amp; {\color{red} 0} &amp; {\color{red} 0} \\ {\color{red} 0} &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\ {\color{red} 0} &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\ {\color{red} 0} &amp; 0 &amp; 0 &amp; 1 &amp; 0 \end{vmatrix}=-1\begin{vmatrix} {\color{green} 1} &amp; {\color{green} 0} &amp; {\color{green} 0} &amp; {\color{green} 0} \\ {\color{green} 1} &amp; 0 &amp; 1 &amp; 0 \\ {\color{green} 0} &amp; 1 &amp; 0 &amp; 1 \\ {\color{green} 0} &amp; 0 &amp; 1 &amp; 0 \end{vmatrix}=-1\cdot1\begin{vmatrix} {\color{blue} 0} &amp; {\color{blue} 1} &amp; {\color{blue} 0} \\ 1 &amp; {\color{blue} 0} &amp; 1 \\ 0 &amp; {\color{blue} 1} &amp; 0 \end{vmatrix}=(-1)\cdot1\cdot(-1)\begin{vmatrix} 1 &amp; 1 \\ 0 &amp; 0 \end{vmatrix}=(-1)\cdot1\cdot(-1)\cdot0=0\end{split}\]</div>
 </div>
 </details></div>
 <div class="miniexercise admonition">
 <p class="admonition-title">Übung 7.4</p>
 <p>Berechnen Sie die inverse Matrix für die folgende <span class="math notranslate nohighlight">\((3\times3)\)</span>-Matrix:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\begin{pmatrix} -1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; -2 \\ 1 &amp; 4 &amp; -1 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-9">
+<span class="eqno">(7.97)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-9" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\begin{pmatrix} -1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; -2 \\ 1 &amp; 4 &amp; -1 \end{pmatrix}\end{split}\]</div>
 </div>
 <div class="miniexercise toggle admonition">
 <p class="admonition-title">Lösung</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{-1}=\frac{1}{12}\begin{pmatrix} -7 &amp; -6 &amp; 5 \\ 2 &amp; 0 &amp; 2 \\ 1 &amp; -6 &amp; 1 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-10">
+<span class="eqno">(7.98)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-10" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{-1}=\frac{1}{12}\begin{pmatrix} -7 &amp; -6 &amp; 5 \\ 2 &amp; 0 &amp; 2 \\ 1 &amp; -6 &amp; 1 \end{pmatrix}\end{split}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}^{-1}=\frac{1}{12}\begin{pmatrix} -7 &amp; -6 &amp; 5 \\ 2 &amp; 0 &amp; 2 \\ 1 &amp; -6 &amp; 1 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-11">
+<span class="eqno">(7.99)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-11" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}^{-1}=\frac{1}{12}\begin{pmatrix} -7 &amp; -6 &amp; 5 \\ 2 &amp; 0 &amp; 2 \\ 1 &amp; -6 &amp; 1 \end{pmatrix}\end{split}\]</div>
 </div>
 </details></div>
 <div class="miniexercise admonition">
@@ -625,11 +625,11 @@
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">a)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 2 \\ 2 &amp; -2 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-12">
+<span class="eqno">(7.100)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-12" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 2 \\ 2 &amp; -2 \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">charakteristische Gleichung:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-13">
+<span class="eqno">(7.101)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-13" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 0&amp;=\left|\mathbf{A}-\lambda\cdot\mathbf{E}\right|=\begin{vmatrix} 1-\lambda &amp; 2 \\ 2 &amp; -2-\lambda \end{vmatrix}=(1-\lambda)(-2-\lambda)-4=-2-\lambda+2\lambda+{\lambda}^{2}-4=-6+\lambda+{\lambda}^{2} \\
 &amp;=(\lambda+3)(\lambda-2)
@@ -637,24 +637,24 @@
 \end{split}\]</div>
 <p class="sd-card-text">Lösung: <span class="math notranslate nohighlight">\({\lambda}_{1}=-3\,,\,{\lambda}_{2}=2\)</span> sind die Eigenwerte.</p>
 <p class="sd-card-text">Für Eigenvektoren zum EW <span class="math notranslate nohighlight">\({\lambda}_{i}\)</span> gilt:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}(\mathbf{A}-{\lambda}_{i}\mathbf{E})\begin{pmatrix} {v}_{i1} \\ {v}_{i2} \end{pmatrix}=\vec{0}\Rightarrow\,\begin{array}{lrcl} (1-{\lambda}_{i}){v}_{i1} &amp; +2{v}_{i2} &amp; = &amp; 0 \\ 2{v}_{i1} &amp; +(-2-{\lambda}_{i}){v}_{i2} &amp; = &amp; 0 \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-14">
+<span class="eqno">(7.102)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-14" title="Link to this equation">#</a></span>\[\begin{split}(\mathbf{A}-{\lambda}_{i}\mathbf{E})\begin{pmatrix} {v}_{i1} \\ {v}_{i2} \end{pmatrix}=\vec{0}\Rightarrow\,\begin{array}{lrcl} (1-{\lambda}_{i}){v}_{i1} &amp; +2{v}_{i2} &amp; = &amp; 0 \\ 2{v}_{i1} &amp; +(-2-{\lambda}_{i}){v}_{i2} &amp; = &amp; 0 \end{array}\end{split}\]</div>
 <p class="sd-card-text">Für</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}{\lambda}_{1}=-3:\quad\begin{array}{lrcl} 4{v}_{11} &amp; +2{v}_{12} &amp; = &amp; 0 \\ 2{v}_{11} &amp; +{v}_{12} &amp; = &amp; 0 \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-15">
+<span class="eqno">(7.103)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-15" title="Link to this equation">#</a></span>\[\begin{split}{\lambda}_{1}=-3:\quad\begin{array}{lrcl} 4{v}_{11} &amp; +2{v}_{12} &amp; = &amp; 0 \\ 2{v}_{11} &amp; +{v}_{12} &amp; = &amp; 0 \end{array}\end{split}\]</div>
 <p class="sd-card-text">Die erste Gleichung ist das doppelte der zweiten. Die zweite Gleichung reicht aus. Wir wählen <span class="math notranslate nohighlight">\({v}_{11}=1\)</span> und erhalten damit <span class="math notranslate nohighlight">\({v}_{12}=-2{v}_{11}=-2\)</span>.</p>
 <p class="sd-card-text">Ein EV zu <span class="math notranslate nohighlight">\({\lambda}_{1}\)</span> ist damit <span class="math notranslate nohighlight">\(\vec{v}_{1}=\begin{pmatrix} 1 \\ -2 \end{pmatrix}\)</span>.</p>
 <p class="sd-card-text">Für</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}{\lambda}_{2}=2:\quad\begin{array}{lrcl} -{v}_{21} &amp; +2{v}_{22} &amp; = &amp; 0 \\ 2{v}_{21} &amp; -4{v}_{22} &amp; = &amp; 0 \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-16">
+<span class="eqno">(7.104)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-16" title="Link to this equation">#</a></span>\[\begin{split}{\lambda}_{2}=2:\quad\begin{array}{lrcl} -{v}_{21} &amp; +2{v}_{22} &amp; = &amp; 0 \\ 2{v}_{21} &amp; -4{v}_{22} &amp; = &amp; 0 \end{array}\end{split}\]</div>
 <p class="sd-card-text">Die zweite Gleichung folgt aus der ersten durch Multiplikation mit -2. Die erste reicht also aus. Um im Ergebnis ganze Zahlen zu erhalten, wählen wir <span class="math notranslate nohighlight">\({v}_{21}=2\)</span>.</p>
 <p class="sd-card-text">Damit erhalten wir <span class="math notranslate nohighlight">\({v}_{22}={v}_{21}/2=1\)</span>. Ein EV zu <span class="math notranslate nohighlight">\({\lambda}_{2}\)</span> ist damit <span class="math notranslate nohighlight">\(\vec{v}_{2}=\begin{pmatrix} 2 \\ 1 \end{pmatrix}\)</span>.</p>
 <p class="sd-card-text">b)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{B}=\begin{pmatrix} -3 &amp; -3 &amp; -3 \\ -3 &amp; 1 &amp; -1 \\ -3 &amp; -1 &amp; 1 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-17">
+<span class="eqno">(7.105)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-17" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B}=\begin{pmatrix} -3 &amp; -3 &amp; -3 \\ -3 &amp; 1 &amp; -1 \\ -3 &amp; -1 &amp; 1 \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">Charakteristische Gleichung:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-18">
+<span class="eqno">(7.106)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-18" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 0&amp;=\left|\mathbf{B}-\lambda\mathbf{E}\right|=\begin{vmatrix} -3-\lambda &amp; -3 &amp; -3 \\ -3 &amp; 1-\lambda &amp; -1 \\ -3 &amp; -1 &amp; 1-\lambda \end{vmatrix} \\
 &amp;=(-3-\lambda)(1-\lambda)(1-\lambda)+(-3)(-1)(-3)+(-3)(-3)(-1) \\
@@ -666,43 +666,43 @@
 \end{aligned}
 \end{split}\]</div>
 <p class="sd-card-text">Gleichung mithilfe von zum Beispiel <a class="reference external" href="http://wolframalpha.com">wolframalpha.com</a> oder ChatGPT lösen:</p>
-<div class="math notranslate nohighlight">
-\[{\lambda}_{1}=-6,\quad{\lambda}_{2}=2,\quad{\lambda}_{3}=3\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-19">
+<span class="eqno">(7.107)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-19" title="Link to this equation">#</a></span>\[{\lambda}_{1}=-6,\quad{\lambda}_{2}=2,\quad{\lambda}_{3}=3\]</div>
 <p class="sd-card-text">Für Eigenvektoren zum EW <span class="math notranslate nohighlight">\({\lambda}_{i}\)</span> gilt:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}(\mathbf{B}-\lambda\mathbf{E})\begin{pmatrix} {v}_{i1} \\ {v}_{i2} \\ {v}_{i3} \end{pmatrix}=\vec{0}\Rightarrow\,\begin{array}{llrcl} (-3-{\lambda}_{i}){v}_{i1} &amp; -3{v}_{i2} &amp; -3{v}_{i3} &amp; = &amp; 0 \\ -3{v}_{i1} &amp; +(1-{\lambda}_{i}){v}_{i2} &amp; -{v}_{i3} &amp; = &amp; 0 \\ -3{v}_{i1} &amp; -{v}_{i2} &amp; +(1-{\lambda}_{i}){v}_{i3} &amp; = &amp; 0 \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-20">
+<span class="eqno">(7.108)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-20" title="Link to this equation">#</a></span>\[\begin{split}(\mathbf{B}-\lambda\mathbf{E})\begin{pmatrix} {v}_{i1} \\ {v}_{i2} \\ {v}_{i3} \end{pmatrix}=\vec{0}\Rightarrow\,\begin{array}{llrcl} (-3-{\lambda}_{i}){v}_{i1} &amp; -3{v}_{i2} &amp; -3{v}_{i3} &amp; = &amp; 0 \\ -3{v}_{i1} &amp; +(1-{\lambda}_{i}){v}_{i2} &amp; -{v}_{i3} &amp; = &amp; 0 \\ -3{v}_{i1} &amp; -{v}_{i2} &amp; +(1-{\lambda}_{i}){v}_{i3} &amp; = &amp; 0 \end{array}\end{split}\]</div>
 <p class="sd-card-text">Das Gleichungssystem wird keine eindeutige Lösung haben, weil seine Determinante Null ist. Sie erhalten für die Eigenwerte:</p>
 <p class="sd-card-text">Für <span class="math notranslate nohighlight">\({\lambda}_{1}=-6\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{llrcl} 3{v}_{11} &amp; -3{v}_{12} &amp; -3{v}_{13} &amp; = &amp; 0 \\ -3{v}_{11} &amp; +7{v}_{12} &amp; -{v}_{13} &amp; = &amp; 0 \\ -3{v}_{11} &amp; -{v}_{12} &amp; +7{v}_{13} &amp; = &amp; 0 \end{array}\,\begin{array}{l} (\text{I}) \\ (\text{II}) \\ (\text{III}) \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-21">
+<span class="eqno">(7.109)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-21" title="Link to this equation">#</a></span>\[\begin{split}\begin{array}{llrcl} 3{v}_{11} &amp; -3{v}_{12} &amp; -3{v}_{13} &amp; = &amp; 0 \\ -3{v}_{11} &amp; +7{v}_{12} &amp; -{v}_{13} &amp; = &amp; 0 \\ -3{v}_{11} &amp; -{v}_{12} &amp; +7{v}_{13} &amp; = &amp; 0 \end{array}\,\begin{array}{l} (\text{I}) \\ (\text{II}) \\ (\text{III}) \end{array}\end{split}\]</div>
 <p class="sd-card-text">Die erste Gleichung kann eliminiert werden mit 2(I)+(II)+(III).</p>
 <p class="sd-card-text">Aus (II)-(III) folgt:</p>
-<div class="math notranslate nohighlight">
-\[8{v}_{12}-8{v}_{13}=0\Rightarrow\,{v}_{12}={v}_{13}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-22">
+<span class="eqno">(7.110)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-22" title="Link to this equation">#</a></span>\[8{v}_{12}-8{v}_{13}=0\Rightarrow\,{v}_{12}={v}_{13}\]</div>
 <p class="sd-card-text">Damit folgt aus (II):</p>
-<div class="math notranslate nohighlight">
-\[-3{v}_{11}+6{v}_{12}=0\Rightarrow\,{v}_{11}=2{v}_{12}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-23">
+<span class="eqno">(7.111)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-23" title="Link to this equation">#</a></span>\[-3{v}_{11}+6{v}_{12}=0\Rightarrow\,{v}_{11}=2{v}_{12}\]</div>
 <p class="sd-card-text">Wir wählen <span class="math notranslate nohighlight">\({v}_{13}=1\)</span> und erhalten <span class="math notranslate nohighlight">\({v}_{12}=1\)</span> und <span class="math notranslate nohighlight">\({v}_{11}=2\)</span>.</p>
 <p class="sd-card-text">Ein EV zu <span class="math notranslate nohighlight">\({\lambda}_{1}\)</span> ist damit <span class="math notranslate nohighlight">\(\vec{v}_{1}=\begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix}\)</span>.</p>
 <p class="sd-card-text">Für <span class="math notranslate nohighlight">\({\lambda}_{2}=2\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{llrcl} -5{v}_{21} &amp; -3{v}_{22} &amp; -3{v}_{23} &amp; = &amp; 0 \\ -3{v}_{21} &amp; -{v}_{22} &amp; -{v}_{23} &amp; = &amp; 0 \\ -3{v}_{21} &amp; -{v}_{22} &amp; -{v}_{23} &amp; = &amp; 0 \end{array}\begin{array}{l} (\text{I}) \\ (\text{II}) \\ (\text{III}) \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-24">
+<span class="eqno">(7.112)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-24" title="Link to this equation">#</a></span>\[\begin{split}\begin{array}{llrcl} -5{v}_{21} &amp; -3{v}_{22} &amp; -3{v}_{23} &amp; = &amp; 0 \\ -3{v}_{21} &amp; -{v}_{22} &amp; -{v}_{23} &amp; = &amp; 0 \\ -3{v}_{21} &amp; -{v}_{22} &amp; -{v}_{23} &amp; = &amp; 0 \end{array}\begin{array}{l} (\text{I}) \\ (\text{II}) \\ (\text{III}) \end{array}\end{split}\]</div>
 <p class="sd-card-text">Gleichungen (II) und (III) sind identisch. Wir verwenden also nur (I) und (II).</p>
 <p class="sd-card-text">Aus (I)-3(II) folgt direkt: <span class="math notranslate nohighlight">\(4{v}_{21}=0\Rightarrow\,{v}_{21}=0\)</span></p>
 <p class="sd-card-text">Damit folgt aus (II):</p>
-<div class="math notranslate nohighlight">
-\[-{v}_{22}-{v}_{23}=0\Rightarrow\,{v}_{22}=-{v}_{23}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-25">
+<span class="eqno">(7.113)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-25" title="Link to this equation">#</a></span>\[-{v}_{22}-{v}_{23}=0\Rightarrow\,{v}_{22}=-{v}_{23}\]</div>
 <p class="sd-card-text">Wir wählen <span class="math notranslate nohighlight">\({v}_{22}=1\)</span> und erhalten <span class="math notranslate nohighlight">\({v}_{23}=-1\)</span> und <span class="math notranslate nohighlight">\({v}_{21}=0\)</span>.</p>
 <p class="sd-card-text">Ein EV zu <span class="math notranslate nohighlight">\({\lambda}_{2}\)</span> ist damit <span class="math notranslate nohighlight">\(\vec{v}_{2}=\begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}\)</span>.</p>
 <p class="sd-card-text">Für <span class="math notranslate nohighlight">\({\lambda}_{3}=3\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{llrcl} -6{v}_{31} &amp; -3{v}_{32} &amp; -3{v}_{33} &amp; = &amp; 0 \\ -3{v}_{31} &amp; -2{v}_{32} &amp; -{v}_{33} &amp; = &amp; 0 \\ -3{v}_{31} &amp; -{v}_{32} &amp; -2{v}_{33} &amp; = &amp; 0 \end{array}\,\begin{array}{l} (\text{I}) \\ (\text{II}) \\ (\text{III}) \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-26">
+<span class="eqno">(7.114)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-26" title="Link to this equation">#</a></span>\[\begin{split}\begin{array}{llrcl} -6{v}_{31} &amp; -3{v}_{32} &amp; -3{v}_{33} &amp; = &amp; 0 \\ -3{v}_{31} &amp; -2{v}_{32} &amp; -{v}_{33} &amp; = &amp; 0 \\ -3{v}_{31} &amp; -{v}_{32} &amp; -2{v}_{33} &amp; = &amp; 0 \end{array}\,\begin{array}{l} (\text{I}) \\ (\text{II}) \\ (\text{III}) \end{array}\end{split}\]</div>
 <p class="sd-card-text">Die erste Gleichung kann eliminiert werden mit (I)-(II)-(III).</p>
 <p class="sd-card-text">Wir verwenden also nur (II) und (III).</p>
 <p class="sd-card-text">Aus (II)-(III) folgt direkt: <span class="math notranslate nohighlight">\(-{v}_{32}+{v}_{33}=0\Rightarrow\,{v}_{32}={v}_{33}\)</span></p>
 <p class="sd-card-text">Damit folgt aus (II):</p>
-<div class="math notranslate nohighlight">
-\[-3{v}_{31}-3{v}_{32}=0\Rightarrow\,{v}_{31}=-{v}_{32}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-27">
+<span class="eqno">(7.115)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-27" title="Link to this equation">#</a></span>\[-3{v}_{31}-3{v}_{32}=0\Rightarrow\,{v}_{31}=-{v}_{32}\]</div>
 <p class="sd-card-text">Wir wählen <span class="math notranslate nohighlight">\({v}_{33}=1\)</span> und erhalten <span class="math notranslate nohighlight">\({v}_{32}=1\)</span> und <span class="math notranslate nohighlight">\({v}_{31}=-1\)</span>.</p>
 <p class="sd-card-text">Ein EV zu <span class="math notranslate nohighlight">\({\lambda}_{3}\)</span> ist damit <span class="math notranslate nohighlight">\(\vec{v}_{3}=\begin{pmatrix} -1 \\ 1 \\ 1 \end{pmatrix}\)</span>.</p>
 </div>
@@ -710,11 +710,11 @@
 <div class="miniexercise vernetzend admonition">
 <p class="admonition-title">Übung 7.6</p>
 <p>Gegeben seien die Matrix</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-28">
+<span class="eqno">(7.116)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-28" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\end{split}\]</div>
 <p>sowie die Vektoren</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{w}_{1}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\qquad\text{und}\qquad\vec{w}_{2}=\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-29">
+<span class="eqno">(7.117)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-29" title="Link to this equation">#</a></span>\[\begin{split}\vec{w}_{1}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\qquad\text{und}\qquad\vec{w}_{2}=\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}.\end{split}\]</div>
 <p>a) Bestimmen Sie die Determinante der Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>. Untersuchen Sie, ob die Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> invertierbar ist.</p>
 <p>b) Zeigen Sie, dass die Vektoren <span class="math notranslate nohighlight">\(\vec{w}_{1}\)</span> und <span class="math notranslate nohighlight">\(\vec{w}_{2}\)</span> Eigenvektoren von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> sind. Bestimmen Sie die zugehörigen Eigenwerte.</p>
 <p>c) Überprüfen Sie, ob die Eigenvektoren <span class="math notranslate nohighlight">\(\vec{w}_{1}\)</span> und <span class="math notranslate nohighlight">\(\vec{w}_{2}\)</span> orthogonal zueinander sind.</p>
@@ -730,8 +730,8 @@
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg a)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Die dritte Zeile enthält zwei Nullen. Deshalb lohnt sich die Entwicklung nach der 3. Zeile, denn dann bleibt nur ein Summand übrig:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\det(\mathbf{A})=4\cdot(+1)\cdot\begin{vmatrix} 1 &amp; 2 \\ 2 &amp; 1 \end{vmatrix}=4\cdot\left( 1\cdot1-2\cdot2 \right)=4\cdot(-3)=-12\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-30">
+<span class="eqno">(7.118)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-30" title="Link to this equation">#</a></span>\[\begin{split}\det(\mathbf{A})=4\cdot(+1)\cdot\begin{vmatrix} 1 &amp; 2 \\ 2 &amp; 1 \end{vmatrix}=4\cdot\left( 1\cdot1-2\cdot2 \right)=4\cdot(-3)=-12\end{split}\]</div>
 <p class="sd-card-text">Das Vorzeichen <span class="math notranslate nohighlight">\((+1)\)</span> ergibt sich aus dem Schachbrettmuster: Das Element steht in Zeile 3 und Spalte 3, also <span class="math notranslate nohighlight">\((-1)^{3+3}=+1\)</span>.</p>
 <p class="sd-card-text">Eine quadratische Matrix ist genau dann invertierbar, wenn ihre Determinante ungleich null ist. Wegen <span class="math notranslate nohighlight">\(\det(\mathbf{A})=-12\neq 0\)</span> ist <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> invertierbar.</p>
 <div class="note admonition">
@@ -743,19 +743,19 @@
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg b)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Ein Vektor <span class="math notranslate nohighlight">\(\vec{w}\neq\vec{0}\)</span> ist Eigenvektor von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, wenn <span class="math notranslate nohighlight">\(\mathbf{A}\vec{w}\)</span> ein Vielfaches von <span class="math notranslate nohighlight">\(\vec{w}\)</span> ist: <span class="math notranslate nohighlight">\(\mathbf{A}\vec{w}=\lambda\vec{w}\)</span>. Der Faktor <span class="math notranslate nohighlight">\(\lambda\)</span> ist dann der zugehörige Eigenwert. Man muss also nur das Produkt ausrechnen und vergleichen:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}\vec{w}_{1}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot1+2\cdot1+0\cdot0 \\ 2\cdot1+1\cdot1+0\cdot0 \\ 0\cdot1+0\cdot1+4\cdot0 \end{pmatrix}=\begin{pmatrix} 3 \\ 3 \\ 0 \end{pmatrix}=3\cdot\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}=3\,\vec{w}_{1}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-31">
+<span class="eqno">(7.119)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-31" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}\vec{w}_{1}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot1+2\cdot1+0\cdot0 \\ 2\cdot1+1\cdot1+0\cdot0 \\ 0\cdot1+0\cdot1+4\cdot0 \end{pmatrix}=\begin{pmatrix} 3 \\ 3 \\ 0 \end{pmatrix}=3\cdot\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}=3\,\vec{w}_{1}\end{split}\]</div>
 <p class="sd-card-text">Also ist <span class="math notranslate nohighlight">\(\vec{w}_{1}\)</span> Eigenvektor zum Eigenwert <span class="math notranslate nohighlight">\(\lambda_{1}=3\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{A}\vec{w}_{2}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1-2 \\ 2-1 \\ 0 \end{pmatrix}=\begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}=-1\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=-1\cdot\vec{w}_{2}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-32">
+<span class="eqno">(7.120)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-32" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A}\vec{w}_{2}=\begin{pmatrix} 1 &amp; 2 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 4 \end{pmatrix}\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1-2 \\ 2-1 \\ 0 \end{pmatrix}=\begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}=-1\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=-1\cdot\vec{w}_{2}\end{split}\]</div>
 <p class="sd-card-text">Also ist <span class="math notranslate nohighlight">\(\vec{w}_{2}\)</span> Eigenvektor zum Eigenwert <span class="math notranslate nohighlight">\(\lambda_{2}=-1\)</span>.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg c)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Zwei Vektoren sind orthogonal, wenn ihr Skalarprodukt null ist:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{w}_{1}\cdot\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=1\cdot1+1\cdot(-1)+0\cdot0=0\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-33">
+<span class="eqno">(7.121)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-33" title="Link to this equation">#</a></span>\[\begin{split}\vec{w}_{1}\cdot\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\cdot\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=1\cdot1+1\cdot(-1)+0\cdot0=0\end{split}\]</div>
 <p class="sd-card-text">Die beiden Eigenvektoren sind also orthogonal.</p>
 <p class="sd-card-text">Das ist kein Zufall: <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> ist symmetrisch (<span class="math notranslate nohighlight">\(\mathbf{A}^{T}=\mathbf{A}\)</span>). Bei symmetrischen Matrizen stehen Eigenvektoren zu verschiedenen Eigenwerten immer senkrecht aufeinander.</p>
 </div>
@@ -763,8 +763,8 @@
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Lösungsweg d)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>Weg 1: Über das charakteristische Polynom.</strong> Die Eigenwerte sind die Nullstellen von <span class="math notranslate nohighlight">\(\det(\mathbf{A}-\lambda\mathbf{E})\)</span>. Auch hier hilft die Entwicklung nach der 3. Zeile:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-34">
+<span class="eqno">(7.122)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-34" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{aligned}
 \det(\mathbf{A}-\lambda\mathbf{E})&amp;=\begin{vmatrix} 1-\lambda &amp; 2 &amp; 0 \\ 2 &amp; 1-\lambda &amp; 0 \\ 0 &amp; 0 &amp; 4-\lambda \end{vmatrix}=(4-\lambda)\cdot\left[ (1-\lambda)^{2}-4 \right] \\
 &amp;=(4-\lambda)\cdot(1-\lambda-2)\cdot(1-\lambda+2)=(4-\lambda)\cdot(-1-\lambda)\cdot(3-\lambda)
@@ -772,15 +772,15 @@
 \end{split}\]</div>
 <p class="sd-card-text">Die Nullstellen sind <span class="math notranslate nohighlight">\(\lambda=4\)</span>, <span class="math notranslate nohighlight">\(\lambda=-1\)</span> und <span class="math notranslate nohighlight">\(\lambda=3\)</span>. Die Eigenwerte <span class="math notranslate nohighlight">\(3\)</span> und <span class="math notranslate nohighlight">\(-1\)</span> kennen wir schon aus b), der dritte Eigenwert ist also <span class="math notranslate nohighlight">\(\lambda_{3}=4\)</span>.</p>
 <p class="sd-card-text">Den Eigenvektor erhält man aus <span class="math notranslate nohighlight">\((\mathbf{A}-4\mathbf{E})\vec{v}=\vec{0}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} -3 &amp; 2 &amp; 0 \\ 2 &amp; -3 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\qquad\Leftrightarrow\qquad\begin{array}{lrcll} &amp; -3x+2y &amp; = &amp; 0 &amp; \text{ (I)} \\ &amp; 2x-3y &amp; = &amp; 0 &amp; \text{ (II)} \\ &amp; 0 &amp; = &amp; 0 &amp; \text{ (III)} \end{array}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-35">
+<span class="eqno">(7.123)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-35" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix} -3 &amp; 2 &amp; 0 \\ 2 &amp; -3 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{pmatrix}\begin{pmatrix} x \\ y \\ z \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\qquad\Leftrightarrow\qquad\begin{array}{lrcll} &amp; -3x+2y &amp; = &amp; 0 &amp; \text{ (I)} \\ &amp; 2x-3y &amp; = &amp; 0 &amp; \text{ (II)} \\ &amp; 0 &amp; = &amp; 0 &amp; \text{ (III)} \end{array}\end{split}\]</div>
 <p class="sd-card-text">Aus (I) folgt <span class="math notranslate nohighlight">\(y=\frac{3}{2}x\)</span>. Eingesetzt in (II): <span class="math notranslate nohighlight">\(2x-\frac{9}{2}x=-\frac{5}{2}x=0\)</span>, also <span class="math notranslate nohighlight">\(x=0\)</span> und damit <span class="math notranslate nohighlight">\(y=0\)</span>. Für <span class="math notranslate nohighlight">\(z\)</span> gibt es keine Bedingung, <span class="math notranslate nohighlight">\(z\)</span> ist frei wählbar. Mit <span class="math notranslate nohighlight">\(z=1\)</span> erhält man</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-36">
+<span class="eqno">(7.124)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-36" title="Link to this equation">#</a></span>\[\begin{split}\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}.\end{split}\]</div>
 <p class="sd-card-text"><strong>Probe:</strong> <span class="math notranslate nohighlight">\(\mathbf{A}\vec{w}_{3}=\begin{pmatrix} 0 \\ 0 \\ 4 \end{pmatrix}=4\,\vec{w}_{3}\)</span>. ✓</p>
 <p class="sd-card-text"><strong>Weg 2: Über das Kreuzprodukt.</strong> Da <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> symmetrisch ist, steht der dritte Eigenvektor senkrecht auf <span class="math notranslate nohighlight">\(\vec{w}_{1}\)</span> und <span class="math notranslate nohighlight">\(\vec{w}_{2}\)</span> (siehe c). Einen solchen Vektor liefert das Kreuzprodukt:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{w}_{1}\times\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\times\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot0-0\cdot(-1) \\ 0\cdot1-1\cdot0 \\ 1\cdot(-1)-1\cdot1 \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ -2 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec07-37">
+<span class="eqno">(7.125)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec07-37" title="Link to this equation">#</a></span>\[\begin{split}\vec{w}_{1}\times\vec{w}_{2}=\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\times\begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}=\begin{pmatrix} 1\cdot0-0\cdot(-1) \\ 0\cdot1-1\cdot0 \\ 1\cdot(-1)-1\cdot1 \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ -2 \end{pmatrix}\end{split}\]</div>
 <p class="sd-card-text">Das ist ein Vielfaches von <span class="math notranslate nohighlight">\(\vec{w}_{3}\)</span> und damit ebenfalls ein Eigenvektor zu <span class="math notranslate nohighlight">\(\lambda_{3}=4\)</span>.</p>
 </div>
 </details></div>

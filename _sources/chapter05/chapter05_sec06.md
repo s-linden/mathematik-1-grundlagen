@@ -25,8 +25,8 @@ gekennzeichnet.
 width: 50%
 name: schnittwinkel_geraden
 ---
-Winkel zwischen zwei Geraden; Quelle: eigene Darstellung; 
-Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+Winkel zwischen zwei Geraden
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 Als **Schnittwinkel zweier Geraden** mit dem mathematischen Symbol

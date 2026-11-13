@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -554,8 +554,8 @@ interpretiert</strong> wird: Das Vektorprodukt der beiden Vektoren <span class="
 <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> gebildet wird. Wenn
 <span class="math notranslate nohighlight">\(\varphi=\angle(\vec{a},\vec{b})\)</span> der eingeschlossene Winkel zwischen
 <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> ist, dann gilt:</p>
-<div class="math notranslate nohighlight">
-\[|\vec{a}\times\vec{b}| = |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi).\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-1">
+<span class="eqno">(4.79)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-1" title="Link to this equation">#</a></span>\[|\vec{a}\times\vec{b}| = |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi).\]</div>
 </li>
 </ul>
 </li>
@@ -572,26 +572,26 @@ Besonderheit: es gibt sie nur im dreidimensionalen Standardvektorraum
 <p>Um das <strong>Vektorprodukt</strong> zu erklären, nehmen wir ein Beispiel aus dem Video
 <a class="reference external" href="https://youtu.be/tg9oiUPdrFc?feature=shared">“Kreuzprodukt zweier Vektoren”</a>
 von VisualX, nämlich die beiden 3D-Vektoren</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{a} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \; \text{ und } \;
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-2">
+<span class="eqno">(4.80)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-2" title="Link to this equation">#</a></span>\[\begin{split}\vec{a} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \; \text{ und } \;
 \vec{b} = \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix}.\end{split}\]</div>
 <p>Das Vektorprodukt wird berechnet als</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{a} \times \vec{b} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-3">
+<span class="eqno">(4.81)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-3" title="Link to this equation">#</a></span>\[\begin{split}\vec{a} \times \vec{b} =
 \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \times \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix} =
 \begin{pmatrix} 2\cdot 2 -(-1)\cdot 0 \\-1\cdot 3 -1\cdot 2 \\1\cdot 0 - 2\cdot 3\end{pmatrix}=
 \begin{pmatrix} 4 \\-5 \\-6\end{pmatrix}.\end{split}\]</div>
 <p>Die genaue Formel zur Berechnung lautet</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{a} \times \vec{b} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-4">
+<span class="eqno">(4.82)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-4" title="Link to this equation">#</a></span>\[\begin{split}\vec{a} \times \vec{b} =
 \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} \times \begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix}=
 \begin{pmatrix}a_2 b_3 - a_3 b_2 \\ a_3 b_1 - a_1 b_3\\a_1 b_2 - a_2 b_1\end{pmatrix}.\end{split}\]</div>
 <div class="note admonition">
 <p class="admonition-title">Was ist … das Vektorprodukt?</p>
 <p>In einem rechtshändischen kartesischen Koordinatensystem <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> wird das
 Vektorprodukt zweier Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> defininert als</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{a} \times \vec{b} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-5">
+<span class="eqno">(4.83)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-5" title="Link to this equation">#</a></span>\[\begin{split}\vec{a} \times \vec{b} =
 \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} \times \begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix}=
 \begin{pmatrix}a_2 b_3 - a_3 b_2 \\ a_3 b_1 - a_1 b_3\\a_1 b_2 - a_2 b_1\end{pmatrix}.\end{split}\]</div>
 <p>Das Vektorprodukt wird auch manchmal Kreuzprodukt genannt.</p>
@@ -615,33 +615,33 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 sind.</p>
 <p>Das Vektorprodukt ist nicht kommutativ, sondern <strong>antikommutativ</strong>. Wir greifen
 das obige Beispiel erneut auf:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{a} \times \vec{b} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \times
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-6">
+<span class="eqno">(4.84)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-6" title="Link to this equation">#</a></span>\[\begin{split}\vec{a} \times \vec{b} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \times
 \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix} = \begin{pmatrix} 4 \\-5
 \\-6\end{pmatrix}.\end{split}\]</div>
 <p>Wenn wir nun <span class="math notranslate nohighlight">\(\vec{b}\times\vec{a}\)</span> ausrechnen, erhalten wir aber</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix}\times\begin{pmatrix} 1 \\ 2 \\ -1
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-7">
+<span class="eqno">(4.85)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-7" title="Link to this equation">#</a></span>\[\begin{split}\begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix}\times\begin{pmatrix} 1 \\ 2 \\ -1
 \end{pmatrix}= \begin{pmatrix} -4 \\5 \\6\end{pmatrix}.\end{split}\]</div>
 <p>Das ist der Gegenvektor zu <span class="math notranslate nohighlight">\(\vec{a}\times\vec{b}\)</span>. Das ist kein Zufall.
 Tatsächlich können wir beweisen, dass immer das Antikommutativgesetz</p>
-<div class="math notranslate nohighlight">
-\[\vec{a}\times\vec{b} = \textcolor{red}{-}\vec{b}\times\vec{a}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-8">
+<span class="eqno">(4.86)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-8" title="Link to this equation">#</a></span>\[\vec{a}\times\vec{b} = \textcolor{red}{-}\vec{b}\times\vec{a}\]</div>
 <p>für alle Vektoren <span class="math notranslate nohighlight">\(\vec{a}\in\mathbb{R}^3\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\in\mathbb{R}^3\)</span> gilt.</p>
 <p>Die Regel für die Mischung von Skalarmultiplikation und Vektorprodukt sind
 wieder natürlich. Es gilt</p>
-<div class="math notranslate nohighlight">
-\[s\cdot\left(\vec{a}\times\vec{b}\right) = \left(s\cdot\vec{a}\right)\times\vec{b} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-9">
+<span class="eqno">(4.87)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-9" title="Link to this equation">#</a></span>\[s\cdot\left(\vec{a}\times\vec{b}\right) = \left(s\cdot\vec{a}\right)\times\vec{b} =
 \vec{a}\times\left(s\cdot\vec{b}\right).\]</div>
 <p>Es gilt also das <strong>Distributivgesetz für die Skalarmultiplikation</strong>. Ebenso gilt
 das <strong>Distributivgesetz für die Addition</strong>, also</p>
-<div class="math notranslate nohighlight">
-\[\vec{a}\times\left(\vec{b}+\vec{c}\right) = \vec{a}\times\vec{b} +
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-10">
+<span class="eqno">(4.88)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-10" title="Link to this equation">#</a></span>\[\vec{a}\times\left(\vec{b}+\vec{c}\right) = \vec{a}\times\vec{b} +
 \vec{a}\times\vec{c}.\]</div>
 <p>Umgekehrt halten wir noch fest, dass das Vektorprodukt <strong>nicht assoziativ</strong> ist.
 Allgemein gilt also</p>
-<div class="math notranslate nohighlight">
-\[\left(\vec{a}\times\vec{b}\right)\times\vec{c}
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-11">
+<span class="eqno">(4.89)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-11" title="Link to this equation">#</a></span>\[\left(\vec{a}\times\vec{b}\right)\times\vec{c}
   \textcolor{red}{\, \neq \, } \vec{a}\times \left(\vec{b} \times
   \vec{c}\right).\]</div>
 </section>
@@ -654,38 +654,39 @@ zunächst einmal folgende Beobachtung fest. Der Vektor <span class="math notrans
 dem Vektor <span class="math notranslate nohighlight">\(\vec{b}\)</span>.</p>
 <p>Probieren wir zunächst ein Beispiel. Wir greifen wieder auf das Beispiel von
 oben zurück, d.h. wir nehmen die beiden Vektoren</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{a} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \; \text{ und } \;
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-12">
+<span class="eqno">(4.90)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-12" title="Link to this equation">#</a></span>\[\begin{split}\vec{a} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \; \text{ und } \;
 \vec{b} = \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix}.\end{split}\]</div>
 <p>Das Kreuzprodukt ist dann</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{n} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \times
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-13">
+<span class="eqno">(4.91)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-13" title="Link to this equation">#</a></span>\[\begin{split}\vec{n} = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} \times
 \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix} = \begin{pmatrix} 4 \\-5
 \\-6\end{pmatrix}.\end{split}\]</div>
 <p>Als erstes testen wir, ob <span class="math notranslate nohighlight">\(\vec{n}\)</span> senkrecht auf <span class="math notranslate nohighlight">\(\vec{a}\)</span> steht und berechnen
 dazu das Skalarprodukt:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{n}\cdot\vec{a} = \begin{pmatrix} 4 \\-5 \\-6\end{pmatrix}\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-14">
+<span class="eqno">(4.92)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-14" title="Link to this equation">#</a></span>\[\begin{split}\vec{n}\cdot\vec{a} = \begin{pmatrix} 4 \\-5 \\-6\end{pmatrix}\cdot
 \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix} =
 4\cdot 1 + (-5)\cdot 2 + (-6)\cdot (-1) = 0.\end{split}\]</div>
 <p>Da das Skalarprodukt der beiden Vektoren Null ist, steht <span class="math notranslate nohighlight">\(\vec{n}\)</span> senkrecht auf
 <span class="math notranslate nohighlight">\(\vec{a}\)</span>. Als zweites testen wir <span class="math notranslate nohighlight">\(\vec{n}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{n}\cdot\vec{b} = \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix}\cdot
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-15">
+<span class="eqno">(4.93)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-15" title="Link to this equation">#</a></span>\[\begin{split}\vec{n}\cdot\vec{b} = \begin{pmatrix} 3 \\ 0 \\ 2 \end{pmatrix}\cdot
 \begin{pmatrix} 4 \\-5 \\-6\end{pmatrix} = 3\cdot 4 + 0\cdot (-5) + 2\cdot (-6)
 = 0.\end{split}\]</div>
 <p>Nur weil bei unserem Beispiel das Vektorprodukt<span class="math notranslate nohighlight">\(\vec{a}\times\vec{b}\)</span> senkrecht
 auf <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> steht, muss das nicht immer so sein. Das könnte auch
 Zufall gewesen sein. Schauen wir uns also allgemein an, was
 <span class="math notranslate nohighlight">\(\vec{n}\cdot\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{n}\cdot\vec{b}\)</span> ergeben.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-16">
+<span class="eqno">(4.94)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-16" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 \vec{n}\cdot\vec{a} &amp;= (\vec{a}\times\vec{b})\cdot\vec{a} =
 \begin{pmatrix}a_2 b_3 - a_3 b_2 \\ a_3 b_1 - a_1 b_3\\a_1 b_2 - a_2 b_1\end{pmatrix}
 \cdot \begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} \\
 &amp;= (a_2 b_3 - a_3 b_2)\cdot a_1 + (a_3 b_1 - a_1 b_3)\cdot a_2 + (a_1 b_2 - a_2 b_1)\cdot a_3\\
 &amp;= a_1 a_2 b_3 - a_1 a_3 b_2 + a_2 a_3 b_1 - a_1 a_2 b_3 + a_1 a_2 b_3 - a_2 a_3 b_1 \\
 &amp;= 0
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Die Rechnung <span class="math notranslate nohighlight">\(\vec{n}\cdot\vec{b}\)</span> funktioniert genauso und ergibt ebenfalls <span class="math notranslate nohighlight">\(0\)</span>.</p>
 <p>Etwas kniffliger ist der Nachweis, dass die Länge des Vektorproduktes gleich dem
 Flächeninhalt des Parallelogramms ist, das die Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span>
@@ -705,8 +706,8 @@ dem Vektor <span class="math notranslate nohighlight">\(\vec{a}\)</span> als auf
 Vektoren bilden zusammen ein Rechtssystem. Die Länge <span class="math notranslate nohighlight">\(|\vec{n}|\)</span> des Vektors
 <span class="math notranslate nohighlight">\(\vec{n}\)</span> ist gleich dem Flächeninhalt des Parallelogramms, das die beiden
 Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> aufspannen. Es gilt</p>
-<div class="math notranslate nohighlight">
-\[|\vec{n}| = |\vec{a}\times\vec{b}| =
+<div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-17">
+<span class="eqno">(4.95)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-17" title="Link to this equation">#</a></span>\[|\vec{n}| = |\vec{a}\times\vec{b}| =
 |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi),\]</div>
 <p>wobei <span class="math notranslate nohighlight">\(\varphi=\angle(\vec{a},\vec{b})\)</span> der eingeschlossene Winkel zwischen
 <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> ist.</p>

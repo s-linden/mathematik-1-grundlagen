@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -580,15 +580,16 @@ dass die Anzahl endlich ist. <strong>Folgen</strong> sind Tupel mit unendlich vi
 Elementen. Die können wir nicht mehr alle auflisten, wir brauchen eine
 Beschreibung für die unendlich vielen Elemente.</p>
 <p>Die Aufzählung</p>
-<div class="math notranslate nohighlight">
-\[2, 4, 6, 8, 10, 12, 14, \ldots\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-1">
+<span class="eqno">(9.1)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-1" title="Link to this equation">#</a></span>\[2, 4, 6, 8, 10, 12, 14, \ldots\]</div>
 <p>ist ein klassisches Beispiel für eine Folge. Wir erkennen, dass es sich um die
 <em>geraden</em> natürlichen Zahlen handelt.</p>
 <p>An der dritten Stelle der Folge steht das Element 6. Bei Folgen benutzt man
 allerdings selten den Fachbegriff »Element«, sondern spricht von dritten
 <strong>Folgenglied</strong>. Da es bei Folgen auf die Reihenfolge der Elemente ankommt,
 werden die Positionen durchnummeriert, also beispielsweise</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-2">
+<span class="eqno">(9.2)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-2" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 a_1 &amp;= 2 \\
 a_2 &amp;= 4 \\
 a_3 &amp;= 6 \\
@@ -596,7 +597,7 @@ a_4 &amp;= 8 \\
 a_5 &amp;= 10 \\
 a_6 &amp;= 12 \\
 &amp; \; \vdots \\
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Allgemein schreibt man für eine Folge <span class="math notranslate nohighlight">\((a_i)_{i\in\mathbb{N}}\)</span> oder auch einfach
 <span class="math notranslate nohighlight">\((a_i)\)</span> um anzudeuten, dass es sich hier um eine Aufzählung unendlich vieler
 Folgenglieder <span class="math notranslate nohighlight">\(a_i\)</span> handelt. Die Positionsangabe <span class="math notranslate nohighlight">\(i\)</span> heißt <strong>Index</strong> der Folge.</p>
@@ -604,8 +605,8 @@ Folgenglieder <span class="math notranslate nohighlight">\(a_i\)</span> handelt.
 <p class="admonition-title">Was ist … eine Folge?</p>
 <p>Eine Folge ist eine Aufzählung von unendlich vielen Zahlen <span class="math notranslate nohighlight">\(a_i\)</span> und wird mit
 runden Klammern geschrieben:</p>
-<div class="math notranslate nohighlight">
-\[(a_i)_{i\in\mathbb{N}}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-3">
+<span class="eqno">(9.3)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-3" title="Link to this equation">#</a></span>\[(a_i)_{i\in\mathbb{N}}.\]</div>
 <p>Eine einzelne Zahl der Folge wird Folgenglied genannt. Die Position eines
 Folgenglieds innerhalb der Folge wird Index genannt.</p>
 </div>
@@ -628,15 +629,15 @@ wir oben getan.</p>
 Folgenglieder gebildet werden sollen. Die explizite Regel können wir uns wie
 eine Funktion vorstellen, bei der die Definitionsmenge die natürlichen Zahlen
 sind. In dem obigen Beispiel lautet eine explizite Regel</p>
-<div class="math notranslate nohighlight">
-\[a_k = 2 \cdot k, \quad k\in\mathbb{N}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-4">
+<span class="eqno">(9.4)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-4" title="Link to this equation">#</a></span>\[a_k = 2 \cdot k, \quad k\in\mathbb{N}.\]</div>
 <p>Eine dritte Variante, folgen zu beschreiben, ist die Beschreibung als
 <strong>rekursive Regel</strong>. Wir können bei dem obigen Beispiel festhalten, dass die
 Folge bei <span class="math notranslate nohighlight">\(a_1 = 2\)</span> startet. Ist ein Folgenglied <span class="math notranslate nohighlight">\(a_{k}\)</span> berechnet, wird das
 nächste Folgenglied <span class="math notranslate nohighlight">\(a_{k+1}\)</span> berechnet, indem die Zahl 2 addiert wird. Also
 können wir die Folge auch folgendermaßen beschreiben:</p>
-<div class="math notranslate nohighlight">
-\[a_1 = 2, \quad a_{k+1} = a_{k} + 2, \quad k = 2, 3, 4, \ldots .\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-5">
+<span class="eqno">(9.5)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-5" title="Link to this equation">#</a></span>\[a_1 = 2, \quad a_{k+1} = a_{k} + 2, \quad k = 2, 3, 4, \ldots .\]</div>
 <p>Manche Folgen können explizit beschrieben werden, manche rekursiv und manchmal
 ist es möglich, für eine Folge sowohl eine explizite als auch eine rekursive
 Bildungsvorschrift zu finden.</p>
@@ -664,8 +665,8 @@ wir die drei Eigenschaften alternierend, monoton und beschränkt.</p>
 <h3>Alternierende Folgen<a class="headerlink" href="#alternierende-folgen" title="Link to this heading">#</a></h3>
 <p>Die obige Folge der geraden natürlichen Zahlen kann auch so abgeändert werden,
 dass das Vorzeichen immer abwechselt:</p>
-<div class="math notranslate nohighlight">
-\[2, -4, 6, -8, 10, -12, \ldots.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-6">
+<span class="eqno">(9.6)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-6" title="Link to this equation">#</a></span>\[2, -4, 6, -8, 10, -12, \ldots.\]</div>
 <p>Eine solche Folge heißt <strong>alternierend</strong>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -694,37 +695,37 @@ muss nicht monoton sein. Wenn sie monoton ist, gibt es vier Fälle. Eine Folge
 <section id="beschranktheit-von-folgen">
 <h3>Beschränktheit von Folgen<a class="headerlink" href="#beschranktheit-von-folgen" title="Link to this heading">#</a></h3>
 <p>Als nächstes betrachten wir als Beispiel die Folge</p>
-<div class="math notranslate nohighlight">
-\[1,\frac{1}{2},\frac{1}{4},\frac{1}{8},\frac{1}{16},\frac{1}{32},\ldots.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-7">
+<span class="eqno">(9.7)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-7" title="Link to this equation">#</a></span>\[1,\frac{1}{2},\frac{1}{4},\frac{1}{8},\frac{1}{16},\frac{1}{32},\ldots.\]</div>
 <p>Das explizite Bildungsgesetz für diese Folge lautet</p>
-<div class="math notranslate nohighlight">
-\[a_{k} = \left(\frac{1}{2}\right)^{k-1}, \quad k \in\mathbb{N}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-8">
+<span class="eqno">(9.8)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-8" title="Link to this equation">#</a></span>\[a_{k} = \left(\frac{1}{2}\right)^{k-1}, \quad k \in\mathbb{N}.\]</div>
 <p>Die Folgenglieder werden immer kleiner und sind irgendwann so klein, dass sie
 kaum von Null zu unterscheiden sind. Aber dennoch bleiben sie positiv, egal wie
 groß auch <span class="math notranslate nohighlight">\(k\)</span> wird. Man sagt daher, dass die Zahl 0 eine untere Schranke für
 diese Folge ist bzw. dass die Folge nach unten beschränkt ist. Es gilt</p>
-<div class="math notranslate nohighlight">
-\[0 \leq a_k, \quad \forall k\in\mathbb{N},\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-9">
+<span class="eqno">(9.9)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-9" title="Link to this equation">#</a></span>\[0 \leq a_k, \quad \forall k\in\mathbb{N},\]</div>
 <p>tatsächlich gilt sogar <span class="math notranslate nohighlight">\(0 &lt; a_k\)</span>. Aber auch die Zahl -17.3 ist eine untere
 Schranke für diese Folge, denn es gilt auch</p>
-<div class="math notranslate nohighlight">
-\[-17.3 \leq a_k, \quad \forall k\in\mathbb{N}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-10">
+<span class="eqno">(9.10)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-10" title="Link to this equation">#</a></span>\[-17.3 \leq a_k, \quad \forall k\in\mathbb{N}.\]</div>
 <p>Auch hier gilt sogar das strikte Ungleichheitszeichen <span class="math notranslate nohighlight">\(&lt;\)</span>.</p>
 <p>Alle negativen Zahlen sind untere Schranken für diese Folge. Von den unteren
 Schranken ist <span class="math notranslate nohighlight">\(S_{\text{unten}}=0\)</span> die größte untere Schranke und wird
 <strong>Infimum</strong> genannt.</p>
 <p>Auch nach oben finden wir eine Schranke, die Folge <span class="math notranslate nohighlight">\((a_k)\)</span> ist nach oben
 beschränkt. Beispielsweise sind alle Folgenglieder kleiner als 4, also</p>
-<div class="math notranslate nohighlight">
-\[4 \geq a_k, \quad \forall k\in\mathbb{N}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-11">
+<span class="eqno">(9.11)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-11" title="Link to this equation">#</a></span>\[4 \geq a_k, \quad \forall k\in\mathbb{N}.\]</div>
 <p>Auch hier gilt eigentlich das strikte Ungleichheitszeichen <span class="math notranslate nohighlight">\(&gt;\)</span>. Eine Zahl
 <span class="math notranslate nohighlight">\(S\in\mathbb{R}\)</span> mit</p>
-<div class="math notranslate nohighlight">
-\[s \geq a_k, \quad \forall k\in\mathbb{R}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-12">
+<span class="eqno">(9.12)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-12" title="Link to this equation">#</a></span>\[s \geq a_k, \quad \forall k\in\mathbb{R}\]</div>
 <p>wird obere Schranke genannt. Auch hier gibt es eine kleinste obere Schranke,
 nämlich die Zahl 1, denn es gilt</p>
-<div class="math notranslate nohighlight">
-\[1 \geq a_k, \quad \forall k\in\mathbb{R}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec01-13">
+<span class="eqno">(9.13)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec01-13" title="Link to this equation">#</a></span>\[1 \geq a_k, \quad \forall k\in\mathbb{R}.\]</div>
 <p>Die kleinste obere Schranke wird <strong>Supremum</strong> genannt. Allrdings gibt es hier
 bei diesem konkreten Beispiel einen Unterschied zwischen dem Infimum 0 und dem
 Supremum 1. Es gibt kein Folgenglied <span class="math notranslate nohighlight">\(a_k\)</span>, das jemals den Wert 0 annimmt. Das

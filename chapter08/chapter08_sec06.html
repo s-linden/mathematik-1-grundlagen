@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=1b6d1a07" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -193,7 +193,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec03.html">2.3 Polynome</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec04.html">2.4 Exponential- und Logarithmusfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec05.html">2.5 Trigonometrische Funktionen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion, Verkettung und abschnittsweise definierte Funktionen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec06.html">2.6 Umkehrfunktion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter02/chapter02_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -535,52 +535,57 @@ Wurzelziehen für komplexe Zahlen.</p>
 <h2>Potenzen von komplexen Zahlen<a class="headerlink" href="#potenzen-von-komplexen-zahlen" title="Link to this heading">#</a></h2>
 <p>Die Potenz einer komplexen Zahl ist – genau wie bei den reellen Zahlen – eine
 Abkürzung für das wiederholte Multiplizieren einer Zahl mit sich selbst.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-1">
+<span class="eqno">(8.70)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-1" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z^2 &amp;= z\cdot z \\
 z^3 &amp;= z \cdot z \cdot z \\
 z^4 &amp;= z \cdot z \cdot z \cdot z \\
 z^5 &amp;= z \cdot z \cdot z \cdot z \cdot z\\
 \vdots
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Die Zahl <span class="math notranslate nohighlight">\(z\)</span> heißt Basis und die Anzahl, wie oft die Basis mit sich selbst
 multipliziert wird, heißt Exponent oder Hochzahl. Es gibt auch negative Potenzen:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-2">
+<span class="eqno">(8.71)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-2" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z^{-2} &amp;= \frac{1}{z\cdot z} \\
 z^{-3} &amp;= \frac{1}{z \cdot z \cdot z} \\
 z^{-4} &amp;= \frac{1}{z \cdot z \cdot z \cdot z} \\
 z^{-5} &amp;= \frac{1}{z \cdot z \cdot z \cdot z \cdot z}\\
 \vdots
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Wenn nun konkret eine Potenz einer komplexen Zahl ausgerechnet werden soll, ist
 die Exponentialform am besten geeignet, wie das folgende Beispiel zeigt. Wir
 möchten von der komplexen Zahl <span class="math notranslate nohighlight">\(z = 3e^{\frac{\pi}{4}\mathrm{i}}\)</span> die Potenzen
 bis 4 bilden.</p>
 <p>Für die 2. Potenz erhalten wir zufälligerweise eine rein imaginäre Zahl, wie die
 folgende Rechnung zeigt:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-3">
+<span class="eqno">(8.72)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-3" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z^2
 &amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
 &amp;= 3^2 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
 &amp;= 9 \, e^{\frac{\pi}{2} \mathrm{i}} \\
 &amp;= 9\mathrm{i}.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Für die 3. Potenz erhalten wir</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-4">
+<span class="eqno">(8.73)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-4" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z^3
 &amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
 &amp;= 3^3 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
 &amp;= 27 \, e^{\frac{3}{4}\pi \mathrm{i}} \\
 &amp;\approx -19.0919 + 19.0919 \, \mathrm{i}.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Und die 4. Potenz ist zufälligerweise rein reell:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-5">
+<span class="eqno">(8.74)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-5" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z^4
 &amp;= \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right) \cdot \left( 3e^{\frac{\pi}{4}\mathrm{i}} \right)\\
 &amp;= 3^4 \cdot e^{\left(\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}+\frac{\pi}{4}\right)\mathrm{i}} \\
 &amp;= 81 \cdot e^{\pi \mathrm{i}} \\
 &amp;= 81 \cdot (-1) \\
 &amp;= -81.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Zusammengefasst gilt für das Potenzieren von komplexen Zahlen die folgende
 Rechenregel.</p>
 <div class="note admonition">
@@ -588,8 +593,8 @@ Rechenregel.</p>
 <p>Für jeden ganzzahligen Exponenten <span class="math notranslate nohighlight">\(n\)</span> wird die n-te Potenz einer komplexen Zahl
 <span class="math notranslate nohighlight">\(z = r e^{\varphi\,\mathrm{i}}\)</span> berechnet, indem der Betrag <span class="math notranslate nohighlight">\(r\)</span> mit <span class="math notranslate nohighlight">\(n\)</span> potenziert
 wird und das Argument <span class="math notranslate nohighlight">\(\varphi\)</span> mit <span class="math notranslate nohighlight">\(n\)</span> multipliziert wird:</p>
-<div class="math notranslate nohighlight">
-\[z^n = \big(r e^{\varphi\,\mathrm{i}}\big)^n = r^n e^{n\, \varphi \, \mathrm{i}}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-6">
+<span class="eqno">(8.75)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-6" title="Link to this equation">#</a></span>\[z^n = \big(r e^{\varphi\,\mathrm{i}}\big)^n = r^n e^{n\, \varphi \, \mathrm{i}}.\]</div>
 </div>
 <p>Wie geht man vor, wenn die komplexe Zahl in Normalform oder trigonometrischer
 Form vorliegt? In Normalform können die Klammern einfach ausmultipliziert
@@ -620,40 +625,42 @@ encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="stric
 <h2>Wurzelziehen von komplexen Zahlen<a class="headerlink" href="#wurzelziehen-von-komplexen-zahlen" title="Link to this heading">#</a></h2>
 <p>Von den Potenzen ist der Schritt zu den Wurzeln recht kurz. Sie treten auf, wenn
 wir beispielsweise die quadratische Gleichung</p>
-<div class="math notranslate nohighlight">
-\[z^2 = 3 + 4\, \mathrm{i}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-7">
+<span class="eqno">(8.76)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-7" title="Link to this equation">#</a></span>\[z^2 = 3 + 4\, \mathrm{i}\]</div>
 <p>lösen wollen. Bei reellen quadratischen Gleichungen kann es keine, eine oder
 zwei Lösungen geben. Eine komplexe quadratische Gleichung hat immer zwei
 Lösungen. Zuerst wandeln wir die komplexe Zahl von der Normalform in die
 Exponentialform um:</p>
-<div class="math notranslate nohighlight">
-\[z^2 = 3 + 4\mathrm{i} = 5 \, e^{53.130^{\circ}\mathrm{i}}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-8">
+<span class="eqno">(8.77)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-8" title="Link to this equation">#</a></span>\[z^2 = 3 + 4\mathrm{i} = 5 \, e^{53.130^{\circ}\mathrm{i}}.\]</div>
 <p>Bei der Berechnung der 2. Potenz müssen wir den Betrag quadrieren und das
 Argument mit 2 multiplizieren, um auf <span class="math notranslate nohighlight">\(5 \, e^{53.13^{\circ}\mathrm{i}}\)</span> zu
 kommen. Diesen Prozess kehren wir jetzt um. Wir ziehen aus dem Betrag 5 die
 Wurzel und teilen das Argument <span class="math notranslate nohighlight">\(53.13^{\circ}\)</span> durch 2:</p>
-<div class="math notranslate nohighlight">
-\[z_1 = \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-9">
+<span class="eqno">(8.78)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-9" title="Link to this equation">#</a></span>\[z_1 = \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}}.\]</div>
 <p>Zur Kontrolle berechnen wir <span class="math notranslate nohighlight">\(z_1^2\)</span>:</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-10">
+<span class="eqno">(8.79)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-10" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z_1^2 &amp;= \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}} \cdot \sqrt{5} \, e^{\frac{53.13^{\circ}}{2}\mathrm{i}}\\
 &amp;= \sqrt{5}\cdot\sqrt{5}\, e^{\left( \frac{53.13^{\circ}}{2} +  \frac{53.13^{\circ}}{2} \right) \mathrm{i}} \\
 &amp;= 5 e^{53.13^{\circ}\mathrm{i}}.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Und die zweite Lösung? Wenn wir auf das Argument der ersten Lösung <span class="math notranslate nohighlight">\(\varphi_1 =
 \frac{53.13^{\circ}}{2} = 26.565^{\circ}\)</span> den Winkel <span class="math notranslate nohighlight">\(180^{\circ}\)</span> addieren,
 erhalten wir die zweite Lösung. Testen wir, ob das stimmt.</p>
-<p><span class="math notranslate nohighlight">\(\begin{align*}
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-11">
+<span class="eqno">(8.80)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-11" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 z_2^2 &amp;= \sqrt{5} \, e^{206.565^{\circ}\mathrm{i}} \cdot \sqrt{5} \,  e^{206.565^{\circ}\mathrm{i}}\\
 &amp;= \sqrt{5}\cdot\sqrt{5}\, e^{\left( 206.565^{\circ} +  206.565^{\circ} \right) \mathrm{i}} \\
 &amp;= 5 e^{413.13^{\circ}\mathrm{i}}.
-\end{align*}\)</span></p>
+\end{aligned}\end{split}\]</div>
 <p>Zunächst sieht es nicht so aus, als ob <span class="math notranslate nohighlight">\(z_2 = 5 \, e^{53.130^{\circ}\mathrm{i}}\)</span>
 gelte. Aber das Argument <span class="math notranslate nohighlight">\(413.13^{\circ}\)</span> ist ja größer als <span class="math notranslate nohighlight">\(360^{\circ}\)</span>.
 Ziehen wir die <span class="math notranslate nohighlight">\(360^{\circ}\)</span> ab, um ein Argument zwischen <span class="math notranslate nohighlight">\(0^{\circ}\)</span> und
 <span class="math notranslate nohighlight">\(360^{\circ}\)</span> zu erhalten, landen wir wieder bei</p>
-<div class="math notranslate nohighlight">
-\[z_2^{2} =  5 e^{53.13^{\circ}\mathrm{i}} = 3 + 4\mathrm{i}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-12">
+<span class="eqno">(8.81)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-12" title="Link to this equation">#</a></span>\[z_2^{2} =  5 e^{53.13^{\circ}\mathrm{i}} = 3 + 4\mathrm{i}.\]</div>
 <p>Also ist auch <span class="math notranslate nohighlight">\(z_2\)</span> eine Lösung der quadratischen Gleichung.</p>
 <p>Dieses Vorgehen zur Berechnung der Wurzeln behalten wir bei. Wenn die fünfte
 Wurzel gezogen werden soll, ziehen wir zuerst die 5.-te Wurzel aus dem Betrag
@@ -664,32 +671,32 @@ Argument der ersten berechneten Wurzel <span class="math notranslate nohighlight
 sich folgendermaßen berechnen. Die erste n-te Wurzel erhalten wir, indem wir die
 n-te Wurzel des Betrages <span class="math notranslate nohighlight">\(r\)</span> berechnen und das Argument <span class="math notranslate nohighlight">\(\varphi\)</span> durch <span class="math notranslate nohighlight">\(n\)</span>
 teilen:</p>
-<div class="math notranslate nohighlight">
-\[z_1 = \sqrt[n]{r} e^{\frac{\varphi}{n}\, \mathrm{i}}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-13">
+<span class="eqno">(8.82)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-13" title="Link to this equation">#</a></span>\[z_1 = \sqrt[n]{r} e^{\frac{\varphi}{n}\, \mathrm{i}}.\]</div>
 <p>Für die weiteren n-ten Wurzeln wird <span class="math notranslate nohighlight">\(\Delta\varphi = \frac{360^{\circ}}{n}\)</span> zu
 dem Argument der ersten Lösung <span class="math notranslate nohighlight">\(\frac{\varphi}{n}\)</span> addiert. Das Argument der 2.
 Lösung ist also</p>
-<div class="math notranslate nohighlight">
-\[\varphi_2 =  \frac{\varphi}{n} + \Delta\varphi\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-14">
+<span class="eqno">(8.83)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-14" title="Link to this equation">#</a></span>\[\varphi_2 =  \frac{\varphi}{n} + \Delta\varphi\]</div>
 <p>Wenn nach der 2. Wurzel gefragt ist, haben wir <span class="math notranslate nohighlight">\(\Delta\varphi = 180^{\circ}\)</span>
 addiert und sind wir hier fertig. Wenn jedoch die 3. Wurzel berechnet werden
 sollte, war <span class="math notranslate nohighlight">\(\Delta\varphi = 120^{\circ}\)</span> und wir müssen noch die 3. Wurzel
 berechnen. Dazu addieren wir noch einmal <span class="math notranslate nohighlight">\(\Delta\varphi\)</span>. Das Argument der
 dritten Lösung ist also</p>
-<div class="math notranslate nohighlight">
-\[\varphi_3 =  \frac{\varphi}{n} + 2\cdot \Delta\varphi.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-15">
+<span class="eqno">(8.84)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-15" title="Link to this equation">#</a></span>\[\varphi_3 =  \frac{\varphi}{n} + 2\cdot \Delta\varphi.\]</div>
 <p>Sollte nach der 4. Wurzel gefragt worden sein, müssen wir <span class="math notranslate nohighlight">\(\Delta\varphi =
 90^{\circ}\)</span> addieren und erneut weitermachen:</p>
-<div class="math notranslate nohighlight">
-\[\varphi_4 =  \frac{\varphi}{n} + 3\cdot \Delta\varphi.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-16">
+<span class="eqno">(8.85)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-16" title="Link to this equation">#</a></span>\[\varphi_4 =  \frac{\varphi}{n} + 3\cdot \Delta\varphi.\]</div>
 <p>Und dieses Schema setzt sich so fort. Übrigens, falls der Winkel nicht im
 Gradmaß, sondern im Bogenmaß angegeben ist, wird <span class="math notranslate nohighlight">\(\Delta\varphi =
 \frac{2\pi}{n}\)</span> addiert.</p>
 <div class="note admonition">
 <p class="admonition-title">Wie werden die n-ten Wurzeln einer komplexen Zahl berechnet?</p>
 <p>Die n-ten Wurzeln einer komplexen Zahl <span class="math notranslate nohighlight">\(z = r\, e^{\varphi\, \mathrm{i}}\)</span> lauten</p>
-<div class="math notranslate nohighlight">
-\[z_k = \sqrt[n]{r} \, e^{\left(\frac{\varphi}{n}+(k-1)\cdot\Delta\varphi\right)\mathrm{i}}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter08-chapter08-sec06-17">
+<span class="eqno">(8.86)<a class="headerlink" href="#equation-auto-chapter08-chapter08-sec06-17" title="Link to this equation">#</a></span>\[z_k = \sqrt[n]{r} \, e^{\left(\frac{\varphi}{n}+(k-1)\cdot\Delta\varphi\right)\mathrm{i}}\]</div>
 <p>mit <span class="math notranslate nohighlight">\(\Delta\varphi=\frac{360^{\circ}}{n} = \frac{2\pi}{n}\)</span> und <span class="math notranslate nohighlight">\(k = 1, \ldots,
 n\)</span>.</p>
 </div>
