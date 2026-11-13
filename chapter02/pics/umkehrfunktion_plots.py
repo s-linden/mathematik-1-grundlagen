@@ -78,7 +78,7 @@ ax.plot(x, x, color=GRAU, linewidth=1.2, linestyle="--")
 ax.plot(x, 0.25 * x**3 - 2, color=BLAU, linewidth=2.5)
 ax.plot(x, np.cbrt(4 * x + 8), color=ROT, linewidth=2.5)
 ax.text(2.4, -1.2, r"$f(x)=\frac{1}{4}x^3-2$", color=BLAU, fontsize=14)
-ax.text(-1.0, 3.4, r"$f^{-1}(x)=\sqrt[3]{4x+8}$", color=ROT, fontsize=14, ha="center")
+ax.text(-0.8, 3.6, r"$f^{-1}(x)=\sqrt[3]{4x+8}$", color=ROT, fontsize=14, ha="right")
 ax.text(-4.6, -3.6, "$y=x$", color=GRAU, fontsize=14)
 ax.plot([0, -2], [-2, 0], "o", color="k", markersize=4)
 ax.annotate("", xy=(-1.85, -0.15), xytext=(-0.15, -1.85),
