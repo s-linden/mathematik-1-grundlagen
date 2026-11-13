@@ -36,6 +36,7 @@ sphinx:
       figure: "Abb. %s:"
       table: "Tab. %s"
     math_numfig: true           # Formelnummern kapitelweise, z. B. (7.3)
+    myst_links_external_new_tab: true  # externe Links in neuem Tab öffnen
     togglebutton_hint_hide: ""  # kein "Click to hide"
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     html_css_files:

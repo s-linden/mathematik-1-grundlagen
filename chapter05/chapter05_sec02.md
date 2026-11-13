@@ -53,7 +53,9 @@ t\cdot\vec{v}$ und nennen diese Darstellung Parametergleichung der Ebene.
 Das folgende Video und die dazugehörigen Erläuterungen erklären die
 Parameterform einer Ebene. In dem Video werden Punkte als Vektoren notiert.
 
-> [https://studyflix.de/mathematik/parameterform-2402](https://studyflix.de/mathematik/parameterform-2402)
+```{dropdown} Video „Parameterform“ von studyflix (Link)
+[Zum Video auf studyflix.de](https://studyflix.de/mathematik/parameterform-2402)
+```
 
 ## Normalengleichung der Ebene
 
@@ -121,13 +123,21 @@ der Ebene. Ist der Normalenvektor normiert, nennt man die Darstellung
 Die folgenden Videos und die dazugehörigen Erläuterungen erklären die
 Normalenform einer Ebene. In den Videos werden Punkte als Vektoren notiert.
 
-> [https://studyflix.de/mathematik/normalenform-2404](https://studyflix.de/mathematik/normalenform-2404)
+```{dropdown} Video „Normalenform“ von studyflix (Link)
+[Zum Video auf studyflix.de](https://studyflix.de/mathematik/normalenform-2404)
+```
 
-> [https://studyflix.de/mathematik/hessesche-normalform-2597](https://studyflix.de/mathematik/hessesche-normalform-2597)
+```{dropdown} Video „Hessesche Normalform“ von studyflix (Link)
+[Zum Video auf studyflix.de](https://studyflix.de/mathematik/hessesche-normalform-2597)
+```
 
-> [https://studyflix.de/mathematik/koordinatenform-2403](https://studyflix.de/mathematik/koordinatenform-2403)
+```{dropdown} Video „Koordinatenform“ von studyflix (Link)
+[Zum Video auf studyflix.de](https://studyflix.de/mathematik/koordinatenform-2403)
+```
 
-> [https://studyflix.de/mathematik/ebenengleichung-5791](https://studyflix.de/mathematik/ebenengleichung-5791)
+```{dropdown} Video „Ebenengleichung“ von studyflix (Link)
+[Zum Video auf studyflix.de](https://studyflix.de/mathematik/ebenengleichung-5791)
+```
 
 Hier können Sie üben, zunächst die Parametergleichungen einer Ebeneaufzustellen
 und dann diese in die Normalengleichung (Anmerkung: wird hier Koordinatenbene
