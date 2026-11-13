@@ -216,12 +216,14 @@ $$\begin{aligned}
 berechnet werden.
 ```
 
-```{raw} html
-<iframe src="../_static/geogebra/richtungswinkel.html"
-width="100%" height="640"
-frameborder="0" scrolling="no"
-title="Interaktive Darstellung der Richtungswinkel">
-</iframe>
+```{interaktive-abbildung} ../_static/geogebra/richtungswinkel.html
+---
+height: 640
+name: richtungswinkel_interaktiv
+title: Interaktive Darstellung der Richtungswinkel
+---
+Interaktive Darstellung der Richtungswinkel $\alpha$, $\beta$ und $\gamma$ eines Vektors
+(Quelle: eigene Darstellung; Lizenz: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0))
 ```
 
 ## Zusammenfassung und Ausblick

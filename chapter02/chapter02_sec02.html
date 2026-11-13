@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=caca1696" />
+    <link rel="stylesheet" type="text/css" href="../_static/vernetzend.css?v=697c7dcc" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -545,13 +545,12 @@ beispielsweise</p>
 <p>Betrachten wir zunächst unsere ursprüngliche gerade Kugelbahn genauer. Die Kugel
 rollt von links nach rechts und ihre Höhe wird dabei kontinuierlich niedriger.
 Diese Eigenschaft nennen wir <strong>Monotonie</strong>.</p>
-<div class="kugelbahn-wrapper">
-<iframe src="marble_track/marble_track_simple.html"
-width="100%" height="500"
-frameborder="0"scrolling="no"
-title="Interaktive Kugelbahn">
-</iframe>
-</div><p>Je größer der Abstand zum Start ist, desto niedriger ist die Höhe der Kugel und
+<figure class="interaktive-abbildung align-default" id="kugelbahn-interaktiv">
+<div class="kugelbahn-wrapper"><iframe src="marble_track/marble_track_simple.html" width="100%" height="500" frameborder="0" scrolling="no" title="Interaktive Kugelbahn"></iframe></div><figcaption>
+<p><span class="caption-number">Abb. 2.3: </span><span class="caption-text">Interaktive Kugelbahn mit gerader Schiene</span><a class="headerlink" href="#kugelbahn-interaktiv" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Je größer der Abstand zum Start ist, desto niedriger ist die Höhe der Kugel und
 das gilt sogar streng. Wir formulieren diese Beobachtung mathematisch: Wenn
 <span class="math notranslate nohighlight">\(x_1\)</span> kleiner als <span class="math notranslate nohighlight">\(x_2\)</span> ist, dann ist die Höhe <span class="math notranslate nohighlight">\(h(x_1)\)</span> echt größer als die Höhe
 <span class="math notranslate nohighlight">\(h(x_2)\)</span>. Verallgemeinert auf alle Funktionen gilt:</p>
@@ -564,13 +563,12 @@ folgenden Kugelbahn. Damit leichter erkennbar ist, wo das Plateau beginnt, wird
 die Kugel bei einem Plateau weiß gefärbt. Je steiler die Kugelbahn ist, desto
 dunkler wird die Kugel eingefärbt. Das hat nichts mit der physikalischen
 Geschwindigkeit der Kugel zu tun, sondern zeigt die Eigenschaften der Schienen.</p>
-<div class="kugelbahn-wrapper">
-<iframe src="marble_track/marble_track_simple_with_plateau.html"
-width="100%" height="500"
-frameborder="0"scrolling="no"
-title="Interaktive Kugelbahn">
-</iframe>
-</div><p>Wenn wir die obige Kugelbahn als mathematische Funktion darstellen möchten,
+<figure class="interaktive-abbildung align-default" id="kugelbahn-plateau-interaktiv">
+<div class="kugelbahn-wrapper"><iframe src="marble_track/marble_track_simple_with_plateau.html" width="100%" height="500" frameborder="0" scrolling="no" title="Interaktive Kugelbahn"></iframe></div><figcaption>
+<p><span class="caption-number">Abb. 2.4: </span><span class="caption-text">Interaktive Kugelbahn mit Plateau</span><a class="headerlink" href="#kugelbahn-plateau-interaktiv" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Wenn wir die obige Kugelbahn als mathematische Funktion darstellen möchten,
 müssen wir drei Abschnitte unterscheiden:</p>
 <ul class="simple">
 <li><p>Abschnitt 1: von 0 cm bis 8 cm gilt <span class="math notranslate nohighlight">\(\;h_1(x)=-0.25x+6\)</span>,</p></li>

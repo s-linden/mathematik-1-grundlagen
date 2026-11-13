@@ -23,14 +23,14 @@ Betrachten wir zunächst unsere ursprüngliche gerade Kugelbahn genauer. Die Kug
 rollt von links nach rechts und ihre Höhe wird dabei kontinuierlich niedriger.
 Diese Eigenschaft nennen wir **Monotonie**.
 
-```{raw} html
-<div class="kugelbahn-wrapper">
-<iframe src="marble_track/marble_track_simple.html"
-width="100%" height="500"
-frameborder="0"scrolling="no"
-title="Interaktive Kugelbahn">
-</iframe>
-</div>
+```{interaktive-abbildung} marble_track/marble_track_simple.html
+---
+height: 500
+name: kugelbahn_interaktiv
+title: Interaktive Kugelbahn
+class: kugelbahn-wrapper
+---
+Interaktive Kugelbahn mit gerader Schiene
 ```
 
 Je größer der Abstand zum Start ist, desto niedriger ist die Höhe der Kugel und
@@ -49,14 +49,14 @@ die Kugel bei einem Plateau weiß gefärbt. Je steiler die Kugelbahn ist, desto
 dunkler wird die Kugel eingefärbt. Das hat nichts mit der physikalischen
 Geschwindigkeit der Kugel zu tun, sondern zeigt die Eigenschaften der Schienen.
 
-```{raw} html
-<div class="kugelbahn-wrapper">
-<iframe src="marble_track/marble_track_simple_with_plateau.html"
-width="100%" height="500"
-frameborder="0"scrolling="no"
-title="Interaktive Kugelbahn">
-</iframe>
-</div>
+```{interaktive-abbildung} marble_track/marble_track_simple_with_plateau.html
+---
+height: 500
+name: kugelbahn_plateau_interaktiv
+title: Interaktive Kugelbahn
+class: kugelbahn-wrapper
+---
+Interaktive Kugelbahn mit Plateau
 ```
 
 Wenn wir die obige Kugelbahn als mathematische Funktion darstellen möchten,
