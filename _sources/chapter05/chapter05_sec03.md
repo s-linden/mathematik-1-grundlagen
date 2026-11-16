@@ -4,7 +4,7 @@ Lineare Gleichungssysteme kommen in vielen Anwendungen vor. Ein typisches
 Anwendungsszenario sind Kräfteberechnungen in der Technischen Mechanik. Wir
 werden im nächsten Kapitel lineare Gleichungssysteme benötigen, um die Lage von
 Geraden und Ebenen zu untersuchen. Daher beschäftigen wir uns in diesem Kapitel
-mit linearen Gleichungssytemen, die aus drei Gleichungen mit drei Unbekannten
+mit linearen Gleichungssystemen, die aus drei Gleichungen mit drei Unbekannten
 bestehen.
 
 ## Lernziele
@@ -20,14 +20,14 @@ bestehen.
 ## Gauß-Algorithmus
 
 Für zwei Gleichungen mit zwei Unbekannten gibt es mehrere Verfahren, das
-Gleichungssytem zu lösen. In der Schule lernt man beispielsweise das
+Gleichungssystem zu lösen. In der Schule lernt man beispielsweise das
 Additionsverfahren oder das Gleichsetzungsverfahren. Bei drei Gleichungen mit
 drei Unbekannten oder noch größeren Gleichungssystemen ist es sinnvoll, eine
 festgelegte Strategie zu verfolgen, da man sonst leicht den Überblick verliert.
-Ein bewährtes Verfahren zum Lösen von linearen Gleichungssytemen mit drei und
+Ein bewährtes Verfahren zum Lösen von linearen Gleichungssystemen mit drei und
 mehr Gleichungen ist der **Gauß-Algorithmus**.
 
-Beim Gauß-Algorithmus wird das lineare Gleichungssytem zunächst in eine
+Beim Gauß-Algorithmus wird das lineare Gleichungssystem zunächst in eine
 **Dreiecksform** gebracht. Anstatt Dreiecksform wird auch der Begriff
 **Zeilen-Stufenform** verwendet. Danach werden die Unbekannten durch
 **Rückwärtseinsetzen** berechnet. Im Folgenden wird der Gauß-Algorithmus an
@@ -54,7 +54,7 @@ $$\begin{alignedat}{2}
 
 Jetzt formen wir die zweite Gleichung um. Ziel der Umformung ist es, geschickt
 Vielfache der ersten Gleichung zu Vielfachen der zweiten Gleichung zu addieren,
-so dass de Term $6x_1$ zu Null wird. Dazu multiplizieren wir die 1. Zeile mit 2
+so dass der Term $6x_1$ zu Null wird. Dazu multiplizieren wir die 1. Zeile mit 2
 und subtrahieren dann die 2. Zeile. Diesen Schritt führen wir in einer
 Zwischenrechnung aus:
 
@@ -87,7 +87,7 @@ $$\begin{alignedat}{2}
     && \quad  2x_2 + 3x_3       &=7 &&\quad (\text{Z3})\\
 \end{alignedat}$$
 
-Der letzte Schritt zur Dreiecksform ist, die neue 3. Gleichung zo umzuformen,
+Der letzte Schritt zur Dreiecksform ist, die neue 3. Gleichung so umzuformen,
 dass der Term $2x_2$ verschwindet. Dazu brauchen wir aber nur die neue 2.
 Gleichung und die neue 3. Gleichung addieren. Wir lassen diesmal die
 ausführliche Zwischenrechnung weg und schreiben gleich das neue Gleichungssystem
@@ -128,12 +128,12 @@ Lösen Sie auf der Internetseite
 hintereinander eine Aufgabe korrekt gelöst haben.
 ```
 
-## Unendliche viele Lösungen
+## Unendlich viele Lösungen
 
 Auch wenn die Gleichungen nicht zueinander passen, liefert der Gauß-Algorithmus
 eine passende Berechnungsvorschrift. In dem folgenden Beispiel ist eine
-Gleichung überflüssig. Das lineare Gleichungssytem hat unendlich viele Lösungen.
-Wir schauen uns an, wie dieser Fall mit dme Gauß-Algorithmus detektiert wird und
+Gleichung überflüssig. Das lineare Gleichungssystem hat unendlich viele Lösungen.
+Wir schauen uns an, wie dieser Fall mit dem Gauß-Algorithmus detektiert wird und
 wie die unendlich vielen Lösungen berechnet und beschrieben werden.
 
 $$\begin{alignedat}{2}
@@ -157,7 +157,7 @@ Eliminieren des zweiten Terms der 3. Gleichung ergibt:
 $$\begin{alignedat}{2}
     && \quad x_1 + 9x_2 - 8x_3 &= 0 &&\quad (\text{Z1})\\
     && \quad  27x_2 -9x_3        &=-27  &&\quad (\text{Z2})\\
-\textcolor{lightgray}{3\cdot(\text{Z1})-(\text{Z3})}
+\textcolor{lightgray}{(\text{Z2})-(\text{Z3})}
     && \quad  0     &=0 &&\quad (\text{Z3})\\
 \end{alignedat}$$
 
@@ -166,12 +166,12 @@ eine wahre Aussage, aber diese Aussage hat keinen Informationsgehalt für unser
 Gleichungssystem. Es gibt nur noch zwei Gleichungen mit Informationen darüber,
 wie die drei Variablen $x_1$, $x_2$ und $x_3$ zusammenhängen. Ein solches
 Gleichungssystem, bei dem es weniger Gleichungen als Unbekannte gibt, wird
-**unterbestimmtes Gleichungssytem** genannt.
+**unterbestimmtes Gleichungssystem** genannt.
 
-Da es keinen Konflikt in 3. Gleichung, wenn wir annehmen, dass $x_3$ eine
-beliebige Zahl ist, es gibt also unendliche viele Lösungen. Um formal auch
-kenntlich zu machen, dass jede bleibige Zahl für $x_3$ verwendet werden darf,
-führen wir den sogenannten **Parameter** $t$ ein und setzen die gescuhte Lösung
+Da es keinen Konflikt in der 3. Gleichung gibt, wenn wir annehmen, dass $x_3$ eine
+beliebige Zahl ist, es gibt also unendlich viele Lösungen. Um formal auch
+kenntlich zu machen, dass jede beliebige Zahl für $x_3$ verwendet werden darf,
+führen wir den sogenannten **Parameter** $t$ ein und setzen die gesuchte Lösung
 auf $t$, also
 
 $$(\text{Z3}) \quad x_3 = t.$$
@@ -190,7 +190,7 @@ Die Lösungsmenge ist also
 
 $$\mathbb{L} = \left\{\left( 9+5t \Big| -1 + \frac{1}{3}t \Big| t \right)\right\}.$$
 
-Das kann mann auch in Vektorschreibweise notieren:
+Das kann man auch in Vektorschreibweise notieren:
 
 $$\vec{x}=\begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} =
 \begin{pmatrix} 9+5t \\ -1 + \frac{1}{3}t\\ 0 + t \end{pmatrix} =
@@ -199,7 +199,7 @@ $$\vec{x}=\begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} =
 
 Dabei haben wir in der dritten Komponente den Trick $t = 0 + t$ verwendet.
 
-Es gibt also unendliche viele Lösungen.
+Es gibt also unendlich viele Lösungen.
 
 ```{admonition} Übung
 :class: miniexercise
@@ -210,7 +210,7 @@ hintereinander eine Aufgabe korrekt gelöst haben.
 
 ## Keine Lösung
 
-Ein lineares Gleichungssytem kann auch keine Lösung haben, wenn Gleichungen
+Ein lineares Gleichungssystem kann auch keine Lösung haben, wenn Gleichungen
 zueinander im Konflikt stehen. Der Gauß-Algorithmus zeigt uns, ob ein solcher
 Fall vorliegt. Wir nehmen das Beispiel
 
@@ -268,6 +268,6 @@ auch ein Quiz zum Gauß-Verfahren.
 
 ## Zusammenfassung und Ausblick
 
-Im nächsten Kapitel werden wir lineare Gleichungssyteme aufstellen, um zu
+Im nächsten Kapitel werden wir lineare Gleichungssysteme aufstellen, um zu
 untersuchen, ob sich Geraden und Ebenen schneiden. Mit Hilfe des
 Gauß-Algorithmus werden wir Schnittpunkte und Schnittgeraden berechnen.
