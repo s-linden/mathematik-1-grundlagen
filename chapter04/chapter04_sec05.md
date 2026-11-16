@@ -192,20 +192,89 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 
 Halten wir also die geometrische Interpretation des Vektorproduktes fest.
 
-```{admonition} Wie wird das Vektorprodukt geometrisch interpretiert?
+````{admonition} Wie wird das Vektorprodukt geometrisch interpretiert?
 :class: note
 Das Vektorprodukt $\vec{n}=\vec{a}\times\vec{b}$ ist ein Vektor, der sowohl auf
 dem Vektor $\vec{a}$ als auf dem Vektor $\vec{b}$ senkrecht steht. Die drei
 Vektoren bilden zusammen ein Rechtssystem. Die Länge $|\vec{n}|$ des Vektors
-$\vec{n}$ ist gleich dem Flächeninhalt des Parallelogramms, das die beiden
+$\vec{n}$ ist gleich dem Flächeninhalt $A$ des Parallelogramms, das die beiden
 Vektoren $\vec{a}$ und $\vec{b}$ aufspannen. Es gilt
 
-$$|\vec{n}| = |\vec{a}\times\vec{b}| =
+$$|\vec{n}| = A = |\vec{a}\times\vec{b}| =
 |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi),$$
 
 wobei $\varphi=\angle(\vec{a},\vec{b})$ der eingeschlossene Winkel zwischen
 $\vec{a}$ und $\vec{b}$ ist.
+
+```{dropdown} Begründung
+:class-container: ohne-formelnummern
+**1. Schritt: Flächeninhalt des Parallelogramms.** Der Flächeninhalt eines
+Parallelogramms ist Grundseite mal Höhe. Als Grundseite nehmen wir den Vektor
+$\vec{a}$, sie hat also die Länge $|\vec{a}|$. Die Höhe $h$ ist der Abstand der
+Spitze von $\vec{b}$ zur Grundseite. Sie ist die Gegenkathete des Winkels
+$\varphi$ in dem rechtwinkligen Dreieck mit der Hypotenuse $|\vec{b}|$, also
+$h = |\vec{b}|\cdot\sin(\varphi)$. (Ist $\varphi$ stumpf, liegt im
+rechtwinkligen Dreieck der Winkel $\pi-\varphi$, und wegen
+$\sin(\pi-\varphi)=\sin(\varphi)$ ergibt sich dieselbe Höhe.) Damit ist
+
+$$A = |\vec{a}|\cdot h = |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi).$$
+
+**2. Schritt: Betrag des Vektorprodukts zum Quadrat.** Wir quadrieren den Betrag
+des Vektorprodukts, damit keine Wurzel stört, und multiplizieren aus:
+
+$$\begin{aligned}
+|\vec{a}\times\vec{b}|^2 &= (a_2 b_3 - a_3 b_2)^2 + (a_3 b_1 - a_1 b_3)^2\\
+&\quad {}+ (a_1 b_2 - a_2 b_1)^2\\
+&= a_1^2 b_2^2 + a_1^2 b_3^2 + a_2^2 b_1^2 + a_2^2 b_3^2 + a_3^2 b_1^2 + a_3^2 b_2^2\\
+&\quad {}- 2\,a_1 a_2 b_1 b_2 - 2\,a_1 a_3 b_1 b_3 - 2\,a_2 a_3 b_2 b_3.
+\end{aligned}$$
+
+Dasselbe kommt heraus, wenn wir $|\vec{a}|^2\cdot|\vec{b}|^2 - (\vec{a}\cdot\vec{b})^2$
+ausrechnen. Es ist
+
+$$\begin{aligned}
+|\vec{a}|^2\cdot|\vec{b}|^2 &= (a_1^2 + a_2^2 + a_3^2)\cdot(b_1^2 + b_2^2 + b_3^2)\\
+&= a_1^2 b_1^2 + a_2^2 b_2^2 + a_3^2 b_3^2\\
+&\quad {}+ a_1^2 b_2^2 + a_1^2 b_3^2 + a_2^2 b_1^2 + a_2^2 b_3^2 + a_3^2 b_1^2 + a_3^2 b_2^2
+\end{aligned}$$
+
+und
+
+$$\begin{aligned}
+(\vec{a}\cdot\vec{b})^2 &= (a_1 b_1 + a_2 b_2 + a_3 b_3)^2\\
+&= a_1^2 b_1^2 + a_2^2 b_2^2 + a_3^2 b_3^2\\
+&\quad {}+ 2\,a_1 a_2 b_1 b_2 + 2\,a_1 a_3 b_1 b_3 + 2\,a_2 a_3 b_2 b_3.
+\end{aligned}$$
+
+Beim Abziehen fallen die Terme $a_1^2 b_1^2$, $a_2^2 b_2^2$ und $a_3^2 b_3^2$
+weg, und es bleibt genau der Ausdruck für $|\vec{a}\times\vec{b}|^2$ von oben
+übrig. Also gilt
+
+$$|\vec{a}\times\vec{b}|^2 = |\vec{a}|^2\cdot|\vec{b}|^2 - (\vec{a}\cdot\vec{b})^2.$$
+
+Jetzt setzen wir für das Skalarprodukt
+$\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}|\cdot\cos(\varphi)$ ein und
+benutzen $\sin^2(\varphi) + \cos^2(\varphi) = 1$:
+
+$$\begin{aligned}
+|\vec{a}\times\vec{b}|^2 &= |\vec{a}|^2\cdot|\vec{b}|^2 - \left(|\vec{a}|\cdot|\vec{b}|\cdot\cos(\varphi)\right)^2\\
+&= |\vec{a}|^2\cdot|\vec{b}|^2 - |\vec{a}|^2\cdot|\vec{b}|^2\cdot\cos^2(\varphi)\\
+&= |\vec{a}|^2\cdot|\vec{b}|^2\cdot\left(1 - \cos^2(\varphi)\right)\\
+&= |\vec{a}|^2\cdot|\vec{b}|^2\cdot\sin^2(\varphi).
+\end{aligned}$$
+
+**3. Schritt: Wurzel ziehen.** Beim Wurzelziehen müssen wir auf das Vorzeichen
+achten, denn $\sqrt{x^2} = |x|$:
+
+$$|\vec{a}\times\vec{b}| = |\vec{a}|\cdot|\vec{b}|\cdot|\sin(\varphi)|.$$
+
+Der Winkel zwischen zwei Vektoren liegt immer im Bereich $0 \le \varphi \le \pi$,
+und dort ist $\sin(\varphi) \ge 0$. Die Betragsstriche um $\sin(\varphi)$
+können also entfallen, und mit dem 1. Schritt folgt
+
+$$|\vec{a}\times\vec{b}| = |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi) = A.$$
 ```
+````
 
 ## Zusammenfassung und Ausblick
 

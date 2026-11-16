@@ -6,7 +6,10 @@
 * In Bildunterschriften wird "(Quelle: ...; Lizenz: ...)" ausgegraut (CSS-Klasse quelle).
 * Tabellen: jede Tabelle bekommt eine Unterschrift "Tab. 6.1" (ohne Beschreibung).
 * Formeln: jede freigestellte Formel ($$ ... $$) bekommt eine Nummer "(7.3)",
-  rechtsbündig in der Zeile der Formel.
+  rechtsbündig in der Zeile der Formel. Ausnahme: Formeln in einem Block mit
+  der CSS-Klasse "ohne-formelnummern" (z. B. Begründungen in Dropdowns mit
+  `:class-container: ohne-formelnummern`) bleiben ohne Nummer, damit sich die
+  Nummern der übrigen Formeln nicht verschieben.
 
 Sphinx nummeriert ohne nummeriertes Inhaltsverzeichnis fortlaufend durch das
 ganze Buch. Diese Erweiterung ersetzt die Nummern nachträglich durch
@@ -22,13 +25,25 @@ from sphinx.util.docutils import SphinxDirective
 KAPITEL = re.compile(r"chapter(\d+)/")
 
 
+def ohne_nummer(node):
+    """True, wenn die Formel in einem Block mit Klasse "ohne-formelnummern" steht."""
+    eltern = node.parent
+    while eltern is not None:
+        # sphinx-design legt :class-container: zunächst in "container_classes" ab
+        klassen = eltern.get("classes", []) + eltern.get("container_classes", [])
+        if "ohne-formelnummern" in klassen:
+            return True
+        eltern = eltern.parent
+    return False
+
+
 def formeln_markieren(app, doctree):
     """Gibt jeder freigestellten Formel ohne Label ein Label, damit Sphinx sie nummeriert."""
     env = app.env
     domain = env.get_domain("math")
     docname = env.docname
     for i, node in enumerate(doctree.findall(nodes.math_block)):
-        if node.get("label") or node["ids"]:
+        if node.get("label") or node["ids"] or ohne_nummer(node):
             continue
         label = "auto-" + re.sub(r"[^a-z0-9]+", "-", docname.lower()) + f"-{i + 1}"
         domain.note_equation(docname, label, location=node)
