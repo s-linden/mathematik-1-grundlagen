@@ -124,9 +124,7 @@ auf andere zeitabhängige Größen verallgemeinert werden. Ist auf der x-Achse d
 Zeit $t$ aufgetragen und auf der y-Achse die zeitabhängige Größe $f(t)$, so gibt
 der Quotient
 
-\begin{equation*}
-\frac{f(t_2) - f(t_1)}{t_2 - t_1}
-\end{equation*}
+$$\frac{f(t_2) - f(t_1)}{t_2 - t_1}$$
 
 die sogenannte **mittlere Änderungsrate** der zeitabhängigen Größe $f(t)$ an.
 
@@ -135,9 +133,9 @@ die sogenannte **mittlere Änderungsrate** der zeitabhängigen Größe $f(t)$ an
 Die mittlere Änderungsrate einer zeitabhängigen Größe gibt an, wie sich die
 zeitabhängige Größe durchschnittlich zwischen zwei Zeitpunkten verändert. 
 Sie wird folgendermaßen berechnet:
-\begin{equation*} 
-\text{mittlere Änderungsrate} = \frac{f(t_2) - f(t_1)}{t_2 - t_1}.
-\end{equation*}
+
+$$\text{mittlere Änderungsrate} = \frac{f(t_2) - f(t_1)}{t_2 - t_1}.$$
+
 Dabei stehen $t_1$ und $t_2$ für die beiden Zeitpunkte und $f(t_1)$ und $f(t_2)$
 jeweils für den Wert der zeitabhängigen Größe zu diesen Zeitpunkten.
 ```
@@ -148,9 +146,7 @@ Weise analysiert werden. Die abhängige Größe (Wirkung) bezeichnen wir mit $f$
 die Ursache mit $x$. Betrachten wir zwei Messungen zur Ursache $x_1$ und zur
 Ursache $x_2$, dann wird der Quotient
 
-\begin{equation*}
-\frac{f(x_2) - f(x_1)}{x_2 - x_1}
-\end{equation*}
+$$\frac{f(x_2) - f(x_1)}{x_2 - x_1}$$
 
 ganz allgemein **Differenzenquotient** genannt. Im Zähler steht eine Differenz,
 im Nennen steht eine Differenz, der Term ist also ein Quotient von Differenzen
@@ -161,9 +157,9 @@ durchschnittlich die Wirkung verändert, wenn sich deren Ursache verändert.
 :class: note
 Für eine reellwertige Funktion $f$, bei der das Intervall $[x_1, x_2]$ zur
 Definitionsmenge gehört, bezeichnen wir den Term
-\begin{equation*} 
-\frac{f(x_2) - f(x_1)}{x_2 - x_1} 
-\end{equation*}
+
+$$\frac{f(x_2) - f(x_1)}{x_2 - x_1}$$
+
 als Differenzenquotient von $f$ im Intervall $[x_1, x_2]$.
 ```
 
@@ -174,9 +170,7 @@ allgemein zwei verschiedene Ursachen $x_1$ und $x_2$ betrachtet. Betrachten wir
 die Punkte $(x_1, f(x_1))$ und $(x_2, f(x_2))$ rein geometrisch, also mit ihren
 Koordinaten $(x_1,y_1)$ und $(x_2,y_2)$, so lautet der Differenzenquotient
 
-\begin{equation*}
-\frac{f(x_2) - f(x_1)}{x_2 - x_1} = \frac{y_2 - y_1}{x_2 - x_1} = \frac{\Delta y}{\Delta x}.
-\end{equation*}
+$$\frac{f(x_2) - f(x_1)}{x_2 - x_1} = \frac{y_2 - y_1}{x_2 - x_1} = \frac{\Delta y}{\Delta x}.$$
 
 Verbinden wir die beiden Punkte $(x_1,y_1)$ und $(x_2,y_2)$ durch eine Gerade,
 dann ist der Differenzenquotient die Steigung dieser Gerade. Diese spezielle
@@ -211,10 +205,10 @@ kleiner werdende Intervalle $[t_1, t_2]$. Wenn diese Folge von mittleren
 Die momentane Änderungsrate beschreibt die Änderung einer zeitabhängigen Größe für ein
 unendlich kleines Intervall. Mathematisch ausgedrückt, ist sie der Grenzwert der
 mittleren Änderungsrate:
-\begin{equation*} 
-\text{momentane Änderungsrate} = 
-\lim_{t_2 \to t_1} \frac{f(t_2) - f(t_1)}{t_2 - t_1},
-\end{equation*}
+
+$$\text{momentane Änderungsrate} =
+\lim_{t_2 \to t_1} \frac{f(t_2) - f(t_1)}{t_2 - t_1},$$
+
 sofern der Grenzwert existiert.
 ```
 
@@ -236,9 +230,9 @@ der Differentialquotient.
 :class: note
 Wenn das Intervall des Differenzenquotienten unendlich klein wird und der
 Grenzwert des Differenzenquotienten  
-\begin{equation*} 
-\lim_{x_2 \to x_1} \frac{f(x_2) - f(x_1)}{x_2 - x_1}
-\end{equation*}
+
+$$\lim_{x_2 \to x_1} \frac{f(x_2) - f(x_1)}{x_2 - x_1}$$
+
 existiert, nennt man diesen Grenzwert Differentialquotient der Funktion $f$ an
 der Stelle $x_1$.
 ```
@@ -254,17 +248,13 @@ Mathematisch ausgedrückt, wenn der Abstand $\Delta x$ zwischen zwei x-Werten $x
 und $x + \Delta x$ gegen Null geht, nähert sich die Sekante einer Tangente an.
 Der Differentialquotient
 
-\begin{equation*}
-\lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x}
-\end{equation*}
+$$\lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x}$$
 
 gibt dann die Steigung dieser Tangente am Punkt $(x, f(x)$ an. Die Steigung der
 Tangente der Funktion $f$ an der Stelle $x$ wird meist mit einem Strich
 abgekürzt, also
 
-\begin{equation*}
-f'(x) = \lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x}.
-\end{equation*}
+$$f'(x) = \lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x}.$$
 
 Man spricht das als "f Strich an der Stelle x ist ..." oder sagt "die Ableitung
 der Funktion f an der Stelle x ist ...".

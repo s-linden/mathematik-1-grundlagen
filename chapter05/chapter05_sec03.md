@@ -46,11 +46,11 @@ besseren Überblick zu behalten, welche Umformungen dabei vorgenommen werden,
 nummerieren wir die Gleichungen mit (Z1), (Z2) und (Z3) für Zeile 1, Zeile 2 und
 Zeile 3.
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
 3x_1 - 4x_2 - 4x_3   &= -4  & &\quad (\text{Z1}) &\\
 6x_1 - 6x_2 - 7x_3   &= -11 & &\quad (\text{Z2}) &\\
 -3x_1 + 6x_2 + 7x_3  &= 11 & &\quad (\text{Z3}) &\\
-\end{alignat*}
+\end{alignedat}$$
 
 Jetzt formen wir die zweite Gleichung um. Ziel der Umformung ist es, geschickt
 Vielfache der ersten Gleichung zu Vielfachen der zweiten Gleichung zu addieren,
@@ -79,13 +79,13 @@ Gleichungen (Z2) und (Z3) durch die neuen Gleichungen ersetzen. Auf der linken
 Seite schreiben wir uns zur Erinnerung auf, welche Umformungen durchgeführt
 wurden. Auf der rechten Seite nummerieren wir neu durch.
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
     && \quad 3x_1 - 4x_2 - 4x_3 &=-4 &&\quad (\text{Z1})\\
 \textcolor{lightgray}{2\cdot (\text{Z1})-(\text{Z2})}  
     && \quad  -2x_2 -x_3        &=3  &&\quad (\text{Z2})\\
 \textcolor{lightgray}{(\text{Z1})+(\text{Z3})}
     && \quad  2x_2 + 3x_3       &=7 &&\quad (\text{Z3})\\
-\end{alignat*}
+\end{alignedat}$$
 
 Der letzte Schritt zur Dreiecksform ist, die neue 3. Gleichung zo umzuformen,
 dass der Term $2x_2$ verschwindet. Dazu brauchen wir aber nur die neue 2.
@@ -93,12 +93,12 @@ Gleichung und die neue 3. Gleichung addieren. Wir lassen diesmal die
 ausführliche Zwischenrechnung weg und schreiben gleich das neue Gleichungssystem
 auf:
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
     && \quad 3x_1 - 4x_2 - 4x_3 &=-4 &&\quad (\text{Z1})\\
     && \quad  -2x_2 -x_3        &=3  &&\quad (\text{Z2})\\
 \textcolor{lightgray}{(\text{Z2})+(\text{Z3})}
     && \quad   2x_3             &=10 &&\quad (\text{Z3})\\
-\end{alignat*}
+\end{alignedat}$$
 
 Damit liegt das lineare Gleichungssystem in Dreiecksform vor. Nun lösen wir das
 Gleichungssystem durch **Rückwärtseinsetzen**. Wir nehmen uns die unterste
@@ -136,30 +136,30 @@ Gleichung überflüssig. Das lineare Gleichungssytem hat unendlich viele Lösung
 Wir schauen uns an, wie dieser Fall mit dme Gauß-Algorithmus detektiert wird und
 wie die unendlich vielen Lösungen berechnet und beschrieben werden.
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
 x_1 + 9x_2 - 8x_3  &= 0  & &\quad (\text{Z1}) &\\
 -2x_1 + 9x_2 + 7x_3   &= -27 & &\quad (\text{Z2}) &\\
 3x_1 \phantom{+ 9x_2} - 15x_3  &= 27 & &\quad (\text{Z3}) &\\
-\end{alignat*}
+\end{alignedat}$$
 
 Eliminieren der ersten Terme der 2. und 3. Gleichung liefert:
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
     && \quad x_1 + 9x_2 - 8x_3 &= 0 &&\quad (\text{Z1})\\
 \textcolor{lightgray}{2\cdot (\text{Z1})+(\text{Z2})}  
     && \quad  27x_2 -9x_3        &=-27  &&\quad (\text{Z2})\\
 \textcolor{lightgray}{3\cdot(\text{Z1})-(\text{Z3})}
     && \quad  27x_2 -9x_3       &=-27 &&\quad (\text{Z3})\\
-\end{alignat*}
+\end{alignedat}$$
 
 Eliminieren des zweiten Terms der 3. Gleichung ergibt:
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
     && \quad x_1 + 9x_2 - 8x_3 &= 0 &&\quad (\text{Z1})\\
     && \quad  27x_2 -9x_3        &=-27  &&\quad (\text{Z2})\\
 \textcolor{lightgray}{3\cdot(\text{Z1})-(\text{Z3})}
     && \quad  0     &=0 &&\quad (\text{Z3})\\
-\end{alignat*}
+\end{alignedat}$$
 
 Diesmal liegt kein Widerspruch vor. Leider haben wir zwar mit der 3. Zeile $0=0$
 eine wahre Aussage, aber diese Aussage hat keinen Informationsgehalt für unser
@@ -214,30 +214,30 @@ Ein lineares Gleichungssytem kann auch keine Lösung haben, wenn Gleichungen
 zueinander im Konflikt stehen. Der Gauß-Algorithmus zeigt uns, ob ein solcher
 Fall vorliegt. Wir nehmen das Beispiel
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
 -2x_1 + 9x_2 - 10x_3  &= -68  & &\quad (\text{Z1}) &\\
 -8x_1 + 2x_2 + 3x_3   &= 204 & &\quad (\text{Z2}) &\\
 14x_1 + 5x_2 - 16x_3  &= -475 & &\quad (\text{Z3}) &\\
-\end{alignat*}
+\end{alignedat}$$
 
 Eliminieren der ersten Terme der 2. und 3. Gleichung liefert:
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
     && \quad -2x_1 + 9x_2 - 10x_3 &=-68 &&\quad (\text{Z1})\\
 \textcolor{lightgray}{4\cdot (\text{Z1})-(\text{Z2})}  
     && \quad  34x_2 -43x_3        &=-476  &&\quad (\text{Z2})\\
 \textcolor{lightgray}{7\cdot(\text{Z1})+(\text{Z3})}
     && \quad  68x_2 -86 x_3       &=-951 &&\quad (\text{Z3})\\
-\end{alignat*}
+\end{alignedat}$$
 
 Eliminieren des zweiten Terms der 3. Gleichung ergibt:
 
-\begin{alignat*}{2}
+$$\begin{alignedat}{2}
     && \quad -2x_1 + 9x_2 - 10x_3 &=-68 &&\quad (\text{Z1})\\
     && \quad  34x_2 -43x_3        &=-476  &&\quad (\text{Z2})\\
 \textcolor{lightgray}{2\cdot(\text{Z2})-(\text{Z3})}
     && \quad 0   &=-1 &&\quad (\text{Z3})\\
-\end{alignat*}
+\end{alignedat}$$
 
 In der 3. Gleichung liegt ein Widerspruch vor. Die Aussage $0=-1$ ist falsch.
 Damit kann das lineare Gleichungssystem keine Lösung haben. Wir schreiben

@@ -12,9 +12,9 @@ Betrachtungsweise von Funktionsgrenzwerten.
 ```{admonition} Lernziele
 :class: goals
 * Sie wissen, was ein **Funktionsgrenzwert** ist. Dazu wird eine Folge von Zahlen $(x_n)$ genommen, die gegen den Grenzwert $x_0$ konvergiert, und dann in die Funktion $f$ eingesetzt. Wenn dann die dadurch entstehende Folge $f(x_n)$ konvergent ist, nennt man diesen Grenzwert $F$ Funktionsgrenzwert von der Funktion $f$ an der Stelle $x_0$. Wir schreiben entweder
-\begin{equation*}
-\lim_{x\rightarrow x_0} f(x) = F \quad \text{ oder } \quad f(x)\rightarrow F \text{ für } x \rightarrow x_0. 
-\end{equation*}
+
+  $$\lim_{x\rightarrow x_0} f(x) = F \quad \text{ oder } \quad f(x)\rightarrow F \text{ für } x \rightarrow x_0.$$
+
 * Sie können Funktionsgrenzwerte von links und von rechts unterscheiden. Mit Funktionsgrenzwert von links meint man, dass man nur Zahlenfolgen betrachtet, für die $(x_n)$ kleiner als $x_0$ ist und die sich $x_0$ von links annähern. Umgekehrt meint der Funktionsgrenzwert von rechts, das man nur Zahlenfolgen $(x_n)$ nimmt, die sich $x_0$ von rechts annähern. Man verwendet die beiden Schreibweisen
 
 $$\begin{aligned}

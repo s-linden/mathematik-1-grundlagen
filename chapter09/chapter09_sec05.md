@@ -14,9 +14,7 @@ Mathematisch präzise wird eine Funktion **stetig an der Stelle $x_0$** genannt,
  wenn der Grenzwert der Funktion für $x$ gegen $x_0$ existiert und gleich dem
 Funktionswert an der Stelle $x_0$ ist, falls also gilt 
 
-\begin{equation*}
-\lim_{x\rightarrow x_0} f(x) = f(x_0). 
-\end{equation*}
+$$\lim_{x\rightarrow x_0} f(x) = f(x_0).$$
 
 * Die Funktion heißt **stetig**, wenn das für alle Stellen $x_0$ ihres
   Definitionsbereiches gilt.
