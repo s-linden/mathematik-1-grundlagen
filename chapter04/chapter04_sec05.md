@@ -192,7 +192,7 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 
 Halten wir also die geometrische Interpretation des Vektorproduktes fest.
 
-````{admonition} Wie wird das Vektorprodukt geometrisch interpretiert?
+`````{admonition} Wie wird das Vektorprodukt geometrisch interpretiert?
 :class: note
 Das Vektorprodukt $\vec{n}=\vec{a}\times\vec{b}$ ist ein Vektor, der sowohl auf
 dem Vektor $\vec{a}$ als auf dem Vektor $\vec{b}$ senkrecht steht. Die drei
@@ -206,16 +206,27 @@ $$|\vec{n}| = A = |\vec{a}\times\vec{b}| =
 wobei $\varphi=\angle(\vec{a},\vec{b})$ der eingeschlossene Winkel zwischen
 $\vec{a}$ und $\vec{b}$ ist.
 
-```{dropdown} Begründung
+````{dropdown} Begründung
 :class-container: ohne-formelnummern
 **1. Schritt: Flächeninhalt des Parallelogramms.** Der Flächeninhalt eines
 Parallelogramms ist Grundseite mal Höhe. Als Grundseite nehmen wir den Vektor
 $\vec{a}$, sie hat also die Länge $|\vec{a}|$. Die Höhe $h$ ist der Abstand der
-Spitze von $\vec{b}$ zur Grundseite. Sie ist die Gegenkathete des Winkels
-$\varphi$ in dem rechtwinkligen Dreieck mit der Hypotenuse $|\vec{b}|$, also
-$h = |\vec{b}|\cdot\sin(\varphi)$. (Ist $\varphi$ stumpf, liegt im
-rechtwinkligen Dreieck der Winkel $\pi-\varphi$, und wegen
-$\sin(\pi-\varphi)=\sin(\varphi)$ ergibt sich dieselbe Höhe.) Damit ist
+Spitze von $\vec{b}$ zur Grundseite.
+
+```{image} pics/parallelogramm_flaeche.svg
+:alt: Parallelogramm aus den Vektoren a und b mit eingeschlossenem Winkel phi und Höhe h
+:width: 420px
+:align: center
+```
+
+Im rechtwinkligen Dreieck mit der Hypotenuse $|\vec{b}|$ ist $h$ die
+Gegenkathete des Winkels $\varphi$, also
+
+$$\sin(\varphi) = \frac{h}{|\vec{b}|} \quad\Longrightarrow\quad h = |\vec{b}|\cdot\sin(\varphi).$$
+
+(Ist $\varphi$ stumpf, liegt im rechtwinkligen Dreieck der Winkel
+$\pi-\varphi$, und wegen $\sin(\pi-\varphi)=\sin(\varphi)$ ergibt sich dieselbe
+Höhe.) Damit ist
 
 $$A = |\vec{a}|\cdot h = |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi).$$
 
@@ -273,8 +284,8 @@ und dort ist $\sin(\varphi) \ge 0$. Die Betragsstriche um $\sin(\varphi)$
 können also entfallen, und mit dem 1. Schritt folgt
 
 $$|\vec{a}\times\vec{b}| = |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi) = A.$$
-```
 ````
+`````
 
 ## Zusammenfassung und Ausblick
 
