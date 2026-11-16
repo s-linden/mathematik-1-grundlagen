@@ -30,6 +30,8 @@ ax.plot([b[0], b[0]], [0, b[1]], "--", color=ROT, lw=1.5)
 ax.text(b[0] + 0.1, b[1] / 2, "$h$", color=ROT, ha="left", va="center", fontsize=16)
 s = 0.22
 ax.plot([b[0] - s, b[0] - s, b[0]], [0, s, s], color=ROT, lw=1)
+# Flächeninhalt
+ax.text((a[0] + b[0]) / 2 + 0.2, b[1] / 2, "$A$", ha="center", va="center", fontsize=18)
 # Winkel
 ax.add_patch(Arc((0, 0), 1.3, 1.3, theta1=0, theta2=np.degrees(phi), color="k", lw=1.2))
 ax.text(0.85 * np.cos(phi / 2), 0.85 * np.sin(phi / 2), r"$\varphi$", ha="left", va="center", fontsize=16)
