@@ -704,14 +704,81 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 <p>Das Vektorprodukt <span class="math notranslate nohighlight">\(\vec{n}=\vec{a}\times\vec{b}\)</span> ist ein Vektor, der sowohl auf
 dem Vektor <span class="math notranslate nohighlight">\(\vec{a}\)</span> als auf dem Vektor <span class="math notranslate nohighlight">\(\vec{b}\)</span> senkrecht steht. Die drei
 Vektoren bilden zusammen ein Rechtssystem. Die Länge <span class="math notranslate nohighlight">\(|\vec{n}|\)</span> des Vektors
-<span class="math notranslate nohighlight">\(\vec{n}\)</span> ist gleich dem Flächeninhalt des Parallelogramms, das die beiden
+<span class="math notranslate nohighlight">\(\vec{n}\)</span> ist gleich dem Flächeninhalt <span class="math notranslate nohighlight">\(A\)</span> des Parallelogramms, das die beiden
 Vektoren <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> aufspannen. Es gilt</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter04-chapter04-sec05-17">
-<span class="eqno">(4.95)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-17" title="Link to this equation">#</a></span>\[|\vec{n}| = |\vec{a}\times\vec{b}| =
+<span class="eqno">(4.95)<a class="headerlink" href="#equation-auto-chapter04-chapter04-sec05-17" title="Link to this equation">#</a></span>\[|\vec{n}| = A = |\vec{a}\times\vec{b}| =
 |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi),\]</div>
 <p>wobei <span class="math notranslate nohighlight">\(\varphi=\angle(\vec{a},\vec{b})\)</span> der eingeschlossene Winkel zwischen
 <span class="math notranslate nohighlight">\(\vec{a}\)</span> und <span class="math notranslate nohighlight">\(\vec{b}\)</span> ist.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 ohne-formelnummern">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Begründung</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><strong>1. Schritt: Flächeninhalt des Parallelogramms.</strong> Der Flächeninhalt eines
+Parallelogramms ist Grundseite mal Höhe. Als Grundseite nehmen wir den Vektor
+<span class="math notranslate nohighlight">\(\vec{a}\)</span>, sie hat also die Länge <span class="math notranslate nohighlight">\(|\vec{a}|\)</span>. Die Höhe <span class="math notranslate nohighlight">\(h\)</span> ist der Abstand der
+Spitze von <span class="math notranslate nohighlight">\(\vec{b}\)</span> zur Grundseite.</p>
+<a class="reference internal image-reference" href="../_images/parallelogramm_flaeche.svg"><img alt="Parallelogramm aus den Vektoren a und b mit eingeschlossenem Winkel phi und Höhe h" class="align-center" src="../_images/parallelogramm_flaeche.svg" style="width: 420px;" />
+</a>
+<p class="sd-card-text">Im rechtwinkligen Dreieck mit der Hypotenuse <span class="math notranslate nohighlight">\(|\vec{b}|\)</span> ist <span class="math notranslate nohighlight">\(h\)</span> die
+Gegenkathete des Winkels <span class="math notranslate nohighlight">\(\varphi\)</span>, also</p>
+<div class="math notranslate nohighlight">
+\[\sin(\varphi) = \frac{h}{|\vec{b}|} \quad\Longrightarrow\quad h = |\vec{b}|\cdot\sin(\varphi).\]</div>
+<p class="sd-card-text">(Ist <span class="math notranslate nohighlight">\(\varphi\)</span> stumpf, liegt im rechtwinkligen Dreieck der Winkel
+<span class="math notranslate nohighlight">\(\pi-\varphi\)</span>, und wegen <span class="math notranslate nohighlight">\(\sin(\pi-\varphi)=\sin(\varphi)\)</span> ergibt sich dieselbe
+Höhe.) Damit ist</p>
+<div class="math notranslate nohighlight">
+\[A = |\vec{a}|\cdot h = |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi).\]</div>
+<p class="sd-card-text"><strong>2. Schritt: Betrag des Vektorprodukts zum Quadrat.</strong> Wir quadrieren den Betrag
+des Vektorprodukts, damit keine Wurzel stört, und multiplizieren aus:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+|\vec{a}\times\vec{b}|^2 &amp;= (a_2 b_3 - a_3 b_2)^2 + (a_3 b_1 - a_1 b_3)^2\\
+&amp;\quad {}+ (a_1 b_2 - a_2 b_1)^2\\
+&amp;= a_1^2 b_2^2 + a_1^2 b_3^2 + a_2^2 b_1^2 + a_2^2 b_3^2 + a_3^2 b_1^2 + a_3^2 b_2^2\\
+&amp;\quad {}- 2\,a_1 a_2 b_1 b_2 - 2\,a_1 a_3 b_1 b_3 - 2\,a_2 a_3 b_2 b_3.
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Dasselbe kommt heraus, wenn wir <span class="math notranslate nohighlight">\(|\vec{a}|^2\cdot|\vec{b}|^2 - (\vec{a}\cdot\vec{b})^2\)</span>
+ausrechnen. Es ist</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+|\vec{a}|^2\cdot|\vec{b}|^2 &amp;= (a_1^2 + a_2^2 + a_3^2)\cdot(b_1^2 + b_2^2 + b_3^2)\\
+&amp;= a_1^2 b_1^2 + a_2^2 b_2^2 + a_3^2 b_3^2\\
+&amp;\quad {}+ a_1^2 b_2^2 + a_1^2 b_3^2 + a_2^2 b_1^2 + a_2^2 b_3^2 + a_3^2 b_1^2 + a_3^2 b_2^2
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">und</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+(\vec{a}\cdot\vec{b})^2 &amp;= (a_1 b_1 + a_2 b_2 + a_3 b_3)^2\\
+&amp;= a_1^2 b_1^2 + a_2^2 b_2^2 + a_3^2 b_3^2\\
+&amp;\quad {}+ 2\,a_1 a_2 b_1 b_2 + 2\,a_1 a_3 b_1 b_3 + 2\,a_2 a_3 b_2 b_3.
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text">Beim Abziehen fallen die Terme <span class="math notranslate nohighlight">\(a_1^2 b_1^2\)</span>, <span class="math notranslate nohighlight">\(a_2^2 b_2^2\)</span> und <span class="math notranslate nohighlight">\(a_3^2 b_3^2\)</span>
+weg, und es bleibt genau der Ausdruck für <span class="math notranslate nohighlight">\(|\vec{a}\times\vec{b}|^2\)</span> von oben
+übrig. Also gilt</p>
+<div class="math notranslate nohighlight">
+\[|\vec{a}\times\vec{b}|^2 = |\vec{a}|^2\cdot|\vec{b}|^2 - (\vec{a}\cdot\vec{b})^2.\]</div>
+<p class="sd-card-text">Jetzt setzen wir für das Skalarprodukt
+<span class="math notranslate nohighlight">\(\vec{a}\cdot\vec{b} = |\vec{a}|\cdot|\vec{b}|\cdot\cos(\varphi)\)</span> ein und
+benutzen <span class="math notranslate nohighlight">\(\sin^2(\varphi) + \cos^2(\varphi) = 1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+|\vec{a}\times\vec{b}|^2 &amp;= |\vec{a}|^2\cdot|\vec{b}|^2 - \left(|\vec{a}|\cdot|\vec{b}|\cdot\cos(\varphi)\right)^2\\
+&amp;= |\vec{a}|^2\cdot|\vec{b}|^2 - |\vec{a}|^2\cdot|\vec{b}|^2\cdot\cos^2(\varphi)\\
+&amp;= |\vec{a}|^2\cdot|\vec{b}|^2\cdot\left(1 - \cos^2(\varphi)\right)\\
+&amp;= |\vec{a}|^2\cdot|\vec{b}|^2\cdot\sin^2(\varphi).
+\end{aligned}\end{split}\]</div>
+<p class="sd-card-text"><strong>3. Schritt: Wurzel ziehen.</strong> Beim Wurzelziehen müssen wir auf das Vorzeichen
+achten, denn <span class="math notranslate nohighlight">\(\sqrt{x^2} = |x|\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[|\vec{a}\times\vec{b}| = |\vec{a}|\cdot|\vec{b}|\cdot|\sin(\varphi)|.\]</div>
+<p class="sd-card-text">Der Winkel zwischen zwei Vektoren liegt immer im Bereich <span class="math notranslate nohighlight">\(0 \le \varphi \le \pi\)</span>,
+und dort ist <span class="math notranslate nohighlight">\(\sin(\varphi) \ge 0\)</span>. Die Betragsstriche um <span class="math notranslate nohighlight">\(\sin(\varphi)\)</span>
+können also entfallen, und mit dem 1. Schritt folgt</p>
+<div class="math notranslate nohighlight">
+\[|\vec{a}\times\vec{b}| = |\vec{a}|\cdot|\vec{b}|\cdot\sin(\varphi) = A.\]</div>
 </div>
+</details></div>
 </section>
 <section id="zusammenfassung-und-ausblick">
 <h2>Zusammenfassung und Ausblick<a class="headerlink" href="#zusammenfassung-und-ausblick" title="Link to this heading">#</a></h2>
