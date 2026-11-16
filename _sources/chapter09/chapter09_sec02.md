@@ -15,9 +15,8 @@ darum abzuschätzen, wie sich eine Folge für große Indizes verhält.
 Grenzwert hat. Außerdem kennen Sie die beiden üblichen Schreibweisen für
 Grenzwerte: 
 
-\begin{equation*} (a_n) \rightarrow a \text{ für } n \rightarrow
-\infty \quad \text{ oder } \quad \lim_{n\rightarrow\infty} a_n = a.
-\end{equation*} 
+$$(a_n) \rightarrow a \text{ für } n \rightarrow
+\infty \quad \text{ oder } \quad \lim_{n\rightarrow\infty} a_n = a.$$
 
 Man sagt dazu: »Der Limes von $a_n$ für $n$ gegen unendlich ist
 $a$.« 

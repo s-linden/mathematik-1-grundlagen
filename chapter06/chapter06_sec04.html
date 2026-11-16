@@ -526,23 +526,29 @@ wir daher die Skalarmultiplikation und die dazugehörigen Rechenregeln.</p>
 <h2>Lernziele<a class="headerlink" href="#lernziele" title="Link to this heading">#</a></h2>
 <div class="goals admonition">
 <p class="admonition-title">Lernziele</p>
-<ul class="simple">
+<ul>
 <li><p>Sie sind in der Lage, eine Matrix mit einem Skalar multiplizieren, also eine
 <strong>Skalarmultiplikation</strong> durchführen.</p></li>
 <li><p>Sie können die <strong>Differenz zweier Matrizen</strong> berechnen, also Matrizen subtrahieren.</p></li>
 <li><p>Sie beherrschen die Rechenregeln für die Addition von Matrizen und für die
 Skalarmultiplikation, insbesondere</p>
 <ul>
-<li><p>das <strong>Kommutativgesetz</strong>:
-\begin{equation*}\mathbf{A}+\mathbf{B} = \mathbf{B}+\mathbf{A}\end{equation*},</p></li>
-<li><p>das <strong>Assoziativgesetz</strong>:
-\begin{equation*}(\mathbf{A}+\mathbf{B})+\mathbf{C} = \mathbf{A} +
-(\mathbf{B}+\mathbf{C}),\end{equation*}</p></li>
-<li><p>und das <strong>Distributivgesetz</strong> für die Skalarmultiplikation:
-\begin{align*}
-(s+t)\cdot\mathbf{A} &amp;= s\cdot\mathbf{A}+t\cdot\mathbf{A}\
-s\cdot(\mathbf{A}+\mathbf{B}) &amp;= s\cdot\mathbf{A} + s\cdot\mathbf{B}\
-\end{align*}</p></li>
+<li><p>das <strong>Kommutativgesetz</strong>:</p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-1">
+<span class="eqno">(6.18)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-1" title="Link to this equation">#</a></span>\[\mathbf{A}+\mathbf{B} = \mathbf{B}+\mathbf{A},\]</div>
+</li>
+<li><p>das <strong>Assoziativgesetz</strong>:</p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-2">
+<span class="eqno">(6.19)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-2" title="Link to this equation">#</a></span>\[(\mathbf{A}+\mathbf{B})+\mathbf{C} = \mathbf{A} +
+      (\mathbf{B}+\mathbf{C}),\]</div>
+</li>
+<li><p>und das <strong>Distributivgesetz</strong> für die Skalarmultiplikation:</p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-3">
+<span class="eqno">(6.20)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-3" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
+    (s+t)\cdot\mathbf{A} &amp;= s\cdot\mathbf{A}+t\cdot\mathbf{A}\\
+    s\cdot(\mathbf{A}+\mathbf{B}) &amp;= s\cdot\mathbf{A} + s\cdot\mathbf{B}
+    \end{aligned}\end{split}\]</div>
+</li>
 </ul>
 </li>
 </ul>
@@ -556,8 +562,8 @@ Spielerleistungen statistisch ausgewertet werden können.  Diesmal betrachten wi
 jedoch die Pässe während des Trainings. Im Training werden die Spieler in
 Vierergruppen aufgeteilt, und jeder Spieler soll jedem anderen fünfmal den Ball
 zuspielen. Die aufgezeichneten Pässe sind in der folgenden Matrix kodiert:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-1">
-<span class="eqno">(6.18)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-1" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-4">
+<span class="eqno">(6.21)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-4" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix}
 0 &amp; 5 &amp; 5 &amp; 5 \\
 5 &amp; 0 &amp; 5 &amp; 5 \\
 5 &amp; 4 &amp; 0 &amp; 5 \\
@@ -572,8 +578,8 @@ während der 2. Spieler den 3. Spieler wie gefordert fünfmal angespielt hat
 <p>Nun soll diese Übung zwei weitere Male korrekt wiederholt werden. Diesmal
 verläuft die Übung fehlerfrei, und die neue Matrix zeigt die korrekten Pässe des
 zweiten und dritten Durchgangs:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-2">
-<span class="eqno">(6.19)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-2" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B} = \begin{pmatrix}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-5">
+<span class="eqno">(6.22)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-5" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B} = \begin{pmatrix}
 0 &amp; 5 &amp; 5 &amp; 5 \\
 5 &amp; 0 &amp; 5 &amp; 5 \\
 5 &amp; 5 &amp; 0 &amp; 5 \\
@@ -582,8 +588,8 @@ zweiten und dritten Durchgangs:</p>
 <p>Nach Abschluss der drei Übungen sollen alle Pässe insgesamt summiert werden. Wir
 könnten jedes Element einzeln addieren, indem wir die Anzahl der Pässe für jede
 Übung zusammenzählen:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-3">
-<span class="eqno">(6.20)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-3" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} + \mathbf{B} + \mathbf{B} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-6">
+<span class="eqno">(6.23)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-6" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} + \mathbf{B} + \mathbf{B} =
 \begin{pmatrix}
 0+0+0 &amp; 5+5+5 &amp; 5+5+5 &amp; 5+5+5 \\
 5+5+5 &amp; 0+5+5 &amp; 5+5+5 &amp; 5+5+5 \\
@@ -592,8 +598,8 @@ könnten jedes Element einzeln addieren, indem wir die Anzahl der Pässe für je
 \end{pmatrix}\end{split}\]</div>
 <p>Da die zweite und dritte Übung identisch abliefen, können wir die Pässe der
 zweiten und dritten Übung auch direkt verdoppeln:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-4">
-<span class="eqno">(6.21)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-4" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B} + \mathbf{B} = 2\cdot\mathbf{B} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-7">
+<span class="eqno">(6.24)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-7" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{B} + \mathbf{B} = 2\cdot\mathbf{B} =
 \begin{pmatrix}
 2\cdot 0 &amp; 2\cdot 5 &amp; 2\cdot 5 &amp; 2\cdot 5 \\
 2\cdot 5 &amp; 2\cdot 0 &amp; 2\cdot 5 &amp; 2\cdot 5 \\
@@ -616,8 +622,8 @@ indem jedes Element der Matrix mit diesem Skalar multipliziert wird.</p>
 </div>
 <p>Ein weiteres Beispiel für eine Skalarmultiplikation ist die folgende Rechnung,
 bei der jedes Element der Matrix mit dem Bruch <span class="math notranslate nohighlight">\(1/2\)</span> multipliziert wird:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-5">
-<span class="eqno">(6.22)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-5" title="Link to this equation">#</a></span>\[\begin{split}\frac{1}{2}\cdot\begin{pmatrix} 2 &amp; 7 \\ -10 &amp; \frac{3}{5} \end{pmatrix} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-8">
+<span class="eqno">(6.25)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-8" title="Link to this equation">#</a></span>\[\begin{split}\frac{1}{2}\cdot\begin{pmatrix} 2 &amp; 7 \\ -10 &amp; \frac{3}{5} \end{pmatrix} =
 \begin{pmatrix} 1 &amp; 3.5 \\ -5 &amp; \frac{3}{10} \end{pmatrix}.\end{split}\]</div>
 <p>Das folgende Video veranschaulicht ein weiteres Beispiel zur Skalarmultiplikation.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -635,8 +641,8 @@ genutzt, dass die zweite und dritte Übung identisch abgelaufen sind, und uns
 daher zunächst mit der Berechnung von zwei gleichen Matrizen befasst. Für die
 vollständige Summe fehlt jedoch noch die Addition der Pässe aus der ersten
 Übung:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-6">
-<span class="eqno">(6.23)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-6" title="Link to this equation">#</a></span>\[\begin{split}2\cdot\mathbf{B} + \mathbf{A} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-9">
+<span class="eqno">(6.26)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-9" title="Link to this equation">#</a></span>\[\begin{split}2\cdot\mathbf{B} + \mathbf{A} =
 \begin{pmatrix}
 0 &amp; 10 &amp; 10 &amp; 10 \\
 10 &amp; 0 &amp; 10 &amp; 10 \\
@@ -656,8 +662,8 @@ vollständige Summe fehlt jedoch noch die Addition der Pässe aus der ersten
 15 &amp; 15 &amp; 15 &amp; 0 \\
 \end{pmatrix}.\end{split}\]</div>
 <p>Ist diese Vorgehensweise überhaupt erlaubt? Gilt also</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-7">
-<span class="eqno">(6.24)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-7" title="Link to this equation">#</a></span>\[2\cdot\mathbf{B} + \mathbf{A} \overset{?}{=} \mathbf{A} + \mathbf{B} + \mathbf{B} \,?\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-10">
+<span class="eqno">(6.27)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-10" title="Link to this equation">#</a></span>\[2\cdot\mathbf{B} + \mathbf{A} \overset{?}{=} \mathbf{A} + \mathbf{B} + \mathbf{B} \,?\]</div>
 <p>Ja, denn sowohl die Addition als auch die Skalarmultiplikation werden
 <em>elementweise</em> mit reellen Zahlen durchgeführt. Für reelle Zahlen gelten das
 Kommutativgesetz, das besagt, dass die Reihenfolge der Summanden keine Rolle
@@ -667,8 +673,8 @@ Gruppierungen bei der Addition ebenfalls irrelevant ist.</p>
 Kommutativgesetz der reellen Zahlen auf Matrizen. Das bedeutet, dass die
 Addition zweier Matrizen unabhängig von der Reihenfolge der Matrizen ist, wie
 die folgende allgemeine Rechnung zeigt:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-8">
-<span class="eqno">(6.25)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-8" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} + \mathbf{B} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-11">
+<span class="eqno">(6.28)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-11" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} + \mathbf{B} =
 \begin{pmatrix}
 a_{11} + b_{11} &amp; a_{12} + b_{12} &amp; \ldots &amp; a_{1n} + b_{1n} \\
 a_{21} + b_{21} &amp; a_{22} + b_{22} &amp; \ldots &amp; a_{2n} + b_{2n} \\
@@ -694,15 +700,15 @@ direkt die Addition durch eine Skalarmultiplikation ersetzen. Anstatt
 <li><p>Ein Skalar wird mit der Summe zweier Matrizen multipliziert. Das entspricht
 der Verteilung des Skalars auf beide Matrizen, sodass jede Matrix einzeln mit
 dem Skalar multipliziert wird, also</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-9">
-<span class="eqno">(6.26)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-9" title="Link to this equation">#</a></span>\[s\cdot\left(\mathbf{A} + \mathbf{B} \right) = s\cdot\mathbf{A} +
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-12">
+<span class="eqno">(6.29)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-12" title="Link to this equation">#</a></span>\[s\cdot\left(\mathbf{A} + \mathbf{B} \right) = s\cdot\mathbf{A} +
    s\cdot\mathbf{B}.\]</div>
 </li>
 <li><p>Zwei Skalare werden addiert und die resultierende Summe wird mit einer Matrix
 multipliziert. Dies entspricht der Multiplikation der Matrix mit jedem Skalar
 einzeln und der anschließenden Addition der Ergebnisse, also</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-10">
-<span class="eqno">(6.27)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-10" title="Link to this equation">#</a></span>\[(s + t) \cdot \mathbf{A} = s\cdot\mathbf{A} + t\cdot\mathbf{A}.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-13">
+<span class="eqno">(6.30)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-13" title="Link to this equation">#</a></span>\[(s + t) \cdot \mathbf{A} = s\cdot\mathbf{A} + t\cdot\mathbf{A}.\]</div>
 </li>
 </ol>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -727,8 +733,8 @@ Rechenoperation, sondern eine Kombination der Vektoraddition und der
 Skalarmultiplikation mit dem Faktor <span class="math notranslate nohighlight">\(-1\)</span>. Um Berechnungen zu vereinfachen führen
 wir dennoch die <strong>Subtraktion zweier Matrizen</strong> als elementweise Subtraktion der
 Einträge ein:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-11">
-<span class="eqno">(6.28)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-11" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} - \mathbf{B} =
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-14">
+<span class="eqno">(6.31)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-14" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} - \mathbf{B} =
 \begin{pmatrix}
 a_{11} - b_{11} &amp; a_{12} - b_{12} &amp; \ldots &amp; a_{1n} - b_{1n} \\
 a_{21} - b_{21} &amp; a_{22} - b_{22} &amp; \ldots &amp; a_{2n} - b_{2n} \\
@@ -738,8 +744,8 @@ a_{m1} - b_{m1} &amp; a_{m2} - b_{m2} &amp; \ldots &amp; a_{mn} - b_{mn} \\
 <p>Soll beispielsweise die Differenz der folgenden zwei Matrizen gebildet werden,
 werden die entsprechenden Einträge der beiden Matrizen elementweise voneinander
 subtrahiert:</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-12">
-<span class="eqno">(6.29)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-12" title="Link to this equation">#</a></span>\[\begin{split}
+<div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec04-15">
+<span class="eqno">(6.32)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec04-15" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{pmatrix} 3 &amp; -5 \\ 1.5 &amp; 8 \end{pmatrix} -
 \begin{pmatrix} 2 &amp;  3 \\ 0   &amp; -3 \end{pmatrix} =
 \begin{pmatrix} 1 &amp; -8 \\ 1.5 &amp; 11 \end{pmatrix}

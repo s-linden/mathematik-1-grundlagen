@@ -279,7 +279,7 @@ achten, denn $\sqrt{x^2} = |x|$:
 
 $$|\vec{a}\times\vec{b}| = |\vec{a}|\cdot|\vec{b}|\cdot|\sin(\varphi)|.$$
 
-Der Winkel zwischen zwei Vektoren liegt immer im Bereich $0 \le \varphi \le \pi$,
+In einem Parallelogramm betrachten wir immer Winkel $0 \le \varphi \le \pi$,
 und dort ist $\sin(\varphi) \ge 0$. Die Betragsstriche um $\sin(\varphi)$
 können also entfallen, und mit dem 1. Schritt folgt
 

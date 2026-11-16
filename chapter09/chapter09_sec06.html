@@ -542,12 +542,12 @@ Grenzwerte sind nicht gleich dem Funktionswert oder aber die Funktion hat an
 dieser Stelle eine Definitionslücke.</p>
 <p>Als Beispiel betrachten wir die Funktion</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec06-1">
-<span class="eqno">(9.57)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-1" title="Link to this equation">#</a></span>\[f(x) = \frac{x^2-1}{x-1}.\]</div>
+<span class="eqno">(9.60)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-1" title="Link to this equation">#</a></span>\[f(x) = \frac{x^2-1}{x-1}.\]</div>
 <p>Da der Nenner bei <span class="math notranslate nohighlight">\(x_0 = 1\)</span> Null wird, ist diese Funktion an der Stelle <span class="math notranslate nohighlight">\(x_0 =
 1\)</span> nicht definiert, der Funktionswert <span class="math notranslate nohighlight">\(f(1)\)</span> existiert nicht. Wir berechnen nun
 den linksseitigen Grenzwert:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec06-2">
-<span class="eqno">(9.58)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-2" title="Link to this equation">#</a></span>\[\lim_{x\to 1^{-}} \left(\frac{x^2-1}{x-1}\right) =
+<span class="eqno">(9.61)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-2" title="Link to this equation">#</a></span>\[\lim_{x\to 1^{-}} \left(\frac{x^2-1}{x-1}\right) =
 \lim_{x\to 1^{-}}\left(\frac{(x+1)(x-1)}{x-1}\right) =
 \lim_{x\to 1^{-}}(x + 1) = 2.\]</div>
 <p>Aber
@@ -555,13 +555,13 @@ Das Kürzen des Bruches ist erlaubt, da wir uns von links der Stelle <span class
 nähern und daher immer <span class="math notranslate nohighlight">\(x \neq 1\)</span> gilt. Analog dazu berechnen wir den
 rechtsseitigen Grenzwert als</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec06-3">
-<span class="eqno">(9.59)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-3" title="Link to this equation">#</a></span>\[\lim_{x\to 1^{+}} \left(\frac{x^2-1}{x-1}\right) =
+<span class="eqno">(9.62)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-3" title="Link to this equation">#</a></span>\[\lim_{x\to 1^{+}} \left(\frac{x^2-1}{x-1}\right) =
 \lim_{x\to 1^{+}}(x + 1) = 2,\]</div>
 <p>wo erneut das Kürzen erlaubt ist, weil wir uns von rechts der Stelle <span class="math notranslate nohighlight">\(x_0 = 1\)</span>
 nähern und daher stets <span class="math notranslate nohighlight">\(x\neq 1\)</span> gilt. Wir führen jetzt eine neue Funktion
 <span class="math notranslate nohighlight">\(\tilde{f}\)</span> ein, die folgendermaßen definiert ist:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec06-4">
-<span class="eqno">(9.60)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-4" title="Link to this equation">#</a></span>\[\begin{split}\tilde{f}(x) =
+<span class="eqno">(9.63)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-4" title="Link to this equation">#</a></span>\[\begin{split}\tilde{f}(x) =
 \begin{cases}
 \frac{x^2-1}{x-1}, \quad &amp; x\neq 1, \\
 2, \quad &amp; x = 1.
@@ -589,10 +589,10 @@ wieder auf 1 linear anzuwachsen. Dieser Vorgang wiederholt sich periodisch alle
 <p>Betrachten wir nun beispielsweise die Stelle <span class="math notranslate nohighlight">\(x_0 = 0\)</span>, so stellen wir fest,
 dass der linksseitige Grenzwert</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec06-5">
-<span class="eqno">(9.61)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-5" title="Link to this equation">#</a></span>\[\lim_{x\to 0^{-}}f(x) = 1\]</div>
+<span class="eqno">(9.64)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-5" title="Link to this equation">#</a></span>\[\lim_{x\to 0^{-}}f(x) = 1\]</div>
 <p>ist, während der rechtsseitige Grenzwert</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec06-6">
-<span class="eqno">(9.62)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-6" title="Link to this equation">#</a></span>\[\lim_{x\to 0^{+}}f(x) = -1\]</div>
+<span class="eqno">(9.65)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-6" title="Link to this equation">#</a></span>\[\lim_{x\to 0^{+}}f(x) = -1\]</div>
 <p>ist. Diese Stelle ist daher eine Sprungstelle (so wie auch alle weiteren
 Vielfachen von 2).</p>
 </section>
@@ -607,11 +607,11 @@ uneigentlichen Sinne existiert, gehören dazu.</p>
 Umgebung betragsmäßig beliebig groß werden, nennen wir <strong>Polstelle</strong>, also wenn
 beispielsweise</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec06-7">
-<span class="eqno">(9.63)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-7" title="Link to this equation">#</a></span>\[\lim_{x\to x_0}f(x)=+\infty \; \text{ oder } \; \lim_{x\to x_0}f(x) =
+<span class="eqno">(9.66)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-7" title="Link to this equation">#</a></span>\[\lim_{x\to x_0}f(x)=+\infty \; \text{ oder } \; \lim_{x\to x_0}f(x) =
 -\infty.\]</div>
 <p>Beispielsweise hat die Funktion</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec06-8">
-<span class="eqno">(9.64)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-8" title="Link to this equation">#</a></span>\[f(x) = \frac{1}{(x-1)^2}, \quad x\neq 1\]</div>
+<span class="eqno">(9.67)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec06-8" title="Link to this equation">#</a></span>\[f(x) = \frac{1}{(x-1)^2}, \quad x\neq 1\]</div>
 <p>an der Stelle <span class="math notranslate nohighlight">\(x_0 = 1\)</span> eine Polstelle, wie auch die folgende Visualisierung
 zeigt:</p>
 <figure class="align-default" id="plot-polstelle">

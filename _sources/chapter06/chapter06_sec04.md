@@ -13,16 +13,21 @@ wir daher die Skalarmultiplikation und die dazugehörigen Rechenregeln.
 * Sie können die **Differenz zweier Matrizen** berechnen, also Matrizen subtrahieren.
 * Sie beherrschen die Rechenregeln für die Addition von Matrizen und für die
   Skalarmultiplikation, insbesondere
-  * das **Kommutativgesetz**: 
-    \begin{equation*}\mathbf{A}+\mathbf{B} = \mathbf{B}+\mathbf{A}\end{equation*},
-  * das **Assoziativgesetz**: 
-    \begin{equation*}(\mathbf{A}+\mathbf{B})+\mathbf{C} = \mathbf{A} +
-      (\mathbf{B}+\mathbf{C}),\end{equation*} 
-  * und das **Distributivgesetz** für die Skalarmultiplikation: 
-    \begin{align*}
+  * das **Kommutativgesetz**:
+
+    $$\mathbf{A}+\mathbf{B} = \mathbf{B}+\mathbf{A},$$
+
+  * das **Assoziativgesetz**:
+
+    $$(\mathbf{A}+\mathbf{B})+\mathbf{C} = \mathbf{A} +
+      (\mathbf{B}+\mathbf{C}),$$
+
+  * und das **Distributivgesetz** für die Skalarmultiplikation:
+
+    $$\begin{aligned}
     (s+t)\cdot\mathbf{A} &= s\cdot\mathbf{A}+t\cdot\mathbf{A}\\
-    s\cdot(\mathbf{A}+\mathbf{B}) &= s\cdot\mathbf{A} + s\cdot\mathbf{B}\\
-    \end{align*}
+    s\cdot(\mathbf{A}+\mathbf{B}) &= s\cdot\mathbf{A} + s\cdot\mathbf{B}
+    \end{aligned}$$
 ```
 
 ## Skalar mal Matrix

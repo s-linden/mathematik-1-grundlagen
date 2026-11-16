@@ -534,9 +534,9 @@ auch an den englischen Begriff Limit.</p></li>
 Grenzwert hat. Außerdem kennen Sie die beiden üblichen Schreibweisen für
 Grenzwerte:</p></li>
 </ul>
-<p>\begin{equation*} (a_n) \rightarrow a \text{ für } n \rightarrow
-\infty \quad \text{ oder } \quad \lim_{n\rightarrow\infty} a_n = a.
-\end{equation*}</p>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-1">
+<span class="eqno">(9.14)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-1" title="Link to this equation">#</a></span>\[(a_n) \rightarrow a \text{ für } n \rightarrow
+\infty \quad \text{ oder } \quad \lim_{n\rightarrow\infty} a_n = a.\]</div>
 <p>Man sagt dazu: »Der Limes von <span class="math notranslate nohighlight">\(a_n\)</span> für <span class="math notranslate nohighlight">\(n\)</span> gegen unendlich ist
 <span class="math notranslate nohighlight">\(a\)</span>.«</p>
 <ul class="simple">
@@ -573,8 +573,8 @@ gegen unendlich geht. Diesen Wert nennt man den Grenzwert der Folge.</p>
 <p>Eine Folge <span class="math notranslate nohighlight">\((a_n)\)</span> besitzt den Grenzwert <span class="math notranslate nohighlight">\(a\)</span>, wenn für jede (sehr kleine) Zahl
 <span class="math notranslate nohighlight">\(\varepsilon &gt;0\)</span> alle Folgenglieder <span class="math notranslate nohighlight">\(a_n\)</span> ab einem bestimmten Index <span class="math notranslate nohighlight">\(N\)</span> in dem
 offenen Intervall um <span class="math notranslate nohighlight">\(a\)</span> liegen, d.h.</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-1">
-<span class="eqno">(9.14)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-1" title="Link to this equation">#</a></span>\[|a_{n} - a| &lt; \varepsilon, \quad \text{ falls } n \geq N.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-2">
+<span class="eqno">(9.15)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-2" title="Link to this equation">#</a></span>\[|a_{n} - a| &lt; \varepsilon, \quad \text{ falls } n \geq N.\]</div>
 </div>
 <p>Eine Zahlenfolge, die einen Grenzwert besitzt, heißt <strong>konvergent</strong>. Wenn dieser
 Grenzwert Null ist, wird die Folge eine <strong>Nullfolge</strong> genannt.</p>
@@ -606,12 +606,12 @@ encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="stric
 wollen wir überprüfen. Wir probieren zunächst mit einem Taschenrechner aus, ob
 wir für verschiedene (sehr kleine) Werte von <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> einen Index <span class="math notranslate nohighlight">\(N\)</span>
 finden, so dass</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-2">
-<span class="eqno">(9.15)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-2" title="Link to this equation">#</a></span>\[\left|2 + \frac{1}{n} - 2\right| &lt; \varepsilon\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-3">
+<span class="eqno">(9.16)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-3" title="Link to this equation">#</a></span>\[\left|2 + \frac{1}{n} - 2\right| &lt; \varepsilon\]</div>
 <p>gilt. Da <span class="math notranslate nohighlight">\(\frac{1}{n}\)</span> für alle natürlichen Zahlen <span class="math notranslate nohighlight">\(n\)</span> positiv ist, können wir
 obige Ungleichung vereinfachen zu</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-3">
-<span class="eqno">(9.16)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-3" title="Link to this equation">#</a></span>\[\frac{1}{n} &lt; \varepsilon.\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-4">
+<span class="eqno">(9.17)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-4" title="Link to this equation">#</a></span>\[\frac{1}{n} &lt; \varepsilon.\]</div>
 <p>Damit finden wir leicht die folgenden Indizes <span class="math notranslate nohighlight">\(N\)</span> mit dem Taschenrechner:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\varepsilon = 0.1\)</span>: Index <span class="math notranslate nohighlight">\(N = 11\)</span></p></li>
@@ -621,8 +621,8 @@ obige Ungleichung vereinfachen zu</p>
 <p>Allgemein können wir festhalten, dass die Ungleichung <span class="math notranslate nohighlight">\(\frac{1}{n} &lt;
 \varepsilon\)</span> erfüllt ist, wenn <span class="math notranslate nohighlight">\(N\)</span> größer gewählt wird als
 <span class="math notranslate nohighlight">\(\frac{1}{\varepsilon}\)</span>. Damit gilt für dieses Beispiel</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-4">
-<span class="eqno">(9.17)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-4" title="Link to this equation">#</a></span>\[ \left(2+\frac{1}{n}\right) \rightarrow 2 \; \text{ für } \; n \rightarrow
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-5">
+<span class="eqno">(9.18)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-5" title="Link to this equation">#</a></span>\[ \left(2+\frac{1}{n}\right) \rightarrow 2 \; \text{ für } \; n \rightarrow
 \infty \quad \text{ oder } \quad \lim_{n\rightarrow\infty} \left(2+\frac{1}{n}\right) = 2.\]</div>
 </section>
 <section id="divergente-zahlenfolgen">
@@ -654,8 +654,8 @@ konvergent sind.</p>
 </div>
 <p>Die Umkehrung gilt nicht unbedingt. Zwar ist jede konvergent Folge beschränkt,
 aber nicht jede konvergente Folge ist monoton. Beispielsweise ist die Folge</p>
-<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-5">
-<span class="eqno">(9.18)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-5" title="Link to this equation">#</a></span>\[a_n = \frac{(-1)^n}{n}\]</div>
+<div class="math notranslate nohighlight" id="equation-auto-chapter09-chapter09-sec02-6">
+<span class="eqno">(9.19)<a class="headerlink" href="#equation-auto-chapter09-chapter09-sec02-6" title="Link to this equation">#</a></span>\[a_n = \frac{(-1)^n}{n}\]</div>
 <p>eine Nullfolge, d.h. sie hat den Grenzwert Null. Dennoch ist sie nicht monoton.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
