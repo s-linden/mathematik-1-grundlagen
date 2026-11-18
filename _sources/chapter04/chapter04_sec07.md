@@ -372,9 +372,21 @@ Seien $\vec{a}$, $\vec{b}$ und $\vec{c}$ drei Vektoren, für die gilt $\vec{a}+\
 ````{admonition} Lösung
 :class: miniexercise, toggle
 
-Interpretation: $\vec{a}, \vec{b}, \vec{c}$ bilden ein Dreieck. Für die Fläche ist es unerheblich, mit welchem Paar von Kanten man sie berechnet. Und, mit welchem Paar von Kanten man den Normalenvektor berechnet.
+$\vec{a}$, $\vec{b}$, $\vec{c}$ bilden ein Dreieck. Alle drei Vektorprodukte ergeben denselben Vektor senkrecht zur Dreiecksebene. Sein Betrag ist der doppelte Flächeninhalt des Dreiecks.
 
 ```{dropdown} Lösungsweg
-Interpretation: $\vec{a}, \vec{b}, \vec{c}$ bilden ein Dreieck. Für die Fläche ist es unerheblich, mit welchem Paar von Kanten man sie berechnet. Und, mit welchem Paar von Kanten man den Normalenvektor berechnet.
+Aus $\vec{a}+\vec{b}+\vec{c}=\vec{0}$ folgt $\vec{c}=-\vec{a}-\vec{b}$. Das setzen wir ein und benutzen $\vec{v}\times\vec{v}=\vec{0}$ und $\vec{b}\times\vec{a}=-\vec{a}\times\vec{b}$:
+
+$$\vec{b}\times\vec{c}=\vec{b}\times(-\vec{a}-\vec{b})=-\vec{b}\times\vec{a}-\vec{b}\times\vec{b}=\vec{a}\times\vec{b}-\vec{0}=\vec{a}\times\vec{b}$$
+
+$$\vec{c}\times\vec{a}=(-\vec{a}-\vec{b})\times\vec{a}=-\vec{a}\times\vec{a}-\vec{b}\times\vec{a}=\vec{0}+\vec{a}\times\vec{b}=\vec{a}\times\vec{b}$$
+
+Also gilt $\vec{a}\times\vec{b}=\vec{b}\times\vec{c}=\vec{c}\times\vec{a}$.
+
+Geometrische Deutung: Wegen $\vec{a}+\vec{b}+\vec{c}=\vec{0}$ führen die drei Vektoren, aneinandergehängt, wieder zum Ausgangspunkt zurück. Sie bilden also ein Dreieck. Je zwei Seiten des Dreiecks spannen ein Parallelogramm auf, und das Dreieck ist genau die Hälfte dieses Parallelogramms. Der Betrag des Vektorprodukts ist der Flächeninhalt des Parallelogramms. Für jedes der drei Seitenpaare erhält man deshalb denselben Wert, nämlich den doppelten Flächeninhalt des Dreiecks:
+
+$$A_\triangle=\frac{1}{2}\left|\vec{a}\times\vec{b}\right|=\frac{1}{2}\left|\vec{b}\times\vec{c}\right|=\frac{1}{2}\left|\vec{c}\times\vec{a}\right|$$
+
+Die Vektorprodukte sind sogar als Vektoren gleich, nicht nur ihre Beträge. Dafür kommt es auf die Reihenfolge an. Man muss die Seiten in der Reihenfolge nehmen, in der man das Dreieck umläuft: $\vec{a}\times\vec{b}$, $\vec{b}\times\vec{c}$ und $\vec{c}\times\vec{a}$. Dann zeigt das Vektorprodukt jedes Mal auf dieselbe Seite der Dreiecksebene. Vertauscht man die Reihenfolge, also $\vec{b}\times\vec{a}$, $\vec{c}\times\vec{b}$ oder $\vec{a}\times\vec{c}$, dann kehrt sich das Vorzeichen um, wegen $\vec{b}\times\vec{a}=-\vec{a}\times\vec{b}$. Man erhält dann den andersherum gerichteten Flächeninhalt.
 ```
 ````
