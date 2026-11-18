@@ -192,7 +192,13 @@ Also
 
 $$\vec{b}=5\vec{e}_{a}=\frac{5}{\sqrt{14}}\begin{pmatrix} 3 \\ 2 \\ 1 \end{pmatrix}$$
 
-$$\begin{array}{lrcl} \text{Alternative Lösung (deutlich einfacher):} & \left|\vec{e}_{a}\right| & = & 1 \\ \text{Also muss gelten:} & \vec{b} & = & 5\vec{e}_{a} \end{array}$$
+Alternative Lösung (deutlich einfacher):
+
+$$\left|\vec{e}_{a}\right|=1$$
+
+Also muss gelten:
+
+$$\vec{b}=5\vec{e}_{a}$$
 
 c)
 
