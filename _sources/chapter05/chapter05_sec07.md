@@ -424,13 +424,7 @@ $$
 **Schritt 2: Fallunterscheidung.** Ob man durch $(a-1)$ teilen darf, hängt von $a$ ab.
 
 - **Fall $a\neq 1$:** Dann ist $t=\dfrac{2}{a-1}$ eindeutig bestimmt. Es gibt genau einen gemeinsamen Punkt, die Gerade schneidet die Ebene.
-- **Fall $a=1$:** Die Gleichung lautet $0\cdot t=2$, also $0=2$. Das ist für kein $t$ erfüllt. Gerade und Ebene haben keinen gemeinsamen Punkt, die Gerade verläuft parallel zur Ebene $E_1$ (und liegt nicht in ihr).
-
-**Kontrolle über den Normalenvektor:** Eine Gerade ist genau dann parallel zu einer Ebene (oder liegt in ihr), wenn ihr Richtungsvektor senkrecht auf dem Normalenvektor steht:
-
-$$\vec{u}\cdot\vec{n}_a=\begin{pmatrix} 1 \\ -1 \\ 1 \end{pmatrix}\cdot\begin{pmatrix} 1 \\ 2 \\ a \end{pmatrix}=1-2+a=a-1.$$
-
-Das ist genau für $a=1$ gleich null. Um zu entscheiden, ob $g$ dann parallel ist oder in $E_1$ liegt, setzt man den Stützpunkt $(1,0,0)$ ein: $1+0+0=1\neq 3$. Der Stützpunkt liegt nicht in $E_1$, also ist $g$ echt parallel.
+- **Fall $a=1$:** Die Gleichung lautet $0\cdot t=2$, also $0=2$. Diese Gleichung ist für keinen Wert von $t$ erfüllt, die Gleichung hat also keine Lösung. Es gibt keinen Punkt, der sowohl auf der Geraden $g$ als auch in der Ebene $E_1$ liegt. $g$ schneidet also $E_1$ nicht und liegt auch nicht in $E_1$. $g$ ist also parallel zu $E_1$.
 
 **Schritt 3: Schnittpunkt für $a=3$.** Es ist $t=\dfrac{2}{3-1}=1$, also
 
