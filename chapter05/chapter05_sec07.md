@@ -26,8 +26,6 @@ Bestimmen Sie die Normalengleichung für die Ebene durch die Punkte $A=(1,2,3)$,
 $$E:\ -y+z=1$$
 
 ```{dropdown} Lösungsweg
-Vorgehen wie in Beispiel (II) der Vorlesung.
-
 Zunächst werden die beiden Richtungsvektoren der Ebene bestimmt
 
 $$\vec{u}=\overrightarrow{AB}=\begin{pmatrix} 2-1 \\ 4-2 \\ 5-3 \end{pmatrix}=\begin{pmatrix} 1 \\ 2 \\ 2 \end{pmatrix}\qquad\vec{v}=\overrightarrow{AC}=\begin{pmatrix} 4-1 \\ 5-2 \\ 6-3 \end{pmatrix}=\begin{pmatrix} 3 \\ 3 \\ 3 \end{pmatrix}$$
