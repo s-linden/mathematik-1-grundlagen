@@ -424,11 +424,7 @@ $$
 **Schritt 2: Fallunterscheidung.** Ob man durch $(a-1)$ teilen darf, hängt von $a$ ab.
 
 - **Fall $a\neq 1$:** Dann ist $t=\dfrac{2}{a-1}$ eindeutig bestimmt. Es gibt genau einen gemeinsamen Punkt, die Gerade schneidet die Ebene.
-- **Fall $a=1$:** Die Gleichung lautet $0\cdot t=2$. Der Parameter $t$ fällt heraus, die Lage der Geraden hängt also nicht von $t$ ab: Die Gerade $g$ verläuft entweder parallel zu $E_1$ oder liegt in ihr. Die Punktprobe entscheidet. Man nimmt einen Punkt der Geraden und setzt ihn in die Ebenengleichung ein. Erfüllt er die Ebenengleichung, so liegt er in der Ebene und damit $g$ in $E_1$. Erfüllt er sie nicht, so verläuft $g$ echt parallel zu $E_1$. Setzen wir zum Beispiel den Stützpunkt $(1,0,0)$ der Geraden $g$ ein:
-
-  $$1+2\cdot 0+1\cdot 0=1\neq 3.$$
-
-  Der Stützpunkt liegt nicht in $E_1$. Die Gerade $g$ verläuft also echt parallel zu $E_1$, Gerade und Ebene haben keinen gemeinsamen Punkt.
+- **Fall $a=1$:** Die Gleichung lautet $0\cdot t=2$, also $0=2$. Diese Gleichung ist für keinen Wert von $t$ erfüllt, die Gleichung hat also keine Lösung. Es gibt keinen Punkt, der sowohl auf der Geraden $g$ als auch in der Ebene $E_1$ liegt. $g$ schneidet also $E_1$ nicht und liegt auch nicht in $E_1$. $g$ ist also parallel zu $E_1$.
 
 **Schritt 3: Schnittpunkt für $a=3$.** Es ist $t=\dfrac{2}{3-1}=1$, also
 
