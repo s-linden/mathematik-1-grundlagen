@@ -97,7 +97,7 @@ In der Schule und in manchen Büchern rechnet man nur mit Ortsvektoren. Statt {e
 
 $$\overrightarrow{OQ}=\overrightarrow{OP}+\vec{v},$$
 
-statt {eq}`chap03sec04_verbindungsvektor` entsprechend
+statt {eq}`chap03sec04_verbindungsvektor` schreibt man dort
 
 $$\overrightarrow{PQ}=\overrightarrow{OQ}-\overrightarrow{OP}.$$
 
