@@ -1,20 +1,20 @@
-# 7.6 Eigenwerte und Eigenvektoren von 3x3-Matrizen
+# 7.6 Eigenwerte und Eigenvektoren von (3×3)-Matrizen
 
 In diesem Kapitel werden wir die Berechnung von Eigenwerten und Eigenvektoren
-für $3 \times 3$-Matrizen Schritt für Schritt erläutern und praktische Beispiele
+für $(3\times 3)$-Matrizen Schritt für Schritt erläutern und praktische Beispiele
 vorstellen.
 
 ## Lernziele
 
 ```{admonition} Lernziele
 :class: goals
-* Sie können die **Eigenwerte** und **Eigenvektoren** einer $3\times 3$-Matrix
+* Sie können die **Eigenwerte** und **Eigenvektoren** einer $(3\times 3)$-Matrix
   berechnen.
 ```
 
 ## Definition von Eigenwerten und Eigenvektoren
 
-Auch für $3\times 3$-Matrizen bleibt die Definition eines Eigenwertes und von
+Auch für $(3\times 3)$-Matrizen bleibt die Definition eines Eigenwertes und von
 eigenvektoren gleich. Eine quadratische Matrix $\mathbf{A} \in \mathbb{R}^{3
 \times 3}$ hat einen Eigenvektor $\vec{v} \neq \vec{0}$, wenn gilt:
 
@@ -25,10 +25,10 @@ $$
 Dabei ist $\lambda$ ein Eigenwert von $\mathbf{A}$ und $\vec{v}$ ist der
 zugehörige Eigenvektor.
 
-## Berechnung der Eigenwerte für $3\times 3$-Matrizen
+## Berechnung der Eigenwerte für $(3\times 3)$-Matrizen
 
 Auch die Vorgehensweise bei der Berechnung der Eigenwerte bleibt gleich. Um die
-Eigenwerte einer $3 \times 3$-Matrix zu berechnen, müssen wir die
+Eigenwerte einer $(3\times 3)$-Matrix zu berechnen, müssen wir die
 **charakteristische Gleichung** lösen. Diese Gleichung ergibt sich aus der
 Determinante der Matrix $\mathbf{A} - \lambda \mathbf{E}$, wobei $\mathbf{E}$
 die Einheitsmatrix ist:
@@ -47,7 +47,7 @@ $$ \det \begin{pmatrix} a_{11} - \lambda & a_{12} & a_{13} \\ a_{21} & a_{22} -
 
 Diese Gleichung ist ein **Polynom dritten Grades** für $\lambda$, dessen
 Lösungen die Eigenwerte der Matrix $ \mathbf{A}$ sind. Der einzige Unterschied
-zur Berechung der Eigenwerte für $2\times 2$-Matrizen ist also, dass die
+zur Berechung der Eigenwerte für $(2\times 2)$-Matrizen ist also, dass die
 charakteristische Gleichung mit einem Polynom dritten anstatt zweiten Grades
 gebildet wird.
 
@@ -71,7 +71,7 @@ und damit die gesuchten Eigenwerte sind.
 
 ```{admonition} Determinante und Eigenwerte
 :class: note
-Die Determinante einer Matrix ist das Produkt ihrer Eigenwerte. Mehrfache Eigenwerte werden dabei entsprechend oft gezählt. Für eine $3\times 3$-Matrix gilt also
+Die Determinante einer Matrix ist das Produkt ihrer Eigenwerte. Mehrfache Eigenwerte werden dabei entsprechend oft gezählt. Für eine $(3\times 3)$-Matrix gilt also
 
 $$\det(\mathbf{A}) = \lambda_1\cdot\lambda_2\cdot\lambda_3.$$
 
@@ -130,7 +130,7 @@ encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ## Zusammenfassung und Ausblick
 
 In diesem Kapitel haben wir gezeigt, wie die Eigenwerte und Eigenvektoren einer
-$3 \times 3$-Matrix berechnet werden. Die Berechnung der Eigenwerte erfolgt
+$(3\times 3)$-Matrix berechnet werden. Die Berechnung der Eigenwerte erfolgt
 durch das Lösen der charakteristischen Gleichung, während die Eigenvektoren
 durch Lösen eines homogenen Gleichungssystems bestimmt werden. Weitere Themen
 der linearen Algebra werden wir hier nicht mehr behandeln. Stattdessen kehren

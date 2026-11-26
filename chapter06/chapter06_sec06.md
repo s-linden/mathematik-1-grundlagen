@@ -24,7 +24,7 @@ einer Matrix vertauscht. Gegeben sei beispielsweise die Matrix
 
 $$\mathbf{A} = \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{pmatrix}.$$
 
-Diese Matrix hat die Dimension $3\times 2$, also drei Zeilen und zwei Spalten.
+Diese Matrix hat die Dimension $(3\times 2)$, also drei Zeilen und zwei Spalten.
 Die ttansponierte Matrix hat dann zwei Zeilen und drei Spalten. Die erste Zeile
 wird zur ersten Spalte, die zweite Zeile zur zweiten Spalte und die dritte Zeile
 zur dritten Spalte. Insgesamt erhalten wir fúr die transponierte Matrix den

@@ -61,7 +61,7 @@ $$\mathbf{A} =
 Zunächst überprüfen wir, ob wir die beiden Matrizen multiplizieren dürfen. Da
 die Spaltenanzahl der ersten Matrix $\mathbf{A}$ zwei und die Zeilenanzahl der
 zweiten Matrix $\mathbf{B}$ ebenfalls zwei ist, dürfen wir das Matrixprodukt
-berechnen. Die Produktmatrix wird die Dimension $4\times 3$ haben und die
+berechnen. Die Produktmatrix wird die Dimension $(4\times 3)$ haben und die
 folgende Form annehmen:
 
 $$\mathbf{C} =

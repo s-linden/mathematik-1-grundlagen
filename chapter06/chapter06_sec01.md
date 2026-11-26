@@ -93,10 +93,11 @@ $$\begin{pmatrix}
 -12.99 & -12.99 & -17.99 & -17.99 \\
 \end{pmatrix} \in \mathbb{R}^{5\times 4}$$
 
-und sagen, dass diese Matrix eine $5\times 4$-Matrix ist (sprich: 5 Kreuz 4).
+und sagen, dass diese Matrix eine $(5\times 4)$-Matrix ist (sprich: 5 Kreuz 4).
 Die kombinierte Angabe der Anzahl Zeilen und Anzahl Spalten nennen wir
 **Dimension** der Matrix oder **Format** der Matrix. Bei der Angabe der
-Dimension kommt immer die Anzahl der Zeilen zuerst.
+Dimension kommt immer die Anzahl der Zeilen zuerst. Allgemein hat eine Matrix mit $m$ Zeilen und
+$n$ Spalten das Format $(m\times n)$. Die Klammer schreiben wir dabei immer mit.
 
 Um über einzelne Zahlen in der Matrix reden zu können, können wir ihre Position
 in der Matrix angeben. Beispielsweise steht in 5. Zeile und in der 2. Spalte die
@@ -122,7 +123,7 @@ sind die beiden Matrizen **gleich**, wenn jedes Element $a_{ij}$ der ersten
 Matrix $A$ mit jedem Element $b_{ij}$ der zweiten Matrix $B$ übereinstimmt.
 
 Üblicherweise werden Matrizen mit einem großen fettgedrucktem Buchstaben
-bezeichnet, so dass beispielsweise eine $3\times 2$-Matrix die folgende
+bezeichnet, so dass beispielsweise eine $(3\times 2)$-Matrix die folgende
 allgemeine Struktur hat:
 
 $$\mathbf{A} = \begin{pmatrix}
@@ -171,7 +172,7 @@ Lizenz: [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/))
 Wir werden noch einige spezielle Matrizen kennenlernen. Eine spezielle Art von
 Matrix ist die **quadratische Matrix**. Bei einer quadratischen Matrix ist die
 Anzahl der Zeilen $m$ gleich der Anzahl der Spalten $n$, also $m = n$.
-Beispielsweise ist die $2\times 2$-Matrix
+Beispielsweise ist die $(2\times 2)$-Matrix
 
 $$\mathbf{A} = \begin{pmatrix}
 1 & -1 \\

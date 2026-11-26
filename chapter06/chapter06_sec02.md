@@ -72,12 +72,12 @@ Elemente auf der Hauptdiagonalen gleich der Zahl Eins sein. Oft wird sie mit
 einem großen, fettegdrucktem E oder I gekennzeichnet. An den Variablennamen wird
 als tiefgestelltes Zeichen die Dimension der Matrix geschrieben. Und da die
 Matrix quadratisch sein muss, reicht auch nur die Anzahl der Zeilen, wie die
-folgenden Beispiele zeigen. Die Einheitsmatrix der Dimension $2\times 2$ ist
+folgenden Beispiele zeigen. Die Einheitsmatrix der Dimension $(2\times 2)$ ist
 
 $$\mathbf{E}_{2} = \mathbf{I}_{2} =
 \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix},$$
 
-während die Einheitsmatrix der Dimension $4\times 4$ folgendermaßen geschrieben
+während die Einheitsmatrix der Dimension $(4\times 4)$ folgendermaßen geschrieben
 wird:
 
 $$\mathbf{E}_{4} = \mathbf{I}_{4} =
