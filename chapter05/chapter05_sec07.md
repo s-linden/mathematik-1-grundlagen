@@ -294,7 +294,7 @@ $$\vec{x}=\begin{pmatrix} 3 \\ 1 \\ 1 \end{pmatrix}+s\cdot\begin{pmatrix} 1 \\ 2
 
 ```{admonition} Übung 5.9
 :class: miniexercise
-Bestimmen Sie den Winkel zwischen den Ebenen $2x+y-2z=5$ und $3x-6y-2z=7$.
+Bestimmen Sie den spitzen Winkel zwischen den Ebenen $2x+y-2z=5$ und $3x-6y-2z=7$.
 ```
 
 ````{admonition} Lösung
@@ -303,7 +303,7 @@ Bestimmen Sie den Winkel zwischen den Ebenen $2x+y-2z=5$ und $3x-6y-2z=7$.
 $$\varphi=\arccos \left( \frac{4}{21} \right)=79^\circ =1{,}38\,\mathrm{rad}$$
 
 ```{dropdown} Lösungsweg
-Der Winkel zwischen Ebenen ist auch der Winkel zwischen den Normalenvektoren.
+Der spitze Winkel zwischen den Ebenen ist auch der spitze Winkel zwischen den Normalenvektoren. Die Betragsstriche im Zähler sorgen dafür, dass $\cos(\varphi)\geq 0$ und damit $\varphi\leq 90^\circ$ ist.
 
 Also Normalenvektoren ablesen:
 
@@ -313,7 +313,7 @@ Winkel aus dem Skalarprodukt:
 
 $$
 \begin{aligned}
-\cos (\varphi)&=\frac{\vec{n}_{1}\cdot\vec{n}_{2}}{\left|\vec{n}_{1}\right|\cdot\left|\vec{n}_{2}\right|}=\frac{\begin{pmatrix} 2 \\ 1 \\ -2 \end{pmatrix}\cdot\begin{pmatrix} 3 \\ -6 \\ -2 \end{pmatrix}}{\sqrt{{2}^{2}+{1}^{2}+{2}^{2}}\cdot\sqrt{{3}^{2}+{6}^{2}+{2}^{2}}}=\frac{4}{\sqrt{9}\cdot\sqrt{49}}=\frac{4}{3\cdot7} \\
+\cos (\varphi)&=\frac{\left|\vec{n}_{1}\cdot\vec{n}_{2}\right|}{\left|\vec{n}_{1}\right|\cdot\left|\vec{n}_{2}\right|}=\frac{\left|\begin{pmatrix} 2 \\ 1 \\ -2 \end{pmatrix}\cdot\begin{pmatrix} 3 \\ -6 \\ -2 \end{pmatrix}\right|}{\sqrt{{2}^{2}+{1}^{2}+{2}^{2}}\cdot\sqrt{{3}^{2}+{6}^{2}+{2}^{2}}}=\frac{|6-6+4|}{\sqrt{9}\cdot\sqrt{49}}=\frac{4}{3\cdot7} \\
 \varphi&=\arccos \left( \frac{4}{21} \right)=79^\circ =1{,}38\,\mathrm{rad}
 \end{aligned}
 $$
