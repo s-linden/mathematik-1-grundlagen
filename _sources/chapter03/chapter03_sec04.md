@@ -34,7 +34,10 @@ wo er gezeichnet wird.
 Wenden wir die Verschiebung $\vec{v}$ auf den Punkt $P$ an, landen wir bei
 einem neuen Punkt $Q$. Wir schreiben dafür
 
-$$P + \vec{v} = Q.$$
+```{math}
+:label: chap03sec04_punkt_plus_vektor
+P + \vec{v} = Q.
+```
 
 Gerechnet wird komponentenweise. Dazu schreiben wir auch die Koordinaten des
 Punktes als Spalte:
@@ -74,7 +77,10 @@ Zu zwei Punkten $P$ und $Q$ gibt es genau eine Verschiebung, die $P$ nach $Q$
 bringt. Sie heißt **Verbindungsvektor** und wird mit $\overrightarrow{PQ}$
 bezeichnet. Aus $P + \overrightarrow{PQ} = Q$ folgt
 
-$$\overrightarrow{PQ} = Q - P.$$
+```{math}
+:label: chap03sec04_verbindungsvektor
+\overrightarrow{PQ} = Q - P.
+```
 
 Man rechnet also »Spitze minus Fuß«. Im Beispiel:
 
@@ -86,8 +92,16 @@ $Q$. Deshalb dürfen wir mit den Koordinaten von Punkten so rechnen wie mit
 Vektoren.
 
 ```{admonition} Andere Schreibweise
-:class: note
-In der Schule und in manchen Büchern rechnet man nur mit Ortsvektoren. Statt $P+\vec{v}=Q$ schreibt man dort $\overrightarrow{OQ}=\overrightarrow{OP}+\vec{v}$, statt $\overrightarrow{PQ}=Q-P$ entsprechend $\overrightarrow{PQ}=\overrightarrow{OQ}-\overrightarrow{OP}$. Beide Schreibweisen bedeuten dasselbe und führen auf dieselbe Rechnung. Wer nur mit Ortsvektoren rechnet, setzt sie dabei immer im Ursprung an, denn nur dann legt $\overrightarrow{OQ}$ den Punkt $Q$ fest. In unserer Schreibweise ist das nicht nötig: Den Punkt erhalten wir als $Q = O + \overrightarrow{OQ}$. Sie dürfen beide Schreibweisen verwenden.
+:class: note ohne-formelnummern
+In der Schule und in manchen Büchern rechnet man nur mit Ortsvektoren. Statt {eq}`chap03sec04_punkt_plus_vektor` schreibt man dort
+
+$$\overrightarrow{OQ}=\overrightarrow{OP}+\vec{v},$$
+
+statt {eq}`chap03sec04_verbindungsvektor` entsprechend
+
+$$\overrightarrow{PQ}=\overrightarrow{OQ}-\overrightarrow{OP}.$$
+
+Beide Schreibweisen bedeuten dasselbe und führen auf dieselbe Rechnung. Wer nur mit Ortsvektoren rechnet, setzt sie dabei immer im Ursprung an, denn nur dann legt $\overrightarrow{OQ}$ den Punkt $Q$ fest. In unserer Schreibweise ist das nicht nötig: Den Punkt erhalten wir als $Q = O + \overrightarrow{OQ}$. Sie dürfen beide Schreibweisen verwenden.
 ```
 
 ## Was darf man rechnen?
