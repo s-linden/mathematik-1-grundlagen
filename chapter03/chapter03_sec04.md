@@ -34,7 +34,10 @@ wo er gezeichnet wird.
 Wenden wir die Verschiebung $\vec{v}$ auf den Punkt $P$ an, landen wir bei
 einem neuen Punkt $Q$. Wir schreiben dafür
 
-$$P + \vec{v} = Q.$$
+```{math}
+:label: chap03sec04_punkt_plus_vektor
+P + \vec{v} = Q.
+```
 
 Gerechnet wird komponentenweise. Dazu schreiben wir auch die Koordinaten des
 Punktes als Spalte:
@@ -74,7 +77,10 @@ Zu zwei Punkten $P$ und $Q$ gibt es genau eine Verschiebung, die $P$ nach $Q$
 bringt. Sie heißt **Verbindungsvektor** und wird mit $\overrightarrow{PQ}$
 bezeichnet. Aus $P + \overrightarrow{PQ} = Q$ folgt
 
-$$\overrightarrow{PQ} = Q - P.$$
+```{math}
+:label: chap03sec04_verbindungsvektor
+\overrightarrow{PQ} = Q - P.
+```
 
 Man rechnet also »Spitze minus Fuß«. Im Beispiel:
 
@@ -87,19 +93,11 @@ Vektoren.
 
 ```{admonition} Andere Schreibweise
 :class: note ohne-formelnummern
-In der Schule und in manchen Büchern rechnet man nur mit Ortsvektoren. Statt
-
-$$P+\vec{v}=Q$$
-
-schreibt man dort
+In der Schule und in manchen Büchern rechnet man nur mit Ortsvektoren. Statt {eq}`chap03sec04_punkt_plus_vektor` schreibt man dort
 
 $$\overrightarrow{OQ}=\overrightarrow{OP}+\vec{v},$$
 
-statt
-
-$$\overrightarrow{PQ}=Q-P$$
-
-entsprechend
+statt {eq}`chap03sec04_verbindungsvektor` entsprechend
 
 $$\overrightarrow{PQ}=\overrightarrow{OQ}-\overrightarrow{OP}.$$
 
