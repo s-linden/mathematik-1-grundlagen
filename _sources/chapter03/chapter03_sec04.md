@@ -85,6 +85,11 @@ $\overrightarrow{OQ}$. Er hat dieselben Komponenten wie die Koordinaten von
 $Q$. Deshalb dürfen wir mit den Koordinaten von Punkten so rechnen wie mit
 Vektoren.
 
+```{admonition} Andere Schreibweise
+:class: note
+In der Schule und in manchen Büchern rechnet man nur mit Ortsvektoren. Statt $P+\vec{v}=Q$ schreibt man dort $\overrightarrow{OQ}=\overrightarrow{OP}+\vec{v}$, statt $\overrightarrow{PQ}=Q-P$ entsprechend $\overrightarrow{PQ}=\overrightarrow{OQ}-\overrightarrow{OP}$. Beide Schreibweisen bedeuten dasselbe und führen auf dieselbe Rechnung. Sie dürfen beide verwenden.
+```
+
 ## Was darf man rechnen?
 
 ```{admonition} Rechenregeln für Punkte und Vektoren
