@@ -69,6 +69,19 @@ Es liegt ein Polynom dritten Grades vor, dessen Nullstellen $\lambda_1 = 6$,
 $\lambda_2 = 6$ und $\lambda_3 = 0$ die Lösung der charakteristischen Gleichung
 und damit die gesuchten Eigenwerte sind.
 
+```{admonition} Determinante und Eigenwerte
+:class: note
+Die Determinante einer Matrix ist das Produkt ihrer Eigenwerte. Mehrfache Eigenwerte werden dabei entsprechend oft gezählt. Für eine $3\times 3$-Matrix gilt also
+
+$$\det(\mathbf{A}) = \lambda_1\cdot\lambda_2\cdot\lambda_3.$$
+
+Im Beispiel ist $\det(\mathbf{A}) = 6\cdot 6\cdot 0 = 0$. Das bestätigt die Regel von Sarrus:
+
+$$\det(\mathbf{A}) = 5\cdot 5\cdot 2 + (-1)\cdot 2\cdot 2 + 2\cdot(-1)\cdot 2 - 2\cdot 5\cdot 2 - 5\cdot 2\cdot 2 - (-1)\cdot(-1)\cdot 2 = 50 - 4 - 4 - 20 - 20 - 2 = 0.$$
+
+Daraus folgt auch: Eine Matrix ist genau dann invertierbar, wenn keiner ihrer Eigenwerte null ist. Die Matrix $\mathbf{A}$ aus dem Beispiel ist also nicht invertierbar.
+```
+
 ## Berechnung der Eigenvektoren
 
 Sobald die Eigenwerte $\lambda_1, \lambda_2, \lambda_3$ gefunden sind, können

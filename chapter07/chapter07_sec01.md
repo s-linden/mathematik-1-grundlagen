@@ -10,6 +10,7 @@ Anwendungen hat, die sogenannte Determinante.
 ```{admonition} Lernziele
 :class: goals
 * Sie können die **Determinante** einer $2\times 2$-Matrix berechnen.
+* Sie können die Determinante einer $3\times 3$-Matrix mit der **Regel von Sarrus** berechnen.
 * Sie können die Determinante einer $n\times n$-Matrix mit $n>2$ berechnen,
   indem Sie den **Laplaceschen Entwicklungssatz** anwenden.
 ```
@@ -39,6 +40,50 @@ Wir betrachten ein Beispiel:
 $$\det\begin{pmatrix} 2 & 3 \\ 1 & 5 \end{pmatrix} =
 \left|\begin{matrix} 2 & 3 \\ 1 & 5 \end{matrix}\right| =
 2\cdot 5 - 1\cdot 3 = 7.$$
+
+## Determinante von $3\times 3$-Matrizen
+
+Für $3\times 3$-Matrizen gibt es ein einfaches Rechenschema, die **Regel von Sarrus**. Für die Matrix
+
+$$\mathbf{A} = \begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix}$$
+
+schreibt man die ersten beiden Spalten noch einmal rechts neben die Matrix:
+
+$$\begin{array}{ccc|cc} a & b & c & a & b \\ d & e & f & d & e \\ g & h & i & g & h \end{array}$$
+
+Dann bildet man sechs Produkte aus je drei Faktoren entlang der Diagonalen:
+
+* Die drei Produkte entlang der Diagonalen von links oben nach rechts unten werden **addiert**: $a\cdot e\cdot i$, $b\cdot f\cdot g$ und $c\cdot d\cdot h$.
+* Die drei Produkte entlang der Diagonalen von rechts oben nach links unten werden **subtrahiert**: $c\cdot e\cdot g$, $a\cdot f\cdot h$ und $b\cdot d\cdot i$.
+
+Insgesamt gilt also
+
+$$\det(\mathbf{A}) = a\cdot e\cdot i + b\cdot f\cdot g + c\cdot d\cdot h - c\cdot e\cdot g - a\cdot f\cdot h - b\cdot d\cdot i.$$
+
+Wir betrachten ein Beispiel. Für die Matrix
+
+$$\mathbf{A} = \begin{pmatrix} 1 & 2 & 0 \\ 2 & 1 & 0 \\ 0 & 0 & 4 \end{pmatrix}$$
+
+schreiben wir die ersten beiden Spalten rechts daneben:
+
+$$\begin{array}{ccc|cc} 1 & 2 & 0 & 1 & 2 \\ 2 & 1 & 0 & 2 & 1 \\ 0 & 0 & 4 & 0 & 0 \end{array}$$
+
+Die Produkte entlang der Diagonalen von links oben nach rechts unten sind
+
+$$1\cdot 1\cdot 4 + 2\cdot 0\cdot 0 + 0\cdot 2\cdot 0 = 4,$$
+
+die Produkte entlang der Diagonalen von rechts oben nach links unten sind
+
+$$0\cdot 1\cdot 0 + 1\cdot 0\cdot 0 + 2\cdot 2\cdot 4 = 16.$$
+
+Damit ist
+
+$$\det(\mathbf{A}) = 4 - 16 = -12.$$
+
+```{admonition} Achtung
+:class: warning
+Die Regel von Sarrus gilt **nur** für $3\times 3$-Matrizen. Für größere Matrizen verwendet man den Laplaceschen Entwicklungssatz aus dem nächsten Abschnitt.
+```
 
 ## Determinante von $n\times n$-Matrizen
 
