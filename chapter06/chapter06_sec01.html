@@ -248,8 +248,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec02.html">7.2 Inverse Matrizen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec03.html">7.3 Orthogonale Matrizen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec04.html">7.4 Lineare Gleichungssysteme mit Matrizenrechnung lösen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec05.html">7.5 Eigenwerte und Eigenvektoren (2x2-Matrix)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec06.html">7.6 Eigenwerte und Eigenvektoren von 3x3-Matrizen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec05.html">7.5 Eigenwerte und Eigenvektoren von (2×2)-Matrizen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec06.html">7.6 Eigenwerte und Eigenvektoren von (3×3)-Matrizen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter07/chapter07_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -646,10 +646,11 @@ Spalten. Die Einträge in der Matrix sind reelle Zahlen. Wir schreiben daher</p>
 -108.74 &amp; -90.56 &amp; -110.50 &amp; -95.80 \\
 -12.99 &amp; -12.99 &amp; -17.99 &amp; -17.99 \\
 \end{pmatrix} \in \mathbb{R}^{5\times 4}\end{split}\]</div>
-<p>und sagen, dass diese Matrix eine <span class="math notranslate nohighlight">\(5\times 4\)</span>-Matrix ist (sprich: 5 Kreuz 4).
+<p>und sagen, dass diese Matrix eine <span class="math notranslate nohighlight">\((5\times 4)\)</span>-Matrix ist (sprich: 5 Kreuz 4).
 Die kombinierte Angabe der Anzahl Zeilen und Anzahl Spalten nennen wir
 <strong>Dimension</strong> der Matrix oder <strong>Format</strong> der Matrix. Bei der Angabe der
-Dimension kommt immer die Anzahl der Zeilen zuerst.</p>
+Dimension kommt immer die Anzahl der Zeilen zuerst. Allgemein hat eine Matrix mit <span class="math notranslate nohighlight">\(m\)</span> Zeilen und
+<span class="math notranslate nohighlight">\(n\)</span> Spalten das Format <span class="math notranslate nohighlight">\((m\times n)\)</span>. Die Klammer schreiben wir dabei immer mit.</p>
 <p>Um über einzelne Zahlen in der Matrix reden zu können, können wir ihre Position
 in der Matrix angeben. Beispielsweise steht in 5. Zeile und in der 2. Spalte die
 Zahl -12.99. Anstatt Position wird in der Mathematik der Fachbegriff <strong>Index</strong>
@@ -670,7 +671,7 @@ ist und wir lesen ab, dass</p>
 sind die beiden Matrizen <strong>gleich</strong>, wenn jedes Element <span class="math notranslate nohighlight">\(a_{ij}\)</span> der ersten
 Matrix <span class="math notranslate nohighlight">\(A\)</span> mit jedem Element <span class="math notranslate nohighlight">\(b_{ij}\)</span> der zweiten Matrix <span class="math notranslate nohighlight">\(B\)</span> übereinstimmt.</p>
 <p>Üblicherweise werden Matrizen mit einem großen fettgedrucktem Buchstaben
-bezeichnet, so dass beispielsweise eine <span class="math notranslate nohighlight">\(3\times 2\)</span>-Matrix die folgende
+bezeichnet, so dass beispielsweise eine <span class="math notranslate nohighlight">\((3\times 2)\)</span>-Matrix die folgende
 allgemeine Struktur hat:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-7">
 <span class="eqno">(6.7)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-7" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix}
@@ -714,7 +715,7 @@ Lizenz: <a class="reference external" href="https://creativecommons.org/licenses
 <p>Wir werden noch einige spezielle Matrizen kennenlernen. Eine spezielle Art von
 Matrix ist die <strong>quadratische Matrix</strong>. Bei einer quadratischen Matrix ist die
 Anzahl der Zeilen <span class="math notranslate nohighlight">\(m\)</span> gleich der Anzahl der Spalten <span class="math notranslate nohighlight">\(n\)</span>, also <span class="math notranslate nohighlight">\(m = n\)</span>.
-Beispielsweise ist die <span class="math notranslate nohighlight">\(2\times 2\)</span>-Matrix</p>
+Beispielsweise ist die <span class="math notranslate nohighlight">\((2\times 2)\)</span>-Matrix</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter06-chapter06-sec01-10">
 <span class="eqno">(6.10)<a class="headerlink" href="#equation-auto-chapter06-chapter06-sec01-10" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix}
 1 &amp; -1 \\

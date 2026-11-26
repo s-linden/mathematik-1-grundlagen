@@ -1,8 +1,8 @@
-# 7.5 Eigenwerte und Eigenvektoren (2x2-Matrix)
+# 7.5 Eigenwerte und Eigenvektoren von (2×2)-Matrizen
 
 Eigenwerte und Eigenvektoren bieten eine Möglichkeit, schwingende Systeme zu
 analysieren. In diesem Kapitel werden die Grundlagen von Eigenwerten und
-Eigenvektoren für $2\times 2$-Matrizen erklärt.
+Eigenvektoren für $(2\times 2)$-Matrizen erklärt.
 
 ## Lernziele
 
@@ -10,7 +10,7 @@ Eigenvektoren für $2\times 2$-Matrizen erklärt.
 :class: goals
 * Sie kennen die Definition des Fachbegriffes **Eigenwert** und wissen, was ein
   **Eigenvektor** ist.
-* Sie können die Eigenwerte und Eigenvektoren einer $2\times 2$-Matrix
+* Sie können die Eigenwerte und Eigenvektoren einer $(2\times 2)$-Matrix
   berechnen.
 ```
 
@@ -29,7 +29,7 @@ darstellt, ohne dessen Richtung zu verändern.
 
 ## Wie werden Eigenwerte berechnet?
 
-Um die Eigenwerte $\lambda$ einer $2 \times 2$-Matrix $\mathbf{A}$ zu berechnen,
+Um die Eigenwerte $\lambda$ einer $(2\times 2)$-Matrix $\mathbf{A}$ zu berechnen,
 muss die **charakteristische Gleichung** gelöst werden. Diese ergibt sich aus
 der Determinante der Matrix $\mathbf{A} - \lambda \mathbf{E} $, wobei
 $\mathbf{E}$ die Einheitsmatrix ist. Die charakteristische Gleichung lautet:
@@ -47,7 +47,7 @@ $$ \det\begin{pmatrix} a - \lambda & b \\ c & d - \lambda \end{pmatrix} = (a -
 Dies ist eine quadratische Gleichung für $\lambda$, deren Lösungen die
 Eigenwerte der Matrix $\mathbf{A}$ sind.
 
-Wir betrachten als Beispiel die $2\times 2$-Matrix
+Wir betrachten als Beispiel die $(2\times 2)$-Matrix
 
 $$
 \mathbf{A} = \begin{pmatrix} 6 & 2 \\ 2 & 3 \end{pmatrix}.

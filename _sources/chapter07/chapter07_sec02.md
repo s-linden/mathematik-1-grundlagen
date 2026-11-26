@@ -11,16 +11,16 @@ Kapitel das Thema inverse Matrizen.
 :class: goals
 * Sie wissen, wann es erlaubt ist, die **inverse Matrix** einer quadratischen
   Matrix zu berechnen und welche Rolle die Determinante dabei spielt.
-* Sie können die **Inverse einer $2\times 2$-Matrix** berechnen.
-* Sie können die **Inverse einer $n\times n$-Matrix** für $n>2$ berechnen.
+* Sie können die **Inverse einer $(2\times 2)$-Matrix** berechnen.
+* Sie können die **Inverse einer $(n\times n)$-Matrix** für $n>2$ berechnen.
 * Sie kennen die **Rechenregeln für inverse Matrizen** und können sie anwenden.
 ```
 
-## Inverse Matrix von $2\times 2$-Matrizen
+## Inverse Matrix von $(2\times 2)$-Matrizen
 
 Anhand der Überschrift können Sie schon erahnen, dass auch der Fachbegriff
 **inverse Matrix** nur für quadratische Matrizen definiert ist. Wir beginnen mit
-der Inversen einer $2 \times 2$-Matrix, also allgemein einer Matrix der Form
+der Inversen einer $(2\times 2)$-Matrix, also allgemein einer Matrix der Form
 
 $$\mathbf{A} = \begin{pmatrix} a & b \\ c & d \end{pmatrix}.$$
 
@@ -58,7 +58,7 @@ $$\begin{pmatrix} 2 & 3 \\ 1 & 5 \end{pmatrix} \cdot
 \frac{1}{7} \begin{pmatrix} 5 & -3 \\ -1 & 2 \end{pmatrix} =
 \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ \end{pmatrix}.$$
 
-Das Ergebnis ist die Einheitsmatrix der Dimension $2\times 2$. Tatsächlich ist
+Das Ergebnis ist die Einheitsmatrix der Dimension $(2\times 2)$. Tatsächlich ist
 das auch die Definition der inversen Matrix.
 
 ```{admonition} Was ist ... die inverse Matrix?
@@ -70,14 +70,14 @@ multipliziert wird, die Einheitsmatrix $\mathbf{E}$ ergibt:
 $$\mathbf{A}^{-1}\cdot \mathbf{A} = \mathbf{E}.$$
 ```
 
-## Inverse Matrix von $n \times n$-Matrizen
+## Inverse Matrix von $(n\times n)$-Matrizen
 
 Die obige Definition einer inversen Matrix ist für alle quadratischen Matrizen
-gültig. Auch bei einer quadratischen $n\times n$-Matrix $\mathbf{A}$ ist also
+gültig. Auch bei einer quadratischen $(n\times n)$-Matrix $\mathbf{A}$ ist also
 die inverse Matrix $\mathbf{A}^{-1}$ diejenige Matrix, für die dann
 $\mathbf{A}^{-1}\cdot\mathbf{A}=\mathbf{E}$ gilt. Leider gibt es keine so schöne
 einfache Formel zur Berechnung der Inversen. Die Berechnung der Inversen einer
-$n \times n$-Matrix ist aufwändiger als bei $2 \times 2$-Matrizen und erfordert
+$(n\times n)$-Matrix ist aufwändiger als bei $(2\times 2)$-Matrizen und erfordert
 in der Regel eine systematische Methode. Eines der bekanntesten Verfahren ist
 der Gauß-Algorithmus, den wir auch schon zur Lösung eines linearen
 Gleichungssystems kennengelernt haben.
@@ -158,7 +158,7 @@ miteinander vertauschbar sind.
 
 ### Inverse bei Skalarmultiplikation
 
-Ist $s$ ein Skalar und $\mathbf{A}$ eine $n \times n$-Matrix, dann gilt für die
+Ist $s$ ein Skalar und $\mathbf{A}$ eine $(n\times n)$-Matrix, dann gilt für die
 Inverse des Produkts von $s$ und $\mathbf{A}$:
 
 $$ (s \cdot \mathbf{A})^{-1} = \frac{1}{s} \cdot \mathbf{A}^{-1}, \quad s \neq 0.$$

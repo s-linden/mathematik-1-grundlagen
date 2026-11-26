@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7.5 Eigenwerte und Eigenvektoren (2x2-Matrix) &#8212; Mathematik 1: Grundlagen</title>
+    <title>7.5 Eigenwerte und Eigenvektoren von (2×2)-Matrizen &#8212; Mathematik 1: Grundlagen</title>
   
   
   
@@ -70,7 +70,7 @@
     <script src="../_static/goatcounter-events.js?v=ce13ae3e"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7.6 Eigenwerte und Eigenvektoren von 3x3-Matrizen" href="chapter07_sec06.html" />
+    <link rel="next" title="7.6 Eigenwerte und Eigenvektoren von (3×3)-Matrizen" href="chapter07_sec06.html" />
     <link rel="prev" title="7.4 Lineare Gleichungssysteme mit Matrizenrechnung lösen" href="chapter07_sec04.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -248,8 +248,8 @@
 <li class="toctree-l2"><a class="reference internal" href="chapter07_sec02.html">7.2 Inverse Matrizen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter07_sec03.html">7.3 Orthogonale Matrizen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter07_sec04.html">7.4 Lineare Gleichungssysteme mit Matrizenrechnung lösen</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">7.5 Eigenwerte und Eigenvektoren (2x2-Matrix)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter07_sec06.html">7.6 Eigenwerte und Eigenvektoren von 3x3-Matrizen</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">7.5 Eigenwerte und Eigenvektoren von (2×2)-Matrizen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter07_sec06.html">7.6 Eigenwerte und Eigenvektoren von (3×3)-Matrizen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter07_sec07.html">Übungen zum Selbststudium</a></li>
 </ul>
 </details></li>
@@ -491,7 +491,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>7.5 Eigenwerte und Eigenvektoren (2x2-Matrix)</h1>
+    <h1>7.5 Eigenwerte und Eigenvektoren von (2×2)-Matrizen</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -521,11 +521,11 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="eigenwerte-und-eigenvektoren-2x2-matrix">
-<h1>7.5 Eigenwerte und Eigenvektoren (2x2-Matrix)<a class="headerlink" href="#eigenwerte-und-eigenvektoren-2x2-matrix" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="eigenwerte-und-eigenvektoren-von-22-matrizen">
+<h1>7.5 Eigenwerte und Eigenvektoren von (2×2)-Matrizen<a class="headerlink" href="#eigenwerte-und-eigenvektoren-von-22-matrizen" title="Link to this heading">#</a></h1>
 <p>Eigenwerte und Eigenvektoren bieten eine Möglichkeit, schwingende Systeme zu
 analysieren. In diesem Kapitel werden die Grundlagen von Eigenwerten und
-Eigenvektoren für <span class="math notranslate nohighlight">\(2\times 2\)</span>-Matrizen erklärt.</p>
+Eigenvektoren für <span class="math notranslate nohighlight">\((2\times 2)\)</span>-Matrizen erklärt.</p>
 <section id="lernziele">
 <h2>Lernziele<a class="headerlink" href="#lernziele" title="Link to this heading">#</a></h2>
 <div class="goals admonition">
@@ -533,7 +533,7 @@ Eigenvektoren für <span class="math notranslate nohighlight">\(2\times 2\)</spa
 <ul class="simple">
 <li><p>Sie kennen die Definition des Fachbegriffes <strong>Eigenwert</strong> und wissen, was ein
 <strong>Eigenvektor</strong> ist.</p></li>
-<li><p>Sie können die Eigenwerte und Eigenvektoren einer <span class="math notranslate nohighlight">\(2\times 2\)</span>-Matrix
+<li><p>Sie können die Eigenwerte und Eigenvektoren einer <span class="math notranslate nohighlight">\((2\times 2)\)</span>-Matrix
 berechnen.</p></li>
 </ul>
 </div>
@@ -544,7 +544,7 @@ berechnen.</p></li>
 Ein Vektor <span class="math notranslate nohighlight">\(\vec{v} \neq \vec{0} \)</span> heißt <strong>Eigenvektor</strong> von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>, wenn
 für einen Skalar <span class="math notranslate nohighlight">\(\lambda \in \mathbb{R}\)</span> die folgende Gleichung gilt:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-1">
-<span class="eqno">(7.50)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-1" title="Link to this equation">#</a></span>\[\mathbf{A} \vec{v} = \lambda \vec{v}.\]</div>
+<span class="eqno">(7.58)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-1" title="Link to this equation">#</a></span>\[\mathbf{A} \vec{v} = \lambda \vec{v}.\]</div>
 <p>Der Skalar <span class="math notranslate nohighlight">\(\lambda\)</span> wird dabei als <strong>Eigenwert</strong> von <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> bezeichnet.
 Dies bedeutet, dass die Wirkung der Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> auf den Vektor <span class="math notranslate nohighlight">\(\vec{v}\)</span>
 lediglich eine Streckung oder Stauchung des Vektors um den Faktor <span class="math notranslate nohighlight">\(\lambda\)</span>
@@ -552,53 +552,53 @@ darstellt, ohne dessen Richtung zu verändern.</p>
 </section>
 <section id="wie-werden-eigenwerte-berechnet">
 <h2>Wie werden Eigenwerte berechnet?<a class="headerlink" href="#wie-werden-eigenwerte-berechnet" title="Link to this heading">#</a></h2>
-<p>Um die Eigenwerte <span class="math notranslate nohighlight">\(\lambda\)</span> einer <span class="math notranslate nohighlight">\(2 \times 2\)</span>-Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> zu berechnen,
+<p>Um die Eigenwerte <span class="math notranslate nohighlight">\(\lambda\)</span> einer <span class="math notranslate nohighlight">\((2\times 2)\)</span>-Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> zu berechnen,
 muss die <strong>charakteristische Gleichung</strong> gelöst werden. Diese ergibt sich aus
 der Determinante der Matrix <span class="math notranslate nohighlight">\(\mathbf{A} - \lambda \mathbf{E} \)</span>, wobei
 <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> die Einheitsmatrix ist. Die charakteristische Gleichung lautet:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-2">
-<span class="eqno">(7.51)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-2" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7.59)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-2" title="Link to this equation">#</a></span>\[
 \det(\mathbf{A} - \lambda \mathbf{E}) = 0.
 \]</div>
 <p>Für eine Matrix <span class="math notranslate nohighlight">\(\mathbf{A} = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}\)</span>
 ergibt sich die charakteristische Gleichung zu:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-3">
-<span class="eqno">(7.52)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-3" title="Link to this equation">#</a></span>\[\begin{split} \det\begin{pmatrix} a - \lambda &amp; b \\ c &amp; d - \lambda \end{pmatrix} = (a -
+<span class="eqno">(7.60)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-3" title="Link to this equation">#</a></span>\[\begin{split} \det\begin{pmatrix} a - \lambda &amp; b \\ c &amp; d - \lambda \end{pmatrix} = (a -
 \lambda)(d - \lambda) - bc = 0. \end{split}\]</div>
 <p>Dies ist eine quadratische Gleichung für <span class="math notranslate nohighlight">\(\lambda\)</span>, deren Lösungen die
 Eigenwerte der Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> sind.</p>
-<p>Wir betrachten als Beispiel die <span class="math notranslate nohighlight">\(2\times 2\)</span>-Matrix</p>
+<p>Wir betrachten als Beispiel die <span class="math notranslate nohighlight">\((2\times 2)\)</span>-Matrix</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-4">
-<span class="eqno">(7.53)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-4" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.61)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-4" title="Link to this equation">#</a></span>\[\begin{split}
 \mathbf{A} = \begin{pmatrix} 6 &amp; 2 \\ 2 &amp; 3 \end{pmatrix}.
 \end{split}\]</div>
 <p>Zunächst berechnen wir die Eigenwerte <span class="math notranslate nohighlight">\(\lambda\)</span> der Matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>. Dazu
 lösen wir die charakteristische Gleichung:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-5">
-<span class="eqno">(7.54)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-5" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7.62)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-5" title="Link to this equation">#</a></span>\[
 \det(\mathbf{A} - \lambda \mathbf{E}) = 0.
 \]</div>
 <p>Die Matrix <span class="math notranslate nohighlight">\(\mathbf{A} - \lambda \mathbf{E}\)</span> ergibt sich zu</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-6">
-<span class="eqno">(7.55)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-6" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.63)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-6" title="Link to this equation">#</a></span>\[\begin{split}
 \mathbf{A} - \lambda \mathbf{E} =
 \begin{pmatrix} 6 - \lambda &amp; 2 \\ 2 &amp; 3 - \lambda \end{pmatrix}.
 \end{split}\]</div>
 <p>Nun berechnen wir die Determinante dieser Matrix:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-7">
-<span class="eqno">(7.56)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-7" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.64)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-7" title="Link to this equation">#</a></span>\[\begin{split}
 \det\begin{pmatrix} 6 - \lambda &amp; 2 \\ 2 &amp; 3 - \lambda \end{pmatrix}
 = (6 - \lambda)(3 - \lambda) - 2 \cdot 2.
 \end{split}\]</div>
 <p>Damit ergibt die charakteristische Gleichung</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-8">
-<span class="eqno">(7.57)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-8" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7.65)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-8" title="Link to this equation">#</a></span>\[
 (6 - \lambda)(3 - \lambda) - 4 =
 18 - 9\lambda + \lambda^2 - 4 = \lambda^2 - 9\lambda + 14 = 0.
 \]</div>
 <p>Diese quadratische Gleichung lösen wir mit der pq-Formel:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-9">
-<span class="eqno">(7.58)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-9" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(7.66)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-9" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 \lambda_{1/2}
 &amp;= \frac{-(-9)}{2} \pm \sqrt{\frac{81}{4} - 14} \\
 &amp;= \frac{9}{2} \pm \sqrt{\frac{81-56}{4}} \\
@@ -606,7 +606,7 @@ lösen wir die charakteristische Gleichung:</p>
 \end{aligned}\end{split}\]</div>
 <p>Damit erhalten wir die beiden Eigenwerte</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-10">
-<span class="eqno">(7.59)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-10" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7.67)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-10" title="Link to this equation">#</a></span>\[
 \lambda_{1} = \frac{9}{2} + \frac{5}{2} = 7 \; \text{ und } \;
 \lambda_{2} = \frac{9}{2} - \frac{5}{2} = 2.
 \]</div>
@@ -616,7 +616,7 @@ lösen wir die charakteristische Gleichung:</p>
 <p>Ist ein Eigenwert <span class="math notranslate nohighlight">\(\lambda\)</span> gefunden, so lassen sich die zugehörigen
 Eigenvektoren <span class="math notranslate nohighlight">\(\vec{v}\)</span> berechnen, indem das Gleichungssystem</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-11">
-<span class="eqno">(7.60)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-11" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7.68)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-11" title="Link to this equation">#</a></span>\[
 (\mathbf{A} - \lambda \mathbf{E}) \vec{v} = \vec{0}
 \]</div>
 <p>gelöst wird. Dies führt auf ein lineares Gleichungssystem, dessen Lösungen die
@@ -624,51 +624,51 @@ Eigenvektoren der Matrix <span class="math notranslate nohighlight">\(\mathbf{A}
 <p>Wir demonstrieren die Vorgehensweise an dem obige Beispiel. Mit Hilfe der
 charakteristischen Gleichung haben wir bereits zu der Matrix</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-12">
-<span class="eqno">(7.61)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-12" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix} 6 &amp; 2 \\ 2 &amp; 3 \end{pmatrix}.\end{split}\]</div>
+<span class="eqno">(7.69)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-12" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{A} = \begin{pmatrix} 6 &amp; 2 \\ 2 &amp; 3 \end{pmatrix}.\end{split}\]</div>
 <p>die beiden Eigenwerte <span class="math notranslate nohighlight">\(\lambda_1 = 7\)</span> und <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span> gefunden. Zu jedem
 dieser beiden Eigenwerte wird nun der dazugehörige Eigenvektor berechnet.</p>
 <section id="eigenvektor-zu-lambda-1-7">
 <h3>Eigenvektor zu <span class="math notranslate nohighlight">\(\lambda_1 = 7\)</span>:<a class="headerlink" href="#eigenvektor-zu-lambda-1-7" title="Link to this heading">#</a></h3>
 <p>Das Gleichungssystem lautet:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-13">
-<span class="eqno">(7.62)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-13" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7.70)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-13" title="Link to this equation">#</a></span>\[
 (\mathbf{A} - 7 \mathbf{E}) \vec{v}_{1} = \vec{0}.
 \]</div>
 <p>Die Matrix <span class="math notranslate nohighlight">\(\mathbf{A} - 7 \mathbf{E}\)</span> ist:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-14">
-<span class="eqno">(7.63)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-14" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.71)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-14" title="Link to this equation">#</a></span>\[\begin{split}
 \mathbf{A} - 7 \mathbf{E} =
 \begin{pmatrix} 6 - 7 &amp; 2 \\ 2 &amp; 3 - 7 \end{pmatrix} =
 \begin{pmatrix} -1 &amp; 2 \\ 2 &amp; -4 \end{pmatrix}.
 \end{split}\]</div>
 <p>Somit müssen wir das lineare Gleichungssystem</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-15">
-<span class="eqno">(7.64)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-15" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.72)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-15" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{pmatrix} -1 &amp; 2 \\ 2 &amp; -4 \end{pmatrix} \cdot
 \begin{pmatrix} x \\ y \end{pmatrix} =
 \begin{pmatrix} 0 \\ 0 \end{pmatrix}
 \end{split}\]</div>
 <p>lösen. Dies ergibt zwei Gleichungen:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-16">
-<span class="eqno">(7.65)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-16" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(7.73)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-16" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 -1 x + 2 y &amp;= 0 \quad \text{(I)}\\
 2 x - 4 y &amp;= 0 \quad \text{(II)}
 \end{aligned}\end{split}\]</div>
 <p>Gleichung (I) lösen wir nach <span class="math notranslate nohighlight">\(x\)</span> auf:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-17">
-<span class="eqno">(7.66)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-17" title="Link to this equation">#</a></span>\[x = 2 y.\]</div>
+<span class="eqno">(7.74)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-17" title="Link to this equation">#</a></span>\[x = 2 y.\]</div>
 <p>Setzen wir dies in Gleichung (II) ein:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-18">
-<span class="eqno">(7.67)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-18" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7.75)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-18" title="Link to this equation">#</a></span>\[
 2 (2 y) - 4 y = 0 \quad \Rightarrow \quad 4 y - 4 y = 0.
 \]</div>
 <p>Dies ist immer erfüllt, wir haben unendlich viele Lösungen. Daher wählen wir
 einen Parameter <span class="math notranslate nohighlight">\(s\)</span> für <span class="math notranslate nohighlight">\(y\)</span>, also</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-19">
-<span class="eqno">(7.68)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-19" title="Link to this equation">#</a></span>\[y = s,\]</div>
+<span class="eqno">(7.76)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-19" title="Link to this equation">#</a></span>\[y = s,\]</div>
 <p>was <span class="math notranslate nohighlight">\(x = 2s\)</span> ergibt. Die Menge aller Eigenvektoren zu <span class="math notranslate nohighlight">\(\lambda_1 = 7\)</span> ist also</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-20">
-<span class="eqno">(7.69)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-20" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.77)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-20" title="Link to this equation">#</a></span>\[\begin{split}
 \vec{v}_1 = s\cdot\begin{pmatrix} 2 \\ 1 \end{pmatrix}.
 \end{split}\]</div>
 </section>
@@ -676,38 +676,38 @@ einen Parameter <span class="math notranslate nohighlight">\(s\)</span> für <sp
 <h3>Eigenvektor zu <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span>:<a class="headerlink" href="#eigenvektor-zu-lambda-2-2" title="Link to this heading">#</a></h3>
 <p>Das Gleichungssystem lautet:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-21">
-<span class="eqno">(7.70)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-21" title="Link to this equation">#</a></span>\[(\mathbf{A} - 2 \mathbf{E}) \vec{v}_{2} = \vec{0}.\]</div>
+<span class="eqno">(7.78)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-21" title="Link to this equation">#</a></span>\[(\mathbf{A} - 2 \mathbf{E}) \vec{v}_{2} = \vec{0}.\]</div>
 <p>Die Matrix <span class="math notranslate nohighlight">\(\mathbf{A} - 2 \mathbf{E}\)</span> ist:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-22">
-<span class="eqno">(7.71)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-22" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.79)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-22" title="Link to this equation">#</a></span>\[\begin{split}
 \mathbf{A} - 2 \mathbf{E} =
 \begin{pmatrix} 6 - 2 &amp; 2 \\ 2 &amp; 3 - 2 \end{pmatrix} =
 \begin{pmatrix} 4 &amp; 2 \\ 2 &amp; 1 \end{pmatrix}.
 \end{split}\]</div>
 <p>Das lineare Gleichungssystem lautet</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-23">
-<span class="eqno">(7.72)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-23" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.80)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-23" title="Link to this equation">#</a></span>\[\begin{split}
 \begin{pmatrix} 4 &amp; 2 \\ 2 &amp; 1 \end{pmatrix} \cdot
 \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}.
 \end{split}\]</div>
 <p>Dies ergibt zwei Gleichungen:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-24">
-<span class="eqno">(7.73)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-24" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
+<span class="eqno">(7.81)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-24" title="Link to this equation">#</a></span>\[\begin{split}\begin{aligned}
 4 x + 2 y &amp;= 0 \quad \text{(I)}\\
 2 x + 1 y &amp;= 0 \quad \text{(II)}
 \end{aligned}\end{split}\]</div>
 <p>Gleichung (II) lösen wir nach <span class="math notranslate nohighlight">\(y\)</span> auf:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-25">
-<span class="eqno">(7.74)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-25" title="Link to this equation">#</a></span>\[y = -2 x.\]</div>
+<span class="eqno">(7.82)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-25" title="Link to this equation">#</a></span>\[y = -2 x.\]</div>
 <p>Setzen wir dies in Gleichung (I) ein:</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-26">
-<span class="eqno">(7.75)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-26" title="Link to this equation">#</a></span>\[
+<span class="eqno">(7.83)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-26" title="Link to this equation">#</a></span>\[
 4 x + 2 (-2 x) = 0 \quad \Rightarrow \quad 4 x - 4 x = 0.
 \]</div>
 <p>Dies ist immer erfüllt, daher wählen wir <span class="math notranslate nohighlight">\(x = t\)</span>, was <span class="math notranslate nohighlight">\(y = -2 t\)</span> ergibt.</p>
 <p>Der Eigenvektor zu <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span> ist also</p>
 <div class="math notranslate nohighlight" id="equation-auto-chapter07-chapter07-sec05-27">
-<span class="eqno">(7.76)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-27" title="Link to this equation">#</a></span>\[\begin{split}
+<span class="eqno">(7.84)<a class="headerlink" href="#equation-auto-chapter07-chapter07-sec05-27" title="Link to this equation">#</a></span>\[\begin{split}
 \vec{v}_2 = t\cdot\begin{pmatrix} 1 \\ -2 \end{pmatrix}.
 \end{split}\]</div>
 <p>In dem folgenden Video wird ein weiteres Beispiel gerechnet.</p>
@@ -772,7 +772,7 @@ Berechnung wird etwas länglicher. Das sehen wir uns im nächsten Kapitel an.</p
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">7.6 Eigenwerte und Eigenvektoren von 3x3-Matrizen</p>
+        <p class="prev-next-title">7.6 Eigenwerte und Eigenvektoren von (3×3)-Matrizen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

@@ -49,8 +49,8 @@ $$\mathbf{A}^T \cdot\mathbf{A} =
 (1 \cdot 0 + 0 \cdot (-1)) & (1 \cdot 1 + 0 \cdot 0) \end{pmatrix}
 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.$$
 
-Das Ergebnis ist die Einheitsmatrix der Dimension $2\times 2$. Ein weiteres sehr
-bekanntes Beispiel einer orthogonalen Matrix ist die $2\times 2$-Rotationsmatrix
+Das Ergebnis ist die Einheitsmatrix der Dimension $(2\times 2)$. Ein weiteres sehr
+bekanntes Beispiel einer orthogonalen Matrix ist die $(2\times 2)$-Rotationsmatrix
 
 $$\mathbf{R}(\varphi) =
 \begin{pmatrix}\cos(\varphi)&-\sin(\varphi) \\ \sin(\varphi)&\cos(\varphi)\end{pmatrix},$$
@@ -74,7 +74,7 @@ Die trigonometrischen Terme können weiter vereinfacht werden, denn es gelten:
 - $(- \sin(\varphi))\cos(\varphi) + \cos(\varphi)\sin(\varphi) = 0$
 - $\sin^2(\varphi) + \cos^2(\varphi) = 1$
 
-Somit erhalten wir erneut die $2\times 2$-Einheitsmatrix
+Somit erhalten wir erneut die $(2\times 2)$-Einheitsmatrix
 
 $$\mathbf{R}^T(\varphi)\cdot \mathbf{R}(\varphi) =
 \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}.$$
